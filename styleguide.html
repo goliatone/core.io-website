@@ -1,0 +1,1196 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>StyleGuide</title>
+  <meta name="description" content="add_description">
+  <meta name="keywords" content="add_keywords">
+  <meta name="author" content="add_author">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div id="main-content" class="styleguide midnight-mode layout-app relative">
+    
+    <div class="deco-bar"></div>
+
+    <header class="header row">
+  
+      <!-- HEADER LOGO -->
+      <div class="logo">
+        <a href="features.html"><img src="img/logo/core_io-logo.png" alt="Core.io" title="Core.io"/></a>
+      </div><!-- END HEADER LOGO -->
+
+      <!-- Header Navigation Bar -->
+      <nav id="styleguide-menu" class="nav-bar-1">
+        <div class="menu-item">
+          <a href="#skins">Skins</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#colors">Colors</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#headers">Headers</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#text">Text (p)</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#hr">Separators (hr)</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#buttons">Buttons</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#labels">Labels</a> 
+        </div>
+      </nav><!-- END Header Navigation Bar -->
+
+    </header><!-- END SECTION HEADER -->
+
+    <div id="content" class="content relative">
+     
+      <h1 id="skins" class="h-big highlight">:Skins:</h1>
+      <div class="cols">
+        <div class="col-2">  
+          <div class="code-block">
+<pre>.midnight-mode
+  background-color: #2C2E31
+  color: #2C2E31
+.highlight
+  color: #00d8d8</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p>This is regular text in .midnight-mode, and <span class="highlight">this is highlighted text</span>.<p>
+        </div>
+      </div>      <hr/>
+
+
+      <h1 id="colors" class="h-big highlight">:Colors:</h1>
+      <div class="row">
+        <table style="width:100%">
+          
+          <tr>
+            <td style="background-color: #1b1d1d">
+              <p>code bg</p>
+              <p>$BG_2, $c23</p>
+              <p>#1b1d1d</p>
+            </td>
+            <td style="background-color: #1B1D1E">
+              <p>footer bg</p>
+              <p>$BG_3, $c22</p>
+              <p>#1B1D1E</p>
+            </td> 
+            <td style="background-color: #212121">
+              <p>button shadow</p>
+              <p>$c26</p>
+              <p>#212121</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="background-color: #2C2E31">
+              <p>main bg</p>
+              <p>$BG_1, $c1</p>
+              <p>#2C2E31</p>
+            </td>
+            <td style="background-color: #2c2d31">
+              <p>font buttons, labels</p>
+              <p>$BG_3, $c6</p>
+              <p>#2c2d31</p>
+            </td> 
+            <td style="background-color: #354052">
+              <p>font labels</p>
+              <p>$c7</p>
+              <p>#354052</p>
+            </td>
+            <td style="background-color: #516173">
+              <p>labels bg</p>
+              <p>$c12</p>
+              <p>#516173</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="background-color: #8a9199">
+              <p>font pagination</p>
+              <p>$c16</p>
+              <p>#8a9199</p>
+            </td>
+            <td style="background-color: #a1acb7">
+              <p>border buttons, labels</p>
+              <p>$c17</p>
+              <p>#a1acb7</p>
+            </td> 
+            <td style="background-color: #979797">
+              <p>border posts</p>
+              <p>$SHADE_1, $c21</p>
+              <p>#979797</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="background-color: #dfe1e5; color: black">
+              <p>labels bg</p>
+              <p>$c14</p>
+              <p>#dfe1e5</p>
+            </td>
+            <td style="background-color: #c2cad4; color: black">
+              <p>bg labels</p>
+              <p>$c15</p>
+              <p>#c2cad4</p>
+              <td style="background-color: #7a8999">
+              <p>doc nav bar color</p>
+              <p>$c15</p>
+              <p>#7a8999</p>
+            </td> 
+          </tr>
+
+          <tr>
+            <td style="background-color: #1991eb">
+              <p>labels bg</p>
+              <p>$c10</p>
+              <p>#1991eb</p>
+            </td>
+            <td style="background-color: #5088EA">
+              <p>deco bar gradient</p>
+              <p>$c24</p>
+              <p>#5088EA</p>
+            </td> 
+            <td style="background-color: #00d8d8">
+              <p>highlight</p>
+              <p>$HIGHLIGHT_1, $c4</p>
+              <p>#00d8d8</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #A4DD74">
+              <p>deco bar gradient</p>
+              <p>$c25</p>
+              <p>#A4DD74</p>
+            </td>
+            <td style="background-color: #36af47">
+              <p>label bg</p>
+              <p>$c9</p>
+              <p>#36af47</p>
+            </td>
+            <td style="background-color: #00d936">
+              <p>window controls</p>
+              <p>$c20</p>
+              <p>#00d936</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #ed1c24">
+              <p>labels bg</p>
+              <p>$c11</p>
+              <p>#ed1c24</p>
+            </td>
+            <td style="background-color: #ff5c26">
+              <p>window controls</p>
+              <p>$c18</p>
+              <p>#ff5c26</p>
+            </td> 
+            <td style="background-color: #f7981c">
+              <p>labels bg</p>
+              <p>$c13</p>
+              <p>#f7981c</p>
+            </td>
+            <td style="background-color: #ffbf00">
+              <p>window controls</p>
+              <p>$c19</p>
+              <p>#ffbf00</p>
+            </td> 
+          </tr>
+          <tr>
+            <td style="background-color: #ffffff; color: black;">
+              <p>font labels</p>
+              <p>$c5</p>
+              <p>#ffffff</p>
+            </td>
+            <td style="background-color: #fafafa; color: black;">
+              <p>main font color</p>
+              <p>$COLOR_1, $c2</p>
+              <p>#fafafa</p>
+            </td> 
+            <td style="background-color: #f8f8f8; color: black;">
+              <p>font, searchbox, buttons, borders</p>
+              <p>$SHADE_1, $c3</p>
+              <p>#f8f8f8</p>
+            </td>
+          </tr>
+        </table>
+      </div>      <hr/>
+
+      
+      <h1 id="headers" class="h-big highlight">:Headers:</h1>
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.h-biggest
+  font-family: HelveticaNeue-Light
+  font-size: 64px
+  font-weight: lighter</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-biggest">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-biggest
+  font-family: HelveticaNeue-Light
+  font-size: 64px
+  font-weight: lighter  
+.hightlight
+  color: #00d8d8</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-biggest highlight">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+  
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-big
+  font-family: HelveticaNeue-Light
+  font-size: 48px
+  font-weight: lighter
+  line-height: 1.2</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-big">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-medium
+  font-family: HelveticaNeue-Light
+  font-size: 36px
+  font-weight: lighter</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-medium">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-small
+  font-family: HelveticaNeue-Medium
+  font-size: 28px
+  font-weight: lighter</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-small">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-smaller
+  font-family: HelveticaNeue-Medium
+  font-size: 24px
+  font-weight: lighter
+  letter-spacing: 0.13px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-smaller">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-smaller-italic
+  font-family: HelveticaNeue-MediumItalic
+  font-size: 24px
+  font-weight: lighter</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-smaller-italic">Lorem ipsum dolor sit amet.</h1>
+          <p class="footnote">@TODO Load fonts.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">
+          <div class="code-block">
+            <pre>
+.h-smallest
+  font-family: HelveticaNeue-Medium
+  font-size: 16px
+  font-weight: lighter</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <h1 class="h-smallest">Lorem ipsum dolor sit amet.</h1>
+        </div>
+      </div>      <hr/>
+      
+
+      <h1 id="text" class="h-big highlight">:Text (p):</h1>
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-biggest
+  font-family: HelveticaNeue-LightItalic
+  font-size: 48px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-biggest">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-big-1
+  font-family: HelveticaNeue-Light
+  font-size: 20px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-big-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-big-2
+  font-family: HelveticaNeue-Medium
+  font-size: 20px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-big-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-big-2.shade
+  font-family: HelveticaNeue-Medium
+  font-size: 20px
+.shade
+  color: #f8f8f8</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-big-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+          <p>* This is almost exactly same color on screen?
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-medium-1
+  font-family: HelveticaNeue
+  font-size: 18px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-medium-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-medium-2
+  font-family: HelveticaNeue-Medium
+  font-size: 18px
+  letter-spacing: 0.1px
+  line-height: 24px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-medium-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-medium-2
+  font-family: HelveticaNeue-Medium
+  font-size: 18px
+  letter-spacing: 0.1px
+  line-height: 24px
+.light
+  font-family: HelveticaNeue-Light</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-medium-2 light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-small
+  font-family: HelveticaNeue
+  font-size: 16px
+  line-height: 24px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-small-2
+  font-family: HelveticaNeue Medium
+  font-size: 16px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.p-smallest
+  font-family: HelveticaNeue
+  font-size: 14px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <p class="p-smallest">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+        </div>
+      </div>
+      <hr/>
+      
+
+      <h1 id="hr" class="h-big highlight">:Separators (hr):</h1>
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.hr
+  width: 100%
+  border-top: 1px solid white</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <hr/>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.hr-shade
+  border-color: $SHADE_2</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <hr class="hr-shade"/>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.hr-small
+  width: 53px
+  border-width: 3px</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <hr class="hr-small"/>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2">  
+          <div class="code-block">
+            <pre>
+.hr-medium
+  width: 50%</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <hr class="hr-medium"/>
+        </div>
+      </div>
+      <hr/>
+      
+
+      <h1 id="buttons" class="h-big highlight">:Buttons:</h1>
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button
+  $w: 200px
+  $h: 53px
+  $border_w: 1px
+  $border_r: 3px 
+
+  &.big-btn
+    +button_draw($w, $h, $border_w, $r)
+    +button_fonts($MAIN_FONT_BOLD, 18px)
+
+&lt;div class="button big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button
+  $w: 155px
+  $h: 44px
+  $border_w: 2px
+  $border_r: 5px
+
+  &.medium-btn
+    +button_draw($w, $h, $border_w, $r)
+    +button_fonts($MAIN_FONT_MEDIUM, 16px)
+
+&lt;div class="button medium-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button medium-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.big-btn
+
+  &.black-btn
+    +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
+
+&lt;div class="button black-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.big-btn
+
+  &.gray-btn
+    +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
+
+&lt;div class="button gray-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button gray-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+
+  &.blue-btn
+    +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
+
+&lt;div class="button blue-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button blue-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+  
+  &.fade
+    +button_fade($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+
+&lt;div class="button fade blue-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+  
+  &.shutter-left
+    +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-left blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+
+  &.shutter-right
+    +button_shutter-right($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-right blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+ 
+  &.shutter-in
+    +button_shutter-in($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-in blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+ 
+  &.shutter-out
+    +button_shutter-out($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-out blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      <hr/>
+
+
+      <h1 id="labels" class="h-big highlight">:Labels:</h1>
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+$width: 47px
+$height: 20px
+$border_r: 3px
+
+.label
+  +label_draw($width, $height, $border_r)
+
+&lt;div class="label"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.green
+    +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
+
+&lt;div class="label green"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label green">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.blue
+    +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
+
+&lt;div class="label blue"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label blue">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.red
+    +label_color($LABELS_RED_C, $LABELS_RED_BG)
+
+&lt;div class="label red"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label red">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+      
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.black
+    +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
+
+&lt;div class="label black"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label black">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+      
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.orange
+    +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
+
+&lt;div class="label orange"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label orange">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+      
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.light-gray
+    +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
+
+&lt;div class="label light-gray"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label light-gray">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-medium hr-shade"/>
+
+      
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.label.dark-gray
+    +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+
+&lt;div class="label dark-gray"&gt;
+  &lt;span&gt;&lt;span>Text&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="label dark-gray">
+            <span>Text</span>
+          </div>
+        </div>
+      </div>      <hr/>
+
+    </div><!-- END CONTENT -->
+
+
+
+
+
+
+    <footer>
+      <div class="cols cols-centered">
+        
+        <div class="col-3">
+          <div class="footer-logo">
+            <a href="features.html"><img src="img/logo/core_io-logo-2.png" title="Core.io" alt="Core.io"/></a>
+          </div>
+          
+          <div class="footer-menu">
+            <a href="features.html">Features</a>
+            <a href="modules.html">Modules</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="examples.html">Examples</a>
+          </div>
+        </div> 
+        
+        <div class="col-3">
+          <div class="footer-releases">
+            <p>Latest Release: 0.2.8 (June 01. 2017)</p>
+          </div>
+        </div>
+        
+        <div class="col-3">
+          <div class="footer-github">
+            <a href="#" class="row">
+              <img src="img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-centered footnote">
+        <p>Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+      </div>
+    </footer>
+    <div id="to-top" class="to-top fixed uppercase">
+      <a href="#main-content"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve">
+<g>
+  <path d="M286.935,197.286L159.028,69.379c-3.613-3.617-7.895-5.424-12.847-5.424s-9.233,1.807-12.85,5.424L5.424,197.286   C1.807,200.9,0,205.184,0,210.132s1.807,9.233,5.424,12.847c3.621,3.617,7.902,5.428,12.85,5.428h255.813   c4.949,0,9.233-1.811,12.848-5.428c3.613-3.613,5.427-7.898,5.427-12.847S290.548,200.9,286.935,197.286z" fill="#00d8d8"/>
+</g>
+</svg>
+</a>
+    </div>
+    
+  </div><!-- END styleguide midnight-mode layout-app -->
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
