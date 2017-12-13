@@ -1,0 +1,36 @@
+          <!-- END MODULE POST -->
+          <div class="post cols">
+            <div>
+              <!-- POST TITLE, VERSION and DESCRIPTION -->    
+              <div class="row">
+                <div class="title h-small">
+                  <a href="">{{title}}</a>
+                </div>
+                <div class="tag">
+                  <span href="">{{version}}</span>
+                </div>
+              </div>   
+              <div class="row">
+                <div class="description p-medium-1">
+                  <p>{{description}}</p>
+                </div>
+              </div><!-- END POST DESCRIPTION -->
+            </div>
+
+            <!-- POST LABELS AND ACCES ICON -->
+            <div class="row">
+              <div class="labels row">
+                {{#labels}}
+                  {{>_label}}
+                {{/labels}}
+              </div>
+
+              <div class="links row">
+                {{#icons}}
+                  <div class="link">
+                    <span><a href="">{{_icon}}</a></span>
+                  </div>
+                {{/icons}}
+              </div>
+            </div><!-- POST LABELS AND ACCES ICON -->
+          </div><!-- END MODULE POST -->

@@ -1,0 +1,21 @@
+        
+        <div class="instruction_block">
+          {{#title}}
+          <div class="title{{#class}} {{.}}{{/class}}"> 
+            <h3>{{txt}}</h3>
+          </div>
+          {{/title}}
+          {{#description}}
+          <div class="description{{#class}} {{.}}{{/class}}">
+            {{{txt}}}
+          </div>
+          {{/description}}
+          {{#buttons}}
+            {{> _button}}
+          {{/buttons}}
+          {{#code_block}}
+            {{> _code_block}}
+          {{/code_block}}
+        </div><!-- END INSTRUCTION BLOCK -->
+
+

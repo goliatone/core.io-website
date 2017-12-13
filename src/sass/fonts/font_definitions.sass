@@ -1,0 +1,203 @@
+/* -------------------------------------- FONT_DEFINITIONS */
+html
+  font-size: 62.5%
+
+body
+  font-family: $MAIN_FONT
+  font-size: 18px
+  line-height: 1.2
+  font-weight: lighter
+
+h1, h2, h3, h4, h5, h6
+  font-weight: inherit
+
+p, a, code, pre
+  font-family: inherit
+  font-size: inherit
+  font-weight: inherit
+  line-height: inherit
+
+footer
+  font-family: $MAIN_FONT
+  font-size: 14px
+  font-weight: 300
+
+
+/* ----------------------------------- HEADERS */
+.h-biggest
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 64px
+  font-weight: lighter
+
+.h-big
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 48px
+  font-weight: lighter
+  // line-height: 1.2
+
+.h-medium
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 36px
+  font-weight: lighter
+
+.h-small
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 28px
+  font-weight: lighter
+
+.h-smaller
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 24px
+  letter-spacing: 0.13px
+  font-weight: lighter
+
+.h-smaller-italic
+  font-family: $MAIN_FONT_MEDIUM_ITALIC
+  font-size: 24px
+  font-weight: lighter
+
+.h-smallest
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 16px
+  font-weight: lighter
+
+/* ---------------------------------- TEXT (p) */
+.p-biggest
+  font-family: $MAIN_FONT_LIGHT_ITALIC
+  font-size: 48px
+  font-weight: lighter
+
+.p-big-1
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 20px
+  font-weight: lighter
+
+.p-big-2
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 20px
+  
+
+.p-medium-1
+  font-family: $MAIN_FONT
+  font-size: 18px
+
+.p-medium-2
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 18px
+  letter-spacing: 0.1px
+  line-height: 24px
+
+.p-medium-3
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 18px
+  letter-spacing: 0.1px
+  line-height: 24px
+
+.p-small
+  font-family: $MAIN_FONT
+  font-size: 16px
+  line-height: 24px
+  font-weight: 300
+
+.p-small-2
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 16px
+
+.p-smallest
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 14px
+
+.light
+  font-family: $MAIN_FONT_LIGHT
+
+/* -------------------------------------- CODE */
+code
+  font-family: $CODE_FONT_1
+.code-block
+  font-family: $CODE_FONT_2
+  font-size: 16px
+  .title
+    font-family: $COURIER
+    font-size: 14 
+
+.code-block-2
+  font-family: $CODE_FONT_1
+  font-size: 15px
+  .title
+    font-family: $CODE_FONT_1
+    font-size: 15 
+    font-weight: bold
+
+
+/* ---------------------------------- NAV BARS */
+.nav-bar-1
+  font-family: $MAIN_FONT_LIGHT
+  font-size: 18px
+  line-height: 18px
+
+.nav-bar-2
+  font-family: $MAIN_FONT
+  font-size: 14px
+  line-height: 14px
+
+.side-menu
+  font-family: $MAIN_FONT_LIGHT_ITALIC
+  font-size: 22px
+  .menu-item-submenu
+    font-family: $MAIN_FONT_MEDIUM_ITALIC
+    font-size: 18px
+
+
+/* ------------------------------- SEARCH BARS */
+.search-bar-1
+  font-family: $MAIN_FONT_LIGHT_ITALIC
+
+.search-bar-2
+  +search_bar_fonts($MAIN_FONT_LIGHT_ITALIC, 16px, 14px)
+
+/* -------------------------------- PAGINATION */
+.pagination
+  font-size: 16px
+  font-weight: 200
+
+
+/* ----------------------------------- BUTTONS */
+.big-btn
+  +button_fonts($MAIN_FONT_BOLD, 18px)
+
+.medium-btn
+  +button_fonts($MAIN_FONT_MEDIUM, 16px)
+
+
+/* ------------------------------------ LABELS */
+.label
+  font-family: $SPECIAL_FONT
+  font-size: 10px
+  text-transform: uppercase
+
+
+/* ---------------------------------- FOOTNOTE */
+.footnote
+  font-family: $MAIN_FONT_LIGHT_ITALIC
+  font-size: 14px
+  > *
+    font-family: inherit
+    font-size: inherit
+
+
+/* ------------------------------------- POSTS */
+.post 
+  .title
+    font-family: $MAIN_FONT_LIGHT
+    font-size: 28px
+    
+  .tag
+    font-family: $MAIN_FONT_MEDIUM
+    font-size: 16px
+
+  .description
+    font-family: $MAIN_FONT
+    font-size: 16px
+    font-weight: 200
+
+

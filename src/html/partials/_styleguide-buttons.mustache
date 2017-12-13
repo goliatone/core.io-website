@@ -1,0 +1,335 @@
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button
+  $w: 200px
+  $h: 53px
+  $border_w: 1px
+  $border_r: 3px 
+
+  &.big-btn
+    +button_draw($w, $h, $border_w, $r)
+    +button_fonts($MAIN_FONT_BOLD, 18px)
+
+&lt;div class="button big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button
+  $w: 155px
+  $h: 44px
+  $border_w: 2px
+  $border_r: 5px
+
+  &.medium-btn
+    +button_draw($w, $h, $border_w, $r)
+    +button_fonts($MAIN_FONT_MEDIUM, 16px)
+
+&lt;div class="button medium-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button medium-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.big-btn
+
+  &.black-btn
+    +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
+
+&lt;div class="button black-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.big-btn
+
+  &.gray-btn
+    +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
+
+&lt;div class="button gray-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button gray-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+
+  &.blue-btn
+    +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
+
+&lt;div class="button blue-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button blue-btn big-btn">
+            <button><span>Text</span></button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+  
+  &.fade
+    +button_fade($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+
+&lt;div class="button fade blue-btn big-btn"&gt;
+  &lt;button&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn fade">
+            <button>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+  
+  &.shutter-left
+    +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-left blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-left">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+
+  &.shutter-right
+    +button_shutter-right($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-right blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-right">
+            <button>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+ 
+  &.shutter-in
+    +button_shutter-in($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-in blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-in">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="hr-medium hr-shade"/>
+
+      <div class="cols"> 
+        <div class="col-2 wider">  
+          <div class="code-block">
+            <pre>
+.button.blue-btn.big-btn
+ 
+  &.shutter-out
+    +button_shutter-out($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+&lt;div class="button shutter-out blue-btn big-btn"&gt;
+  &lt;button&gt;&lt;span>Text&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="button black-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button gray-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+          <div class="button blue-btn big-btn shutter-out">
+            <button>
+              <div class="overlay"></div>
+              <div class="overlay"></div>
+              <span>Text</span>  
+            </button>
+          </div>
+
+        </div>
+
+      </div>
