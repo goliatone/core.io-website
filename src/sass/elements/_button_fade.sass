@@ -1,0 +1,44 @@
+/// Mixin to add a fading transition to a button on hover.
+///
+/// Markup has the following structure:
+///
+/// ```
+///   <div class="fade">
+///     <button>Button Text</button>
+///   <div>
+/// ```
+///
+///
+/// <style>
+///   .fade {
+/// </style>
+/// 
+/// <div class="button">
+///   <button class="fade">Text</button>
+/// </div>
+///
+///
+/// @group Buttons
+/// @group Transitions
+/// @group Colors
+/// @author Tatiana Burgos
+///
+///
+/// @param {Color} $color_1 [white] - Button's text and border color on hover.
+/// @param {Color} $color_2 [black] - Button's background color on hover.
+///
+/// @output css for `.button`
+///     
+/// @example sass - Creating `.fade`
+///   .fade
+///     +button_fade()
+///
+
+=button_fade($color_1:white, $color_2:black)
+  button
+    +transition(all .6s ease)
+    &:hover
+      color: $color_1
+      background-color: $color_2
+      border-color: $color_1
+      +transition(all .6s ease)

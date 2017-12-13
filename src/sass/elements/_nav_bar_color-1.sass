@@ -1,0 +1,45 @@
+/// Mixin to color a menu bar with a 
+/// top border on hover
+///
+/// Example markup:
+///   <nav class="nav-bar">
+///     <div class="menu-item">
+///       <a href="menu_item-1.html">menu_item-1</a> 
+///     </div>
+///     ...
+///     <div class="menu-item">
+///       <a href="menu_item-n.html">menu_item-n</a> 
+///     </div>
+///   </nav>
+///
+/// When menu item is hovered, it changes color and
+/// can display a border on top (see nav_bar_draw-1)
+/// @todo add link to nav_bar_draw-1
+///
+/// @group Menus
+/// @group Colors
+/// @author Tatiana Burgos
+///
+/// @param {Color} $color - Element's text (links) color
+/// @param {Color} $hover_c - Element's text (links) hover color
+/// @param {Color} $border - Border on hover color. 
+/// @output `.nav_bar-1` elements css:
+///   ```
+///   .nav-bar-1 a {
+///     color: #fafafa;
+///   .nav-bar-1 a:hover {
+///     color: #00d8d8;
+///     border-top: 1px solid #fafafa; }
+/// ```
+///
+/// @example sass - Creating `.nav_bar`
+///   +nav_bar_color-1(white, cyan, white)
+
+
+=nav_bar_color-1($color, $hover_c, $border_c)
+  a
+    color: $color
+    &:hover, &.selected
+      color: $hover_c
+      border-color: $border_c
+

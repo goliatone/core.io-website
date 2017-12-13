@@ -1,0 +1,206 @@
+/* SKINS ----------------------------------------------------------- */
+// -------------------------------------------------------------- CSS
+// SCOPE = PROJECT
+
+// ----------------------------------------- MIDNIGHT MODE
+.midnight-mode.print
+  background: none
+  color: black
+  .code-block, .code-line
+    background: none
+    color: black
+  footer
+    display: none
+
+.midnight-mode
+  background-color: $BG_1
+  color: $COLOR_1
+
+  a, p
+    color: inherit
+
+  a
+    color: $HIGHLIGHT_1
+    &:hover
+      color: $COLOR_1
+
+  .post .title a
+    color: $COLOR_1
+
+  .highlight
+    color: $HIGHLIGHT_1
+  .shade
+    color: $SHADE_1
+
+  footer
+    background-color: $BG_3
+    // color: $COLOR_1
+    a
+      color: $COLOR_1
+      &:hover
+        color: $HIGHLIGHT_1
+
+  hr
+    border-color: $SHADE_1
+    &.hr-shade
+      border-color: $SHADE_2 
+
+
+  .highlight-bar 
+    border-bottom: 1px solid $HIGHLIGHT_1
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
+    background: #5088ea /* Old browsers */
+    background: -moz-linear-gradient(left, #5088ea 0%, #a4dd74 50%, #a4dd74 51%, #5088ea 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #5088ea 0%,#a4dd74 50%,#a4dd74 51%,#5088ea 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #5088ea 0%,#a4dd74 50%,#a4dd74 51%,#5088ea 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5088ea', endColorstr='#5088ea',GradientType=1 ) /* IE6-9 */
+
+    -webkit-animation: bg_move 4s infinite /* Safari 4+ */
+    -moz-animation:    bg_move 4s infinite /* Fx 5+ */
+    -o-animation:      bg_move 4s infinite /* Opera 12+ */
+    animation:         bg_move 4s infinite /* IE 10+, Fx 29+ */
+
+  
+  @-webkit-keyframes bg_move
+    0%
+      background-position: 0px
+    50%
+      background-position: $DECO_BAR_W
+    100%
+      background-position: $DECO_BAR_W * 2
+
+  @-moz-keyframes bg_move
+    0%
+      background-position: 0px
+    50%
+      background-position: $DECO_BAR_W
+    100%
+      background-position: $DECO_BAR_W * 2
+
+  @-o-keyframes bg_move
+    0%
+      background-position: 0px
+    50%
+      background-position: $DECO_BAR_W
+    100%
+      background-position: $DECO_BAR_W * 2
+
+  @keyframes bg_move bg_move
+    0%
+      background-position: 0px
+    50%
+      background-position: $DECO_BAR_W
+    100%
+      background-position: $DECO_BAR_W * 2
+
+
+  .code-block,
+  .code-line
+    background-color: $BG_2
+
+
+  .posts
+    > .row
+      border-top: 1px solid $SHADE_2
+      &:last-child
+        border-bottom: 1px solid $SHADE_2
+
+
+  .nav-bar-1
+    +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
+
+  .nav-bar-2
+    +nav_bar_color-2($c8, $HIGHLIGHT_1, $COLOR_1)
+    /* shadow */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20)
+    .menu-item
+      /* separator */
+      border-color: rgba(161, 172, 183, .2)
+
+  .search-bar-1
+    +search_bar_color($COLOR_1, transparent, $SHADE_1)
+
+  .search-bar-2
+    +search_bar_color($COLOR_1, transparent, $SHADE_1)
+    
+
+  $color: $PAGINATION_C
+  $border_color: $PAGINATION_BORDER_C
+  $border_w: 2px
+  $detail_c: $PAGINATION_C_HIGHLIGHT
+  $detail_bg: $PAGINATION_BACKGROUND_HIGHTLIGHT
+
+
+  .pagination
+    +pagination_color($color, $border_color, $border_w, $detail_c, $detail_bg)
+ 
+
+  .black-btn
+    +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
+    &.fade
+      +button_fade($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
+    &.shutter-left
+      +button_shutter-left($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
+    &.shutter-right
+      +button_shutter-right($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
+    &.shutter-in
+      +button_shutter-in($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
+    &.shutter-out
+      +button_shutter-out($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
+
+  .gray-btn
+    +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
+    &.fade
+      +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
+    &.shutter-left
+      +button_shutter-left($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
+    &.shutter-right
+      +button_shutter-right($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
+    &.shutter-in
+      +button_shutter-in($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
+    &.shutter-out
+      +button_shutter-out($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
+
+
+  .blue-btn
+    +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
+    &.fade
+      +button_fade($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+    &.shutter-left
+      +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+    &.shutter-right
+      +button_shutter-right($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+    &.shutter-in
+      +button_shutter-in($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+    &.shutter-out
+      +button_shutter-out($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
+
+
+  .label    
+    &.green
+      +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
+
+    &.blue
+      +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
+
+    &.red
+      +label_color($LABELS_RED_C, $LABELS_RED_BG)
+
+    &.black
+      +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
+
+    &.orange
+      +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
+
+    &.light-gray
+      +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
+
+    &.dark-gray
+      +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+
+
+  .instruction_block
+    .description,
+    .button,
+    .code-wrapper
+      border-left: 1px solid $SHADE_2 

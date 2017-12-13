@@ -1,0 +1,40 @@
+.button
+  &.blend
+    position: relative
+    overflow: hidden
+
+    button
+      +transition(color .3s ease-in-out)
+
+    span
+      z-index: 10
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+
+    .overlay
+      border: 1px solid #00d8d8
+      border-radius: 3px
+      position: absolute
+      top: 0
+      left: 0
+      width: inherit
+      height: inherit
+      background-color: #00d8d8
+      opacity: 0
+      +transition(opacity .3s ease-in)
+      mix-blend-mode: color-dodge
+
+    &:hover 
+      cursor: pointer
+      .overlay
+        opacity: 1
+        +transition(opacity .3s ease-in)
+      
+      button
+        color: #2C2E31
+        +transition(color .5s ease-in-out)
+    

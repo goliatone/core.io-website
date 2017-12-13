@@ -1,0 +1,64 @@
+/// Mixin to show an horizontal
+/// submenu.
+///
+/// Example markup:
+///   <nav class="nav-bar">
+///     <div class="menu-item">
+///       <a href="menu_item-1.html">menu_item-1</a> 
+///         <div class="submenu">
+///           <div class="menu-item-submenu">
+///             <a href="#">item 1</a>
+///           </div>
+///           ...
+///           <div class="menu-item-submenu">
+///             <a href="#">item 1</a>
+///           </div>
+///     </div>
+///     ...
+///     <div class="menu-item">
+///       <a href="menu_item-n.html">menu_item-n</a> 
+///     </div>
+///   </nav>
+///
+/// When menu item is hovered, it changes color and
+/// displays an horizontal border on top
+///
+/// @group Menus
+/// @group Layouts
+/// @author Tatiana Burgos
+///
+/// @param {Length} $item_padding - Space between links
+/// @param {Length} $border_w - Border width 
+/// @param {Lenght} $border_padding - Space between link and border (x and y)
+/// @output `.nav_bar` elements css:
+///   ```
+///   .nav-bar {
+///     }
+/// ```
+///
+/// @example sass - Creating `.nav_bar`
+///   .nav-bar
+///     +nav_bar_submenu(36px, 2px, 7px 11px)
+
+
+=nav_bar_submenu($spacing)
+  +flexDisplay
+  .menu-item
+    position: relative
+    > a:hover + .submenu
+      /* transition properties */
+      opacity: 1  
+    .submenu
+      position: absolute
+      +flexDisplay
+      left: -25%
+      top: $spacing
+      /* transition properties */
+      opacity: 0
+      +transition(opacity 1s ease)
+      &:hover
+        /* transition properties */
+        opacity: 1
+      &.show
+        /* transition properties */
+        opacity: 1

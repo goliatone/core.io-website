@@ -1,0 +1,109 @@
+/* QUICKSTART PAGE ----------------------------------------------- */
+$numeration_w: 60px
+$numeration_margin_r: 20px
+
+$margin_l: $numeration_w/2
+$padding_l: $numeration_w/2 + $numeration_margin_r
+
+
+$instrus_padding_l: 197px
+$instrus_padding_r: 91px
+
+
+.quickstart 
+  .header
+    .logo
+      height: $LOGO_H
+  section
+    &:first-child
+      padding-top: 105px 
+  .paragraph-1
+    padding-left: 172px
+    padding-right: 189px
+    margin-bottom: 71px
+    .subheader
+      margin-top: 23px
+    .side-img
+      width: 334px
+      height: 263px
+
+  .instrus
+    padding-left: $instrus_padding_l
+    padding-right: $instrus_padding_r
+    hr
+      width: 505px
+      margin: 71px auto 83px auto
+
+    /* circle number */
+    counter-reset: instrus -1
+
+    .instruction_block
+      /* circle number */
+      counter-increment: instrus
+      /* to have vertical line = border-left 
+       * margin can't be set here,
+       * instead padding-bottom on each
+       * last element of the instruction block */
+      &:last-of-type 
+        .description
+          border: none
+        .last
+          padding-bottom: 0
+
+    .title
+      display: flex
+      align-items: center
+      &:before
+        /* circle number */
+        content: counter(instrus)
+        width: $numeration_w
+        height: $numeration_w
+        margin-right: $numeration_margin_r
+        border: 1px dashed #979797
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center 
+        font-size: 18px 
+        font-family: $MAIN_FONT_MEDIUM    
+ 
+    .description,
+    .button,
+    .code-wrapper,
+    .paragraph-2
+      margin-left: $margin_l
+      padding-left: $padding_l
+
+    .description
+      max-width: 649px
+      padding-top: 7px
+      padding-bottom: 38px
+      p.last
+        padding-bottom: 55px
+
+    .button
+      padding-bottom: 120px
+
+    .code-line
+      width: 850px
+      margin: 28px 0 32px 0
+
+    .code-wrapper
+      padding-bottom: 110px
+
+  .paragraph-2
+    margin-left: $margin_l
+    padding-left: $padding_l +$instrus_padding_l
+    padding-right: $instrus_padding_r
+    .subheader
+      margin-top: 26px 
+      ul
+        margin-top: 7px
+        li
+          list-style-type: disc
+          margin-left: 16px
+
+
+
+
+
