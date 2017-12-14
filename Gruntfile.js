@@ -26,6 +26,20 @@ module.exports = function(grunt) {
       }
     },
 
+    // add vendor prefixes
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require('autoprefixer')({browsers: 'last 3 versions'})
+        ]
+      },
+      dist: {
+        src: ['<%= path.css %>/*.css']
+      }
+    },
+
+    // generate sass documentation
     sassdoc: {
       default: {
         src: '<%= path.sass %>',
@@ -44,7 +58,7 @@ module.exports = function(grunt) {
         livereloadOnError: false
       },
 
-      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass'] },
+      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass', 'postcss'] },
 
       js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
 
@@ -233,7 +247,7 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default', ['clean:default', 'sass', 'jshint', 'copy:js']);
-  grunt.registerTask('dist', ['clean:default', 'sass', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
+  grunt.registerTask('dist', ['clean:default', 'sass', 'postcss', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
   grunt.registerTask('render', ['mustache_render:render', 'prettify']);
   grunt.registerTask('img', ['imagemin', 'grunticon', 'copy', 'sprite', 'clean:img']);
   grunt.registerTask('nosvg', ['clean:svg']);
