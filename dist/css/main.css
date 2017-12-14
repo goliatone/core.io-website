@@ -1135,8 +1135,7 @@ footer {
 /* ----------------------------------- HEADERS */
 .h-biggest {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 64px;
-  font-weight: lighter; }
+  font-size: 64px; }
 
 .h-big {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -1679,19 +1678,18 @@ header .logo {
 .features section {
   margin-bottom: 50px; }
   .features section:first-child {
-    padding-top: 140px; }
+    padding-top: 112px; }
 .features hr {
-  margin-top: 21px;
-  margin-bottom: 14px; }
+  margin-top: 18px;
+  margin-bottom: 25px; }
 .features .paragraph-1 {
   padding-left: 112px;
   padding-right: 93px;
   padding-bottom: 10px; }
   .features .paragraph-1 .subheader {
-    margin-bottom: 60px; }
+    margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
-    width: 336px;
-    height: 322px; }
+    width: 336px; }
   .features .paragraph-1 .side-svg {
     text-align: center; }
   .features .paragraph-1 .button {
