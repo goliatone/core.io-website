@@ -42,7 +42,7 @@
 
 
 =nav_bar_submenu($spacing)
-  +flexDisplay
+  display: flex
   .menu-item
     position: relative
     > a:hover + .submenu
@@ -50,12 +50,12 @@
       opacity: 1  
     .submenu
       position: absolute
-      +flexDisplay
+      display: flex
       left: -25%
       top: $spacing
       /* transition properties */
       opacity: 0
-      +transition(opacity 1s ease)
+      transition: opacity 1s ease
       &:hover
         /* transition properties */
         opacity: 1

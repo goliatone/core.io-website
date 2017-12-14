@@ -51,7 +51,7 @@
   overflow: hidden
 
   button
-    +transition(all .3s ease-in-out)
+    transition: all .3s ease-in-out
 
   span
     z-index: 10
@@ -76,14 +76,14 @@
     left: 51%
     border-right: none
     border-radius: $border_r 0 0 $border_r
-    +transition(opacity .3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out)
+    transition: opacity .3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out
   
   .overlay:nth-child(2)
     /* right overlay */
     left: 49%
     border-left: none
     border-radius: 0 $border_r $border_r 0
-    +transition(opacity .3s ease-in, width 0.2s ease-in-out)
+    transition: opacity .3s ease-in, width 0.2s ease-in-out
 
   &:hover 
     cursor: pointer
@@ -91,7 +91,7 @@
     button
       color: $color_1
       border-color: $color_1
-      +transition(all .5s ease-in-out)
+      transition: all .5s ease-in-out
 
     .overlay
       opacity: 1
@@ -100,9 +100,9 @@
       /* left overlay */
       left: 0
       width: 50%
-      +transition(opacity .1s ease-in, width .4s ease-in-out, left .4s ease-in-out)
+      transition: opacity .1s ease-in, width .4s ease-in-out, left .4s ease-in-out
     
     .overlay:nth-child(2)
       /* right overlay */
       width: 51%
-      +transition(opacity .1s ease-in, width .4s ease-in-out)
+      transition: opacity .1s ease-in, width .4s ease-in-out

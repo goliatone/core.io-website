@@ -8,89 +8,6 @@
  * 6. Elements
  * 7. Styleguide                                        
  *                                                                   */
-/* Note: importing file 'all-imports.sass' with colors, fonts, utils,
- * elements and layouts 
- *                                                                   */
-/* RESETS --------------------------------------------------- RESETS */
-/* so frame doesn't float around when x-scrolling on pad */
-html {
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-ul, li {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-img {
-  width: 100%;
-  height: 100%; }
-
-/* GENERAL CLASSES --------------------------------- GENERAL CLASSES */
-.relative {
-  position: relative; }
-
-.fixed {
-  position: fixed;
-  z-index: 5000; }
-
-.absolute {
-  position: absolute;
-  z-index: 5000; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.vCentered {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.flex {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  height: 100%; }
-
-.hidden {
-  display: none; }
-
-.hidden-text {
-  position: absolute;
-  height: 0;
-  width: 0;
-  opacity: 0;
-  font-size: 0; }
-
-.hidden-link-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  font-size: 0; }
-
-.fullwidth {
-  width: 100%;
-  overflow-x: visible; }
-
-.fullheight {
-  height: 100vh;
-  overflow: hidden; }
-
-.uppercase {
-  text-transform: uppercase; }
-
 #bg {
   position: absolute;
   top: 0;
@@ -161,14 +78,9 @@ footer {
     width: 38px;
     height: 38px; }
   .layout-app footer .footer-menu {
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-app footer .footer-menu a {
-      padding-bottom: 10px; }
+    flex-direction: column;
+    padding-bottom: 10px; }
   .layout-app footer .footnote {
     margin-top: 46px; }
 .layout-app footer {
@@ -200,19 +112,9 @@ footer {
 .layout-app .row-reverse {
   flex-direction: row-reverse; }
 .layout-app .cols {
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
   justify-content: space-between; }
-  .layout-app .cols .col-3 {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; }
 .layout-app .cols-centered {
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
   justify-content: space-around; }
 .layout-app .grid {
   /* 3 X 2 grid */
@@ -403,22 +305,16 @@ footer {
     border-color: #f8f8f8;
     box-shadow: 5px 5px 5px #212121; }
   .midnight-mode .black-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
     transition: all 0.6s ease; }
     .midnight-mode .black-btn.fade button:hover {
       color: #2c2c31;
       background-color: #f8f8f8;
       border-color: #2c2c31;
-      -webkit-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
       transition: all 0.6s ease; }
   .midnight-mode .black-btn.shutter-left {
     position: relative;
     overflow: hidden; }
     .midnight-mode .black-btn.shutter-left button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -ms-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-left span {
       z-index: 10;
@@ -438,29 +334,21 @@ footer {
       height: inherit;
       background-color: #f8f8f8;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .black-btn.shutter-left:hover {
       cursor: pointer; }
       .midnight-mode .black-btn.shutter-left:hover button {
         color: #2c2c31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .black-btn.shutter-left:hover .overlay {
         width: inherit;
         border-color: #2c2c31;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .black-btn.shutter-right {
     position: relative;
     overflow: hidden; }
     .midnight-mode .black-btn.shutter-right button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -ms-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-right span {
       z-index: 10;
@@ -480,30 +368,22 @@ footer {
       height: inherit;
       background-color: #f8f8f8;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-right:hover {
       cursor: pointer; }
       .midnight-mode .black-btn.shutter-right:hover button {
         color: #2c2c31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .black-btn.shutter-right:hover .overlay {
         width: inherit;
         border: 1px solid #2c2c31;
         border-radius: 3px;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .black-btn.shutter-in {
     position: relative;
     overflow: hidden; }
     .midnight-mode .black-btn.shutter-in button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -ms-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
     .midnight-mode .black-btn.shutter-in span {
       z-index: 10;
@@ -526,8 +406,6 @@ footer {
       width: 0;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-in .overlay:nth-child(2) {
       /* right overlay */
@@ -535,16 +413,12 @@ footer {
       right: 1px;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-in:hover {
       cursor: pointer; }
       .midnight-mode .black-btn.shutter-in:hover button {
         color: #2c2c31;
         border-color: #2c2c31;
-        -webkit-transition: all 0.7s ease-in-out;
-        -ms-transition: all 0.7s ease-in-out;
         transition: all 0.7s ease-in-out; }
       .midnight-mode .black-btn.shutter-in:hover .overlay {
         border-color: #2c2c31;
@@ -552,21 +426,15 @@ footer {
       .midnight-mode .black-btn.shutter-in:hover .overlay:first-child {
         /* left overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
       .midnight-mode .black-btn.shutter-in:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .black-btn.shutter-out {
     position: relative;
     overflow: hidden; }
     .midnight-mode .black-btn.shutter-out button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
     .midnight-mode .black-btn.shutter-out span {
       z-index: 10;
@@ -589,24 +457,18 @@ footer {
       left: 51%;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
     .midnight-mode .black-btn.shutter-out .overlay:nth-child(2) {
       /* right overlay */
       left: 49%;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .black-btn.shutter-out:hover {
       cursor: pointer; }
       .midnight-mode .black-btn.shutter-out:hover button {
         color: #2c2c31;
         border-color: #2c2c31;
-        -webkit-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
       .midnight-mode .black-btn.shutter-out:hover .overlay {
         opacity: 1; }
@@ -614,14 +476,10 @@ footer {
         /* left overlay */
         left: 0;
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
       .midnight-mode .black-btn.shutter-out:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .gray-btn button {
     color: #2c2c31;
@@ -629,22 +487,16 @@ footer {
     border-color: #2c2c31;
     box-shadow: 5px 5px 5px #212121; }
   .midnight-mode .gray-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
     transition: all 0.6s ease; }
     .midnight-mode .gray-btn.fade button:hover {
       color: #f8f8f8;
       background-color: #2c2c31;
       border-color: #f8f8f8;
-      -webkit-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
       transition: all 0.6s ease; }
   .midnight-mode .gray-btn.shutter-left {
     position: relative;
     overflow: hidden; }
     .midnight-mode .gray-btn.shutter-left button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -ms-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-left span {
       z-index: 10;
@@ -664,29 +516,21 @@ footer {
       height: inherit;
       background-color: #2c2c31;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .gray-btn.shutter-left:hover {
       cursor: pointer; }
       .midnight-mode .gray-btn.shutter-left:hover button {
         color: #f8f8f8;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .gray-btn.shutter-left:hover .overlay {
         width: inherit;
         border-color: #f8f8f8;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .gray-btn.shutter-right {
     position: relative;
     overflow: hidden; }
     .midnight-mode .gray-btn.shutter-right button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -ms-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-right span {
       z-index: 10;
@@ -706,30 +550,22 @@ footer {
       height: inherit;
       background-color: #2c2c31;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-right:hover {
       cursor: pointer; }
       .midnight-mode .gray-btn.shutter-right:hover button {
         color: #f8f8f8;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .gray-btn.shutter-right:hover .overlay {
         width: inherit;
         border: 1px solid #f8f8f8;
         border-radius: 3px;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .gray-btn.shutter-in {
     position: relative;
     overflow: hidden; }
     .midnight-mode .gray-btn.shutter-in button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -ms-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
     .midnight-mode .gray-btn.shutter-in span {
       z-index: 10;
@@ -752,8 +588,6 @@ footer {
       width: 0;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-in .overlay:nth-child(2) {
       /* right overlay */
@@ -761,16 +595,12 @@ footer {
       right: 1px;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-in:hover {
       cursor: pointer; }
       .midnight-mode .gray-btn.shutter-in:hover button {
         color: #f8f8f8;
         border-color: #f8f8f8;
-        -webkit-transition: all 0.7s ease-in-out;
-        -ms-transition: all 0.7s ease-in-out;
         transition: all 0.7s ease-in-out; }
       .midnight-mode .gray-btn.shutter-in:hover .overlay {
         border-color: #f8f8f8;
@@ -778,21 +608,15 @@ footer {
       .midnight-mode .gray-btn.shutter-in:hover .overlay:first-child {
         /* left overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
       .midnight-mode .gray-btn.shutter-in:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .gray-btn.shutter-out {
     position: relative;
     overflow: hidden; }
     .midnight-mode .gray-btn.shutter-out button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
     .midnight-mode .gray-btn.shutter-out span {
       z-index: 10;
@@ -815,24 +639,18 @@ footer {
       left: 51%;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
     .midnight-mode .gray-btn.shutter-out .overlay:nth-child(2) {
       /* right overlay */
       left: 49%;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .gray-btn.shutter-out:hover {
       cursor: pointer; }
       .midnight-mode .gray-btn.shutter-out:hover button {
         color: #f8f8f8;
         border-color: #f8f8f8;
-        -webkit-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
       .midnight-mode .gray-btn.shutter-out:hover .overlay {
         opacity: 1; }
@@ -840,36 +658,26 @@ footer {
         /* left overlay */
         left: 0;
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
       .midnight-mode .gray-btn.shutter-out:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .blue-btn button {
     color: #00d8d8;
     background-color: #2C2E31;
     border-color: #00d8d8; }
   .midnight-mode .blue-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -ms-transition: all 0.6s ease;
     transition: all 0.6s ease; }
     .midnight-mode .blue-btn.fade button:hover {
       color: #2C2E31;
       background-color: #00d8d8;
       border-color: #2C2E31;
-      -webkit-transition: all 0.6s ease;
-      -ms-transition: all 0.6s ease;
       transition: all 0.6s ease; }
   .midnight-mode .blue-btn.shutter-left {
     position: relative;
     overflow: hidden; }
     .midnight-mode .blue-btn.shutter-left button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -ms-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-left span {
       z-index: 10;
@@ -889,29 +697,21 @@ footer {
       height: inherit;
       background-color: #00d8d8;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .blue-btn.shutter-left:hover {
       cursor: pointer; }
       .midnight-mode .blue-btn.shutter-left:hover button {
         color: #2C2E31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .blue-btn.shutter-left:hover .overlay {
         width: inherit;
         border-color: #2C2E31;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .blue-btn.shutter-right {
     position: relative;
     overflow: hidden; }
     .midnight-mode .blue-btn.shutter-right button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -ms-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-right span {
       z-index: 10;
@@ -931,30 +731,22 @@ footer {
       height: inherit;
       background-color: #00d8d8;
       opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-right:hover {
       cursor: pointer; }
       .midnight-mode .blue-btn.shutter-right:hover button {
         color: #2C2E31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -ms-transition: color 0.4s ease-in-out;
         transition: color 0.4s ease-in-out; }
       .midnight-mode .blue-btn.shutter-right:hover .overlay {
         width: inherit;
         border: 1px solid #2C2E31;
         border-radius: 3px;
         opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
   .midnight-mode .blue-btn.shutter-in {
     position: relative;
     overflow: hidden; }
     .midnight-mode .blue-btn.shutter-in button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -ms-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
     .midnight-mode .blue-btn.shutter-in span {
       z-index: 10;
@@ -977,8 +769,6 @@ footer {
       width: 0;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-in .overlay:nth-child(2) {
       /* right overlay */
@@ -986,16 +776,12 @@ footer {
       right: 1px;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -ms-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-in:hover {
       cursor: pointer; }
       .midnight-mode .blue-btn.shutter-in:hover button {
         color: #2C2E31;
         border-color: #2C2E31;
-        -webkit-transition: all 0.7s ease-in-out;
-        -ms-transition: all 0.7s ease-in-out;
         transition: all 0.7s ease-in-out; }
       .midnight-mode .blue-btn.shutter-in:hover .overlay {
         border-color: #2C2E31;
@@ -1003,21 +789,15 @@ footer {
       .midnight-mode .blue-btn.shutter-in:hover .overlay:first-child {
         /* left overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
       .midnight-mode .blue-btn.shutter-in:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .blue-btn.shutter-out {
     position: relative;
     overflow: hidden; }
     .midnight-mode .blue-btn.shutter-out button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
     .midnight-mode .blue-btn.shutter-out span {
       z-index: 10;
@@ -1040,24 +820,18 @@ footer {
       left: 51%;
       border-right: none;
       border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
     .midnight-mode .blue-btn.shutter-out .overlay:nth-child(2) {
       /* right overlay */
       left: 49%;
       border-left: none;
       border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -ms-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .blue-btn.shutter-out:hover {
       cursor: pointer; }
       .midnight-mode .blue-btn.shutter-out:hover button {
         color: #2C2E31;
         border-color: #2C2E31;
-        -webkit-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out; }
       .midnight-mode .blue-btn.shutter-out:hover .overlay {
         opacity: 1; }
@@ -1065,14 +839,10 @@ footer {
         /* left overlay */
         left: 0;
         width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
       .midnight-mode .blue-btn.shutter-out:hover .overlay:nth-child(2) {
         /* right overlay */
         width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -ms-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .label.green {
     color: #ffffff;
@@ -1332,8 +1102,6 @@ hr {
     width: 100%;
     height: 205px;
     padding: 32px 90px 29px 58px;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column; }
 
 /* ---------------------------------------------- NAV-BARS */
@@ -1342,11 +1110,7 @@ hr {
 .nav-bar-1 {
   position: relative;
   top: -4px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex; }
   .nav-bar-1 .menu-item {
     padding-left: 36px; }
@@ -1361,15 +1125,11 @@ hr {
       opacity: 1; }
     .nav-bar-1 .menu-item .submenu {
       position: absolute;
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
       left: -25%;
       top: 30px;
       /* transition properties */
       opacity: 0;
-      -webkit-transition: opacity 1s ease;
-      -ms-transition: opacity 1s ease;
       transition: opacity 1s ease; }
       .nav-bar-1 .menu-item .submenu:hover {
         /* transition properties */
@@ -1384,8 +1144,6 @@ hr {
   margin: 55px 0 55px 42px;
   height: 44px;
   border-radius: 5px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex; }
   .nav-bar-2 a {
     font-size: inherit;
@@ -1458,14 +1216,8 @@ hr {
     float: left; }
     .pagination li a {
       height: 100%;
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
       align-items: center; }
     .pagination li:first-child a {
       border-top-left-radius: 5px;
@@ -1522,14 +1274,8 @@ hr {
   .label span {
     width: 100%;
     height: 100%;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center; }
 
 /* ----------------------------------------------- BUTTONS */
@@ -1558,14 +1304,8 @@ hr {
     padding-bottom: 43px;
     position: relative; }
     .code-block .header .window-controls {
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-align-items: center;
-      -ms-flex-align: center;
       align-items: center;
       position: absolute;
       top: 3px;
@@ -1583,7 +1323,6 @@ hr {
         .code-block .header .window-controls button:last-child {
           margin-right: 0; }
         .code-block .header .window-controls button:hover {
-          -webkit-filter: brightness(130%);
           filter: brightness(130%);
           border: none; }
         .code-block .header .window-controls button:focus {
@@ -1613,11 +1352,7 @@ hr {
 .code-line {
   height: 60px;
   padding: 25px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center; }
 
 /* STYLEGUIDE ----------------------------------------- STYLEGUIDE */

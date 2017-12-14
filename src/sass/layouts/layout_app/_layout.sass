@@ -25,10 +25,9 @@
       width: $FOOTER_ICON_SIZE
       height: $FOOTER_ICON_SIZE
     .footer-menu
-      +flexDisplay
-      +flexDirection(column)
-      a 
-        padding-bottom: $FOOTER_A_PADDING
+      display: flex
+      flex-direction: column 
+      padding-bottom: $FOOTER_A_PADDING
     .footnote
       margin-top: $FOOTER_FOOTNOTE_MARGIN
 
@@ -68,12 +67,12 @@
 
 
   .cols
-    +flexDisplay
-    +flexJustifyContent(space-between)
+    display: flex
+    justify-content: space-between
     .col-3
-      +flexDisplay
+      display-flex
   .cols-centered
-    +flexJustifyContent(space-around)
+    justify-content: space-around
 
   
   .grid

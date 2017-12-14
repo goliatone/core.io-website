@@ -45,7 +45,7 @@
   overflow: hidden
 
   button
-    +transition(color .4s ease-in-out)
+    transition: color .4s ease-in-out
 
   span
     z-index: 10
@@ -66,16 +66,16 @@
     height: inherit
     background-color: $color_2
     opacity: 0
-    +transition(opacity .7s ease-in, width .4s ease-in-out, border 1s ease-in-out)
+    transition: opacity .7s ease-in, width .4s ease-in-out, border 1s ease-in-out
   
   &:hover 
     cursor: pointer
     button
       color: $color_1
-      +transition(color .4s ease-in-out)
+      transition: color .4s ease-in-out
     .overlay
       width: inherit
       border-color: $color_1
       opacity: 1
-      +transition(opacity .1s ease-in, width .4s ease-in-out, border .4s ease-in-out)
+      transition: opacity .1s ease-in, width .4s ease-in-out, border .4s ease-in-out
     
