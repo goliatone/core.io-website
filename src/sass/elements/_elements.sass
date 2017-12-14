@@ -1,0 +1,215 @@
+/* ELEMENTS --------------------------------------------- ELEMENTS */
+
+/* ---------------------------------------------------- HR */
+hr
+  width: 100%
+  height: 0
+  border: none
+  border-top: 1px solid white
+
+  &.hr-small
+    width: 53px
+    border-width: 3px
+
+  &.hr-medium
+    width: 50% 
+
+
+/* ---------------------------------------------- DECO-BAR */
+.highlight-bar
+  width: $DECO_BAR_W * 2
+  height: $DECO_BAR_H
+
+
+/* ------------------------------------------------- POSTS */
+.posts
+  padding: 70px 0
+  .post
+    width: 100%
+    height: 205px
+    padding: 32px 90px 29px 58px
+    +flexDirection(column)
+
+
+/* ---------------------------------------------- NAV-BARS */
+/* --------------------------------- NAV-BAR-1 */
+/* HEADER NAV BAR */
+$item_padding: 36px
+$border_w: 2px
+$border_padding: 7px 11px
+
+$spacing: 30px
+
+.nav-bar-1
+  position: relative
+  top: -4px
+  +nav_bar_draw-1($item_padding, $border_w, $border_padding)
+  +nav_bar_submenu($spacing)
+
+
+/* --------------------------------- NAV-BAR-2 */
+/* DOCUMENTATION NAV BAR */
+$h: 44px
+$border_w: 3px
+$border_r: 5px
+$padding_top: 11px
+
+$padding_compensation: 7px
+
+.nav-bar-2
+  margin: 55px 0 55px 42px
+  +nav_bar_draw-2($h, $border_w, $border_r, $padding_top)
+  .menu-item
+    /* separator */
+    height: 6px
+    border-right: 1px solid black
+    &:last-child
+      border-right: none
+    a 
+      position: relative
+      top: -4px
+
+
+/* -------------------------------------------- SEARCH BARS */
+
+/* ------------------------------- SEARCH-BAR-1 */
+$width: 100%
+$height: 78px
+$padding: 60px
+$border_w: 1px
+$border_r: 3px
+
+.search-bar-1
+  +search_bar_draw-1($width, $height, $padding, $border_w, $border_r)
+
+
+/* ------------------------------- SEARCH-BAR-2 */
+$width: 270px
+$height: 43px
+$padding: 20px
+$border_w: 1px
+$border_r: 3px
+
+.search-bar-2
+  +search_bar_draw-2($width, $height, $border_w, $border_r)
+  .icon
+    top: 14px
+    right: 19px
+
+
+/* -------------------------------------------- PAGINATION */
+$height: 44px
+$border_width: 2px
+$border_r: 5px
+$num_width: 47px
+
+.pagination
+  +pagination_draw($height, $border_r, $num_width)
+  .prev,
+  .next
+    width: 78px
+  .prev:before,
+  .next:after
+    content: ''
+    width: 7.5px
+    height: 7.5px
+    border: 1px solid $PAGINATION_C
+    border-top: none
+    border-right: none
+  .prev:before
+    margin-right: 5px
+    transform: rotate(45deg)    
+  .next:after
+    margin-left: 5px
+    transform: rotate(225deg)
+
+
+/* ----------------------------------------------- BUTTONS */
+/* --------------------------------- BIG BUTTON */
+
+.big-btn
+  $w: 200px
+  $h: 53px
+  $border_w: 1px
+  $r: 3px
+
+  +button_draw($w, $h, $border_w, $r)
+
+
+/* ------------------------------ MEDIUM BUTTON */
+.medium-btn
+  $w: 155px
+  $h: 44px
+  $border_w: 2px
+  $r: 5px
+
+  +button_draw($w, $h, $border_w, $r)
+
+
+/* ------------------------------------------------ LABELS */
+$width: 47px
+$height: 20px
+$border_r: 3px
+
+.label
+  margin-right: 13px
+  +label_draw($width, $height, $border_r)
+  
+
+/* ----------------------------------------------- BUTTONS */
+
+/* ---------------------------- DOWNLOAD BUTTON */
+.button.download
+  span
+    position: relative
+    padding-left: 50px
+    &:before
+      content: ""
+      background: url("../img/icons/white-github-512.png")
+      background-size: cover
+      +size(26px)
+      display: inline-block
+      position: absolute
+      top: -2px
+      left: 10px
+  &:hover
+    span:before
+      background: url("../img/icons/black-github-512.png")
+      background-size: cover
+
+
+/* -------------------------------- CODE-BLOCK */
+$w: $WINDOW_CONTROLS_W
+
+.code-block
+  padding: $CODE_BLOCK_PADDING  
+  .header
+    padding-bottom: $HEADER_PADDING
+    position: relative
+    .window-controls    
+      +window_controls($w: $w)
+      position: absolute
+      top: 3px
+      left: 0
+  .title
+    width: 100%
+    display: inline-block
+    text-align: center
+  code, pre 
+    display: block
+    margin-bottom: $CODE_MARGIN
+    &.tab-1
+      padding-left: $TAB_1_PADDING
+    &.code-tight
+      margin-bottom: 0
+
+.code-block-2
+  padding: 22px 25px
+
+
+/* --------------------------------- CODE-LINE */
+.code-line
+  height: 60px
+  padding: 25px
+  +flexDisplay
+  +flexAlignItems(center)

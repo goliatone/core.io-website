@@ -1,0 +1,42 @@
+/// Mixin to draw an horizontal
+/// menu bar with menu-items.
+///
+/// Example markup:
+///   <nav class="nav-bar-1">
+///     <div class="menu-item">
+///       <a href="menu_item-1.html">menu_item-1</a> 
+///     </div>
+///     ...
+///     <div class="menu-item">
+///       <a href="menu_item-n.html">menu_item-n</a> 
+///     </div>
+///   </nav>
+///
+/// When menu item is hovered, it changes color and
+/// displays an horizontal border on top
+///
+/// @group Menus
+/// @group Layouts
+/// @author Tatiana Burgos
+///
+/// @param {Length} $item_padding - Space between links
+/// @param {Length} $border_w - Border width 
+/// @param {Lenght} $border_padding - Space between link and border (x and y)
+/// @output `.nav_bar` elements css:
+///
+/// @example sass - Creating `.nav_bar`
+///   .nav-bar
+///     +nav_bar_draw-1(36px, 2px, 7px 11px)
+
+
+=nav_bar_draw-1($item_padding, $border_w, $border_padding)
+  +flexDisplay
+  .menu-item
+    padding-left: $item_padding
+    a
+      padding: $border_padding
+    > a:hover, > a.selected
+      border-top: $border_w solid white
+      
+
+

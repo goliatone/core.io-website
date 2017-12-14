@@ -1,0 +1,49 @@
+/// Mixin to draw a button with given width and height.
+///
+/// Markup has the following structure:
+///
+/// ```
+///   <div class="button">
+///     <span>Button Text</span>
+///   <div>
+/// ```
+///
+///
+/// <style>
+///   .button {
+///   }
+/// </style>
+/// 
+/// <div class="button">
+/// </div>
+///
+///
+/// @group Buttons
+/// @group Layouts
+/// @author Tatiana Burgos
+///
+///
+/// @param {Length} $w [200px] - Button's width.
+/// @param {Length} $h [50px] - Button's height.
+/// @param {Length} $border_w [1px] - Button's border width.
+/// @param {Length} $border_r [false] - Button's border radius.
+///
+/// @output css for `.button`
+///     
+/// @example sass - Creating `.button`
+///   .button
+///     +button_draw()
+///
+/// @todo * Add link to label element
+/// @todo * Relate margin and padding sizes either to title size or to param
+
+=button_draw($w: 200px, $h: 50px, $border_w: 1px, $r: false) 
+  button
+    width: $w
+    height: $h
+    line-height: $h - 2*$border_w
+    border: $border_w solid black
+    @if $r
+      border-radius: $r
+    &:hover
+      cursor: pointer
