@@ -242,7 +242,7 @@
 
   "data_img": [
     { "logo": {
-      "src": "img/logo/core_io-logo.png",
+      "src": "img/logo/c_core.svg",
       "alt": "Core.io",
       "title": "Core.io",
       "link": "features.html"
