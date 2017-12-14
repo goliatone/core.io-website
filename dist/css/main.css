@@ -154,7 +154,7 @@ footer {
 .layout-app footer {
   width: 100%;
   margin-top: 120px;
-  padding: 50px 112px 14px 112px; }
+  padding: 50px 112px 20px 112px; }
   .layout-app footer .footer-logo {
     display: inline-block;
     width: 38px;
@@ -166,18 +166,21 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 10px; }
-  .layout-app footer .footnote {
-    margin-top: 46px; }
+            flex-direction: column; }
+    .layout-app footer .footer-menu a {
+      padding-bottom: 10px; }
+  .layout-app footer .copyright {
+    margin-top: 32px; }
 .layout-app footer {
   /* footer positioning of elements
    * because of display flex column changing position
    * of one could affect other                        */ }
-  .layout-app footer .footer-logo img {
-    position: relative;
-    top: -14px;
-    left: -36px; }
+  .layout-app footer .footer-logo {
+    float: left; }
+    .layout-app footer .footer-logo img {
+      position: relative;
+      top: -14px;
+      left: -36px; }
   .layout-app footer .footer-releases {
     position: relative;
     top: 5px;
@@ -1286,10 +1289,10 @@ code {
   text-transform: uppercase; }
 
 /* ---------------------------------- FOOTNOTE */
-.footnote {
-  font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif;
+.copyright {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px; }
-  .footnote > * {
+  .copyright > * {
     font-family: inherit;
     font-size: inherit; }
 
@@ -1350,7 +1353,7 @@ header .logo {
   display: flex;
   display: flex; }
   .nav-bar-1 .menu-item {
-    padding-left: 36px; }
+    padding-left: 14px; }
     .nav-bar-1 .menu-item a {
       padding: 7px 11px; }
     .nav-bar-1 .menu-item > a:hover, .nav-bar-1 .menu-item > a.selected {

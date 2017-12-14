@@ -22,20 +22,21 @@
     padding: $FOOTER_PADDING
     .footer-logo
       display: inline-block
-      width: $FOOTER_ICON_SIZE
-      height: $FOOTER_ICON_SIZE
+      +size($FOOTER_ICON_SIZE)
     .footer-menu
       display: flex
       flex-direction: column 
-      padding-bottom: $FOOTER_A_PADDING
-    .footnote
-      margin-top: $FOOTER_FOOTNOTE_MARGIN
+      a
+        padding-bottom: $FOOTER_A_PADDING
+    .copyright
+      margin-top: $FOOTER_FOOTNOTE_MARGIN - $FOOTER_A_PADDING
 
   footer
     /* footer positioning of elements
      * because of display flex column changing position
      * of one could affect other                        */
     .footer-logo
+      float: left
       img 
         position: relative
         top: -14px
