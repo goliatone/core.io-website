@@ -117,7 +117,7 @@
 
   "data_docs_menu": {
     "name": "Documentation Navigation Bar",
-    "class": "nav-bar-2 row",
+    "class": "nav-bar-2",
     "id": "docs-nav",
     "menu_items": [
       { 

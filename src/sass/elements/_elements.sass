@@ -54,22 +54,15 @@ $spacing: 30px
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
-$h: 44px
-$border_w: 3px
-$border_r: 5px
-$padding_top: 11px
+$border_w: 2px
+$padding: 13px
 
 $padding_compensation: 7px
 
 .nav-bar-2
-  margin: 55px 0 55px 42px
-  +nav_bar_draw-2($h, $border_w, $border_r, $padding_top)
+  margin: 55px 0 11px 0px
+  +nav_bar_draw-3($border_w, $padding)
   .menu-item
-    /* separator */
-    height: 6px
-    border-right: 1px solid black
-    &:last-child
-      border-right: none
     a 
       position: relative
       top: -4px

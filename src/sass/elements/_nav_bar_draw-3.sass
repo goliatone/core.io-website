@@ -1,0 +1,51 @@
+/// Mixin to draw an horizontal
+/// menu bar with boxed background
+///
+/// Example markup:
+///   <nav class="nav-bar">
+///     <div class="menu-item">
+///       <a href="menu_item-1.html">menu_item-1</a> 
+///     </div>
+///     ...
+///     <div class="menu-item">
+///       <a href="menu_item-n.html">menu_item-n</a> 
+///     </div>
+///   </nav>
+///
+/// When menu item is hovered, it changes color and
+/// displays an horizontal border on top
+///
+/// @group Menus
+/// @group Layouts
+/// @author Tatiana Burgos
+///
+/// @param {Length} $border_w - Border width 
+/// @param {Length} $border_r - Border radius 
+/// @param {Lenght} $padding - Space between link and bottom border
+/// @output `.nav_bar` elements css:
+///   ```
+///   .nav-bar {}
+/// ```
+///
+/// @example sass - Creating `.nav_bar`
+///   +nav_bar_draw-3(3px, 5px)
+
+
+=nav_bar_draw-3($border_w, $padding)
+
+  display: flex
+  a
+    font-size: inherit
+    line-height: inherit
+    padding: $padding
+    &:hover, &.selected
+      border-bottom: $border_w solid white
+
+  .menu-item
+    // &:first-child a
+    //   border-top-left-radius: $border_r 
+    //   border-bottom-left-radius: $border_r
+    // &:last-child a 
+    //   border-top-right-radius: $border_r 
+    //   border-bottom-right-radius: $border_r
+
