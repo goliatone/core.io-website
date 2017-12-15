@@ -154,7 +154,7 @@ footer {
 .layout-app footer {
   width: 100%;
   margin-top: 120px;
-  padding: 50px 112px 20px 112px; }
+  padding: 50px 112px 20px 119px; }
   .layout-app footer .footer-logo {
     display: inline-block;
     width: 38px;
@@ -183,12 +183,12 @@ footer {
       left: -36px; }
   .layout-app footer .footer-releases {
     position: relative;
-    top: 5px;
-    left: -58px; }
+    top: 3px;
+    left: -47px; }
   .layout-app footer .footer-github {
     position: relative;
     top: -7px;
-    left: -123px; }
+    left: -95px; }
     .layout-app footer .footer-github img {
       margin-right: 17px;
       width: 26px;
@@ -203,6 +203,10 @@ footer {
 .layout-app .row-centered {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+.layout-app .row-vCentered {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 .layout-app .row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1111,9 +1115,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: lighter; }
+  font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit; }
