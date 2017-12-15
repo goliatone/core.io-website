@@ -199,10 +199,7 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+          justify-content: space-between; }
 .layout-app .row-centered {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
@@ -1139,8 +1136,7 @@ footer {
 
 .h-big {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 48px;
-  font-weight: lighter; }
+  font-size: 48px; }
 
 .h-medium {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -1225,14 +1221,14 @@ code {
   font-size: 16px; }
   .code-block .title {
     font-family: "Courier New", Courier, monospace;
-    font-size: 14; }
+    font-size: 14px; }
 
 .code-block-2 {
   font-family: "Courier Bold", Courier, monospace;
   font-size: 15px; }
   .code-block-2 .title {
     font-family: "Courier Bold", Courier, monospace;
-    font-size: 15;
+    font-size: 15px;
     font-weight: bold; }
 
 /* ---------------------------------- NAV BARS */
@@ -1609,7 +1605,8 @@ header .logo {
     display: block;
     margin-bottom: 20px; }
     .code-block code.tab-1, .code-block pre.tab-1 {
-      padding-left: 45px; }
+      padding-left: 45px;
+      margin-top: -11px; }
     .code-block code.code-tight, .code-block pre.code-tight {
       margin-bottom: 0; }
 
@@ -1686,6 +1683,9 @@ header .logo {
   padding-left: 112px;
   padding-right: 93px;
   padding-bottom: 10px; }
+  .features .paragraph-1 hr {
+    margin-top: 18px;
+    margin-bottom: 25px; }
   .features .paragraph-1 .subheader {
     margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
@@ -1704,11 +1704,17 @@ header .logo {
   padding-left: 80px;
   padding-right: 115px;
   margin-top: 317px; }
+  .features .paragraph-2 .col-2:first-of-type {
+    margin-right: 14px; }
   .features .paragraph-2 .code-block {
     min-width: 466px;
     min-height: 331px;
-    position: relative;
     margin-right: 50px; }
+  .features .paragraph-2 h2 {
+    margin-top: -7px; }
+  .features .paragraph-2 hr {
+    margin-top: 26px;
+    margin-bottom: 32px; }
 .features .paragraph-3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;

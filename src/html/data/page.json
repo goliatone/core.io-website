@@ -466,9 +466,9 @@
           "code": [
             { "txt": "$ npm install -g core.io", "class": "" }, 
             { "txt": "$ core new myApp", "class": "" },
-            { "txt": "created ./myapp", "class": "" },
-            { "txt": "|- ./myapp/modules", "class": "tab-1" },
-            { "txt": "|- ./myapp/models", "class": "tab-1" }
+            { "txt": "<span class='highlight'>created</span> ./myapp", "class": "" },
+            { "txt": "├── ./myapp/modules", "class": "tab-1" },
+            { "txt": "└── ./myapp/models", "class": "tab-1" }
           ],
           "class": "code-block-1"
         }
