@@ -112,18 +112,14 @@
 
   .nav-bar-2
     +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
-    /* shadow */
-    // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20)
-    .menu-item
-      /* separator */
-      // border-color: rgba(161, 172, 183, .2)
 
-  .search-bar-1
-    +search_bar_color($COLOR_1, transparent, $SHADE_1)
+  
+  .side-menu
+    .menu-item a
+      color: $COLOR_1
+      &:hover
+        color: $HIGHLIGHT_1
 
-  .search-bar-2
-    +search_bar_color($COLOR_1, transparent, $SHADE_1)
-    
 
   $color: $PAGINATION_C
   $border_color: $PAGINATION_BORDER_C
@@ -131,10 +127,16 @@
   $detail_c: $PAGINATION_C_HIGHLIGHT
   $detail_bg: $PAGINATION_BACKGROUND_HIGHTLIGHT
 
-
   .pagination
     +pagination_color($color, $border_color, $border_w, $detail_c, $detail_bg)
  
+
+  .search-bar-1
+    +search_bar_color($COLOR_1, transparent, $SHADE_1)
+
+  .search-bar-2
+    +search_bar_color($COLOR_1, transparent, $SHADE_1)
+
 
   .black-btn
     +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
@@ -207,3 +209,6 @@
     .button,
     .code-wrapper
       border-left: 1px solid $SHADE_2 
+
+  .code-block, code
+    background-color: $CODE_BG

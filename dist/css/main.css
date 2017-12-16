@@ -325,14 +325,36 @@ footer {
     .midnight-mode .nav-bar-1 a:hover, .midnight-mode .nav-bar-1 a.selected {
       color: #00d8d8;
       border-color: #fafafa; }
-  .midnight-mode .nav-bar-2 {
-    /* shadow */ }
-    .midnight-mode .nav-bar-2 .menu-item a {
-      color: #fafafa; }
-      .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
-        border-color: #00d8d8; }
-    .midnight-mode .nav-bar-2 .menu-item {
-      /* separator */ }
+  .midnight-mode .nav-bar-2 .menu-item a {
+    color: #fafafa; }
+    .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
+      border-color: #00d8d8; }
+  .midnight-mode .side-menu .menu-item a {
+    color: #fafafa; }
+    .midnight-mode .side-menu .menu-item a:hover {
+      color: #00d8d8; }
+  .midnight-mode .pagination {
+    color: #8a9199; }
+    .midnight-mode .pagination a {
+      color: #8a9199;
+      margin-left: -2px;
+      border: 2px solid #a1acb7;
+      border-left: none; }
+      .midnight-mode .pagination a:hover {
+        background-color: #00d8d8;
+        border-color: #00d8d8;
+        position: relative;
+        z-index: 2; }
+      .midnight-mode .pagination a:hover {
+        color: #ffffff; }
+    .midnight-mode .pagination li:first-child a {
+      border-left: 2px solid #a1acb7; }
+      .midnight-mode .pagination li:first-child a:hover {
+        border-left: 2px solid #00d8d8; }
+    .midnight-mode .pagination .active a {
+      border: 2px solid #00d8d8;
+      position: relative;
+      z-index: 2; }
   .midnight-mode .search-bar-1 {
     color: #fafafa;
     /* placeholder */
@@ -371,28 +393,6 @@ footer {
       /* Mozilla Firefox 19+ */
       color: #fafafa;
       opacity: 1; }
-  .midnight-mode .pagination {
-    color: #8a9199; }
-    .midnight-mode .pagination a {
-      color: #8a9199;
-      margin-left: -2px;
-      border: 2px solid #a1acb7;
-      border-left: none; }
-      .midnight-mode .pagination a:hover {
-        background-color: #00d8d8;
-        border-color: #00d8d8;
-        position: relative;
-        z-index: 2; }
-      .midnight-mode .pagination a:hover {
-        color: #ffffff; }
-    .midnight-mode .pagination li:first-child a {
-      border-left: 2px solid #a1acb7; }
-      .midnight-mode .pagination li:first-child a:hover {
-        border-left: 2px solid #00d8d8; }
-    .midnight-mode .pagination .active a {
-      border: 2px solid #00d8d8;
-      position: relative;
-      z-index: 2; }
   .midnight-mode .black-btn button {
     color: #f8f8f8;
     background-color: #2c2c31;
@@ -1108,6 +1108,8 @@ footer {
   .midnight-mode .instruction_block .button,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
+  .midnight-mode .code-block, .midnight-mode code {
+    background-color: #292D34; }
 
 /* -------------------------------------- FONT_DEFINITIONS */
 html {
@@ -1156,6 +1158,11 @@ footer {
   letter-spacing: 0.13px;
   font-weight: lighter; }
 
+.h-smaller-bold {
+  font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.13px; }
+
 .h-smaller-italic {
   font-family: "HelveticaNeue-MediumItalic", "Helvetica Neue MediumItalic", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
@@ -1202,6 +1209,12 @@ footer {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300; }
+
+.p-small-light {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.09px; }
 
 .p-small-2 {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
@@ -1478,6 +1491,12 @@ header .logo {
     -webkit-transform: rotate(225deg);
         -ms-transform: rotate(225deg);
             transform: rotate(225deg); }
+
+/* -------------------------------------------- PAGINATION */
+/* --------------------------------------- LINK PAGINATION */
+.link-pagination {
+  margin-top: 99px;
+  text-align: right; }
 
 /* ----------------------------------------------- BUTTONS */
 /* --------------------------------- BIG BUTTON */
@@ -1809,15 +1828,16 @@ header .logo {
 /* DOCUMENTATION PAGE -------------------------------------------- */
 .docs .content {
   margin-top: 56px; }
+  .docs .content .cols {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial; }
 .docs .hr-light {
   margin: 14px 0 75px; }
 .docs .side-menu {
   width: 255px; }
   .docs .side-menu a {
-    display: inline-block;
-    color: #fafafa; }
-    .docs .side-menu a:hover {
-      color: #00d8d8; }
+    display: inline-block; }
   .docs .side-menu .menu-item {
     margin-top: 31px; }
     .docs .side-menu .menu-item:first-child {
@@ -1826,14 +1846,16 @@ header .logo {
     margin: 15px 0 0 18px; }
   .docs .side-menu .menu-item-submenu {
     margin-bottom: 10px; }
-.docs .main-txt .title {
-  margin-bottom: 14px; }
-.docs .main-txt .description p {
-  padding-bottom: 24px; }
+.docs .main-txt {
+  width: 730px; }
+  .docs .main-txt .title {
+    margin-bottom: 14px; }
+  .docs .main-txt .description {
+    width: 623px; }
+    .docs .main-txt .description p {
+      padding-bottom: 24px; }
 .docs .code-block {
-  margin-bottom: 81px; }
-.docs .code-block, .docs code {
-  background-color: #292D34; }
+  width: 714px; }
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
 /* alt nav */
