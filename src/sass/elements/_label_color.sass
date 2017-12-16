@@ -1,0 +1,48 @@
+/// Mixin to add color to a label (without link)
+/// (no hover style).
+///
+/// Use +label_draw to draw the label.
+///
+/// Markup has the following structure:
+///
+/// ```
+///   <div class="label">
+///     <a href="">Label Text</a>
+///   <div>
+/// ```
+///
+///
+/// <style>
+///   .label {
+///   }
+/// </style>
+/// 
+/// <div class="label">
+/// </div>
+///
+///
+/// @group Labels
+/// @group Colors
+/// @author Tatiana Burgos
+///
+///
+/// @param {Color} $color [white] - Label's text color.
+/// @param {Color} $bg_1 [black] - Label's background color.
+///
+/// @output css for `.label`
+///     
+/// @example sass - Creating `.label`
+///   .label
+///     +label_color()
+///
+/// @todo * Add link to label element
+/// @todo * Relate margin and padding sizes either to title size or to param
+
+=label_color($color: white, $bg: black)
+  color: $color
+  border-color: $bg
+  background-color: $bg
+
+
+        
+

@@ -1,0 +1,45 @@
+/// Mixin to color a button.
+///
+/// Markup has the following structure:
+///
+/// ```
+///   <div class="button">
+///     <span>Button Text</span>
+///   <div>
+/// ```
+///
+///
+/// <style>
+///   .button {
+/// </style>
+/// 
+/// <div class="button">
+/// </div>
+///
+///
+/// @group Buttons
+/// @group Colors
+/// @author Tatiana Burgos
+///
+///
+/// @param {Color} $color_1 [black] - Button's text and border color.
+/// @param {Color} $color_2 [white] - Button's background color.
+/// @param {Color} $color_3 [false] - Button's shadow color.
+///
+/// @output css for `.button`
+///     
+/// @example sass - Creating `.button`
+///   .button
+///     +button_color()
+///
+/// @todo * Add link to label element
+/// @todo * Relate margin and padding sizes either to title size or to param
+
+=button_color($color_1:black, $color_2:white, $color_3:false)
+  button
+    color: $color_1
+    background-color: $color_2
+    border-color: $color_1
+    @if $color_3
+      box-shadow: 5px 5px 5px $color_3
+   

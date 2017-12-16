@@ -1,0 +1,70 @@
+/// Mixin to style little round colored window controls
+/// (min, max, close)
+///
+/// Markup should have the following structure:
+///
+/// ```
+///   <div class="window_controls">
+///     <button class="close">Close</button>
+///     <button class="minimize">Minimize</buttton>
+///     <button class="maximize">Maximize</button>
+///   </div>
+/// ```
+///
+/// <style>
+///   .window_controls {
+///    }
+/// </style>
+/// 
+/// <div class="window_controls">
+///   <button class="close">Close</button>
+///   <button class="minimize">Minimize</buttton>
+///   <button class="maximize">Maximize</button>
+/// </div>
+///
+/// @todo: add style for example
+///
+/// @group Window controls
+/// @author Tatiana Burgos
+///
+/// @param {Length} $w [1em] - Round button's width and height.
+/// @param {Color} $close - Close button's color.
+/// @param {Color} $minimize - Minimize button's color.
+/// @param {Color} $maximize - Maximize button's color.
+///
+/// @output css for `.window_controls`
+///     
+/// @example sass - Creating `.window_controls`
+///   .window_controls
+///     +window_controls()
+///
+///
+
+=window_controls($w: 1em, $close: red, $minimize: yellow, $maximize: green)
+  // center v and h
+  +flexCenter
+  button
+    width: $w
+    height: $w 
+    margin: 0 $w/3
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+    border-radius: $w/2
+    border: none
+    padding: 0
+    // hide text
+    text-indent: -99999px
+    &:hover
+      filter: brightness(130%) 
+      border: none
+    // hide outline on click
+    &:focus
+      outline: none   
+  .close
+    background-color: $close
+  .minimize
+    background-color: $minimize
+  .maximize
+    background-color: $maximize

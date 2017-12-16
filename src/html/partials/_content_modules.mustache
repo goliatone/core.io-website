@@ -1,0 +1,21 @@
+    <section class="content">
+      
+      <div class="row row-centered">
+        {{#search_bars}}
+          {{#modules}}
+            {{>_search_bar}}
+          {{/modules}}
+        {{/search_bars}}
+      </div>
+
+      <!-- MODULES -->
+      <div class="posts">
+      {{#data_modules}}
+        <div class="row">
+          {{>_post}} 
+        </div>
+      {{/data_modules}}
+      </div><!-- END MODULES -->
+
+    {{>_pagination}}
+    </section><!-- END SECTION CONTENT --> 

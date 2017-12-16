@@ -1,0 +1,240 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Documentation</title>
+  <meta name="description" content="add_description">
+  <meta name="keywords" content="add_keywords">
+  <meta name="author" content="add_author">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- highlight js -->
+  <link rel="stylesheet" href="js/vendor/highlight-common/styles/atelier-dune-dark.css">
+  <script src="js/vendor/highlight-common/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+
+  <div class="docs-2 docs midnight-mode layout-app">
+    
+    <div class="highlight-bar"></div>
+
+    <header class="row">
+  
+      <!-- HEADER LOGO -->
+      <div class="logo">
+        <a href="features.html"><img src="img/logo/core_io-logo-2.png" alt="Core.io" title="Core.io"/></a>
+      </div><!-- END HEADER LOGO -->
+
+      <!-- Header Navigation Bar -->
+      <nav id="main-nav" class="nav-bar-1">
+        <div class="menu-item">
+          <a href="features.html">Features</a> 
+        </div>
+        <div class="menu-item">
+          <a href="modules.html">Modules</a> 
+        </div>
+        <div class="menu-item">
+          <a href="documentation.html">Documentation</a> 
+            <div class="submenu">
+              <div class="menu-item-submenu">
+                <a href="quickstart.html">Quickstart</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="guide.html">Guide</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="api.html">API</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="examples.html">Examples</a>
+              </div>
+            </div>
+        </div>
+        <div class="menu-item">
+          <a href="examples.html">Examples</a> 
+        </div>
+      </nav><!-- END Header Navigation Bar -->
+
+      <div class="cheat-bg"></div>
+
+    </header><!-- END SECTION HEADER -->
+
+    <div class="content">
+    
+      <div class="row">
+      <!-- Documentation Navigation Bar -->
+      <nav id="docs-nav" class="nav-bar-2">
+        <div class="menu-item">
+          <a href="quickstart.html">Quickstart</a> 
+        </div>
+        <div class="menu-item">
+          <a href="guide.html">Guide</a> 
+        </div>
+        <div class="menu-item">
+          <a href="api.html">API</a> 
+        </div>
+        <div class="menu-item">
+          <a href="examples.html">Examples</a> 
+        </div>
+      </nav><!-- END Documentation Navigation Bar -->
+
+        <!-- SEARCH BAR -->
+        <div class="search-bar-2 p-small-3">
+          <label for="" class="sr-only">Search Documentation…</label>
+          <input id="" name="" placeholder="Search Documentation…" maxlength="150">
+          <span class="icon icon-search"><img src="img/icons/search-icon.png" alt="Search" title="Search"/></span>
+          <div class="message mg-search mg-out"><span class="mg-txt" hidden>Error message</span></div>
+          <input hidden type="reset">
+        </div><!-- END SEARCH BAR -->
+      </div>
+
+      <div class="cols">
+        
+        <div class="col-2">
+      <!-- Documentation Side Menu -->
+      <nav id="docs-side-menu" class="side-menu">
+        <div class="menu-item">
+          <a href="#">Application</a> 
+            <div class="submenu">
+              <div class="menu-item-submenu">
+                <a href="#">Context</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="#">Lifecycle</a>
+              </div>
+            </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Configuration</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#">Modules</a> 
+            <div class="submenu">
+              <div class="menu-item-submenu">
+                <a href="#">Core</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="#">Community</a>
+              </div>
+            </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Commands</a> 
+        </div>
+        <div class="menu-item">
+          <a href="#">Autoloading</a> 
+            <div class="submenu">
+              <div class="menu-item-submenu">
+                <a href="#">Modules</a>
+              </div>
+              <div class="menu-item-submenu">
+                <a href="#">Commands</a>
+              </div>
+            </div>
+        </div>
+        <div class="menu-item">
+          <a href="#">Concepts</a> 
+        </div>
+      </nav><!-- END Documentation Side Menu -->
+        </div>
+        
+        <div class="col-2">
+          <hr class="hr-wide"/>
+          <div class="main-txt">
+            <h3 class="title h-smaller-italic">core.io documentation</h3>
+          
+            <div class="description p-medium-3">
+              <p>core.io provides a structure to quickly prototype Node.js applications of any type, providing a set of guidelines and conventions to ease development.</p>
+              <p>In a way core.io aims to be a workflow rather than a framework by providing a common application structure regardless if the application is web, desktop, or data focused.</p>
+              <p>core.io provides basic building blocks which are useful in any context and help with command tasks like configuration management, logging, dependency management and more basic needs of most applications.</p>
+              <p>The heart of core.io is the application context, which you can extend directly with custom logic or indirectly with modules.</p>
+              <p>Modules are intended to encapsulate code and make it portable. They also serve as glue to integrate libraries like Socket.IO or AMQP into your project.</p>
+              <p>Following simple conventions on how files are named and where those files are placed core.io will auto-load, auto-configure, and auto-wire components always leaving you the choice to override defaults or create custom modules to replace core functionality.</p>
+            </div>
+
+            <div class="code-block">
+              <pre><code>
+class MyClass {
+    constructor(options){
+        options = extend({}, MyClass.DEFAULTS, options);
+        if(options.autoinitialize) {
+            this.init(options);
+        }
+    }
+
+    init(options={}) {
+        extend(this, options);
+    }
+}
+
+MyClass.DEFAULTS = {
+    autoinitialize: true;
+    getName: function() {
+        return this.name;
+    },
+    name: 'MyClass'
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- END CONTENT -->
+
+    <footer>
+      <div class="cols cols-centered">
+        
+        <div class="col-3">
+          <div class="footer-logo">
+            <a href="features.html"><img src="img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
+          </div>
+          
+          <div class="footer-menu">
+            <a href="features.html">Features</a>
+            <a href="modules.html">Modules</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="examples.html">Examples</a>
+          </div>
+        </div> 
+        
+        <div class="col-3">
+          <div class="footer-releases">
+            <p>Latest Release: 0.2.8 (June 01. 2017)</p>
+          </div>
+        </div>
+        
+        <div class="col-3">
+          <div class="footer-github">
+            <a href="#" class="row row-vCentered">
+              <img src="img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-centered copyright">
+        <p>Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+      </div>
+    </footer>    
+  </div><!-- END docs-2 docs midnight-mode layout-app -->
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

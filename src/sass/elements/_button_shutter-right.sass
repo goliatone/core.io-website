@@ -1,0 +1,86 @@
+/// Mixin for adding shutter-right effect on 
+/// hover over button.
+///
+/// Markup has to have the following structure:
+///
+/// ```
+///   <div class="button shutter-right">
+///     <button>
+///       <div class="overlay"></div>
+///       <span>Button Text</span>
+///     </button>
+///   <div>
+/// ```
+///
+///
+/// <style>
+///   .button.shutter-right {
+/// </style>
+/// 
+/// <div class="button shutter-right">
+/// </div>
+///
+///
+/// @group Buttons
+/// @group Transitions
+/// @group Colors
+/// @author Tatiana Burgos
+///
+///
+/// @param {Color} $color_1 [white] - Button's text color on hover.
+/// @param {Color} $color_2 [black] - Button's background and border color on hover.
+/// @param {Length} $border_w [1px] - Button's border width.
+/// @param {Length} $border_r [3px] - Button's border radius.
+///
+/// @output css for `.button.shutter-right`
+///     
+/// @example sass - Creating `.button.shutter-right`
+///   .button.shutter-right
+///     +button_shutter-right()
+///
+
+=button_shutter-right($color_1:white, $color_2:black, $border_w: 1px, $border_r: 3px)
+  
+  position: relative
+  overflow: hidden
+
+  button
+    transition: all .4s ease-in-out
+
+  span
+    z-index: 10
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+  .overlay
+    border: $border_w solid $color_2
+    border-radius: 0 $border_r $border_r 0
+    position: absolute
+    top: 0
+    right: 0
+    width: 0
+    height: inherit
+    background-color: $color_2
+    opacity: 0
+    transition: opacity .7s ease-in, width .4s ease-in-out, border .4s ease-in-out
+  
+  &:hover 
+    cursor: pointer
+
+    button
+      color: $color_1
+      transition: color .4s ease-in-out
+
+    .overlay
+      width: inherit
+      border: $border_w solid $color_1
+      border-radius: $border_r
+      opacity: 1
+      transition: opacity .1s ease-in, width .4s ease-in-out, border .4s ease-in-out
+
+    
+  

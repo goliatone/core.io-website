@@ -1,0 +1,120 @@
+* DONE styleguide scroll effects
+
+* DONE selected menu items (main, docs)
+
+* DONE añadir hover border cuando submenu hovered
+
+* Hover over link in text, que hace? (EMI)
+
+* Revisar fade / styleguide 
+
+* buscar tema mejor para highlight
+
+* styleguide footer arreglar
+
+* styleguide añadir:
+	* pagination
+	* code block
+	* code line
+	* main menu
+	* inside menu
+	* side menu
+	* links
+	* footnote (?)
+
+* DONE revisar img y add sizes
+
+* prettify, revisar x renderizado con mustache
+
+* update reade
+
+* DONE update TODO
+
+* add color filter effects to buttons
+
+* quitar franja derecha botton cuando shutter right
+
+* hacer responsive @mmedia-queries
+
+* selected class to pagination
+
+* revisar sassdocs
+
+* completar ejemplos en cada sass x sassdoc
+
+* revisar indice instrus en quickstart queda espacio
+
+* check prettify plugin why not working
+
+* Add json necessary data to elements in element folder (already has html/mustache and sass)
+* Add output css to elements in templates folder
+* Edit elements in templates folder accordingly
+
+
+* DONE edit mustache and sass partials for -post-1, search-bar-1 etc to exclude class and assign class from project_settings.sass
+
+
+* DONE fix pagination box border on hover or selected
+
+
+* LANDING PAGE: ANIMAR LOGO
+	https://tympanus.net/Development/ItemRevealer/
+	https://tympanus.net/Tutorials/SpringLoaders/index5.html
+	https://tympanus.net/Development/TextStylesHoverEffects/
+	https://tympanus.net/Tutorials/PlayfulTrampolineEffect/
+	https://tympanus.net/Tutorials/AnimatedTextFills/index17.html
+	https://tympanus.net/Tutorials/AnimatedTextFills/index19.html
+	https://tympanus.net/Tutorials/PagePreloadingEffect/index2.html
+	https://tympanus.net/Development/HoverEffectIdeas/
+	https://tympanus.net/Development/ArticleIntroEffects/index2.html
+	https://tympanus.net/Development/ArticleIntroEffects/index7.html
+	https://tympanus.net/Development/PageLoadingEffects/index2.html
+	https://tympanus.net/Development/ItemTransitions/index2.html
+	https://tympanus.net/Development/ItemTransitions/index3.html
+	https://tympanus.net/Tutorials/BorderAnimationSVG/
+	https://tympanus.net/Development/FullscreenOverlayStyles/index6.html
+	https://tympanus.net/Tutorials/TexturedText/index9.html
+	https://tympanus.net/Development/CreativeLoadingEffects/
+	https://tympanus.net/Development/ModalWindowEffects/
+	
+
+* DONE ANIMATION FOR DECO BAR, INCLUIR COLORES FUERA DEL MARCO
+
+* MAQUETACION CMS
+
+
+* ANIMATION HEADER MENU SELECTION?
+	https://tympanus.net/Development/LineMenuStyles/
+
+* BUTTON ANIMATION?
+	https://tympanus.net/Development/ButtonStylesInspiration/
+	https://tympanus.net/Development/ElasticSVGElements/button.html
+	https://tympanus.net/Tutorials/CircularProgressButton/
+	https://tympanus.net/Development/ProgressButtonStyles/
+
+* GUARDAR LINK FOR COLOR THEMING: 
+	https://tympanus.net/Development/InteractiveColoringConcept/
+
+* GUARDAR LINK FOR FORM ANIMATION:
+	https://tympanus.net/Development/TextInputEffects/
+	https://tympanus.net/Development/FullscreenForm/
+	https://tympanus.net/Development/ButtonComponentMorph/
+	https://tympanus.net/Development/MinimalForm/
+	https://tympanus.net/Development/PerspectivePageViewNavigation/index5.html
+
+* GUARDAR LINK FOR TAB ANIMATIONS:
+	https://tympanus.net/Development/TabStylesInspiration/
+
+* GUARDAR LINK FOR LINK ANIMATIONS:
+	https://tympanus.net/Development/InlineAnchorStyles/
+	https://tympanus.net/Development/CreativeLinkEffects/
+
+* GUARDAR LINK FOR ICON ANIMATION:
+	https://tympanus.net/Development/AnimatedSVGIcons/
+
+* GUARDAR LINK SIDEBARS
+	https://tympanus.net/Development/SidebarTransitions/
+	https://tympanus.net/Development/MultiLevelPushMenu/index3.html#
+
+* GUARDAR LINK FOR HEADER EFFECTS:
+	https://tympanus.net/Development/HeaderEffects/
