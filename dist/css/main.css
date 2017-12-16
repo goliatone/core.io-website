@@ -358,43 +358,23 @@ footer {
       position: relative;
       z-index: 2; }
   .midnight-mode .search-bar-1 {
-    color: #fafafa;
-    /* placeholder */
-    /* Mozilla Firefox 4 to 18 */
-    -moz-placeholder-color: #fafafa;
-    -moz-placeholder-opacity: 1;
-    /* Internet Explorer 10+ */
-    -ms-input-placeholder-color: #fafafa; }
-    .midnight-mode .search-bar-1 input {
+    color: #fafafa; }
+    .midnight-mode .search-bar-1 label {
       background-color: transparent;
-      color: inherit;
-      border-color: #f8f8f8; }
-    .midnight-mode .search-bar-1 ::-webkit-input-placeholder {
-      /* WebKit browsers */
-      color: #fafafa; }
-    .midnight-mode .search-bar-1 ::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
       color: #fafafa;
-      opacity: 1; }
+      border-color: #f8f8f8; }
+      .midnight-mode .search-bar-1 label:hover, .midnight-mode .search-bar-1 label:focus {
+        border-color: #00d8d8;
+        outline: none; }
   .midnight-mode .search-bar-2 {
-    color: #fafafa;
-    /* placeholder */
-    /* Mozilla Firefox 4 to 18 */
-    -moz-placeholder-color: #fafafa;
-    -moz-placeholder-opacity: 1;
-    /* Internet Explorer 10+ */
-    -ms-input-placeholder-color: #fafafa; }
-    .midnight-mode .search-bar-2 input {
+    color: #fafafa; }
+    .midnight-mode .search-bar-2 label {
       background-color: transparent;
-      color: inherit;
-      border-color: #f8f8f8; }
-    .midnight-mode .search-bar-2 ::-webkit-input-placeholder {
-      /* WebKit browsers */
-      color: #fafafa; }
-    .midnight-mode .search-bar-2 ::-moz-placeholder {
-      /* Mozilla Firefox 19+ */
       color: #fafafa;
-      opacity: 1; }
+      border-color: #f8f8f8; }
+      .midnight-mode .search-bar-2 label:hover, .midnight-mode .search-bar-2 label:focus {
+        border-color: cyan;
+        outline: none; }
   .midnight-mode .black-btn button {
     color: #f8f8f8;
     background-color: #2c2c31;
@@ -1265,7 +1245,7 @@ code {
 
 /* ------------------------------- SEARCH BARS */
 .search-bar-1 {
-  font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .search-bar-2 input {
   font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif;
@@ -1414,13 +1394,26 @@ header .logo {
   font-size: 24.024px;
   position: relative; }
   .search-bar-1 input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .search-bar-1 label {
+    display: inline-block;
     width: 100%;
     height: 78px;
     border: 1px solid white;
     border-radius: 3px;
     padding-left: 25px;
     font-size: inherit;
-    font-family: inherit; }
+    font-family: inherit;
+    line-height: 78px; }
+    .search-bar-1 label:hover {
+      cursor: pointer; }
+    .search-bar-1 label:focus {
+      border: 1px solid white; }
   .search-bar-1 .icon {
     position: absolute;
     top: 86.988px;

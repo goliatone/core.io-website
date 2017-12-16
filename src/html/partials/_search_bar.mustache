@@ -1,6 +1,7 @@
         <!-- SEARCH BAR -->
         <div{{#class}} class="{{.}}"{{/class}}>
-          <input name="name" placeholder="{{txt}}" maxlength="150">
+          <label for="{{id}}" class="sr-only">{{txt}}</label>
+          <input id="{{id}}" name="{{id}}" placeholder="{{txt}}" maxlength="150">
           {{#icon}}
           <span class="icon icon-search"><img src="{{{src}}}" alt="{{alt}}" title="{{title}}"/></span>
           {{/icon}}

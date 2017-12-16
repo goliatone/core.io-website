@@ -33,7 +33,8 @@
 /// </style>
 /// 
 /// <div class="search-bar">
-///   <input name="name" placeholder="Enter name">
+///   <label for="input-id">Placeholder text</label>
+///   <input id="input-id" name="input-name" placeholder="Placeholder text">
 ///   <span class="icon icon-search"><img src="../dist/img/icons/search.png" alt="Search" title="Search"/></span>
 /// </div>
 ///
@@ -70,6 +71,14 @@
   font-size: $font_size
   position: relative
   input
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+  label
+    display: inline-block
     width: 100%
     height: $height
     border: 1px solid white
@@ -77,6 +86,12 @@
     padding-left: $padding_placeholder
     font-size: inherit
     font-family: inherit
+    line-height: $height
+    // pointer-events: none
+    &:hover
+      cursor: pointer
+    &:focus
+      border: 1px solid white
   .icon
     position: absolute
     top: $icon_top

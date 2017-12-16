@@ -13,6 +13,7 @@
     "keywords": "add_keywords",
     "author": "add_author",
     "scripts": "main",
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -23,7 +24,8 @@
     "description": "add_description",
     "keywords": "add_keywords",
     "author": "add_author",
-    "scripts": "main",
+    "scripts": ["main", "code-output-animation"],
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -35,6 +37,7 @@
     "keywords": "add_keywords",
     "author": "add_author",
     "scripts": "main",
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -46,6 +49,7 @@
     "keywords": "add_keywords",
     "author": "add_author",
     "scripts": "main",
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -57,6 +61,7 @@
     "keywords": "add_keywords",
     "author": "add_author",
     "scripts": "main",
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -68,6 +73,7 @@
     "keywords": "add_keywords",
     "author": "add_author",
     "scripts": "main",
+    "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
@@ -280,7 +286,8 @@
           "alt": "Search",
           "title": "Search"
         },
-        "class": "search-bar-1 p-biggest"
+        "class": "search-bar-1 p-biggest",
+        "id": "search-modules"
       }
     },
     {
@@ -470,7 +477,8 @@
             { "txt": "├── ./myapp/modules", "class": "tab-1" },
             { "txt": "└── ./myapp/models", "class": "tab-1" }
           ],
-          "class": "code-block-1"
+          "class": "code-block-1",
+          "id": "code-output"
         }
       },  
       "class": "paragraph-2 cols row row-reverse"

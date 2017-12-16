@@ -41,20 +41,21 @@
 /// @param {Color} $color [black] - Input text color.
 /// @param {Color} $bg [transparent] - Inputs background color.
 /// @param {Color} $border_c [black] - Inputs border color.
+/// @param {Color} $highlight_c [cyan] - Inputs border color on focus.
 /// @output css for `.search_bar`
 ///     
 /// @example sass - Creating `.search_bar`
-///   +search_bar_color(white, black, black)
+///   +search_bar_color(white, black, black, cyan)
 ///
 
-=search_bar_color($color: black, $bg: transparent, $border_c: black)
+=search_bar_color($color: black, $bg: transparent, $border_c: black, $highlight_c: cyan)
   color: $color
-  input
+  label
     background-color: $bg
-    color: inherit
+    color: $color
     border-color: $border_c
-  /* placeholder */
-  +placeholder_color($color)
-
+    &:hover, &:focus
+      border-color: $highlight_c
+      outline: none
         
 
