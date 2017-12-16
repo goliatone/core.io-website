@@ -327,9 +327,9 @@ footer {
       border-color: #fafafa; }
   .midnight-mode .nav-bar-2 {
     /* shadow */ }
-    .midnight-mode .nav-bar-2 a {
+    .midnight-mode .nav-bar-2 .menu-item a {
       color: #fafafa; }
-      .midnight-mode .nav-bar-2 a:hover, .midnight-mode .nav-bar-2 a.selected {
+      .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
         border-color: #00d8d8; }
     .midnight-mode .nav-bar-2 .menu-item {
       /* separator */ }
@@ -1072,6 +1072,10 @@ footer {
         -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
+  .midnight-mode .label.highlight {
+    color: #ffffff;
+    border-color: #00d8d8;
+    background-color: #00d8d8; }
   .midnight-mode .label.green {
     color: #ffffff;
     border-color: #36af47;
@@ -1237,7 +1241,8 @@ code {
 
 .nav-bar-2 {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 16px; }
 
 .side-menu {
   font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif;
@@ -1377,19 +1382,17 @@ header .logo {
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
 .nav-bar-2 {
-  margin: 55px 0 11px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-2 a {
+  .nav-bar-2 .menu-item a {
     font-size: inherit;
     line-height: inherit;
     padding: 13px; }
-    .nav-bar-2 a:hover, .nav-bar-2 a.selected {
+    .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
       border-bottom: 2px solid white; }
-  .nav-bar-2 .menu-item a {
-    position: relative;
-    top: -4px; }
+  .nav-bar-2 .menu-item:first-of-type a {
+    padding-left: 0; }
 
 /* -------------------------------------------- SEARCH BARS */
 /* ------------------------------- SEARCH-BAR-1 */
@@ -1805,8 +1808,10 @@ header .logo {
         margin-left: 16px; }
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
+.docs .content {
+  margin-top: 56px; }
 .docs .hr-light {
-  margin-bottom: 75px; }
+  margin: 14px 0 75px; }
 .docs .side-menu {
   width: 235px;
   margin-left: 57px; }
