@@ -271,7 +271,8 @@ footer {
   .midnight-mode .shade {
     color: #f8f8f8; }
   .midnight-mode footer {
-    background-color: #1B1D1E; }
+    background-color: #1B1D1E;
+    color: #fafafa; }
     .midnight-mode footer a {
       color: #fafafa; }
       .midnight-mode footer a:hover {
@@ -320,7 +321,7 @@ footer {
     background-color: #1b1d1d; }
   .midnight-mode .posts > .row {
     border-top: 1px solid #979797; }
-    .midnight-mode .posts > .row:last-child {
+    .midnight-mode .posts > .row:last-of-type {
       border-bottom: 1px solid #979797; }
   .midnight-mode .nav-bar-1 a {
     color: #fafafa; }
@@ -1319,18 +1320,6 @@ hr {
 header .logo {
   width: 200px; }
 
-/* ------------------------------------------------- POSTS */
-.posts {
-  padding: 70px 0; }
-  .posts .post {
-    width: 100%;
-    height: 205px;
-    padding: 32px 90px 29px 58px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
@@ -1439,6 +1428,7 @@ header .logo {
 
 /* -------------------------------------------- PAGINATION */
 .pagination {
+  margin: 85px 0 20px;
   height: 44px; }
   .pagination ul {
     height: inherit; }
@@ -1717,9 +1707,19 @@ header .logo {
     margin-bottom: 36px; }
 
 /* MODULES PAGE -------------------------------------------------- */
-.post .description {
+.posts {
+  margin-top: 70px; }
+
+.post {
+  width: 100%;
+  height: 205px;
+  padding: 32px 90px 29px 58px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 13px; }
-  .post .description p {
+  .post p {
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
