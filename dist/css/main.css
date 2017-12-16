@@ -313,7 +313,9 @@ footer {
     background-position: 2220px; }
   100% {
     background-position: 4440px; } }
-  .midnight-mode .code-block,
+  .midnight-mode .code-block, .midnight-mode code {
+    background-color: #292D34; }
+  .midnight-mode .code-block-1,
   .midnight-mode .code-line {
     background-color: #1b1d1d; }
   .midnight-mode .posts > .row {
@@ -1108,8 +1110,6 @@ footer {
   .midnight-mode .instruction_block .button,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
-  .midnight-mode .code-block, .midnight-mode code {
-    background-color: #292D34; }
 
 /* -------------------------------------- FONT_DEFINITIONS */
 html {
