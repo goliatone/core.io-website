@@ -1444,7 +1444,6 @@ header .logo {
         -ms-transform: rotate(225deg);
             transform: rotate(225deg); }
 
-/* -------------------------------------------- PAGINATION */
 /* --------------------------------------- LINK PAGINATION */
 .link-pagination {
   margin-top: 99px;
@@ -1803,13 +1802,15 @@ header .logo {
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
 .docs .content {
-  margin-top: 56px; }
+  margin-top: 16px; }
   .docs .content .cols {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial; }
 .docs .hr-light {
   margin: 14px 0 75px; }
+.docs .label {
+  margin-right: 3px; }
 .docs .side-menu {
   width: 255px; }
   .docs .side-menu a {
@@ -1817,7 +1818,7 @@ header .logo {
   .docs .side-menu .menu-item {
     margin-top: 31px; }
     .docs .side-menu .menu-item:first-child {
-      margin-top: 2px; }
+      margin-top: 8px; }
   .docs .side-menu .submenu {
     margin: 15px 0 0 18px; }
   .docs .side-menu .menu-item-submenu {
@@ -1831,7 +1832,12 @@ header .logo {
     .docs .main-txt .description p {
       padding-bottom: 24px; }
 .docs .code-block {
-  width: 714px; }
+  width: 714px;
+  margin-top: 56px; }
+  .docs .code-block code {
+    padding: 0px 14px; }
+.docs .link-pagination {
+  margin-top: 111px; }
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
 /* alt nav */
