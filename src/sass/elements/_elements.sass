@@ -31,13 +31,16 @@ header .logo
 /* HEADER NAV BAR */
 $item_padding: 2px
 $border_w: 2px
-$border_padding: 7px 17px
+$border_padding_top: 7px
+$border_padding_sides: 17px
+$border_padding: $border_padding_top $border_padding_sides
 
 $spacing: 30px
 
 .nav-bar-1
   position: relative
   top: -4px
+  right: -$border_padding_sides
   +nav_bar_draw-1($item_padding, $border_w, $border_padding)
   +nav_bar_submenu($spacing)
 

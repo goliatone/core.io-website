@@ -93,30 +93,11 @@
       },
       { 
         "link": "documentation.html",
-        "txt": "Documentation",
-        "hasSubmenu": true,
-        "submenu": [
-          {
-            "link": "quickstart.html",
-            "txt": "Quickstart"
-          },
-          {
-            "link": "guide.html",
-            "txt": "Guide"
-          },
-          { 
-            "link": "api.html",
-            "txt": "API"
-          },
-          { 
-            "link": "examples.html",
-            "txt": "Examples"
-          }
-        ]
+        "txt": "Documentation"
       },
       { 
-        "link": "examples.html",
-        "txt": "Examples"
+        "link": "quickstart.html",
+        "txt": "Quickstart"
       }
     ]
   },
