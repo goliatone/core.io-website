@@ -1305,15 +1305,15 @@ header .logo {
 .nav-bar-1 {
   position: relative;
   top: -4px;
-  right: -17px;
+  right: -11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: flex; }
   .nav-bar-1 .menu-item {
-    padding-left: 2px; }
+    padding-left: 14px; }
     .nav-bar-1 .menu-item a {
-      padding: 7px 17px; }
+      padding: 7px 11px; }
     .nav-bar-1 .menu-item > a:hover, .nav-bar-1 .menu-item > a.selected {
       border-top: 2px solid white; }
   .nav-bar-1 .menu-item {
