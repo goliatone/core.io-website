@@ -8,7 +8,7 @@ hr
   border-top: 1px solid white
 
   &.hr-small
-    width: 53px
+    width: 50px
     border-width: 3px
 
   &.hr-medium
@@ -156,7 +156,9 @@ $border_r: 3px
 .button.download
   span
     position: relative
-    padding-left: 50px
+    padding-left: 38px
+    top: 2px
+
     &:before
       content: ""
       background: url("../img/icons/white-github-512.png")
@@ -164,8 +166,8 @@ $border_r: 3px
       +size(26px)
       display: inline-block
       position: absolute
-      top: -2px
-      left: 10px
+      top: 0
+      left: -9px
   &:hover
     span:before
       background: url("../img/icons/black-github-512.png")
@@ -194,7 +196,7 @@ $w: $WINDOW_CONTROLS_W
     margin-bottom: $CODE_MARGIN
     &.tab-1
       padding-left: $TAB_1_PADDING
-      margin-top: $TAB_1_MARGIN - $CODE_MARGIN
+      margin-top: -12px
     &.code-tight
       margin-bottom: 0
 
