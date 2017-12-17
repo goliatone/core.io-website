@@ -1110,14 +1110,12 @@ footer {
 
 .h-small {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 28px;
-  font-weight: lighter; }
+  font-size: 28px; }
 
 .h-smaller {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
-  letter-spacing: 0.13px;
-  font-weight: lighter; }
+  letter-spacing: 0.13px; }
 
 .h-smaller-bold {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1131,8 +1129,7 @@ footer {
 
 .h-smallest {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: lighter; }
+  font-size: 16px; }
 
 /* ---------------------------------- TEXT (p) */
 .p-biggest {
@@ -1275,7 +1272,7 @@ code {
 .post .description {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 16px;
-  font-weight: 200; }
+  line-height: 26px; }
 
 /* ELEMENTS --------------------------------------------- ELEMENTS */
 /* ---------------------------------------------------- HR */
@@ -1400,7 +1397,7 @@ header .logo {
 
 /* -------------------------------------------- PAGINATION */
 .pagination {
-  margin: 85px 0 20px;
+  margin: 82px 0 141px;
   height: 44px; }
   .pagination ul {
     height: inherit; }
@@ -1427,7 +1424,7 @@ header .logo {
       border-bottom-right-radius: 5px; }
   .pagination .prev,
   .pagination .next {
-    width: 78px; }
+    width: 86px; }
   .pagination .prev:before,
   .pagination .next:after {
     content: "";
@@ -1476,8 +1473,8 @@ header .logo {
 
 /* ------------------------------------------------ LABELS */
 .label {
-  margin-right: 13px;
-  width: 47px;
+  margin-right: 10px;
+  width: 46px;
   height: 20px;
   border: 1px solid black;
   border-radius: 3px; }
@@ -1689,13 +1686,22 @@ header .logo {
 
 .post {
   width: 100%;
-  height: 205px;
-  padding: 32px 90px 29px 58px;
+  height: 204px;
+  padding: 32px 90px 27px 61px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 13px; }
+          flex-direction: column; }
+  .post .title {
+    position: relative;
+    left: -1px; }
+  .post .tag {
+    position: relative;
+    right: 3px;
+    top: 2px; }
+  .post .description {
+    margin-top: 9px;
+    width: 655px; }
   .post p {
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -1703,7 +1709,7 @@ header .logo {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    max-height: 38px; }
+    max-height: 52px; }
 
 /* QUICKSTART PAGE ----------------------------------------------- */
 .quickstart .header .logo {

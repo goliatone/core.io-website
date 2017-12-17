@@ -288,7 +288,7 @@
     {
       "title": "core.io-persistence",
       "version": "v0.12.4",
-      "description": "Waterline integration. This modue provides ORM capabilities.",
+      "description": "Waterline integration. This module provides ORM capabilities.",
       "labels": [ 
         { "type": "green", 
           "txt": "label" },
