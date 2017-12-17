@@ -66,8 +66,13 @@ $border_w: 1px
 $border_r: 3px
 
 .search-bar-1
-  +search_bar_draw-1($width, $height, $padding, $border_w, $border_r)
-
+  position: relative
+  padding: 17px 60px 63px
+  +search_bar_draw-3($width, $height, $border_w, $border_r)
+  .icon
+    position: absolute
+    top: 43px
+    right: 100px
 
 /* ------------------------------- SEARCH-BAR-2 */
 $width: 270px

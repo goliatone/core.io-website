@@ -1,7 +1,10 @@
         <!-- SEARCH BAR -->
         <div{{#class}} class="{{.}}"{{/class}}>
+          <label for="{{id}}" class="sr-only">{{txt}}</label>
           <input id="{{id}}" name="{{id}}" placeholder="{{txt}}" maxlength="150">
           {{#icon}}
           <span class="icon icon-search"><img src="{{{src}}}" alt="{{alt}}" title="{{title}}"/></span>
           {{/icon}}
+          <div class="message mg-search mg-out"><span class="mg-txt" hidden>Error message</span></div>
+          <input hidden type="reset">
         </div><!-- END SEARCH BAR -->
