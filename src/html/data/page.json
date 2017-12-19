@@ -286,7 +286,7 @@
           "alt": "Search",
           "title": "Search"
         },
-        "class": "search-bar-1 p-biggest",
+        "class": "search-bar-1",
         "id": "search-modules"
       }
     },

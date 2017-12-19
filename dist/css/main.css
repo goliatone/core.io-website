@@ -360,20 +360,20 @@ footer {
       z-index: 2; }
   .midnight-mode .search-bar-1 {
     color: #fafafa; }
-    .midnight-mode .search-bar-1 label {
+    .midnight-mode .search-bar-1 input {
       background-color: transparent;
       color: #fafafa;
       border-color: #f8f8f8; }
-      .midnight-mode .search-bar-1 label:hover, .midnight-mode .search-bar-1 label:focus {
+      .midnight-mode .search-bar-1 input:hover, .midnight-mode .search-bar-1 input:focus {
         border-color: #00d8d8;
         outline: none; }
   .midnight-mode .search-bar-2 {
     color: #fafafa; }
-    .midnight-mode .search-bar-2 label {
+    .midnight-mode .search-bar-2 input {
       background-color: transparent;
       color: #fafafa;
       border-color: #f8f8f8; }
-      .midnight-mode .search-bar-2 label:hover, .midnight-mode .search-bar-2 label:focus {
+      .midnight-mode .search-bar-2 input:hover, .midnight-mode .search-bar-2 input:focus {
         border-color: cyan;
         outline: none; }
   .midnight-mode .black-btn button {
@@ -1383,13 +1383,6 @@ header .logo {
   font-size: 24.024px;
   position: relative; }
   .search-bar-1 input {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1; }
-  .search-bar-1 label {
     display: inline-block;
     width: 100%;
     height: 78px;
@@ -1399,9 +1392,9 @@ header .logo {
     font-size: inherit;
     font-family: inherit;
     line-height: 78px; }
-    .search-bar-1 label:hover {
+    .search-bar-1 input:hover {
       cursor: pointer; }
-    .search-bar-1 label:focus {
+    .search-bar-1 input:focus {
       border: 1px solid white; }
   .search-bar-1 .icon {
     position: absolute;
