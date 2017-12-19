@@ -522,7 +522,7 @@
           "class": "h-small"
         }, 
         "subheader": {
-          "txt": "Here are a few resources that will help get you acquainted with core.io:", 
+          "txt": "Here are a few resources that will help get you acquainted with developing on core.io:", 
           "class": "p-small"
         },
         "links": [

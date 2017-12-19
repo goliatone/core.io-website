@@ -7,19 +7,6 @@ $(function() {
 
   $('#main-nav').find('a[href="'+page+'"]').addClass('selected');
 
-
-  // update selected link in main navigation bar
-  // when in documentation pages = 
-  // * quickstart
-  // * guide
-  // * api
-  // * examples
-  // @TODO pass as array?
-
-  if (page === ("quickstart.html" || "guide.html" || "api.html" || "examples.html")) {
-    $('header').find('a[href="documentation.html"]').addClass('selected');
-  }
-
   
   // update documentation menu in documentation page
 
