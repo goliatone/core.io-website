@@ -77,6 +77,18 @@
     "layout": "layout-app",
     "skin": "midnight-mode"
   },
+
+  "page_examples": {
+    "title": "Examples",
+    "class": "examples",
+    "description": "add_description",
+    "keywords": "add_keywords",
+    "author": "add_author",
+    "scripts": "main",
+    "css": "main",
+    "layout": "layout-app",
+    "skin": "midnight-mode"
+  },
   
   "data_header_menu": {
     "name": "Header Navigation Bar",
@@ -558,6 +570,57 @@
         ]
       },
       "class": "paragraph-2 "
+    }
+  ],
+
+  "data_examples_sections": [
+    { 
+      "section_header": {
+        "h2": { 
+          "txt": "okko: Registry Service<br>and Monitoring.",
+          "class": "h-big"
+        }, 
+        "subheader": {
+          "txt": "Open source application to register and monitor applications.", 
+          "class": "p-medium-3"
+        },
+        "buttons": [ 
+          { "txt": "Documentation",
+            "class": "big-btn gray-btn fade" }
+        ]
+      },
+      "side_block": {
+        "img": {
+          "src": "img/images/code_editor.svg",
+          "width": "250",
+          "height": "350"
+        }
+      },
+      "class": "paragraph-1 cols row"
+    },
+    { 
+      "section_header": {
+        "h2": { 
+          "txt": "LinkPin: Collect and manage<br>links.",
+          "class": "h-big"
+        }, 
+        "subheader": {
+          "txt": "Open Source application to collect, manage, and share links.", 
+          "class": "p-medium-3"
+        },
+        "buttons": [ 
+          { "txt": "Documentation",
+            "class": "big-btn gray-btn fade" }
+        ]
+      },
+      "side_block": {
+        "img": {
+          "src": "img/images/code_editor.svg",
+          "width": "250",
+          "height": "350"
+        }
+      },
+      "class": "paragraph-1 cols row"
     }
   ],
 
