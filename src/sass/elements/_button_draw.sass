@@ -38,12 +38,14 @@
 /// @todo * Relate margin and padding sizes either to title size or to param
 
 =button_draw($w: 200px, $h: 50px, $border_w: 1px, $r: false)
-  button, .button
+  &button, &.button, button, .button
+    display: inline-block
     width: $w
     height: $h
     line-height: $h - 2*$border_w
     border: $border_w solid black
     @if $r
       border-radius: $r
+    text-align: center
     &:hover
       cursor: pointer
