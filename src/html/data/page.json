@@ -626,7 +626,8 @@
           "class": "medium-btn blue-btn fade",
           "isLink": true,
           "href": "https://nodejs.org/en/download/",
-          "wrapped": true
+          "wrapped": true,
+          "wrapperClass": "button-wrapper"
         }
       ]
     },

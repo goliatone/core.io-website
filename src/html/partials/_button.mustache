@@ -1,12 +1,12 @@
 {{#wrapped}}
   {{#isLink}}
-  <div class="button{{#class}} {{.}}{{/class}}">
-    <a href="{{href}}">{{txt}}</a>
+  <div{{#wrapperClass}} class="{{.}}"{{/wrapperClass}}>
+    <a href="{{href}}" class="button{{#class}} {{.}}{{/class}}">{{txt}}</a>
   </div>
   {{/isLink}}
   {{^isLink}}
-  <div class="button{{#class}} {{.}}{{/class}}">
-    <button>
+  <div{{#wrapperClass}} class="{{.}}"{{/wrapperClass}}>
+    <button class="button{{#class}} {{.}}{{/class}}">
       <span>{{txt}}</span>
     </button>
   </div>

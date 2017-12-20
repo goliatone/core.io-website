@@ -1064,7 +1064,7 @@ footer {
     border-color: #c2cad4;
     background-color: #c2cad4; }
   .midnight-mode .instruction_block .description,
-  .midnight-mode .instruction_block .button,
+  .midnight-mode .instruction_block .button-wrapper,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
 
@@ -1739,6 +1739,12 @@ header .logo {
      * margin can't be set here,
      * instead padding-bottom on each
      * last element of the instruction block */ }
+    .quickstart .instrus .instruction_block .description,
+    .quickstart .instrus .instruction_block .button-wrapper,
+    .quickstart .instrus .instruction_block .code-wrapper,
+    .quickstart .instrus .instruction_block .paragraph-2 {
+      margin-left: 30px;
+      padding-left: 55px; }
     .quickstart .instrus .instruction_block:last-of-type .description {
       border: none; }
     .quickstart .instrus .instruction_block:last-of-type .last {
@@ -1772,12 +1778,6 @@ header .logo {
     .quickstart .instrus .title h3 {
       font-family: inherit;
       font-size: inherit; }
-  .quickstart .instrus .description,
-  .quickstart .instrus .button,
-  .quickstart .instrus .code-wrapper,
-  .quickstart .instrus .paragraph-2 {
-    margin-left: 30px;
-    padding-left: 55px; }
   .quickstart .instrus .description {
     max-width: 675px;
     padding-top: 6px;
@@ -1785,7 +1785,7 @@ header .logo {
     line-height: 26px; }
     .quickstart .instrus .description p.last {
       padding-bottom: 55px; }
-  .quickstart .instrus .button {
+  .quickstart .instrus .button-wrapper {
     padding-bottom: 114px; }
   .quickstart .instrus .code-line {
     width: 850px;

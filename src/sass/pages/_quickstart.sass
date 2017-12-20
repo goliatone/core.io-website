@@ -10,7 +10,7 @@ $instrus_padding_l: 197px
 $instrus_padding_r: 91px
 
 
-.quickstart 
+.quickstart
   .header
     .logo
       height: $LOGO_H
@@ -41,11 +41,17 @@ $instrus_padding_r: 91px
     .instruction_block
       /* circle number */
       counter-increment: instrus
-      /* to have vertical line = border-left 
+      /* to have vertical line = border-left
        * margin can't be set here,
        * instead padding-bottom on each
        * last element of the instruction block */
-      &:last-of-type 
+      .description,
+      .button-wrapper,
+      .code-wrapper,
+      .paragraph-2
+        margin-left: $margin_l
+        padding-left: 55px
+      &:last-of-type
         .description
           border: none
         .last
@@ -64,19 +70,12 @@ $instrus_padding_r: 91px
         border-radius: 50%
         display: flex
         align-items: center
-        justify-content: center 
-        font-size: 18px 
-        font-family: $MAIN_FONT_MEDIUM 
+        justify-content: center
+        font-size: 18px
+        font-family: $MAIN_FONT_MEDIUM
       h3
         font-family: inherit
         font-size: inherit
- 
-    .description,
-    .button,
-    .code-wrapper,
-    .paragraph-2
-      margin-left: $margin_l
-      padding-left: 55px
 
     .description
       max-width: 675px
@@ -86,7 +85,7 @@ $instrus_padding_r: 91px
       p.last
         padding-bottom: 55px
 
-    .button
+    .button-wrapper
       padding-bottom: 114px
 
     .code-line
@@ -97,14 +96,14 @@ $instrus_padding_r: 91px
       padding-bottom: 117px
       .code-block
         padding-top: 14px
-        padding-left: 27px 
+        padding-left: 27px
 
   .paragraph-2
     margin-left: $margin_l
     padding-left: 271px
     // padding-right: $instrus_padding_r
     .subheader
-      margin-top: 16px 
+      margin-top: 16px
       ul
         margin-top: 5px
         li
@@ -112,8 +111,3 @@ $instrus_padding_r: 91px
           margin-left: 15px
           > *
             margin-left: -3px
-
-
-
-
-
