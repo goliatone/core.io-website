@@ -1339,14 +1339,14 @@ header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-2 .menu-item a {
-    font-size: inherit;
-    line-height: inherit;
-    padding: 13px; }
-    .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
-      border-bottom: 2px solid white; }
-  .nav-bar-2 .menu-item:first-of-type a {
-    padding-left: 0; }
+  .nav-bar-2 .menu-item {
+    margin-right: 10px; }
+    .nav-bar-2 .menu-item a {
+      font-size: inherit;
+      line-height: inherit;
+      padding: 13px; }
+      .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
+        border-bottom: 2px solid white; }
 
 /* -------------------------------------------- SEARCH BARS */
 /* ------------------------------- SEARCH-BAR-1 */
