@@ -4,33 +4,13 @@
 ///
 /// ```
 ///   <div class="search-bar">
-///     <input name="name" placeholder="Enter name">
+///     <label for id="input-id">Placeholder text</label>
+///     <input id="input-id" name="name" placeholder="Placeholder text">
 ///   </div>
 /// ```
 ///
 /// For messages see (link to messages elements)
 ///
-/// <style>
-///   .search-bar {
-///     width: 100%;
-///     padding: 60px;
-///     font-size: 47.88px;
-///     position: relative; }
-///   .search-bar input {
-///     width: 100%;
-///     height: 84px;
-///     border: 1px solid white;
-///     border-radius: 3px;
-///     padding-left: 25px;
-///     font-size: inherit;
-///     font-family: inherit; }
-///   .search-bar .icon {
-///     position: absolute;
-///     top: 67.06px;
-///     right: 85px; }
-///   .search-bar .icon:hover {
-///     cursor: pointer; }
-/// </style>
 /// 
 /// <div class="search-bar">
 ///   <label for="input-id">Placeholder text</label>
@@ -87,7 +67,6 @@
     font-size: inherit
     font-family: inherit
     line-height: $height
-    // pointer-events: none
     &:hover
       cursor: pointer
     &:focus
@@ -98,6 +77,3 @@
     right: $icon_right
     &:hover
       cursor: pointer
-
-        
-
