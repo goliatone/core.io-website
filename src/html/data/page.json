@@ -2,7 +2,7 @@
   "releases": [
     { "last": 
       { "version": "0.2.8",
-        "date": "June 01. 2017" }
+        "date": "Jun 01, 2017" }
     }
   ],
 
@@ -93,30 +93,11 @@
       },
       { 
         "link": "documentation.html",
-        "txt": "Documentation",
-        "hasSubmenu": true,
-        "submenu": [
-          {
-            "link": "quickstart.html",
-            "txt": "Quickstart"
-          },
-          {
-            "link": "guide.html",
-            "txt": "Guide"
-          },
-          { 
-            "link": "api.html",
-            "txt": "API"
-          },
-          { 
-            "link": "examples.html",
-            "txt": "Examples"
-          }
-        ]
+        "txt": "Documentation"
       },
       { 
-        "link": "examples.html",
-        "txt": "Examples"
+        "link": "quickstart.html",
+        "txt": "Quickstart"
       }
     ]
   },
@@ -286,7 +267,7 @@
           "alt": "Search",
           "title": "Search"
         },
-        "class": "search-bar-1 p-biggest",
+        "class": "search-bar-1",
         "id": "search-modules"
       }
     },
@@ -307,7 +288,7 @@
     {
       "title": "core.io-persistence",
       "version": "v0.12.4",
-      "description": "Waterline integration. This modue provides ORM capabilities.",
+      "description": "Waterline integration. This module provides ORM capabilities.",
       "labels": [ 
         { "type": "green", 
           "txt": "label" },
@@ -512,9 +493,9 @@
   "data_quickstart_sections": [
     { 
       "section_header": {
-        "h5": { 
+        "h1": { 
           "txt": "Getting started",
-          "class": "h-smaller uppercase"
+          "class": "h-small uppercase"
         }, 
         "subheader": {
           "txt": "Create your first core.io application in 4 simple steps.<br/>Even if you are new to Node.js this will be easy.", 
@@ -522,13 +503,13 @@
         }
       },
       "side_block": {
-        "img":  {
-          "src": "img/images/quickstart-1.png",
-          "alt": "Core.io",
-          "title": "Core.io"
+        "svg":  {
+          "src": "svg/3_cubes.svg",
+          "width": "100%",
+          "height": "100%"
         }
       },
-      "class": "paragraph-1 cols row row-reverse"
+      "class": "paragraph-1 cols row row-reverse row-vCentered"
     },
     {
       "section_instrus": true,
@@ -538,7 +519,7 @@
       "section_footer": {
         "h2": { 
           "txt": "What next?",
-          "class": "h-medium"
+          "class": "h-small"
         }, 
         "subheader": {
           "txt": "Here are a few resources that will help get you acquainted with developing on core.io:", 
@@ -589,16 +570,16 @@
       "code_block": {
         "code": [
           { "txt": "$ core —-help", "class": "" }, 
-          { "txt": "core.io CLI tool", "class": "" },
-          { "txt": "Usage:", "class": "code-tight" },
-          { "txt": "  core help                             Show this message", "class": "code-tight" },
-          { "txt": "  core --version                        Print out the latest released version of core", "class": "code-tight" },
-          { "txt": "  core install [template]               Download and install a [template] from github.", "class": "code-tight" },
-          { "txt": "  core new [project-name]               Create a new project", "class": "" },
-          { "txt": "Example:", "class": "code-tight" },
-          { "txt": "  core new myProject                    Create a new project", "class": "pre" },
-          { "txt": "version:", "class": "code-tight" },
-          { "txt": "  1.0.0", "class": "" }
+          { "txt": "  core.io CLI tool", "class": "" },
+          { "txt": "  Usage:", "class": "code-tight " },
+          { "txt": "    core help                             Show this message", "class": "code-tight" },
+          { "txt": "    core --version                        Print out the latest released version of core", "class": "code-tight" },
+          { "txt": "    core install [template]               Download and install a [template] from github.", "class": "code-tight" },
+          { "txt": "    core new [project-name]               Create a new project", "class": "" },
+          { "txt": "  Example:", "class": "code-tight" },
+          { "txt": "    core new myProject                    Create a new project", "class": "" },
+          { "txt": "  version:", "class": "code-tight" },
+          { "txt": "    1.0.0", "class": "" }
         ],
         "class": "code-block-2"
       }
