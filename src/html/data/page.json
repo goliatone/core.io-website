@@ -627,7 +627,8 @@
           "isLink": true,
           "href": "https://nodejs.org/en/download/",
           "wrapped": true,
-          "wrapperClass": "button-wrapper"
+          "wrapperClass": "button-wrapper",
+          "isExternal": true
         }
       ]
     },

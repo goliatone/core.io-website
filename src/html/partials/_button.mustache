@@ -1,7 +1,7 @@
 {{#wrapped}}
   {{#isLink}}
   <div{{#wrapperClass}} class="{{.}}"{{/wrapperClass}}>
-    <a href="{{href}}" class="button{{#class}} {{.}}{{/class}}">{{txt}}</a>
+    <a href="{{href}}" class="button{{#class}} {{.}}{{/class}}"{{#isExternal}} target="_blank"{{/isExternal}}>{{txt}}</a>
   </div>
   {{/isLink}}
   {{^isLink}}
@@ -15,7 +15,7 @@
 
 {{^wrapped}}
   {{#isLink}}
-  <a href="{{href}}" class="button{{#class}} {{.}}{{/class}}">{{txt}}</a>
+  <a href="{{href}}" class="button{{#class}} {{.}}{{/class}}"{{#isExternal}} target="_blank"{{/isExternal}}>{{txt}}</a>
   {{/isLink}}
   {{^isLink}}
   <button class="button{{#class}} {{.}}{{/class}}">
