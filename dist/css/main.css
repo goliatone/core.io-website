@@ -361,16 +361,15 @@ footer {
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
   .midnight-mode .black-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .midnight-mode .black-btn.fade button:hover {
       color: #2c2c31;
       background-color: #f8f8f8;
-      border-color: #2c2c31;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .black-btn.shutter-left {
     position: relative;
     overflow: hidden; }
@@ -588,16 +587,16 @@ footer {
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
   .midnight-mode .gray-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .midnight-mode .gray-btn.fade button:hover {
       color: #f8f8f8;
       background-color: #2c2c31;
       border-color: #f8f8f8;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .gray-btn.shutter-left {
     position: relative;
     overflow: hidden; }
@@ -813,16 +812,15 @@ footer {
     background-color: #2C2E31;
     border-color: #00d8d8; }
   .midnight-mode .blue-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .midnight-mode .blue-btn.fade button:hover {
       color: #2C2E31;
       background-color: #00d8d8;
-      border-color: #2C2E31;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .blue-btn.shutter-left {
     position: relative;
     overflow: hidden; }
@@ -1468,6 +1466,24 @@ header .logo {
   .medium-btn button:hover {
     cursor: pointer; }
 
+/* ---------------------------- DOWNLOAD BUTTON */
+.button.download span {
+  position: relative;
+  padding-left: 50px; }
+  .button.download span:before {
+    content: "";
+    background: url("../img/icons/white-github-512.png");
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 10px; }
+.button.download:hover span:before {
+  background: url("../img/icons/black-github-512.png");
+  background-size: cover; }
+
 /* ------------------------------------------------ LABELS */
 .label {
   margin-right: 13px;
@@ -1487,25 +1503,6 @@ header .logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-
-/* ----------------------------------------------- BUTTONS */
-/* ---------------------------- DOWNLOAD BUTTON */
-.button.download span {
-  position: relative;
-  padding-left: 50px; }
-  .button.download span:before {
-    content: "";
-    background: url("../img/icons/white-github-512.png");
-    background-size: cover;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: 10px; }
-.button.download:hover span:before {
-  background: url("../img/icons/black-github-512.png");
-  background-size: cover; }
 
 /* -------------------------------- CODE-BLOCK */
 .code-block {
