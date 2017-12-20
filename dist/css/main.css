@@ -1279,7 +1279,7 @@ hr {
   border: none;
   border-top: 1px solid white; }
   hr.hr-small {
-    width: 50px;
+    width: 53px;
     border-width: 3px; }
   hr.hr-medium {
     width: 50%; }
@@ -1299,15 +1299,14 @@ header .logo {
 .nav-bar-1 {
   position: relative;
   top: -4px;
-  right: -11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: flex; }
   .nav-bar-1 .menu-item {
-    padding-left: 14px; }
+    padding-left: 2px; }
     .nav-bar-1 .menu-item a {
-      padding: 7px 11px; }
+      padding: 7px 17px; }
     .nav-bar-1 .menu-item > a:hover, .nav-bar-1 .menu-item > a.selected {
       border-top: 2px solid white; }
   .nav-bar-1 .menu-item {
@@ -1352,9 +1351,9 @@ header .logo {
 /* -------------------------------------------- SEARCH BARS */
 /* ------------------------------- SEARCH-BAR-1 */
 .search-bar-1 {
-  position: relative;
-  padding: 17px 60px 63px;
   width: 100%;
+  padding: 60px;
+  font-size: 24.024px;
   position: relative; }
   .search-bar-1 input {
     display: inline-block;
@@ -1362,19 +1361,20 @@ header .logo {
     height: 78px;
     border: 1px solid white;
     border-radius: 3px;
-    padding-left: 30px;
+    padding-left: 25px;
     font-size: inherit;
     font-family: inherit;
     line-height: 78px; }
     .search-bar-1 input:hover {
       cursor: pointer; }
     .search-bar-1 input:focus {
-      border: 1px solid white;
-      outline: none; }
+      border: 1px solid white; }
   .search-bar-1 .icon {
     position: absolute;
-    top: 43px;
-    right: 100px; }
+    top: 86.988px;
+    right: 85px; }
+    .search-bar-1 .icon:hover {
+      cursor: pointer; }
 
 /* ------------------------------- SEARCH-BAR-2 */
 .search-bar-2 {
@@ -1394,7 +1394,7 @@ header .logo {
 
 /* -------------------------------------------- PAGINATION */
 .pagination {
-  margin: 82px 0 141px;
+  margin: 85px 0 20px;
   height: 44px; }
   .pagination ul {
     height: inherit; }
@@ -1421,7 +1421,7 @@ header .logo {
       border-bottom-right-radius: 5px; }
   .pagination .prev,
   .pagination .next {
-    width: 86px; }
+    width: 78px; }
   .pagination .prev:before,
   .pagination .next:after {
     content: "";
@@ -1441,6 +1441,7 @@ header .logo {
         -ms-transform: rotate(225deg);
             transform: rotate(225deg); }
 
+/* -------------------------------------------- PAGINATION */
 /* --------------------------------------- LINK PAGINATION */
 .link-pagination {
   margin-top: 99px;
@@ -1469,8 +1470,8 @@ header .logo {
 
 /* ------------------------------------------------ LABELS */
 .label {
-  margin-right: 10px;
-  width: 46px;
+  margin-right: 13px;
+  width: 47px;
   height: 20px;
   border: 1px solid black;
   border-radius: 3px; }
@@ -1491,8 +1492,7 @@ header .logo {
 /* ---------------------------- DOWNLOAD BUTTON */
 .button.download span {
   position: relative;
-  padding-left: 38px;
-  top: 2px; }
+  padding-left: 50px; }
   .button.download span:before {
     content: "";
     background: url("../img/icons/white-github-512.png");
@@ -1501,8 +1501,8 @@ header .logo {
     height: 26px;
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: -9px; }
+    top: -2px;
+    left: 10px; }
 .button.download:hover span:before {
   background: url("../img/icons/black-github-512.png");
   background-size: cover; }
@@ -1559,7 +1559,7 @@ header .logo {
     margin-bottom: 19px; }
     .code-block code.tab-1, .code-block pre.tab-1 {
       padding-left: 45px;
-      margin-top: -12px; }
+      margin-top: -10px; }
     .code-block code.code-tight, .code-block pre.code-tight {
       margin-bottom: 0; }
 

@@ -8,7 +8,7 @@ hr
   border-top: 1px solid white
 
   &.hr-small
-    width: 50px
+    width: 53px
     border-width: 3px
 
   &.hr-medium
@@ -29,18 +29,15 @@ header .logo
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
-$item_padding: 14px
+$item_padding: 2px
 $border_w: 2px
-$border_padding_top: 7px
-$border_padding_sides: 11px
-$border_padding: $border_padding_top $border_padding_sides
+$border_padding: 7px 17px
 
 $spacing: 30px
 
 .nav-bar-1
   position: relative
   top: -4px
-  right: -$border_padding_sides
   +nav_bar_draw-1($item_padding, $border_w, $border_padding)
   +nav_bar_submenu($spacing)
 
@@ -66,13 +63,8 @@ $border_w: 1px
 $border_r: 3px
 
 .search-bar-1
-  position: relative
-  padding: 17px 60px 63px
-  +search_bar_draw-3($width, $height, $border_w, $border_r)
-  .icon
-    position: absolute
-    top: 43px
-    right: 100px
+  +search_bar_draw-3($width, $height, $padding, $border_w, $border_r)
+
 
 /* ------------------------------- SEARCH-BAR-2 */
 $width: 270px
@@ -95,11 +87,11 @@ $border_r: 5px
 $num_width: 47px
 
 .pagination
-  margin: 82px 0 141px
+  margin: 85px 0 20px
   +pagination_draw($height, $border_r, $num_width)
   .prev,
   .next
-    width: 86px
+    width: 78px
   .prev:before,
   .next:after
     content: ''
@@ -116,6 +108,7 @@ $num_width: 47px
     transform: rotate(225deg)
 
 
+/* -------------------------------------------- PAGINATION */
 /* --------------------------------------- LINK PAGINATION */
 .link-pagination
   margin-top: 99px
@@ -145,12 +138,12 @@ $num_width: 47px
 
 
 /* ------------------------------------------------ LABELS */
-$width: 46px
+$width: 47px
 $height: 20px
 $border_r: 3px
 
 .label
-  margin-right: 10px
+  margin-right: 13px
   +label_draw($width, $height, $border_r)
   
 
@@ -160,9 +153,7 @@ $border_r: 3px
 .button.download
   span
     position: relative
-    padding-left: 38px
-    top: 2px
-
+    padding-left: 50px
     &:before
       content: ""
       background: url("../img/icons/white-github-512.png")
@@ -170,8 +161,8 @@ $border_r: 3px
       +size(26px)
       display: inline-block
       position: absolute
-      top: 0
-      left: -9px
+      top: -2px
+      left: 10px
   &:hover
     span:before
       background: url("../img/icons/black-github-512.png")
@@ -200,7 +191,7 @@ $w: $WINDOW_CONTROLS_W
     margin-bottom: $CODE_MARGIN
     &.tab-1
       padding-left: $TAB_1_PADDING
-      margin-top: -12px
+      margin-top: $TAB_1_MARGIN - $CODE_MARGIN
     &.code-tight
       margin-bottom: 0
 
