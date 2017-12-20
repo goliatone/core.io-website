@@ -623,7 +623,10 @@
       },
       "buttons": [
         { "txt": "Node.js",
-          "class": "medium-btn blue-btn fade"
+          "class": "medium-btn blue-btn fade",
+          "isLink": true,
+          "href": "https://nodejs.org/en/download/",
+          "wrapped": true
         }
       ]
     },
