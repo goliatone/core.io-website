@@ -105,7 +105,8 @@ module.exports = function(grunt) {
             '<%= path.prod %>/documentation.html': '<%= path.templates %>/documentation.mustache',
             '<%= path.prod %>/quickstart.html': '<%= path.templates %>/quickstart.mustache',
             '<%= path.prod %>/styleguide.html': '<%= path.templates %>/styleguide.mustache',
-            '<%= path.prod %>/examples.html': '<%= path.templates %>/examples.mustache'
+            '<%= path.prod %>/examples.html': '<%= path.templates %>/examples.mustache',
+            '<%= path.prod %>/documentation.swig': '<%= path.templates %>/documentation-swig.mustache',
           }
         ]
       },

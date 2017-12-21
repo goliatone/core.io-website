@@ -1,0 +1,50 @@
+    <div class="content">
+
+      <div class="row row-vCentered">
+        {{#data_docs_menu}}
+          {{>_nav-bar}}
+        {{/data_docs_menu}}
+
+        <div class="label highlight">
+          <span>{{#releases}}{{last.version}}{{/releases}}</span>
+        </div>
+      </div>
+
+      <hr class="hr-light">
+
+      <div class="cols">
+
+        <!-- Documentation Side Menu -->
+        <nav id="docs-side-menu" class="side-menu">
+          <ul>
+          {%- for item in metadata.sidebar.items  %}
+            <li>
+              <a href="{{item.link}}">{{item.name}}</a>
+              {%- if item.children.length > 0 %}
+              <ul>
+              {% for child in item.children  %}
+                <li><a href="{{child.link}}">{{child.name}}</a> </li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        </nav><!-- END Documentation Side Menu -->
+
+        <div class="col-2">
+          <div id="guide" class="main-txt">
+            {% autoescape false %}
+            {{=<% %>=}}
+              {{ content }}
+            <%={{ }}=%>
+            {% endautoescape %}
+
+            <div class="link-pagination">
+              <a href="#">Next: Application</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- END CONTENT -->
