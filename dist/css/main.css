@@ -1895,26 +1895,3 @@ header .logo {
       margin-left: 7px; }
 .docs .link-pagination {
   margin-top: 111px; }
-
-/* DOCUMENTATION PAGE -------------------------------------------- */
-/* alt nav */
-.docs-2 {
-  /* make whole row black colored */ }
-  .docs-2 header {
-    position: relative; }
-    .docs-2 header > * {
-      z-index: 2; }
-    .docs-2 header .cheat-bg {
-      height: 200px;
-      width: 4000px;
-      position: absolute;
-      top: 0;
-      left: -1000px;
-      z-index: 1;
-      background-color: #1B1D1E; }
-  .docs-2 header .logo {
-    width: 45px; }
-  .docs-2 .main-txt {
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 50px; }
