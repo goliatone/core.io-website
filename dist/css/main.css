@@ -354,27 +354,26 @@ footer {
       .midnight-mode .search-bar-2 input:hover, .midnight-mode .search-bar-2 input:focus {
         border-color: cyan;
         outline: none; }
-  .midnight-mode .black-btn button {
+  .midnight-mode .black-btnbutton, .midnight-mode .black-btn.button, .midnight-mode .black-btn button, .midnight-mode .black-btn .button {
     color: #f8f8f8;
     background-color: #2c2c31;
     border-color: #f8f8f8;
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
-  .midnight-mode .black-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
-    .midnight-mode .black-btn.fade button:hover {
+  .midnight-mode .black-btn.fadebutton, .midnight-mode .black-btn.fade.button, .midnight-mode .black-btn.fade button, .midnight-mode .black-btn.fade .button {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .midnight-mode .black-btn.fadebutton:hover, .midnight-mode .black-btn.fade.button:hover, .midnight-mode .black-btn.fade button:hover, .midnight-mode .black-btn.fade .button:hover {
       color: #2c2c31;
       background-color: #f8f8f8;
-      border-color: #2c2c31;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .black-btn.shutter-left {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .black-btn.shutter-left button {
+    .midnight-mode .black-btn.shutter-left button, .midnight-mode .black-btn.shutter-left .button {
       -webkit-transition: color 0.4s ease-in-out;
       -o-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
@@ -401,7 +400,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .black-btn.shutter-left:hover {
       cursor: pointer; }
-      .midnight-mode .black-btn.shutter-left:hover button {
+      .midnight-mode .black-btn.shutter-left:hover button, .midnight-mode .black-btn.shutter-left:hover .button {
         color: #2c2c31;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -416,7 +415,7 @@ footer {
   .midnight-mode .black-btn.shutter-right {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .black-btn.shutter-right button {
+    .midnight-mode .black-btn.shutter-right button, .midnight-mode .black-btn.shutter-right .button {
       -webkit-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
@@ -443,7 +442,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-right:hover {
       cursor: pointer; }
-      .midnight-mode .black-btn.shutter-right:hover button {
+      .midnight-mode .black-btn.shutter-right:hover button, .midnight-mode .black-btn.shutter-right:hover .button {
         color: #2c2c31;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -459,7 +458,7 @@ footer {
   .midnight-mode .black-btn.shutter-in {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .black-btn.shutter-in button {
+    .midnight-mode .black-btn.shutter-in button, .midnight-mode .black-btn.shutter-in .button {
       -webkit-transition: all 0.7s ease-in-out;
       -o-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
@@ -498,7 +497,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .black-btn.shutter-in:hover {
       cursor: pointer; }
-      .midnight-mode .black-btn.shutter-in:hover button {
+      .midnight-mode .black-btn.shutter-in:hover button, .midnight-mode .black-btn.shutter-in:hover .button {
         color: #2c2c31;
         border-color: #2c2c31;
         -webkit-transition: all 0.7s ease-in-out;
@@ -522,7 +521,7 @@ footer {
   .midnight-mode .black-btn.shutter-out {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .black-btn.shutter-out button {
+    .midnight-mode .black-btn.shutter-out button, .midnight-mode .black-btn.shutter-out .button {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
@@ -560,7 +559,7 @@ footer {
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .black-btn.shutter-out:hover {
       cursor: pointer; }
-      .midnight-mode .black-btn.shutter-out:hover button {
+      .midnight-mode .black-btn.shutter-out:hover button, .midnight-mode .black-btn.shutter-out:hover .button {
         color: #2c2c31;
         border-color: #2c2c31;
         -webkit-transition: all 0.5s ease-in-out;
@@ -581,27 +580,27 @@ footer {
         -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-  .midnight-mode .gray-btn button {
+  .midnight-mode .gray-btnbutton, .midnight-mode .gray-btn.button, .midnight-mode .gray-btn button, .midnight-mode .gray-btn .button {
     color: #2c2c31;
     background-color: #f8f8f8;
     border-color: #2c2c31;
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
-  .midnight-mode .gray-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
-    .midnight-mode .gray-btn.fade button:hover {
+  .midnight-mode .gray-btn.fadebutton, .midnight-mode .gray-btn.fade.button, .midnight-mode .gray-btn.fade button, .midnight-mode .gray-btn.fade .button {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .midnight-mode .gray-btn.fadebutton:hover, .midnight-mode .gray-btn.fade.button:hover, .midnight-mode .gray-btn.fade button:hover, .midnight-mode .gray-btn.fade .button:hover {
       color: #f8f8f8;
       background-color: #2c2c31;
       border-color: #f8f8f8;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .gray-btn.shutter-left {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-left button {
+    .midnight-mode .gray-btn.shutter-left button, .midnight-mode .gray-btn.shutter-left .button {
       -webkit-transition: color 0.4s ease-in-out;
       -o-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
@@ -628,7 +627,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .gray-btn.shutter-left:hover {
       cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-left:hover button {
+      .midnight-mode .gray-btn.shutter-left:hover button, .midnight-mode .gray-btn.shutter-left:hover .button {
         color: #f8f8f8;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -643,7 +642,7 @@ footer {
   .midnight-mode .gray-btn.shutter-right {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-right button {
+    .midnight-mode .gray-btn.shutter-right button, .midnight-mode .gray-btn.shutter-right .button {
       -webkit-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
@@ -670,7 +669,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-right:hover {
       cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-right:hover button {
+      .midnight-mode .gray-btn.shutter-right:hover button, .midnight-mode .gray-btn.shutter-right:hover .button {
         color: #f8f8f8;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -686,7 +685,7 @@ footer {
   .midnight-mode .gray-btn.shutter-in {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-in button {
+    .midnight-mode .gray-btn.shutter-in button, .midnight-mode .gray-btn.shutter-in .button {
       -webkit-transition: all 0.7s ease-in-out;
       -o-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
@@ -725,7 +724,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .gray-btn.shutter-in:hover {
       cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-in:hover button {
+      .midnight-mode .gray-btn.shutter-in:hover button, .midnight-mode .gray-btn.shutter-in:hover .button {
         color: #f8f8f8;
         border-color: #f8f8f8;
         -webkit-transition: all 0.7s ease-in-out;
@@ -749,7 +748,7 @@ footer {
   .midnight-mode .gray-btn.shutter-out {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-out button {
+    .midnight-mode .gray-btn.shutter-out button, .midnight-mode .gray-btn.shutter-out .button {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
@@ -787,7 +786,7 @@ footer {
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .gray-btn.shutter-out:hover {
       cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-out:hover button {
+      .midnight-mode .gray-btn.shutter-out:hover button, .midnight-mode .gray-btn.shutter-out:hover .button {
         color: #f8f8f8;
         border-color: #f8f8f8;
         -webkit-transition: all 0.5s ease-in-out;
@@ -808,25 +807,24 @@ footer {
         -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
         transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-  .midnight-mode .blue-btn button {
+  .midnight-mode .blue-btnbutton, .midnight-mode .blue-btn.button, .midnight-mode .blue-btn button, .midnight-mode .blue-btn .button {
     color: #00d8d8;
     background-color: #2C2E31;
     border-color: #00d8d8; }
-  .midnight-mode .blue-btn.fade button {
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
-    .midnight-mode .blue-btn.fade button:hover {
+  .midnight-mode .blue-btn.fadebutton, .midnight-mode .blue-btn.fade.button, .midnight-mode .blue-btn.fade button, .midnight-mode .blue-btn.fade .button {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .midnight-mode .blue-btn.fadebutton:hover, .midnight-mode .blue-btn.fade.button:hover, .midnight-mode .blue-btn.fade button:hover, .midnight-mode .blue-btn.fade .button:hover {
       color: #2C2E31;
       background-color: #00d8d8;
-      border-color: #2C2E31;
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .midnight-mode .blue-btn.shutter-left {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-left button {
+    .midnight-mode .blue-btn.shutter-left button, .midnight-mode .blue-btn.shutter-left .button {
       -webkit-transition: color 0.4s ease-in-out;
       -o-transition: color 0.4s ease-in-out;
       transition: color 0.4s ease-in-out; }
@@ -853,7 +851,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
     .midnight-mode .blue-btn.shutter-left:hover {
       cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-left:hover button {
+      .midnight-mode .blue-btn.shutter-left:hover button, .midnight-mode .blue-btn.shutter-left:hover .button {
         color: #2C2E31;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -868,7 +866,7 @@ footer {
   .midnight-mode .blue-btn.shutter-right {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-right button {
+    .midnight-mode .blue-btn.shutter-right button, .midnight-mode .blue-btn.shutter-right .button {
       -webkit-transition: all 0.4s ease-in-out;
       -o-transition: all 0.4s ease-in-out;
       transition: all 0.4s ease-in-out; }
@@ -895,7 +893,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-right:hover {
       cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-right:hover button {
+      .midnight-mode .blue-btn.shutter-right:hover button, .midnight-mode .blue-btn.shutter-right:hover .button {
         color: #2C2E31;
         -webkit-transition: color 0.4s ease-in-out;
         -o-transition: color 0.4s ease-in-out;
@@ -911,7 +909,7 @@ footer {
   .midnight-mode .blue-btn.shutter-in {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-in button {
+    .midnight-mode .blue-btn.shutter-in button, .midnight-mode .blue-btn.shutter-in .button {
       -webkit-transition: all 0.7s ease-in-out;
       -o-transition: all 0.7s ease-in-out;
       transition: all 0.7s ease-in-out; }
@@ -950,7 +948,7 @@ footer {
       transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
     .midnight-mode .blue-btn.shutter-in:hover {
       cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-in:hover button {
+      .midnight-mode .blue-btn.shutter-in:hover button, .midnight-mode .blue-btn.shutter-in:hover .button {
         color: #2C2E31;
         border-color: #2C2E31;
         -webkit-transition: all 0.7s ease-in-out;
@@ -974,7 +972,7 @@ footer {
   .midnight-mode .blue-btn.shutter-out {
     position: relative;
     overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-out button {
+    .midnight-mode .blue-btn.shutter-out button, .midnight-mode .blue-btn.shutter-out .button {
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
@@ -1012,7 +1010,7 @@ footer {
       transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
     .midnight-mode .blue-btn.shutter-out:hover {
       cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-out:hover button {
+      .midnight-mode .blue-btn.shutter-out:hover button, .midnight-mode .blue-btn.shutter-out:hover .button {
         color: #2C2E31;
         border-color: #2C2E31;
         -webkit-transition: all 0.5s ease-in-out;
@@ -1066,7 +1064,7 @@ footer {
     border-color: #c2cad4;
     background-color: #c2cad4; }
   .midnight-mode .instruction_block .description,
-  .midnight-mode .instruction_block .button,
+  .midnight-mode .instruction_block .button-wrapper,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
 
@@ -1235,12 +1233,12 @@ code {
   font-weight: 200; }
 
 /* ----------------------------------- BUTTONS */
-.big-btn button {
+.big-btnbutton, .big-btn.button, .big-btn button, .big-btn .button {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 18px; }
 
-.medium-btn button {
+.medium-btnbutton, .medium-btn.button, .medium-btn button, .medium-btn .button {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px; }
@@ -1458,24 +1456,46 @@ header .logo {
 
 /* ----------------------------------------------- BUTTONS */
 /* --------------------------------- BIG BUTTON */
-.big-btn button {
+.big-btnbutton, .big-btn.button, .big-btn button, .big-btn .button {
+  display: inline-block;
   width: 200px;
   height: 53px;
   line-height: 51px;
   border: 1px solid black;
-  border-radius: 3px; }
-  .big-btn button:hover {
+  border-radius: 3px;
+  text-align: center; }
+  .big-btnbutton:hover, .big-btn.button:hover, .big-btn button:hover, .big-btn .button:hover {
     cursor: pointer; }
 
 /* ------------------------------ MEDIUM BUTTON */
-.medium-btn button {
+.medium-btnbutton, .medium-btn.button, .medium-btn button, .medium-btn .button {
+  display: inline-block;
   width: 155px;
   height: 44px;
   line-height: 40px;
   border: 2px solid black;
-  border-radius: 5px; }
-  .medium-btn button:hover {
+  border-radius: 5px;
+  text-align: center; }
+  .medium-btnbutton:hover, .medium-btn.button:hover, .medium-btn button:hover, .medium-btn .button:hover {
     cursor: pointer; }
+
+/* ---------------------------- DOWNLOAD BUTTON */
+.button.download span {
+  position: relative;
+  padding-left: 50px; }
+  .button.download span:before {
+    content: "";
+    background: url("../img/icons/white-github-512.png");
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 10px; }
+.button.download:hover span:before {
+  background: url("../img/icons/black-github-512.png");
+  background-size: cover; }
 
 /* ------------------------------------------------ LABELS */
 .label {
@@ -1496,25 +1516,6 @@ header .logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-
-/* ----------------------------------------------- BUTTONS */
-/* ---------------------------- DOWNLOAD BUTTON */
-.button.download span {
-  position: relative;
-  padding-left: 50px; }
-  .button.download span:before {
-    content: "";
-    background: url("../img/icons/white-github-512.png");
-    background-size: cover;
-    width: 26px;
-    height: 26px;
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: 10px; }
-.button.download:hover span:before {
-  background: url("../img/icons/black-github-512.png");
-  background-size: cover; }
 
 /* -------------------------------- CODE-BLOCK */
 .code-block {
@@ -1747,6 +1748,12 @@ header .logo {
      * margin can't be set here,
      * instead padding-bottom on each
      * last element of the instruction block */ }
+    .quickstart .instrus .instruction_block .description,
+    .quickstart .instrus .instruction_block .button-wrapper,
+    .quickstart .instrus .instruction_block .code-wrapper,
+    .quickstart .instrus .instruction_block .paragraph-2 {
+      margin-left: 30px;
+      padding-left: 55px; }
     .quickstart .instrus .instruction_block:last-of-type .description {
       border: none; }
     .quickstart .instrus .instruction_block:last-of-type .last {
@@ -1780,12 +1787,6 @@ header .logo {
     .quickstart .instrus .title h3 {
       font-family: inherit;
       font-size: inherit; }
-  .quickstart .instrus .description,
-  .quickstart .instrus .button,
-  .quickstart .instrus .code-wrapper,
-  .quickstart .instrus .paragraph-2 {
-    margin-left: 30px;
-    padding-left: 55px; }
   .quickstart .instrus .description {
     max-width: 675px;
     padding-top: 6px;
@@ -1793,7 +1794,7 @@ header .logo {
     line-height: 26px; }
     .quickstart .instrus .description p.last {
       padding-bottom: 55px; }
-  .quickstart .instrus .button {
+  .quickstart .instrus .button-wrapper {
     padding-bottom: 114px; }
   .quickstart .instrus .code-line {
     width: 850px;

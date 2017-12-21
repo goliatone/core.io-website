@@ -1,4 +1,4 @@
-/// Mixin for adding shutter-in effect on 
+/// Mixin for adding shutter-in effect on
 /// hover over button.
 ///
 /// Markup has to have the following structure:
@@ -23,7 +23,7 @@
 ///   .button.shutter-in {
 ///   }
 /// </style>
-/// 
+///
 /// <div class="button shutter-in">
 /// </div>
 ///
@@ -40,18 +40,18 @@
 /// @param {Length} $border_r [3px] - Button's border radius.
 ///
 /// @output css for `.button.shutter-in`
-///     
+///
 /// @example sass - Creating `.button.shutter-in`
 ///   .button.shutter-in
 ///     +button_shutter-in()
 ///
 
 =button_shutter-in($color_1:white, $color_2:black, $border_w: 1px, $border_r: 3px)
-  
+
   position: relative
   overflow: hidden
 
-  button
+  button, .button
     transition: all .7s ease-in-out
 
   span
@@ -70,7 +70,7 @@
     height: inherit
     background-color: $color_2
     opacity: 0
-    
+
   .overlay:first-child
     /* left overlay */
     left: 0
@@ -87,10 +87,10 @@
     border-radius: 0 $border_r $border_r 0
     transition: opacity .7s ease-in, width .4s ease-in-out
 
-  &:hover 
+  &:hover
     cursor: pointer
 
-    button
+    button, .button
       color: $color_1
       border-color: $color_1
       transition: all .7s ease-in-out
@@ -98,7 +98,7 @@
     .overlay
       border-color: $color_1
       opacity: 1
-    
+
     .overlay:first-child
       /* left overlay */
       width: 50%
