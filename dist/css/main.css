@@ -110,6 +110,10 @@ header,
   top: 0;
   left: 0;
   right: 0; }
+  #header_path_bottom path,
+  #header_path_middle path,
+  #header_path_top path {
+    mix-blend-mode: multiply; }
 
 #header_path_middle svg,
 #header_path_top svg {

@@ -1,14 +1,30 @@
-* DONE styleguide scroll effects
+* paths add / : /css/, /img/, /svg/, ..
 
-* DONE selected menu items (main, docs)
+* docs main text code blocks css
 
-* DONE añadir hover border cuando submenu hovered
+* features.html a index.html
 
-* Hover over link in text, que hace? (EMI)
+* make documentation.swig with injection code
 
-* Revisar fade / styleguide 
+* favicon sizes
 
-* buscar tema mejor para highlight
+* do semantics
+
+* sticky menu x docs menu
+
+* sticky numbers x instruction blocks
+
+* animacion svgs
+
+* animacion codigo en features/index
+
+* cambiar a searchbox con dropdown styled
+
+* limpiar archivos
+
+* Revisar fade / styleguide
+
+* buscar tema para highlight
 
 * styleguide footer arreglar
 
@@ -22,37 +38,43 @@
 	* links
 	* footnote (?)
 
-* DONE revisar img y add sizes
-
 * prettify, revisar x renderizado con mustache
+* check prettify plugin why not working
 
-* update reade
+* update readmes
 
-* DONE update TODO
-
-* add color filter effects to buttons
-
-* quitar franja derecha botton cuando shutter right
-
-* hacer responsive @mmedia-queries
-
-* selected class to pagination
+* hacer responsive @media-queries
 
 * revisar sassdocs
 
 * completar ejemplos en cada sass x sassdoc
 
-* revisar indice instrus en quickstart queda espacio
 
-* check prettify plugin why not working
+* DONE styleguide scroll effects
 
-* Add json necessary data to elements in element folder (already has html/mustache and sass)
+* DONE selected menu items (main, docs)
+
+* DONE añadir hover border cuando submenu hovered
+
+* DONE Hover over link in text, que hace? (EMI)
+
+* DONE revisar img y add sizes
+
+* DONE update TODO
+
+* NO add color filter effects to buttons
+
+* NO quitar franja derecha botton cuando shutter right
+
+* DONE selected class for pagination
+
+* DONE revisar indice instrus en quickstart queda espacio
+
+* NO Add json necessary data to elements in element folder (already has html/mustache and sass)
 * Add output css to elements in templates folder
 * Edit elements in templates folder accordingly
 
-
 * DONE edit mustache and sass partials for -post-1, search-bar-1 etc to exclude class and assign class from project_settings.sass
-
 
 * DONE fix pagination box border on hover or selected
 
@@ -76,12 +98,9 @@
 	https://tympanus.net/Tutorials/TexturedText/index9.html
 	https://tympanus.net/Development/CreativeLoadingEffects/
 	https://tympanus.net/Development/ModalWindowEffects/
-	
+
 
 * DONE ANIMATION FOR DECO BAR, INCLUIR COLORES FUERA DEL MARCO
-
-* MAQUETACION CMS
-
 
 * ANIMATION HEADER MENU SELECTION?
 	https://tympanus.net/Development/LineMenuStyles/
@@ -92,7 +111,7 @@
 	https://tympanus.net/Tutorials/CircularProgressButton/
 	https://tympanus.net/Development/ProgressButtonStyles/
 
-* GUARDAR LINK FOR COLOR THEMING: 
+* GUARDAR LINK FOR COLOR THEMING:
 	https://tympanus.net/Development/InteractiveColoringConcept/
 
 * GUARDAR LINK FOR FORM ANIMATION:
@@ -118,3 +137,35 @@
 
 * GUARDAR LINK FOR HEADER EFFECTS:
 	https://tympanus.net/Development/HeaderEffects/
+
+* DONE revisar medidas segun pngs
+
+* DONE poner search box funcional
+
+* DONE quickstart cubes poner como imagen
+
+* DONE menu cambiar examples x Quickstart
+
+* DONE documentation submenu style
+
+* DONE computer_01.svg missing
+
+* DONE svgs sin animacion
+
+* DONE sacar animation code
+
+* DONE animations + rapidas (done buttons)
+
+* DONE cambiar botones por links donde tengan href
+
+* DONE menu docs espacio entre links on hover
+
+* DONE main menu features/quickstart/docs/modules
+
+* DONE search bar cursor text and icon cursor pointer
+
+* DONE actualizar links botones
+
+* DONE docs contenido styled sin clases
+
+* DONE lint html
