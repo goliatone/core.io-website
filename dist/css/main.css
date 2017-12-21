@@ -1376,8 +1376,6 @@ header .logo {
     font-size: inherit;
     font-family: inherit;
     line-height: 78px; }
-    .search-bar-1 input:hover {
-      cursor: pointer; }
     .search-bar-1 input:focus {
       border: 1px solid white; }
   .search-bar-1 .icon {
