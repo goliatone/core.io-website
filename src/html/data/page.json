@@ -237,28 +237,28 @@
 
   "data_img": [
     { "logo": {
-      "src": "img/logo/c_core.svg",
+      "src": "/img/logo/c_core.svg",
       "alt": "Core.io",
       "title": "Core.io",
       "link": "features.html"
       }
     },
     { "logo_2": {
-      "src": "img/logo/core_io-logo-2.png",
+      "src": "/img/logo/core_io-logo-2.png",
       "alt": "Core.io",
       "title": "Core.io",
       "link": "features.html"
       }
     },
     { "footer": {
-      "src": "img/logo/mosca.svg",
+      "src": "/img/logo/mosca.svg",
       "alt": "Core.io",
       "title": "Core.io",
       "link": "features.html"
       }
     },
     { "github": {
-      "src": "img/icons/github-icon-2.png",
+      "src": "/img/icons/github-icon-2.png",
       "alt": "Core.io in Github",
       "title": "Github",
       "link": "#"
@@ -271,7 +271,7 @@
       "modules": {
         "txt": "Search 123 modules…",
         "icon": {
-          "src": "img/icons/search-icon.png",
+          "src": "/img/icons/search-icon.png",
           "alt": "Search",
           "title": "Search"
         },
@@ -283,7 +283,7 @@
       "docs": {
         "txt": "Search Documentation…",
         "icon": {
-          "src": "img/icons/search-icon.png",
+          "src": "/img/icons/search-icon.png",
           "alt": "Search",
           "title": "Search"
         },
@@ -422,7 +422,7 @@
           { "txt": "Download",
             "class": "big-btn black-btn fade download",
             "icon": {
-              "src": "img/icons/github-icon-3.png",
+              "src": "/img/icons/github-icon-3.png",
               "title": "Download",
               "alt": "Download"
             }
@@ -440,7 +440,7 @@
       },
       "side_block": {
         "svg": {
-          "src": "svg/computer_01.svg",
+          "src": "/svg/computer_01.svg",
           "width": "350",
           "height": "400"
         }
@@ -495,7 +495,7 @@
       },
       "side_block": {
         "img": {
-          "src": "img/images/code_editor.svg",
+          "src": "/img/images/code_editor.svg",
           "width": "250",
           "height": "350"
         }
@@ -518,7 +518,7 @@
       },
       "side_block": {
         "svg":  {
-          "src": "svg/3_cubes.svg",
+          "src": "/svg/3_cubes.svg",
           "width": "100%",
           "height": "100%"
         }
@@ -574,7 +574,7 @@
       },
       "side_block": {
         "img": {
-          "src": "img/images/code_editor.svg",
+          "src": "/img/images/code_editor.svg",
           "width": "250",
           "height": "350"
         }
@@ -598,7 +598,7 @@
       },
       "side_block": {
         "img": {
-          "src": "img/images/code_editor.svg",
+          "src": "/img/images/code_editor.svg",
           "width": "250",
           "height": "350"
         }
