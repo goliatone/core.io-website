@@ -1880,7 +1880,7 @@ header .logo {
     width: 714px;
     margin-bottom: 24px; }
     .docs .main-txt pre code {
-      padding: 34px 34px 14px; }
+      padding: 34px; }
   .docs .main-txt ul, .docs .main-txt ol {
     margin-bottom: 24px; }
   .docs .main-txt ul li:before {
