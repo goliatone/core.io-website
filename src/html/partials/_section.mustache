@@ -11,12 +11,13 @@
           <h2{{#class}} class="{{.}}"{{/class}}>{{{txt}}}</h2>
           <hr class="hr-small"/>
         {{/h2}}
+        {{ ! h5 elements ---------------------- }}
         {{#h5}}
           <h5{{#class}} class="{{.}}"{{/class}}>{{{txt}}}</h5>
         {{/h5}}
         {{ ! subheader elements -------------- }}
         {{#subheader}}
-          <div class="subheader{{#class}} {{.}}{{/class}}">   
+          <div class="subheader{{#class}} {{.}}{{/class}}">
             <p>{{{txt}}}</p>
           </div>
         {{/subheader}}
@@ -35,14 +36,14 @@
       {{#side_block}}
       <div class="col-2">
         {{ ! img elements --------------------- }}
-        {{#img}} 
+        {{#img}}
           <div class="side-img">
             <img src="{{{src}}}" alt="{{{alt}}}" title="{{{title}}}"/>
           </div>
         {{/img}}
         {{#svg}}
           <div class="side-img side-svg">
-            <object/>
+            <object>
               <embed src="{{{src}}}" width="{{width}}" height="{{height}}">
             </object>
           </div>
@@ -54,11 +55,11 @@
       </div>
       {{/side_block}}
       {{ ! hero img elements ---------------- }}
-      {{#hero_img}} 
+      {{#hero_img}}
         <img src="{{{src}}}" alt="{{{alt}}}" title="{{{title}}}"/>
       {{/hero_img}}
       {{ ! features block ------------------- }}
-      {{#section_features}} 
+      {{#section_features}}
         <hr class="hr-shade"/>
         <div class="grid">
           {{#features}}
@@ -67,7 +68,7 @@
         </div>
       {{/section_features}}
       {{ ! instrus block ------------------- }}
-      {{#section_instrus}} 
+      {{#section_instrus}}
         <hr class="hr-shade"/>
         {{#instrus}}
           {{> _instrus}}
@@ -75,7 +76,7 @@
         <hr class="hr-shade"/>
       {{/section_instrus}}
       {{ ! conclusion block ------------------- }}
-      {{#section_footer}} 
+      {{#section_footer}}
         {{> _section_footer}}
       {{/section_footer}}
       </section><!-- END SECTION -->

@@ -465,7 +465,7 @@
           "code": [
             { "txt": "$ npm install -g core.io", "class": "" },
             { "txt": "$ core new myApp", "class": "" },
-            { "txt": "<span class='highlight'>created</span> ./myapp", "class": "" },
+            { "txt": "<span class=\"highlight\">created</span> ./myapp", "class": "" },
             { "txt": "├── ./myapp/modules", "class": "tab-1" },
             { "txt": "└── ./myapp/models", "class": "tab-1" }
           ],
@@ -634,7 +634,7 @@
         "class": "h-small"
       },
       "description": {
-        "txt": "<p>Use npm to install core.io:</p><code class='code-line'>$ npm install -g core.io-cli</code><p>This will install core.io-cli and make the core command available in your terminal. To verify it was installed correctly, if you type “core” in your terminal you should see a similar help output:</p>",
+        "txt": "<p>Use npm to install core.io:</p><code class=\"code-line\">$ npm install -g core.io-cli</code><p>This will install core.io-cli and make the core command available in your terminal. To verify it was installed correctly, if you type “core” in your terminal you should see a similar help output:</p>",
         "class": "p-small"
       },
       "code_block": {
@@ -660,7 +660,7 @@
         "class": "h-small"
       },
       "description": {
-        "txt": "<p>To generate a new app, just cd into the directory where you want it to be, and type:</p><code class='code-line'>$ core new myProject</code><p class='last'>The generator will create a new folder for your application in your current directory, set up an empty project and download all the necessary dependencies.</p>",
+        "txt": "<p>To generate a new app, just cd into the directory where you want it to be, and type:</p><code class=\"code-line\">$ core new myProject</code><p class=\"last\">The generator will create a new folder for your application in your current directory, set up an empty project and download all the necessary dependencies.</p>",
         "class": "p-small"
       }
     },
@@ -670,7 +670,7 @@
         "class": "h-small"
       },
       "description": {
-        "txt": "<p>Run your project by typing:</p><code class='code-line'>$ cd ./myProject && npm run</code><p class='last'>The generator will create a new folder for your application in your current directory, set up an empty project and download all the necessary dependencies.</p>",
+        "txt": "<p>Run your project by typing:</p><code class=\"code-line\">$ cd ./myProject && npm run</code><p class=\"last\">The generator will create a new folder for your application in your current directory, set up an empty project and download all the necessary dependencies.</p>",
         "class": "p-small"
       }
     }
