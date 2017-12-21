@@ -12,7 +12,7 @@ hr
     border-width: 3px
 
   &.hr-medium
-    width: 50% 
+    width: 50%
 
 
 /* ---------------------------------------------- DECO-BAR */
@@ -102,7 +102,7 @@ $num_width: 47px
     border-right: none
   .prev:before
     margin-right: 5px
-    transform: rotate(45deg)    
+    transform: rotate(45deg)
   .next:after
     margin-left: 5px
     transform: rotate(225deg)
@@ -137,18 +137,6 @@ $num_width: 47px
   +button_draw($w, $h, $border_w, $r)
 
 
-/* ------------------------------------------------ LABELS */
-$width: 47px
-$height: 20px
-$border_r: 3px
-
-.label
-  margin-right: 13px
-  +label_draw($width, $height, $border_r)
-  
-
-/* ----------------------------------------------- BUTTONS */
-
 /* ---------------------------- DOWNLOAD BUTTON */
 .button.download
   span
@@ -169,15 +157,25 @@ $border_r: 3px
       background-size: cover
 
 
+/* ------------------------------------------------ LABELS */
+$width: 47px
+$height: 20px
+$border_r: 3px
+
+.label
+  margin-right: 13px
+  +label_draw($width, $height, $border_r)
+
+
 /* -------------------------------- CODE-BLOCK */
 $w: $WINDOW_CONTROLS_W
 
 .code-block
-  padding: $CODE_BLOCK_PADDING  
+  padding: $CODE_BLOCK_PADDING
   .header
     padding-bottom: $HEADER_PADDING
     position: relative
-    .window-controls    
+    .window-controls
       +window_controls($w: $w)
       position: absolute
       top: 3px
@@ -186,7 +184,7 @@ $w: $WINDOW_CONTROLS_W
     width: 100%
     display: inline-block
     text-align: center
-  code, pre 
+  code, pre
     display: block
     margin-bottom: $CODE_MARGIN
     &.tab-1

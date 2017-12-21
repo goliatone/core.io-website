@@ -144,7 +144,7 @@
   .black-btn
     +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
     &.fade
-      +button_fade($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
+      +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
     &.shutter-left
       +button_shutter-left($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
     &.shutter-right
@@ -171,7 +171,7 @@
   .blue-btn
     +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
     &.fade
-      +button_fade($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+      +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
     &.shutter-left
       +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
     &.shutter-right
@@ -209,6 +209,6 @@
 
   .instruction_block
     .description,
-    .button,
+    .button-wrapper,
     .code-wrapper
       border-left: 1px solid $SHADE_2
