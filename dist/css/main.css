@@ -303,8 +303,7 @@ footer {
     background-position: 2220px; }
   100% {
     background-position: 4440px; } }
-  .midnight-mode .code-block {
-    background-color: #292D34; }
+  .midnight-mode .code-block,
   .midnight-mode .code-block-1,
   .midnight-mode .code-line {
     background-color: #1b1d1d; }
