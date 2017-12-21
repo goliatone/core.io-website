@@ -1524,6 +1524,7 @@ header .logo {
   .label span {
     width: 100%;
     height: 100%;
+    padding-bottom: 1px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1843,8 +1844,6 @@ header .logo {
             justify-content: initial; }
 .docs .hr-light {
   margin: 14px 0 75px; }
-.docs .label {
-  margin-right: 3px; }
 .docs .side-menu {
   width: 255px;
   margin-top: 8px; }
@@ -1880,7 +1879,7 @@ header .logo {
     width: 714px;
     margin-bottom: 24px; }
     .docs .main-txt pre code {
-      padding: 34px 34px 14px; }
+      padding: 34px; }
   .docs .main-txt ul, .docs .main-txt ol {
     margin-bottom: 24px; }
   .docs .main-txt ul li:before {
@@ -1895,26 +1894,3 @@ header .logo {
       margin-left: 7px; }
 .docs .link-pagination {
   margin-top: 111px; }
-
-/* DOCUMENTATION PAGE -------------------------------------------- */
-/* alt nav */
-.docs-2 {
-  /* make whole row black colored */ }
-  .docs-2 header {
-    position: relative; }
-    .docs-2 header > * {
-      z-index: 2; }
-    .docs-2 header .cheat-bg {
-      height: 200px;
-      width: 4000px;
-      position: absolute;
-      top: 0;
-      left: -1000px;
-      z-index: 1;
-      background-color: #1B1D1E; }
-  .docs-2 header .logo {
-    width: 45px; }
-  .docs-2 .main-txt {
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-top: 50px; }

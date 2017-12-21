@@ -1,5 +1,3 @@
-* make documentation.swig with injection code
-
 * favicon sizes
 
 * do semantics
@@ -17,8 +15,6 @@
 * limpiar archivos
 
 * Revisar fade / styleguide
-
-* buscar tema para highlight
 
 * styleguide footer arreglar
 
@@ -42,6 +38,12 @@
 * revisar sassdocs
 
 * completar ejemplos en cada sass x sassdoc
+
+
+
+* DONE make documentation.swig with injection code
+
+* DONE buscar tema para highlight
 
 * DONE docs main text code blocks css
 
