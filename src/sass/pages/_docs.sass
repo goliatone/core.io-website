@@ -22,19 +22,33 @@
       margin-bottom: 10px
   .main-txt
     width: 730px
-    .title
-      margin-bottom: 14px
-    .description
-      width: 623px
-      p 
-        padding-bottom: 24px
+    .title, h1, h2
+      margin: 20px 0 14px
+      &:first-child
+        margin-top: 0
+    .description, p
+      max-width: 623px
+    p
+      padding-bottom: 24px
+    .code-block, code
+      width: 714px
+      margin-top: 56px
+      code
+        padding: 0px 14px
+        margin-top: 0
+    ul, ol
+      margin-bottom: 24px
+    ul li:before
+      content: "*"
+      margin: 0 10px 0 14px
+      position: relative
+      top: 5px
+    ol li
+      list-style: decimal
+      margin-left: 34px
+      > *
+        margin-left: 7px
 
-  .code-block
-    width: 714px
-    margin-top: 56px
-    code
-      padding: 0px 14px
 
   .link-pagination
     margin-top: 111px
-
