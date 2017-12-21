@@ -1296,7 +1296,6 @@ code {
   line-height: 24px;
   letter-spacing: 0.09px; }
 
-/* ELEMENTS --------------------------------------------- ELEMENTS */
 /* ---------------------------------------------------- HR */
 hr {
   width: 100%;
@@ -1464,7 +1463,6 @@ header .logo {
         -ms-transform: rotate(225deg);
             transform: rotate(225deg); }
 
-/* -------------------------------------------- PAGINATION */
 /* --------------------------------------- LINK PAGINATION */
 .link-pagination {
   margin-top: 99px;
@@ -1534,9 +1532,10 @@ header .logo {
         -ms-flex-align: center;
             align-items: center; }
 
-/* -------------------------------- CODE-BLOCK */
+/* -------------------------------------------- CODE-BLOCK */
 .code-block {
-  padding: 9px 20px; }
+  padding: 9px 20px;
+  border-radius: 4px; }
   .code-block .header {
     padding-bottom: 39px;
     position: relative; }
@@ -1593,7 +1592,7 @@ header .logo {
 .code-block-2 {
   padding: 22px 25px; }
 
-/* --------------------------------- CODE-LINE */
+/* --------------------------------------------- CODE-LINE */
 .code-line {
   height: 60px;
   padding: 25px;
@@ -1878,7 +1877,8 @@ header .logo {
     width: 714px;
     margin-bottom: 24px; }
     .docs .main-txt pre code {
-      padding: 34px; }
+      padding: 34px;
+      border-radius: 4px; }
   .docs .main-txt ul, .docs .main-txt ol {
     margin-bottom: 24px; }
   .docs .main-txt ul li:before {
