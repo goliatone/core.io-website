@@ -4,11 +4,11 @@
 /// Example markup:
 ///   <nav class="nav-bar">
 ///     <div class="menu-item">
-///       <a href="menu_item-1.html">menu_item-1</a> 
+///       <a href="menu_item-1.html">menu_item-1</a>
 ///     </div>
 ///     ...
 ///     <div class="menu-item">
-///       <a href="menu_item-n.html">menu_item-n</a> 
+///       <a href="menu_item-n.html">menu_item-n</a>
 ///     </div>
 ///   </nav>
 ///
@@ -19,8 +19,8 @@
 /// @group Layouts
 /// @author Tatiana Burgos
 ///
-/// @param {Length} $border_w - Border width 
-/// @param {Length} $border_r - Border radius 
+/// @param {Length} $border_w - Border width
+/// @param {Length} $border_r - Border radius
 /// @param {Lenght} $padding - Space between link and bottom border
 /// @output `.nav_bar` elements css:
 ///   ```
@@ -34,11 +34,11 @@
 =nav_bar_draw-3($border_w, $padding)
 
   display: flex
-  .menu-item a
-    font-size: inherit
-    line-height: inherit
-    padding: $padding
-    &:hover, &.selected
-      border-bottom: $border_w solid white
-  .menu-item:first-of-type a
-    padding-left: 0
+  .menu-item
+    margin-right: 10px
+    a
+      font-size: inherit
+      line-height: inherit
+      padding: $padding
+      &:hover, &.selected
+        border-bottom: $border_w solid white

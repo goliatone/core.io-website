@@ -120,10 +120,6 @@
     "id": "docs-nav",
     "menu_items": [
       {
-        "link": "quickstart.html",
-        "txt": "Quickstart"
-      },
-      {
         "link": "guide.html",
         "txt": "Guide"
       },
