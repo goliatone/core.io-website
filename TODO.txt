@@ -1,5 +1,3 @@
-* docs main text code blocks css
-
 * make documentation.swig with injection code
 
 * favicon sizes
@@ -44,6 +42,8 @@
 * revisar sassdocs
 
 * completar ejemplos en cada sass x sassdoc
+
+* DONE docs main text code blocks css
 
 * DONE features.html a index.html
 

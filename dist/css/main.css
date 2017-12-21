@@ -303,7 +303,7 @@ footer {
     background-position: 2220px; }
   100% {
     background-position: 4440px; } }
-  .midnight-mode .code-block, .midnight-mode code {
+  .midnight-mode .code-block {
     background-color: #292D34; }
   .midnight-mode .code-block-1,
   .midnight-mode .code-line {
@@ -1193,10 +1193,10 @@ footer {
 code {
   font-family: "Courier Bold", Courier, monospace; }
 
-.code-block {
+.code-block, .docs .main-txt pre {
   font-family: Monaco, monospace;
   font-size: 16px; }
-  .code-block .title {
+  .code-block .title, .docs .main-txt pre .title {
     font-family: "Courier New", Courier, monospace;
     font-size: 14px; }
 
@@ -1285,6 +1285,12 @@ code {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   letter-spacing: 0.13px; }
+.docs .main-txt h3, .docs .main-txt h4 {
+  font-size: 20px; }
+.docs .main-txt h5, .docs .main-txt h6 {
+  font-size: 16px; }
+.docs .main-txt h1, .docs .main-txt h2, .docs .main-txt h3, .docs .main-txt h4, .docs .main-txt h5, .docs .main-txt h6 {
+  font-weight: 600; }
 .docs .main-txt p, .docs .main-txt ul, .docs .main-txt ol {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 16px;
@@ -1853,19 +1859,28 @@ header .logo {
 .docs .main-txt {
   width: 730px; }
   .docs .main-txt .title, .docs .main-txt h1, .docs .main-txt h2 {
-    margin: 20px 0 14px; }
+    margin-bottom: 14px; }
     .docs .main-txt .title:first-child, .docs .main-txt h1:first-child, .docs .main-txt h2:first-child {
       margin-top: 0; }
+  .docs .main-txt h3, .docs .main-txt h4, .docs .main-txt h5, .docs .main-txt h6 {
+    margin-bottom: 10px; }
+  .docs .main-txt h1, .docs .main-txt h2, .docs .main-txt h3, .docs .main-txt h4, .docs .main-txt h5, .docs .main-txt h6 {
+    margin-top: 54px; }
   .docs .main-txt .description, .docs .main-txt p {
     max-width: 623px; }
   .docs .main-txt p {
-    padding-bottom: 24px; }
-  .docs .main-txt .code-block, .docs .main-txt code {
+    margin-bottom: 24px; }
+  .docs .main-txt .code-block {
     width: 714px;
     margin-top: 56px; }
-    .docs .main-txt .code-block code, .docs .main-txt code code {
+    .docs .main-txt .code-block code {
       padding: 0px 14px;
       margin-top: 0; }
+  .docs .main-txt pre {
+    width: 714px;
+    margin-bottom: 24px; }
+    .docs .main-txt pre code {
+      padding: 34px 34px 14px; }
   .docs .main-txt ul, .docs .main-txt ol {
     margin-bottom: 24px; }
   .docs .main-txt ul li:before {
