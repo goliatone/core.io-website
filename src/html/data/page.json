@@ -100,16 +100,16 @@
         "txt": "Features"
       },
       {
-        "link": "modules.html",
-        "txt": "Modules"
+        "link": "quickstart.html",
+        "txt": "Quickstart"
       },
       {
         "link": "documentation.html",
         "txt": "Documentation"
       },
       {
-        "link": "quickstart.html",
-        "txt": "Quickstart"
+        "link": "modules.html",
+        "txt": "Modules"
       }
     ]
   },
