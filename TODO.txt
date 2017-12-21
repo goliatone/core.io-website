@@ -1,8 +1,4 @@
-* paths add / : /css/, /img/, /svg/, ..
-
 * docs main text code blocks css
-
-* features.html a index.html
 
 * make documentation.swig with injection code
 
@@ -49,6 +45,9 @@
 
 * completar ejemplos en cada sass x sassdoc
 
+* DONE features.html a index.html
+
+* DONE paths add / : /css/, /img/, /svg/, ..
 
 * DONE styleguide scroll effects
 
