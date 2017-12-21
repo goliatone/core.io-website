@@ -96,7 +96,7 @@
     "id": "main-nav",
     "menu_items": [
       {
-        "link": "features.html",
+        "link": "index.html",
         "txt": "Features"
       },
       {

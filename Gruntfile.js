@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   var page_name = grunt.option('name') || 'index';
 
   grunt.initConfig({
-    
+
     path: grunt.file.readJSON('settings/tree.json'),
 
 
@@ -86,21 +86,21 @@ module.exports = function(grunt) {
           '<%= path.css %>/login.css': '<%= path.css %>/login.css'
         }
       }
-    },  
+    },
 
     // render working html sheets
     mustache_render: {
       options: {
         // partials directory
-        directory: '<%= path.partials %>', 
+        directory: '<%= path.partials %>',
         // common data
-        data: "<%= path.data %>/page.json",      
+        data: "<%= path.data %>/page.json",
       },
       // task render final page
       render: {
         files: [
           {
-            '<%= path.prod %>/features.html': '<%= path.templates %>/features.mustache',
+            '<%= path.prod %>/index.html': '<%= path.templates %>/features.mustache',
             '<%= path.prod %>/modules.html': '<%= path.templates %>/modules.mustache',
             '<%= path.prod %>/documentation.html': '<%= path.templates %>/documentation.mustache',
             '<%= path.prod %>/documentation-alt-nav.html': '<%= path.templates %>/documentation-alt_nav.mustache',
@@ -113,7 +113,7 @@ module.exports = function(grunt) {
     },
 
     prettify: {
-   
+
       files: {
         '<%= path.prod %>/pretty/index.html': '<%= path.prod %>/index.mustache',
         '<%= path.prod %>/modules.html': '<%= path.prod %>/modules.mustache',
@@ -127,8 +127,8 @@ module.exports = function(grunt) {
 
     // IMAGES * do-once tasks
     // optimize all images and save in tmp
-    imagemin: {                          
-      all: {                         
+    imagemin: {
+      all: {
         files: [{ expand: true, cwd: '<%= path.img_dev %>/', src: ['**/*.{png,jpg,gif,svg}'], dest: '<%= path.temp %>/img'}]
       }
     },
@@ -152,14 +152,14 @@ module.exports = function(grunt) {
           datasvgcss: 'icons.svg.css',
           datapngcss: 'icons.png.css',
           //urlpngcss: 'icons.fallback.css',
-          dynamicColorOnly: true 
+          dynamicColorOnly: true
         },
         files: [{
           expand: true,
           cwd: '<%= path.temp %>/img/icons',
           src: ['**/*.svg', '**/*.png'],
           dest: '<%= path.icons_prod %>'
-        }], 
+        }],
       },
       logo: {
         options: {
@@ -197,7 +197,7 @@ module.exports = function(grunt) {
       }
     },
 
-    
+
     copy: {
       // copy files to final destination folder
       grunticon: {
@@ -216,7 +216,7 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['<%= path.js_dev %>/*.js'], dest: '<%= path.js_prod %>', filter: 'isFile'}
         ]
       }
-    }, 
+    },
 
 
     // HELPERS
