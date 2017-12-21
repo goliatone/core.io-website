@@ -24,7 +24,7 @@
     "description": "add_description",
     "keywords": "add_keywords",
     "author": "add_author",
-    "scripts": ["main", "code-output-animation"],
+    "scripts": "main",
     "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
