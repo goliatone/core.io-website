@@ -317,9 +317,9 @@ footer {
     color: #fafafa; }
     .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
       border-color: #00d8d8; }
-  .midnight-mode .side-menu .menu-item a {
+  .midnight-mode .side-menu .menu-item a, .midnight-mode .side-menu li a {
     color: #fafafa; }
-    .midnight-mode .side-menu .menu-item a:hover {
+    .midnight-mode .side-menu .menu-item a:hover, .midnight-mode .side-menu li a:hover {
       color: #00d8d8; }
   .midnight-mode .pagination {
     color: #8a9199; }
@@ -1218,7 +1218,7 @@ code {
 .side-menu {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px; }
-  .side-menu .menu-item-submenu {
+  .side-menu .menu-item-submenu, .side-menu ul ul li {
     font-size: 16px; }
 
 /* ------------------------------- SEARCH BARS */
@@ -1836,16 +1836,15 @@ header .logo {
 .docs .label {
   margin-right: 3px; }
 .docs .side-menu {
-  width: 255px; }
+  width: 255px;
+  margin-top: 8px; }
   .docs .side-menu a {
     display: inline-block; }
-  .docs .side-menu .menu-item {
-    margin-top: 31px; }
-    .docs .side-menu .menu-item:first-child {
-      margin-top: 8px; }
-  .docs .side-menu .submenu {
+  .docs .side-menu .menu-item, .docs .side-menu li {
+    margin-bottom: 31px; }
+  .docs .side-menu .submenu, .docs .side-menu ul ul {
     margin: 15px 0 0 18px; }
-  .docs .side-menu .menu-item-submenu {
+  .docs .side-menu .menu-item-submenu, .docs .side-menu ul ul li {
     margin-bottom: 10px; }
 .docs .main-txt {
   width: 730px; }
