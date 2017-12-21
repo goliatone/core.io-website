@@ -24,7 +24,7 @@
     "description": "add_description",
     "keywords": "add_keywords",
     "author": "add_author",
-    "scripts": ["main", "code-output-animation"],
+    "scripts": "main",
     "css": "main",
     "layout": "layout-app",
     "skin": "midnight-mode"
@@ -432,7 +432,10 @@
             }
           },
           { "txt": "Getting Started",
-            "class": "big-btn gray-btn fade" }
+            "class": "big-btn gray-btn fade",
+            "isLink": true,
+            "href": "quickstart.html"
+          }
         ],
         "footnote": {
           "txt": "Latest Release: 0.2.8 (Jun 01, 2017)",
@@ -488,7 +491,10 @@
         },
         "buttons": [
           { "txt": "Documentation",
-            "class": "big-btn gray-btn fade" }
+            "class": "big-btn gray-btn fade",
+            "isLink": true,
+            "href": "documentation.html"
+          }
         ]
       },
       "side_block": {
@@ -617,7 +623,12 @@
       },
       "buttons": [
         { "txt": "Node.js",
-          "class": "medium-btn blue-btn fade"
+          "class": "medium-btn blue-btn fade",
+          "isLink": true,
+          "href": "https://nodejs.org/en/download/",
+          "wrapped": true,
+          "wrapperClass": "button-wrapper",
+          "isExternal": true
         }
       ]
     },

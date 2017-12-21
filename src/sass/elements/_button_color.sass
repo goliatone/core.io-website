@@ -12,7 +12,7 @@
 /// <style>
 ///   .button {
 /// </style>
-/// 
+///
 /// <div class="button">
 /// </div>
 ///
@@ -27,7 +27,7 @@
 /// @param {Color} $color_3 [false] - Button's shadow color.
 ///
 /// @output css for `.button`
-///     
+///
 /// @example sass - Creating `.button`
 ///   .button
 ///     +button_color()
@@ -36,10 +36,9 @@
 /// @todo * Relate margin and padding sizes either to title size or to param
 
 =button_color($color_1:black, $color_2:white, $color_3:false)
-  button
+  &button, &.button, button, .button
     color: $color_1
     background-color: $color_2
     border-color: $color_1
     @if $color_3
       box-shadow: 5px 5px 5px $color_3
-   

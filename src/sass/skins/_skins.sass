@@ -43,11 +43,11 @@
   hr
     border-color: $SHADE_1
     &.hr-shade
-      border-color: $SHADE_2 
+      border-color: $SHADE_2
     &.hr-light
       border-color: rgba(222,229,255,0.16)
 
-  .highlight-bar 
+  .highlight-bar
     border-bottom: 1px solid $HIGHLIGHT_1
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
     background: #5088ea /* Old browsers */
@@ -61,7 +61,7 @@
     -o-animation:      bg_move 4s infinite /* Opera 12+ */
     animation:         bg_move 4s infinite /* IE 10+, Fx 29+ */
 
-  
+
   @-webkit-keyframes bg_move
     0%
       background-position: 0px
@@ -97,7 +97,7 @@
 
   .code-block, code
     background-color: $CODE_BG
-    
+
   .code-block-1,
   .code-line
     background-color: $BG_2
@@ -116,7 +116,7 @@
   .nav-bar-2
     +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
 
-  
+
   .side-menu
     .menu-item a
       color: $COLOR_1
@@ -132,7 +132,7 @@
 
   .pagination
     +pagination_color($color, $border_color, $border_w, $detail_c, $detail_bg)
- 
+
 
   .search-bar-1
     +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
@@ -144,7 +144,7 @@
   .black-btn
     +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
     &.fade
-      +button_fade($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
+      +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
     &.shutter-left
       +button_shutter-left($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
     &.shutter-right
@@ -171,7 +171,7 @@
   .blue-btn
     +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
     &.fade
-      +button_fade($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+      +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
     &.shutter-left
       +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
     &.shutter-right
@@ -182,9 +182,9 @@
       +button_shutter-out($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
 
 
-  .label  
+  .label
     &.highlight
-      +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)  
+      +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
     &.green
       +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
 
@@ -209,6 +209,6 @@
 
   .instruction_block
     .description,
-    .button,
+    .button-wrapper,
     .code-wrapper
-      border-left: 1px solid $SHADE_2 
+      border-left: 1px solid $SHADE_2
