@@ -31,7 +31,7 @@
 ///   .search-bar .icon:hover {
 ///     cursor: pointer; }
 /// </style>
-/// 
+///
 /// <div class="search-bar">
 ///   <label for="input-id">Placeholder text</label>
 ///   <input id="input-id" name="input-name" placeholder="Placeholder text">
@@ -47,26 +47,26 @@
 /// @param {Length} $width - Elements width.
 /// @param {Length} $height - Elements height.
 /// @param {Length} $padding - Space around element.
-/// @param {Length} $border_w - Border width. 
+/// @param {Length} $border_w - Border width.
 /// @param {Length} $border_r - Border radius.
 /// @param {Icon name} $icon [false] - Optional, if there is an icon as well as placeholder text.
 /// @todo * Describe available icons and names ?
 /// @output css for `.search_bar`
-///     
+///
 /// @example sass - Creating `.search_bar`
 //    .search-bar
 ///     +search_bar_draw-1(100%, 83px, 60px, 1px, 3px, 'search')
 ///
 
 =search_bar_draw-3($width, $height, $padding, $border_w, $border_r, $icon: false)
-  
+
   $padding_placeholder: 25px
   $font_size: $height * 0.308
 
   $icon_top: $padding + ($height - $font_size)/2
   $icon_right: $padding + $padding_placeholder
 
-  width: $width 
+  width: $width
   padding: $padding
   font-size: $font_size
   position: relative
@@ -80,9 +80,6 @@
     font-size: inherit
     font-family: inherit
     line-height: $height
-    // pointer-events: none
-    &:hover
-      cursor: pointer
     &:focus
       border: 1px solid white
   .icon
@@ -91,6 +88,3 @@
     right: $icon_right
     &:hover
       cursor: pointer
-
-        
-
