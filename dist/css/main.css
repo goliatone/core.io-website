@@ -1335,37 +1335,15 @@ header .logo {
   top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   display: flex; }
   .nav-bar-1 .menu-item {
-    padding-left: 2px; }
+    margin-left: 2px; }
     .nav-bar-1 .menu-item a {
       padding: 7px 17px; }
     .nav-bar-1 .menu-item > a:hover, .nav-bar-1 .menu-item > a.selected {
       border-top: 2px solid white; }
-  .nav-bar-1 .menu-item {
-    position: relative; }
-    .nav-bar-1 .menu-item > a:hover + .submenu {
-      /* transition properties */
-      opacity: 1; }
-    .nav-bar-1 .menu-item .submenu {
-      position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      left: -25%;
-      top: 30px;
-      /* transition properties */
-      opacity: 0;
-      -webkit-transition: opacity 1s ease;
-      -o-transition: opacity 1s ease;
-      transition: opacity 1s ease; }
-      .nav-bar-1 .menu-item .submenu:hover {
-        /* transition properties */
-        opacity: 1; }
-      .nav-bar-1 .menu-item .submenu.show {
-        /* transition properties */
-        opacity: 1; }
+    .nav-bar-1 .menu-item:last-child {
+      margin-right: -17px; }
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
