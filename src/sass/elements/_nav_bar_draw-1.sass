@@ -19,14 +19,15 @@
 /// @group Layouts
 /// @author Tatiana Burgos
 ///
-/// @param {Length} $item_padding - Space between links
+/// @param {Length} $item_padding - Space between menu items (including border)
 /// @param {Length} $border_w - Border width 
-/// @param {Lenght} $border_padding - Space between link and border (x and y)
+/// @param {Lenght} $border_padding_top - Space between menu item and border top
+/// @param {Lenght} $border_padding_sides - Space top border extends beyond menu item
 /// @output `.nav_bar` elements css:
 ///
 /// @example sass - Creating `.nav_bar`
 ///   .nav-bar
-///     +nav_bar_draw-1(36px, 2px, 7px 11px)
+///     +nav_bar_draw-1(36px, 2px, 7px, 11px)
 
 
 =nav_bar_draw-1($item_margin, $border_w, $border_padding_top, $border_padding_sides)
