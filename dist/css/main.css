@@ -12,7 +12,8 @@
 /* so frame doesn't float around when x-scrolling on pad */
 html {
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 * {
   padding: 0;
@@ -1106,11 +1107,13 @@ footer {
 /* ----------------------------------- HEADERS */
 .h-biggest {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 64px; }
+  font-size: 64px;
+  font-weight: 300; }
 
 .h-big {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 48px; }
+  font-size: 48px;
+  font-weight: 300; }
 
 .h-medium {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -1151,7 +1154,8 @@ footer {
 
 .p-big-2 {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 26px; }
 
 .p-medium-1 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -1189,7 +1193,8 @@ footer {
   font-size: 14px; }
 
 .light {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
 
 /* -------------------------------------- CODE */
 code {
@@ -1249,12 +1254,14 @@ code {
 .big-btnbutton, .big-btn.button, .big-btn button, .big-btn .button {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-weight: 500; }
 
 .medium-btnbutton, .medium-btn.button, .medium-btn button, .medium-btn .button {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 16px; }
+  line-height: 16px;
+  font-weight: 500; }
 
 /* ------------------------------------ LABELS */
 .label {

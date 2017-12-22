@@ -502,7 +502,7 @@
         },
         "subheader": {
           "txt": "Create your first core.io application in 4 simple steps.<br/>Even if you are new to Node.js this will be easy.",
-          "class": "p-big-1"
+          "class": "p-big-1 light"
         }
       },
       "side_block": {
