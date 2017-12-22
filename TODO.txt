@@ -1,12 +1,10 @@
-* font sizes firefox and others
 
+* 
 * pasar a gist grunt img tasks
 
 * favicon sizes
 
 * do semantics
-
-* sticky menu x docs menu
 
 * sticky numbers x instruction blocks
 
@@ -46,6 +44,11 @@
 * completar ejemplos en cada sass x sassdoc
 
 
+* DONE sticky menu x docs menu
+
+* DONE sticky sidebar docs
+
+* DONE font sizes firefox and others
 
 * DONE make documentation.swig with injection code
 
