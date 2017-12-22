@@ -301,7 +301,7 @@
         { "type": "green",
           "txt": "label" },
         { "type": "blue",
-          "txt": "label" }
+          "txt": "longer text" }
       ],
       "author": "bygoliatone"
     },
