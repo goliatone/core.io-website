@@ -1475,8 +1475,7 @@ header .logo {
 
 /* --------------------------------------- LINK PAGINATION */
 .link-pagination {
-  margin-top: 99px;
-  text-align: right; }
+  margin-top: 111px; }
 
 /* ----------------------------------------------- BUTTONS */
 /* --------------------------------- BIG BUTTON */
@@ -1904,5 +1903,3 @@ p code, li code {
     margin-left: 34px; }
     .docs .main-txt ol li > * {
       margin-left: 7px; }
-.docs .link-pagination {
-  margin-top: 111px; }
