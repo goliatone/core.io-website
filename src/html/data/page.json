@@ -124,7 +124,7 @@
 
   "docs_side_menu": {
     "name": "Documentation Side Menu",
-    "class": "side-menu",
+    "class": "side-menu sticky",
     "id": "docs-side-menu",
     "menu_items": [
       {
