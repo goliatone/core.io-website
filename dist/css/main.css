@@ -157,6 +157,8 @@ footer {
   height: 200px; }
 .layout-app.modules .content, .layout-app.docs .content, .layout-app.styleguide .content {
   padding: 0 112px; }
+.layout-app.modules .content {
+  min-height: 600px; }
 .layout-app header {
   padding-left: 112px;
   padding-right: 112px; }
@@ -1605,6 +1607,11 @@ header .logo {
           align-items: center;
   border-radius: 4px; }
 
+/* --------------------------------------------- CODE-LINE */
+.message-box {
+  display: none;
+  border: none; }
+
 /* STYLEGUIDE ----------------------------------------- STYLEGUIDE */
 /* ----------------------------------- STYLEGUIDE PAGE CSS */
 .styleguide .to-top {
@@ -1707,6 +1714,9 @@ header .logo {
 /* MODULES PAGE -------------------------------------------------- */
 .posts {
   margin-top: 70px; }
+  .posts .message-box {
+    display: none;
+    border: none; }
 
 .post {
   width: 100%;

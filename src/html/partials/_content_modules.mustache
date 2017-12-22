@@ -10,14 +10,13 @@
 
       <!-- MODULES -->
       <div class="posts">
+        {{> _message_box}}
       {{#data_modules}}
         <div class="row">
           {{>_post}} 
         </div>
       {{/data_modules}}
       </div><!-- END MODULES -->
-
-      {{> _message_box}}
 
     {{>_pagination}}
     </section><!-- END SECTION CONTENT --> 
