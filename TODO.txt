@@ -1,3 +1,7 @@
+* font sizes firefox and others
+
+* pasar a gist grunt img tasks
+
 * favicon sizes
 
 * do semantics
@@ -11,6 +15,8 @@
 * animacion codigo en features/index
 
 * cambiar a searchbox con dropdown styled
+
+* search box icon animation loading
 
 * limpiar archivos
 
