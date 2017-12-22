@@ -228,21 +228,21 @@
       "src": "/img/logo/c_core.svg",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "features.html"
+      "link": "index.html"
       }
     },
     { "logo_2": {
       "src": "/img/logo/core_io-logo-2.png",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "features.html"
+      "link": "index.html"
       }
     },
     { "footer": {
       "src": "/img/logo/mosca.svg",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "features.html"
+      "link": "index.html"
       }
     },
     { "github": {
