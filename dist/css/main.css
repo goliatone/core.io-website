@@ -305,7 +305,8 @@ footer {
     background-position: 4440px; } }
   .midnight-mode .code-block,
   .midnight-mode .code-block-1,
-  .midnight-mode .code-line {
+  .midnight-mode .code-line,
+  .midnight-mode p code, .midnight-mode li code {
     background-color: #1b1d1d; }
   .midnight-mode .posts > .row {
     border-top: 1px solid #979797; }
@@ -1604,6 +1605,11 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px; }
+
+/* ------------------------------------------- INLINE CODE */
+p code, li code {
+  padding: 0 4px 2px 4px;
+  border-radius: 2px; }
 
 /* STYLEGUIDE ----------------------------------------- STYLEGUIDE */
 /* ----------------------------------- STYLEGUIDE PAGE CSS */
