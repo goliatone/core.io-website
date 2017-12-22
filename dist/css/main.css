@@ -1604,6 +1604,10 @@ header .logo {
           align-items: center;
   border-radius: 4px; }
 
+/* ---------------------------------- DROPDOWN TAB CONTENT */
+.tab-content {
+  display: none; }
+
 /* STYLEGUIDE ----------------------------------------- STYLEGUIDE */
 /* ----------------------------------- STYLEGUIDE PAGE CSS */
 .styleguide .to-top {
