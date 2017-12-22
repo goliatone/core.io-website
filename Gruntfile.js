@@ -122,94 +122,12 @@ module.exports = function(grunt) {
         '<%= path.prod %>/quickstart.html': '<%= path.prod %>/quickstart.mustache',
         '<%= path.prod %>/styleguide.html': '<%= path.prod %>/styleguide.mustache'
       }
-  },
-
-
-    // IMAGES * do-once tasks
-    // optimize all images and save in tmp
-    imagemin: {
-      all: {
-        files: [{ expand: true, cwd: '<%= path.img_dev %>/', src: ['**/*.{png,jpg,gif,svg}'], dest: '<%= path.temp %>/img'}]
-      }
     },
 
-    // create svg and png uri stylesheets
-    grunticon: {
-      options: {
-        compressPNG: true,
-        colors: {
-          // add any color svg should display in, for instance
-          white: "#fff",
-          gray: "#808a9e",
-          lightGray: "#d8d9dd",
-          pink: "#fc3257",
-          turq: "#2bd5cb"
-        },
-        enhanceSVG: true // allow for embedding (doesn't work on local)
-      },
-      icons: {
-        options: {
-          datasvgcss: 'icons.svg.css',
-          datapngcss: 'icons.png.css',
-          //urlpngcss: 'icons.fallback.css',
-          dynamicColorOnly: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= path.temp %>/img/icons',
-          src: ['**/*.svg', '**/*.png'],
-          dest: '<%= path.icons_prod %>'
-        }],
-      },
-      logo: {
-        options: {
-          cssprefix: '.logo-',
-          datasvgcss: 'logo.svg.css',
-          datapngcss: 'logo.png.css',
-         // urlpngcss: 'logo.fallback.css'
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= path.temp %>/img/logo',
-          src: ['**/*.svg', '**/*.png'],
-          dest: '<%= path.logo_prod %>'
-        }]
-      }
-    },
 
-    // create spritesheet for png fallbacks
-    sprite: {
-      icons: {
-        src: '<%= path.icons_prod %>/**/*.png',
-        dest: '<%= path.icons_prod %>/icons-spritesheet.png',
-        destCss: '<%= path.icons_prod %>/icons.sprites.css',
-        cssOpts: {
-          cssSelector: function(item) { return '.icon-' + item.name; }
-        }
-      },
-      logo: {
-        src: '<%= path.logo_prod %>/**/*.png',
-        dest: '<%= path.logo_prod %>/logo-spritesheet.png',
-        destCss: '<%= path.logo_prod %>/logo.sprites.css',
-        cssOpts: {
-          cssSelector: function(item) { return '.logo-' + item.name; }
-        }
-      }
-    },
-
+    // HELPERS
 
     copy: {
-      // copy files to final destination folder
-      grunticon: {
-        files: [
-          {expand: true, flatten: true, src: '<%= path.logo_prod %>/grunticon.loader.js', dest: '<%= path.plugins %>', filter: 'isFile' }
-        ]
-      },
-      images: {
-        files: [
-          {expand: true, flatten: true, src: ['<%= path.temp %>/img/images/**'], dest: '<%= path.image_prod %>', filter: 'isFile'}
-        ]
-      },
       // for dev
       js: {
         files: [
@@ -217,9 +135,6 @@ module.exports = function(grunt) {
         ]
       }
     },
-
-
-    // HELPERS
 
     clean: {
       default: [
@@ -230,19 +145,8 @@ module.exports = function(grunt) {
       js: [
         '<%= path.js_prod %>/*.js',
         '!<%= path.js_prod %>/*.min.js',
-      ],
-      img: [
-        '<%= path.img_prod %>/*/grunticon.loader.js',
-        '<%= path.img_prod %>/*/png',
-        '<%= path.img_prod %>/*/preview.html',
-        '<%= path.img_prod %>/*/*.fallback.css',
-        '<%= path.temp %>/*'
-      ],
-      svg: [
-        '<%= path.js_prod %>/*/grunticon.loader.js',
-        '<%= path.img_prod %>/*/*.svg.css',
       ]
-    },
+    }
 
   });
 
@@ -251,5 +155,4 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', ['clean:default', 'sass', 'postcss', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
   grunt.registerTask('render', ['mustache_render:render', 'prettify']);
   grunt.registerTask('img', ['imagemin', 'grunticon', 'copy', 'sprite', 'clean:img']);
-  grunt.registerTask('nosvg', ['clean:svg']);
 };
