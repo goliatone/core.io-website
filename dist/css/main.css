@@ -90,6 +90,10 @@ img {
 .uppercase {
   text-transform: uppercase; }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky; }
+
 #bg {
   position: absolute;
   top: 0;
@@ -250,6 +254,8 @@ footer {
 .midnight-mode {
   background-color: #2C2E31;
   color: #fafafa; }
+  .midnight-mode .sticky {
+    background-color: #2C2E31; }
   .midnight-mode a, .midnight-mode p {
     color: inherit; }
   .midnight-mode a {
@@ -1848,13 +1854,14 @@ p code, li code {
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
 .docs .content {
-  margin-top: 16px; }
-  .docs .content .cols {
+  margin-top: -4px; }
+  .docs .content > .cols {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
-            justify-content: initial; }
+            justify-content: initial;
+    margin-top: 56px; }
 .docs .hr-light {
-  margin: 14px 0 75px; }
+  margin-top: 16px; }
 .docs .side-menu {
   width: 255px;
   margin-top: 8px; }
@@ -1906,3 +1913,7 @@ p code, li code {
       margin-left: 7px; }
 .docs .link-pagination {
   margin-top: 111px; }
+.docs .sticky.nav {
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
