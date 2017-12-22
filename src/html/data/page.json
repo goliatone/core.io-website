@@ -54,18 +54,6 @@
     "skin": "midnight-mode"
   },
 
-  "page_docs-alt_nav": {
-    "title": "Documentation",
-    "class": "docs-2 docs",
-    "description": "add_description",
-    "keywords": "add_keywords",
-    "author": "add_author",
-    "scripts": "main",
-    "css": "main",
-    "layout": "layout-app",
-    "skin": "midnight-mode"
-  },
-
   "page_quickstart": {
     "title": "Quickstart",
     "class": "quickstart",
