@@ -302,7 +302,8 @@
           "txt": "label" },
         { "type": "blue",
           "txt": "label" }
-        ]
+      ],
+      "author": "bygoliatone"
     },
     {
       "title": "core.io-data-manager",
@@ -313,7 +314,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -326,7 +327,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -339,7 +340,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -352,7 +353,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -365,7 +366,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -378,7 +379,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     },
     {
       "title": "Lorem ipsum dolor sit amet.",
@@ -391,7 +392,7 @@
           "txt": "label" },
         { "type": "light-gray",
           "txt": "label" }
-        ]
+      ]
     }
   ],
 
