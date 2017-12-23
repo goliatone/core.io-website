@@ -226,12 +226,12 @@ img {
     border-bottom: 1px solid #00d8d8;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
     background: #5088ea;
-    background: -webkit-gradient(linear, left top, right top, from(#5088ea), color-stop(50%, #a4dd74), color-stop(51%, #a4dd74), to(#5088ea));
-    background: -o-linear-gradient(left, #5088ea 0%, #a4dd74 50%, #a4dd74 51%, #5088ea 100%);
-    background: linear-gradient(to right, #5088ea 0%, #a4dd74 50%, #a4dd74 51%, #5088ea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5088ea', endColorstr='#5088ea',GradientType=1 );
+    background: -webkit-gradient(linear, left top, right top, from(#5088ea), color-stop(50%, #5088ea), color-stop(51%, #a4dd74), to(#5088ea));
+    background: -o-linear-gradient(left, #5088ea 0%, #5088ea 50%, #a4dd74 51%, #5088ea 100%);
+    background: linear-gradient(to right, #5088ea 0%, #5088ea 50%, #a4dd74 51%, #5088ea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
     -webkit-animation: bg_move 4s infinite;
-    animation: bg_move 4s infinite; }
+            animation: bg_move 4s infinite; }
 @-webkit-keyframes bg_move {
   0% {
     background-position: 0px; }
@@ -239,14 +239,7 @@ img {
     background-position: 2220px; }
   100% {
     background-position: 4440px; } }
-@-webkit-keyframes bg_move bg_move {
-  0% {
-    background-position: 0px; }
-  50% {
-    background-position: 2220px; }
-  100% {
-    background-position: 4440px; } }
-@keyframes bg_move bg_move {
+@keyframes bg_move {
   0% {
     background-position: 0px; }
   50% {
