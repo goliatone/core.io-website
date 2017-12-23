@@ -414,11 +414,11 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "express",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     }
