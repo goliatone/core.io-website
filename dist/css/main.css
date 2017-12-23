@@ -94,65 +94,6 @@ img {
   position: -webkit-sticky;
   position: sticky; }
 
-#bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1; }
-
-/* show content, z-index needs position set */
-.highlight-bar,
-header,
-.content {
-  position: relative;
-  z-index: 2; }
-
-#header_path_bottom,
-#header_path_middle,
-#header_path_top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
-  #header_path_bottom path,
-  #header_path_middle path,
-  #header_path_top path {
-    mix-blend-mode: multiply; }
-
-#header_path_middle svg,
-#header_path_top svg {
-  width: 100%; }
-
-#header_path_bottom svg {
-  width: 103%; }
-
-#header_path_bottom g,
-#header_path_middle g {
-  opacity: 0.24; }
-
-#header_path_top g {
-  opacity: 0.20499; }
-
-.layout-app {
-  position: relative; }
-
-#bg-2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-#filter-bottom {
-  height: 1825px;
-  background: -o-linear-gradient(291deg, #2C2E31 49.5%, #2E2F33 49.5%);
-  background: linear-gradient(159deg, #2C2E31 49.5%, #2E2F33 49.5%); }
-
-/* show content, z-index needs position set */
-footer {
-  position: relative;
-  z-index: 2; }
-
 /* LAYOUT_APP STYLE----------------------------------------------- */
 .layout-app header,
 .layout-app .content {
@@ -457,6 +398,65 @@ footer {
   .midnight-mode .instruction_block .button-wrapper,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+/* show content, z-index needs position set */
+.highlight-bar,
+header,
+.content {
+  position: relative;
+  z-index: 2; }
+
+#header_path_bottom,
+#header_path_middle,
+#header_path_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  #header_path_bottom path,
+  #header_path_middle path,
+  #header_path_top path {
+    mix-blend-mode: multiply; }
+
+#header_path_middle svg,
+#header_path_top svg {
+  width: 100%; }
+
+#header_path_bottom svg {
+  width: 103%; }
+
+#header_path_bottom g,
+#header_path_middle g {
+  opacity: 0.24; }
+
+#header_path_top g {
+  opacity: 0.20499; }
+
+.layout-app {
+  position: relative; }
+
+#bg-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#filter-bottom {
+  height: 1825px;
+  background: -o-linear-gradient(291deg, #2C2E31 49.5%, #2E2F33 49.5%);
+  background: linear-gradient(159deg, #2C2E31 49.5%, #2E2F33 49.5%); }
+
+/* show content, z-index needs position set */
+footer {
+  position: relative;
+  z-index: 2; }
 
 /* -------------------------------------- FONT_DEFINITIONS */
 html {
