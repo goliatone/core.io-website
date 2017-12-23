@@ -289,11 +289,11 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "data-manager",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
@@ -305,7 +305,7 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
@@ -324,15 +324,15 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "s3",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "filesync",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
@@ -344,15 +344,15 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "persistence",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "waterline",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
@@ -364,15 +364,15 @@
         "labels": [
             {
                 "txt": "core.io",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "passport",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "auth",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
@@ -384,11 +384,11 @@
         "labels": [
             {
                 "txt": "json-schema",
-                "type": "green"
+                "type": "light-gray"
             },
             {
                 "txt": "waterline",
-                "type": "green"
+                "type": "light-gray"
             }
         ]
     },
