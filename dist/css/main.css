@@ -1730,6 +1730,8 @@ p code, li code {
   .post .description {
     margin: 9px 0 24px;
     width: 655px; }
+  .post .pagination {
+    display: none; }
 
 /* QUICKSTART PAGE ----------------------------------------------- */
 .quickstart .header .logo {
