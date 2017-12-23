@@ -257,7 +257,7 @@
   "search_bars": [
     {
       "modules": {
-        "txt": "Search 123 modules…",
+        "txt": "Search modules…",
         "icon": {
           "src": "/img/icons/search-icon.png",
           "alt": "Search",
