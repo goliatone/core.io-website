@@ -282,107 +282,147 @@
 
   "data_modules": [
     {
-      "title": "core.io-persistence",
-      "version": "v0.12.4",
-      "description": "Waterline integration. This module provides ORM capabilities. Nemo aperiam quisquam possimus eos sapiente voluptatem. Vero aut ut maiores et incidunt consequatur dolorem. Et eius aut enim cupiditate.",
-      "labels": [
-        { "type": "green",
-          "txt": "label" },
-        { "type": "blue",
-          "txt": "longer text" }
-      ],
-      "author": "by goliatone"
+        "title": "core.io-data-manager",
+        "description": "core.io data manager module",
+        "author": "goliatone",
+        "version": "0.5.0",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            },
+            {
+                "txt": "data-manager",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "core.io-data-manager",
-      "version": "v0.8.4",
-      "description": "Import data into your project from JSON seed files. Export to different formats; CSV, JSON, and more.",
-      "labels": [
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io-pubsub-mqtt",
+        "description": "core.io PubSub transport layer providing MQTT suppor",
+        "author": "goliatone",
+        "version": "0.0.8",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io",
+        "description": "Application core utilities",
+        "author": "goliatone",
+        "version": "0.0.0",
+        "labels": []
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io-filesync",
+        "description": "core.io file sync module",
+        "author": "goliatone",
+        "version": "0.1.9",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            },
+            {
+                "txt": "s3",
+                "type": "green"
+            },
+            {
+                "txt": "filesync",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io-persistence",
+        "description": "core.io persistence module",
+        "author": "goliatone",
+        "version": "0.1.7",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            },
+            {
+                "txt": "persistence",
+                "type": "green"
+            },
+            {
+                "txt": "waterline",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io-express-auth",
+        "description": "Module providing Passport.js auth for express",
+        "author": "goliatone",
+        "version": "0.2.2",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            },
+            {
+                "txt": "passport",
+                "type": "green"
+            },
+            {
+                "txt": "auth",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "waterline-to-json-schema",
+        "description": "WaterlineJS to JSON schema generator",
+        "author": "goliatone",
+        "version": "0.5.2",
+        "labels": [
+            {
+                "txt": "json-schema",
+                "type": "green"
+            },
+            {
+                "txt": "waterline",
+                "type": "green"
+            }
+        ]
     },
     {
-      "title": "Lorem ipsum dolor sit amet.",
-      "version": "v0.8.4",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis .",
-      "labels": [
-        { "type": "dark-gray",
-          "txt": "label" },
-        { "type": "orange",
-          "txt": "label" },
-        { "type": "light-gray",
-          "txt": "label" }
-      ]
+        "title": "core.io-cli",
+        "description": "core.io CLI toolbelt manager",
+        "author": "goliatone",
+        "version": "0.0.3",
+        "labels": []
+    },
+    {
+        "title": "core.io-cli-local-env",
+        "description": "CLI utility to create local development environments",
+        "author": "goliatone",
+        "version": "0.1.2",
+        "labels": []
+    },
+    {
+        "title": "core.io-express-server",
+        "description": "core.io Express server module",
+        "author": "goliatone",
+        "version": "0.0.30",
+        "labels": [
+            {
+                "txt": "core.io",
+                "type": "green"
+            },
+            {
+                "txt": "express",
+                "type": "green"
+            }
+        ]
     }
-  ],
+],
 
   "data_icons": [ "direct_access" ],
 
