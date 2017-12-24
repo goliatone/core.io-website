@@ -94,65 +94,6 @@ img {
   position: -webkit-sticky;
   position: sticky; }
 
-#bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1; }
-
-/* show content, z-index needs position set */
-.highlight-bar,
-header,
-.content {
-  position: relative;
-  z-index: 2; }
-
-#header_path_bottom,
-#header_path_middle,
-#header_path_top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; }
-  #header_path_bottom path,
-  #header_path_middle path,
-  #header_path_top path {
-    mix-blend-mode: multiply; }
-
-#header_path_middle svg,
-#header_path_top svg {
-  width: 100%; }
-
-#header_path_bottom svg {
-  width: 103%; }
-
-#header_path_bottom g,
-#header_path_middle g {
-  opacity: 0.24; }
-
-#header_path_top g {
-  opacity: 0.20499; }
-
-.layout-app {
-  position: relative; }
-
-#bg-2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
-
-#filter-bottom {
-  height: 1825px;
-  background: -o-linear-gradient(291deg, #2C2E31 49.5%, #2E2F33 49.5%);
-  background: linear-gradient(159deg, #2C2E31 49.5%, #2E2F33 49.5%); }
-
-/* show content, z-index needs position set */
-footer {
-  position: relative;
-  z-index: 2; }
-
 /* LAYOUT_APP STYLE----------------------------------------------- */
 .layout-app header,
 .layout-app .content {
@@ -365,15 +306,6 @@ footer {
       .midnight-mode .search-bar-1 input:hover, .midnight-mode .search-bar-1 input:focus {
         border-color: #00d8d8;
         outline: none; }
-  .midnight-mode .search-bar-2 {
-    color: #fafafa; }
-    .midnight-mode .search-bar-2 input {
-      background-color: transparent;
-      color: #fafafa;
-      border-color: #f8f8f8; }
-      .midnight-mode .search-bar-2 input:hover, .midnight-mode .search-bar-2 input:focus {
-        border-color: cyan;
-        outline: none; }
   .midnight-mode .black-btnbutton, .midnight-mode .black-btn.button, .midnight-mode .black-btn button, .midnight-mode .black-btn .button {
     color: #f8f8f8;
     background-color: #2c2c31;
@@ -390,216 +322,6 @@ footer {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .midnight-mode .black-btn.shutter-left {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .black-btn.shutter-left button, .midnight-mode .black-btn.shutter-left .button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -o-transition: color 0.4s ease-in-out;
-      transition: color 0.4s ease-in-out; }
-    .midnight-mode .black-btn.shutter-left span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .black-btn.shutter-left .overlay {
-      border: 1px solid #f8f8f8;
-      border-radius: 3px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: inherit;
-      background-color: #f8f8f8;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
-    .midnight-mode .black-btn.shutter-left:hover {
-      cursor: pointer; }
-      .midnight-mode .black-btn.shutter-left:hover button, .midnight-mode .black-btn.shutter-left:hover .button {
-        color: #2c2c31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .black-btn.shutter-left:hover .overlay {
-        width: inherit;
-        border-color: #2c2c31;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .black-btn.shutter-right {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .black-btn.shutter-right button, .midnight-mode .black-btn.shutter-right .button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
-    .midnight-mode .black-btn.shutter-right span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .black-btn.shutter-right .overlay {
-      border: 1px solid #f8f8f8;
-      border-radius: 0 3px 3px 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0;
-      height: inherit;
-      background-color: #f8f8f8;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-    .midnight-mode .black-btn.shutter-right:hover {
-      cursor: pointer; }
-      .midnight-mode .black-btn.shutter-right:hover button, .midnight-mode .black-btn.shutter-right:hover .button {
-        color: #2c2c31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .black-btn.shutter-right:hover .overlay {
-        width: inherit;
-        border: 1px solid #2c2c31;
-        border-radius: 3px;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .black-btn.shutter-in {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .black-btn.shutter-in button, .midnight-mode .black-btn.shutter-in .button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -o-transition: all 0.7s ease-in-out;
-      transition: all 0.7s ease-in-out; }
-    .midnight-mode .black-btn.shutter-in span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .black-btn.shutter-in .overlay {
-      border: 1px solid #f8f8f8;
-      position: absolute;
-      top: 0;
-      height: inherit;
-      background-color: #f8f8f8;
-      opacity: 0; }
-    .midnight-mode .black-btn.shutter-in .overlay:first-child {
-      /* left overlay */
-      left: 0;
-      width: 0;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .black-btn.shutter-in .overlay:nth-child(2) {
-      /* right overlay */
-      width: 0;
-      right: 1px;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .black-btn.shutter-in:hover {
-      cursor: pointer; }
-      .midnight-mode .black-btn.shutter-in:hover button, .midnight-mode .black-btn.shutter-in:hover .button {
-        color: #2c2c31;
-        border-color: #2c2c31;
-        -webkit-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        transition: all 0.7s ease-in-out; }
-      .midnight-mode .black-btn.shutter-in:hover .overlay {
-        border-color: #2c2c31;
-        opacity: 1; }
-      .midnight-mode .black-btn.shutter-in:hover .overlay:first-child {
-        /* left overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-      .midnight-mode .black-btn.shutter-in:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-  .midnight-mode .black-btn.shutter-out {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .black-btn.shutter-out button, .midnight-mode .black-btn.shutter-out .button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    .midnight-mode .black-btn.shutter-out span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .black-btn.shutter-out .overlay {
-      border: 1px solid #2c2c31;
-      position: absolute;
-      top: 0;
-      width: 0;
-      height: inherit;
-      background-color: #f8f8f8;
-      opacity: 0; }
-    .midnight-mode .black-btn.shutter-out .overlay:nth-child(1) {
-      /* left overlay */
-      left: 51%;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
-    .midnight-mode .black-btn.shutter-out .overlay:nth-child(2) {
-      /* right overlay */
-      left: 49%;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
-    .midnight-mode .black-btn.shutter-out:hover {
-      cursor: pointer; }
-      .midnight-mode .black-btn.shutter-out:hover button, .midnight-mode .black-btn.shutter-out:hover .button {
-        color: #2c2c31;
-        border-color: #2c2c31;
-        -webkit-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
-      .midnight-mode .black-btn.shutter-out:hover .overlay {
-        opacity: 1; }
-      .midnight-mode .black-btn.shutter-out:hover .overlay:nth-child(1) {
-        /* left overlay */
-        left: 0;
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
-      .midnight-mode .black-btn.shutter-out:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .gray-btnbutton, .midnight-mode .gray-btn.button, .midnight-mode .gray-btn button, .midnight-mode .gray-btn .button {
     color: #2c2c31;
     background-color: #f8f8f8;
@@ -617,216 +339,6 @@ footer {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .midnight-mode .gray-btn.shutter-left {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-left button, .midnight-mode .gray-btn.shutter-left .button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -o-transition: color 0.4s ease-in-out;
-      transition: color 0.4s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-left span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .gray-btn.shutter-left .overlay {
-      border: 1px solid #2c2c31;
-      border-radius: 3px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: inherit;
-      background-color: #2c2c31;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-left:hover {
-      cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-left:hover button, .midnight-mode .gray-btn.shutter-left:hover .button {
-        color: #f8f8f8;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-left:hover .overlay {
-        width: inherit;
-        border-color: #f8f8f8;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .gray-btn.shutter-right {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-right button, .midnight-mode .gray-btn.shutter-right .button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-right span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .gray-btn.shutter-right .overlay {
-      border: 1px solid #2c2c31;
-      border-radius: 0 3px 3px 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0;
-      height: inherit;
-      background-color: #2c2c31;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-right:hover {
-      cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-right:hover button, .midnight-mode .gray-btn.shutter-right:hover .button {
-        color: #f8f8f8;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-right:hover .overlay {
-        width: inherit;
-        border: 1px solid #f8f8f8;
-        border-radius: 3px;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .gray-btn.shutter-in {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-in button, .midnight-mode .gray-btn.shutter-in .button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -o-transition: all 0.7s ease-in-out;
-      transition: all 0.7s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-in span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .gray-btn.shutter-in .overlay {
-      border: 1px solid #2c2c31;
-      position: absolute;
-      top: 0;
-      height: inherit;
-      background-color: #2c2c31;
-      opacity: 0; }
-    .midnight-mode .gray-btn.shutter-in .overlay:first-child {
-      /* left overlay */
-      left: 0;
-      width: 0;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-in .overlay:nth-child(2) {
-      /* right overlay */
-      width: 0;
-      right: 1px;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-in:hover {
-      cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-in:hover button, .midnight-mode .gray-btn.shutter-in:hover .button {
-        color: #f8f8f8;
-        border-color: #f8f8f8;
-        -webkit-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        transition: all 0.7s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-in:hover .overlay {
-        border-color: #f8f8f8;
-        opacity: 1; }
-      .midnight-mode .gray-btn.shutter-in:hover .overlay:first-child {
-        /* left overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-in:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-  .midnight-mode .gray-btn.shutter-out {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .gray-btn.shutter-out button, .midnight-mode .gray-btn.shutter-out .button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-out span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .gray-btn.shutter-out .overlay {
-      border: 1px solid #f8f8f8;
-      position: absolute;
-      top: 0;
-      width: 0;
-      height: inherit;
-      background-color: #2c2c31;
-      opacity: 0; }
-    .midnight-mode .gray-btn.shutter-out .overlay:nth-child(1) {
-      /* left overlay */
-      left: 51%;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-out .overlay:nth-child(2) {
-      /* right overlay */
-      left: 49%;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
-    .midnight-mode .gray-btn.shutter-out:hover {
-      cursor: pointer; }
-      .midnight-mode .gray-btn.shutter-out:hover button, .midnight-mode .gray-btn.shutter-out:hover .button {
-        color: #f8f8f8;
-        border-color: #f8f8f8;
-        -webkit-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-out:hover .overlay {
-        opacity: 1; }
-      .midnight-mode .gray-btn.shutter-out:hover .overlay:nth-child(1) {
-        /* left overlay */
-        left: 0;
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
-      .midnight-mode .gray-btn.shutter-out:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .blue-btnbutton, .midnight-mode .blue-btn.button, .midnight-mode .blue-btn button, .midnight-mode .blue-btn .button {
     color: #00d8d8;
     background-color: #2C2E31;
@@ -841,216 +353,6 @@ footer {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .midnight-mode .blue-btn.shutter-left {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-left button, .midnight-mode .blue-btn.shutter-left .button {
-      -webkit-transition: color 0.4s ease-in-out;
-      -o-transition: color 0.4s ease-in-out;
-      transition: color 0.4s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-left span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .blue-btn.shutter-left .overlay {
-      border: 1px solid #00d8d8;
-      border-radius: 3px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: inherit;
-      background-color: #00d8d8;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 1s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-left:hover {
-      cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-left:hover button, .midnight-mode .blue-btn.shutter-left:hover .button {
-        color: #2C2E31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-left:hover .overlay {
-        width: inherit;
-        border-color: #2C2E31;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .blue-btn.shutter-right {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-right button, .midnight-mode .blue-btn.shutter-right .button {
-      -webkit-transition: all 0.4s ease-in-out;
-      -o-transition: all 0.4s ease-in-out;
-      transition: all 0.4s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-right span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .blue-btn.shutter-right .overlay {
-      border: 1px solid #00d8d8;
-      border-radius: 0 3px 3px 0;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 0;
-      height: inherit;
-      background-color: #00d8d8;
-      opacity: 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-right:hover {
-      cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-right:hover button, .midnight-mode .blue-btn.shutter-right:hover .button {
-        color: #2C2E31;
-        -webkit-transition: color 0.4s ease-in-out;
-        -o-transition: color 0.4s ease-in-out;
-        transition: color 0.4s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-right:hover .overlay {
-        width: inherit;
-        border: 1px solid #2C2E31;
-        border-radius: 3px;
-        opacity: 1;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, border 0.4s ease-in-out; }
-  .midnight-mode .blue-btn.shutter-in {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-in button, .midnight-mode .blue-btn.shutter-in .button {
-      -webkit-transition: all 0.7s ease-in-out;
-      -o-transition: all 0.7s ease-in-out;
-      transition: all 0.7s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-in span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .blue-btn.shutter-in .overlay {
-      border: 1px solid #00d8d8;
-      position: absolute;
-      top: 0;
-      height: inherit;
-      background-color: #00d8d8;
-      opacity: 0; }
-    .midnight-mode .blue-btn.shutter-in .overlay:first-child {
-      /* left overlay */
-      left: 0;
-      width: 0;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-in .overlay:nth-child(2) {
-      /* right overlay */
-      width: 0;
-      right: 1px;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      -o-transition: opacity 0.7s ease-in, width 0.4s ease-in-out;
-      transition: opacity 0.7s ease-in, width 0.4s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-in:hover {
-      cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-in:hover button, .midnight-mode .blue-btn.shutter-in:hover .button {
-        color: #2C2E31;
-        border-color: #2C2E31;
-        -webkit-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        transition: all 0.7s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-in:hover .overlay {
-        border-color: #2C2E31;
-        opacity: 1; }
-      .midnight-mode .blue-btn.shutter-in:hover .overlay:first-child {
-        /* left overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-in:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
-  .midnight-mode .blue-btn.shutter-out {
-    position: relative;
-    overflow: hidden; }
-    .midnight-mode .blue-btn.shutter-out button, .midnight-mode .blue-btn.shutter-out .button {
-      -webkit-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-out span {
-      z-index: 10;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto; }
-    .midnight-mode .blue-btn.shutter-out .overlay {
-      border: 1px solid #2C2E31;
-      position: absolute;
-      top: 0;
-      width: 0;
-      height: inherit;
-      background-color: #00d8d8;
-      opacity: 0; }
-    .midnight-mode .blue-btn.shutter-out .overlay:nth-child(1) {
-      /* left overlay */
-      left: 51%;
-      border-right: none;
-      border-radius: 3px 0 0 3px;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out, left 0.2s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-out .overlay:nth-child(2) {
-      /* right overlay */
-      left: 49%;
-      border-left: none;
-      border-radius: 0 3px 3px 0;
-      -webkit-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      -o-transition: opacity 0.3s ease-in, width 0.2s ease-in-out;
-      transition: opacity 0.3s ease-in, width 0.2s ease-in-out; }
-    .midnight-mode .blue-btn.shutter-out:hover {
-      cursor: pointer; }
-      .midnight-mode .blue-btn.shutter-out:hover button, .midnight-mode .blue-btn.shutter-out:hover .button {
-        color: #2C2E31;
-        border-color: #2C2E31;
-        -webkit-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-out:hover .overlay {
-        opacity: 1; }
-      .midnight-mode .blue-btn.shutter-out:hover .overlay:nth-child(1) {
-        /* left overlay */
-        left: 0;
-        width: 50%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out, left 0.4s ease-in-out; }
-      .midnight-mode .blue-btn.shutter-out:hover .overlay:nth-child(2) {
-        /* right overlay */
-        width: 51%;
-        -webkit-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        -o-transition: opacity 0.1s ease-in, width 0.4s ease-in-out;
-        transition: opacity 0.1s ease-in, width 0.4s ease-in-out; }
   .midnight-mode .label.highlight {
     color: #ffffff;
     border-color: #00d8d8;
@@ -1087,6 +389,65 @@ footer {
   .midnight-mode .instruction_block .button-wrapper,
   .midnight-mode .instruction_block .code-wrapper {
     border-left: 1px solid #979797; }
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+/* show content, z-index needs position set */
+.highlight-bar,
+header,
+.content {
+  position: relative;
+  z-index: 2; }
+
+#header_path_bottom,
+#header_path_middle,
+#header_path_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+  #header_path_bottom path,
+  #header_path_middle path,
+  #header_path_top path {
+    mix-blend-mode: multiply; }
+
+#header_path_middle svg,
+#header_path_top svg {
+  width: 100%; }
+
+#header_path_bottom svg {
+  width: 103%; }
+
+#header_path_bottom g,
+#header_path_middle g {
+  opacity: 0.24; }
+
+#header_path_top g {
+  opacity: 0.20499; }
+
+.layout-app {
+  position: relative; }
+
+#bg-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#filter-bottom {
+  height: 1825px;
+  background: -o-linear-gradient(291deg, #2C2E31 49.5%, #2E2F33 49.5%);
+  background: linear-gradient(159deg, #2C2E31 49.5%, #2E2F33 49.5%); }
+
+/* show content, z-index needs position set */
+footer {
+  position: relative;
+  z-index: 2; }
 
 /* -------------------------------------- FONT_DEFINITIONS */
 html {
@@ -1391,22 +752,6 @@ header .logo {
     right: 85px; }
     .search-bar-1 .icon:hover {
       cursor: pointer; }
-
-/* ------------------------------- SEARCH-BAR-2 */
-.search-bar-2 {
-  width: 270px;
-  position: relative; }
-  .search-bar-2 input {
-    width: 100%;
-    height: 43px;
-    border: 1px solid white;
-    border-radius: 3px;
-    padding-left: 21.5px; }
-  .search-bar-2 .icon:hover {
-    cursor: pointer; }
-  .search-bar-2 .icon {
-    top: 14px;
-    right: 19px; }
 
 /* -------------------------------------------- PAGINATION */
 .pagination {

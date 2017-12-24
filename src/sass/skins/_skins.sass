@@ -112,10 +112,10 @@
         border-bottom: 1px solid $SHADE_2
 
 
-  .nav-bar-1
+  .nav-bar-1 
     +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
 
-  .nav-bar-2
+  .nav-bar-2 
     +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
 
 
@@ -139,51 +139,22 @@
   .search-bar-1
     +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
 
-  .search-bar-2
-    +search_bar_color($COLOR_1, transparent, $SHADE_1)
-
 
   .black-btn
     +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
     &.fade
       +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
-    &.shutter-left
-      +button_shutter-left($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
-    &.shutter-right
-      +button_shutter-right($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
-    &.shutter-in
-      +button_shutter-in($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
-    &.shutter-out
-      +button_shutter-out($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, 1px, 3px)
-
+    
   .gray-btn
     +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
     &.fade
       +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
-    &.shutter-left
-      +button_shutter-left($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
-    &.shutter-right
-      +button_shutter-right($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
-    &.shutter-in
-      +button_shutter-in($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
-    &.shutter-out
-      +button_shutter-out($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, 1px, 3px)
-
-
+    
   .blue-btn
     +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
     &.fade
       +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
-    &.shutter-left
-      +button_shutter-left($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
-    &.shutter-right
-      +button_shutter-right($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
-    &.shutter-in
-      +button_shutter-in($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
-    &.shutter-out
-      +button_shutter-out($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1, 1px, 3px)
-
-
+    
   .label
     &.highlight
       +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
@@ -214,3 +185,9 @@
     .button-wrapper,
     .code-wrapper
       border-left: 1px solid $SHADE_2
+
+
+
+// ------------------------------------ BACKGROUND EFFECTS
+@import background-1
+@import background-2
