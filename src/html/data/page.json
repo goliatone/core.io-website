@@ -84,19 +84,19 @@
     "id": "main-nav",
     "menu_items": [
       {
-        "link": "index.html",
+        "link": "/index.html",
         "txt": "Features"
       },
       {
-        "link": "quickstart.html",
+        "link": "/quickstart.html",
         "txt": "Quickstart"
       },
       {
-        "link": "documentation.html",
+        "link": "/documentation/about.html",
         "txt": "Documentation"
       },
       {
-        "link": "modules.html",
+        "link": "/modules.html",
         "txt": "Modules"
       }
     ]
@@ -108,15 +108,15 @@
     "id": "docs-nav",
     "menu_items": [
       {
-        "link": "guide.html",
+        "link": "/documentation/guide/index.html",
         "txt": "Guide"
       },
       {
-        "link": "api.html",
+        "link": "/documentation/api/index.html",
         "txt": "API"
       },
       {
-        "link": "examples.html",
+        "link": "/documentation/examples/index.html",
         "txt": "Examples"
       }
     ]
@@ -228,21 +228,21 @@
       "src": "/img/logo/c_core.svg",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "index.html"
+      "link": "/index.html"
       }
     },
     { "logo_2": {
       "src": "/img/logo/core_io-logo-2.png",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "index.html"
+      "link": "/index.html"
       }
     },
     { "footer": {
       "src": "/img/logo/mosca.svg",
       "alt": "Core.io",
       "title": "Core.io",
-      "link": "index.html"
+      "link": "/index.html"
       }
     },
     { "github": {
@@ -459,7 +459,7 @@
           { "txt": "Getting Started",
             "class": "big-btn gray-btn fade",
             "isLink": true,
-            "href": "quickstart.html"
+            "href": "/quickstart.html"
           }
         ],
         "footnote": {
@@ -518,7 +518,7 @@
           { "txt": "Documentation",
             "class": "big-btn gray-btn fade",
             "isLink": true,
-            "href": "documentation.html"
+            "href": "/documentation/about.html"
           }
         ]
       },
