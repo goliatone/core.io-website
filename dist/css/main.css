@@ -1184,7 +1184,10 @@ p code, li code {
             justify-content: initial;
     margin-top: 56px; }
 .docs .hr-light {
-  margin-top: 16px; }
+  margin-top: 13.9px;
+  z-index: 1; }
+.docs .nav-bar-2 .menu-item {
+  z-index: 2; }
 .docs .side-menu {
   width: 255px;
   margin-top: 8px;
