@@ -419,10 +419,10 @@ header,
 
 #header_path_bottom g,
 #header_path_middle g {
-  opacity: 0.24; }
+  opacity: 0.239999995; }
 
 #header_path_top g {
-  opacity: 0.20499; }
+  opacity: 0.204993207; }
 
 /* ------------------------ #bg-2 bottom page svg elements */
 .layout-app {
@@ -890,7 +890,7 @@ header .logo {
       .code-block .header .window-controls button {
         width: 13px;
         height: 13px;
-        margin: 0 4.33333px;
+        margin: 0 4.3333333333px;
         border-radius: 6.5px;
         border: none;
         padding: 0;
@@ -1184,7 +1184,10 @@ p code, li code {
             justify-content: initial;
     margin-top: 56px; }
 .docs .hr-light {
-  margin-top: 16px; }
+  margin-top: 13.9px;
+  z-index: 1; }
+.docs .nav-bar-2 {
+  z-index: 2; }
 .docs .side-menu {
   width: 255px;
   margin-top: 8px;
