@@ -1,8 +1,10 @@
 /* LAYOUT_APP STYLE----------------------------------------------- */
-.layout-app  
-  header, 
+.layout-app
+  min-height: 100vh
+  overflow: hidden
+  header,
   .content
-    max-width: $LAYOUT_MAW_W 
+    max-width: $LAYOUT_MAW_W
     margin: auto
   header
     height: $HEADER_H
@@ -15,7 +17,7 @@
   header
     padding-left: $LAYOUT_PADDING_SIDES
     padding-right: $LAYOUT_PADDING_SIDES
-  
+
   footer
     width: $FOOTER_W
     margin-top: $FOOTER_MARGIN_TOP
@@ -25,7 +27,7 @@
       +size($FOOTER_ICON_SIZE)
     .footer-menu
       display: flex
-      flex-direction: column 
+      flex-direction: column
       a
         padding-bottom: $FOOTER_A_PADDING
     .copyright
@@ -38,7 +40,7 @@
      * of one could affect other                        */
     .footer-logo
       float: left
-      img 
+      img
         position: relative
         top: -10px
         left: -35px
@@ -48,15 +50,15 @@
       left: -72px
     .footer-github
       position: relative
-      top: -4px 
+      top: -4px
       left: -99px
       img
         margin-right: 19px
         margin-top: 1px
         width: 26px
         height: 26px
-  
-  
+
+
   .row
     display: flex
     justify-content: space-between
@@ -78,5 +80,3 @@
       display-flex
   .cols-centered
     justify-content: space-around
-
-
