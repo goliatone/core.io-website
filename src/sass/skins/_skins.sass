@@ -50,7 +50,7 @@
     &.hr-light
       border-color: rgba(222,229,255,0.16)
 
-  
+
   $border-color: $HIGHLIGHT_1
   $color1: #5088ea
   $color2: #a4dd74
@@ -58,7 +58,7 @@
 
   .highlight-bar
     +highlight_bar_color_1($border-color, $color1, $color2, $width)
-    
+
 
   .code-block,
   .code-block-1,
@@ -74,10 +74,17 @@
         border-bottom: 1px solid $SHADE_2
 
 
-  .nav-bar-1 
+  .nav-bar-1
     +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
 
-  .nav-bar-2 
+  &.features #main-nav a[href*="index"],
+  &.quickstart #main-nav a[href*="quickstart"],
+  &.features #main-nav a[href*="index"],
+  &.modules #main-nav a[href*="modules"]
+    border-color: $HIGHLIGHT_1
+    color: $COLOR_1
+
+  .nav-bar-2
     +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
 
 
@@ -106,17 +113,17 @@
     +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
     &.fade
       +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
-    
+
   .gray-btn
     +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
     &.fade
       +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
-    
+
   .blue-btn
     +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
     &.fade
       +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
-    
+
   .label
     &.highlight
       +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)

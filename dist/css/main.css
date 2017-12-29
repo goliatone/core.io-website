@@ -263,6 +263,9 @@ img {
     .midnight-mode .nav-bar-1 a:hover, .midnight-mode .nav-bar-1 a.selected {
       color: #00d8d8;
       border-color: #fafafa; }
+  .midnight-mode.features #main-nav a[href*="index"], .midnight-mode.quickstart #main-nav a[href*="quickstart"], .midnight-mode.features #main-nav a[href*="index"], .midnight-mode.modules #main-nav a[href*="modules"] {
+    border-color: #00d8d8;
+    color: #fafafa; }
   .midnight-mode .nav-bar-2 .menu-item a {
     color: #fafafa; }
     .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
@@ -709,6 +712,12 @@ header .logo {
       border-top: 2px solid white; }
     .nav-bar-1 .menu-item:last-child {
       margin-right: -17px; }
+
+.features #main-nav a[href*="index"],
+.quickstart #main-nav a[href*="quickstart"],
+.features #main-nav a[href*="index"],
+.modules #main-nav a[href*="modules"] {
+  border-top: 2px solid white; }
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
