@@ -1,12 +1,12 @@
 /* INDEX ----------------------------------------------------- INDEX
- *
+ * 
  * 1. Resets
  * 2. General Classes
  * 3. Skins (colors)
  * 4. Font definitions (fonts)
  * 5. Layouts (dims)
  * 6. Elements
- * 7. Styleguide
+ * 7. Styleguide                                        
  *                                                                   */
 /* RESETS --------------------------------------------------- RESETS */
 /* so frame doesn't float around when x-scrolling on pad */
@@ -267,6 +267,8 @@ img {
     color: #fafafa; }
     .midnight-mode .nav-bar-2 .menu-item a:hover, .midnight-mode .nav-bar-2 .menu-item a.selected {
       border-color: #00d8d8; }
+  .midnight-mode.docs .guide #docs-nav a[href*="guide"], .midnight-mode.docs .api #docs-nav a[href*="api"], .midnight-mode.docs .examples #docs-nav a[href*="examples"] {
+    border-color: #00d8d8; }
   .midnight-mode .side-menu .menu-item a, .midnight-mode .side-menu li a {
     color: #fafafa; }
     .midnight-mode .side-menu .menu-item a:hover, .midnight-mode .side-menu li a:hover {
@@ -729,6 +731,11 @@ header .logo {
       padding: 13px; }
       .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
         border-bottom: 2px solid white; }
+
+.docs .guide #docs-nav a[href*="guide"],
+.docs .api #docs-nav a[href*="api"],
+.docs .examples #docs-nav a[href*="examples"] {
+  border-bottom: 2px solid white; }
 
 /* -------------------------------------------- SEARCH BARS */
 /* ------------------------------- SEARCH-BAR-1 */
