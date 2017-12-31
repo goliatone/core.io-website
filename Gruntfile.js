@@ -72,8 +72,7 @@ module.exports = function(grunt) {
     uglify: {
       all: {
         files: {
-          '<%= path.js_prod %>/main.min.js': '<%= path.js_dev %>/main.js',
-          '<%= path.js_prod %>/login.min.js': '<%= path.js_dev %>/login.js'
+          '<%= path.js_prod %>/main.min.js': '<%= path.js_dev %>/main.js'
         }
       }
     },
