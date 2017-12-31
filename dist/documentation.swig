@@ -39,16 +39,16 @@
       <!-- Header Navigation Bar -->
       <nav id="main-nav" class="nav-bar-1">
         <div class="menu-item">
-          <a href="&#x2F;index.html">Features</a> 
+          <a href="/index.html">Features</a>
         </div>
         <div class="menu-item">
-          <a href="&#x2F;quickstart.html">Quickstart</a> 
+          <a href="/quickstart.html">Quickstart</a>
         </div>
         <div class="menu-item">
-          <a href="&#x2F;documentation&#x2F;about.html">Documentation</a> 
+          <a href="/documentation/about.html">Documentation</a>
         </div>
         <div class="menu-item">
-          <a href="&#x2F;modules.html">Modules</a> 
+          <a href="/modules.html">Modules</a>
         </div>
       </nav><!-- END Header Navigation Bar -->
 
@@ -60,13 +60,13 @@
       <!-- Documentation Navigation Bar -->
       <nav id="docs-nav" class="nav-bar-2">
         <div class="menu-item">
-          <a href="&#x2F;documentation&#x2F;guide&#x2F;index.html">Guide</a> 
+          <a href="/documentation/guide/index.html">Guide</a>
         </div>
         <div class="menu-item">
-          <a href="&#x2F;documentation&#x2F;api&#x2F;index.html">API</a> 
+          <a href="/documentation/api/index.html">API</a>
         </div>
         <div class="menu-item">
-          <a href="&#x2F;documentation&#x2F;examples&#x2F;index.html">Examples</a> 
+          <a href="/documentation/examples/index.html">Examples</a>
         </div>
       </nav><!-- END Documentation Navigation Bar -->
 
