@@ -1,12 +1,12 @@
 /* INDEX ----------------------------------------------------- INDEX
- * 
+ *
  * 1. Resets
  * 2. General Classes
  * 3. Skins (colors)
  * 4. Font definitions (fonts)
  * 5. Layouts (dims)
  * 6. Elements
- * 7. Styleguide                                        
+ * 7. Styleguide
  *                                                                   */
 /* RESETS --------------------------------------------------- RESETS */
 /* so frame doesn't float around when x-scrolling on pad */
@@ -124,6 +124,8 @@ img {
             flex-direction: column; }
     .layout-app footer .footer-menu a {
       padding-bottom: 10px; }
+  .layout-app footer .footer-releases p {
+    margin-bottom: 5px; }
   .layout-app footer .copyright {
     margin-top: 32px;
     margin-left: -33px; }
