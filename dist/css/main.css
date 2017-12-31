@@ -1200,6 +1200,18 @@ p code, li code {
   z-index: 1; }
 .docs .nav-bar-2 .menu-item {
   z-index: 2; }
+.docs .bg-menu {
+  width: 2000px;
+  height: 125px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #2C2E31; }
+.docs .nav-bar-2,
+.docs .label,
+.docs hr {
+  z-index: 2; }
 .docs .side-menu {
   width: 255px;
   margin-top: 8px;
