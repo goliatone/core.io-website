@@ -353,7 +353,7 @@ img {
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
   .midnight-mode .label.highlight {
-    color: #ffffff;
+    color: #2C2E31;
     border-color: #00d8d8;
     background-color: #00d8d8; }
   .midnight-mode .label.green {
