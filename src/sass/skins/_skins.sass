@@ -84,9 +84,14 @@
     border-color: $HIGHLIGHT_1
     color: $COLOR_1
 
+
   .nav-bar-2
     +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
 
+  &.docs .guide #docs-nav a[href*="guide"],
+  &.docs .api #docs-nav a[href*="api"],
+  &.docs .examples #docs-nav a[href*="examples"]
+    border-color: $HIGHLIGHT_1
 
   .side-menu
     .menu-item a, li a
