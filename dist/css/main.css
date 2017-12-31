@@ -129,6 +129,8 @@ img {
               flex-direction: column; }
       .layout-app footer .footer-menu a {
         padding-bottom: 10px; }
+    .layout-app footer .footer-releases p {
+      margin-bottom: 5px; }
     .layout-app footer .copyright {
       margin-top: 32px;
       margin-left: -33px; }
