@@ -95,95 +95,90 @@ img {
   position: sticky; }
 
 /* LAYOUT_APP STYLE----------------------------------------------- */
-.layout-app {
-  min-height: 100vh;
-  overflow: hidden; }
-  .layout-app header,
-  .layout-app .content {
-    max-width: 1225px;
-    margin: auto; }
-  .layout-app header {
-    height: 200px; }
-  .layout-app.modules .content, .layout-app.docs .content, .layout-app.styleguide .content {
-    padding: 0 112px; }
-  .layout-app.modules .content {
-    min-height: 600px; }
-  .layout-app header {
-    padding-left: 112px;
-    padding-right: 112px; }
-  .layout-app footer {
-    width: 100%;
-    margin-top: 120px;
-    padding: 46px 112px 20px 112px; }
-    .layout-app footer .footer-logo {
-      display: inline-block;
-      width: 38px;
-      height: 38px; }
-    .layout-app footer .footer-menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .layout-app footer .footer-menu a {
-        padding-bottom: 10px; }
-    .layout-app footer .copyright {
-      margin-top: 32px;
-      margin-left: -33px; }
-  .layout-app footer {
-    /* footer positioning of elements
-     * because of display flex column changing position
-     * of one could affect other                        */ }
-    .layout-app footer .footer-logo {
-      float: left; }
-      .layout-app footer .footer-logo img {
-        position: relative;
-        top: -10px;
-        left: -35px; }
-    .layout-app footer .footer-releases {
-      position: relative;
-      top: 4px;
-      left: -72px; }
-    .layout-app footer .footer-github {
-      position: relative;
-      top: -4px;
-      left: -99px; }
-      .layout-app footer .footer-github img {
-        margin-right: 19px;
-        margin-top: 1px;
-        width: 26px;
-        height: 26px; }
-  .layout-app .row {
+.layout-app header,
+.layout-app .content {
+  max-width: 1225px;
+  margin: auto; }
+.layout-app header {
+  height: 200px; }
+.layout-app.modules .content, .layout-app.docs .content, .layout-app.styleguide .content {
+  padding: 0 112px; }
+.layout-app header {
+  padding-left: 112px;
+  padding-right: 112px; }
+.layout-app footer {
+  width: 100%;
+  margin-top: 120px;
+  padding: 46px 112px 20px 112px; }
+  .layout-app footer .footer-logo {
+    display: inline-block;
+    width: 38px;
+    height: 38px; }
+  .layout-app footer .footer-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .layout-app .row-centered {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-  .layout-app .row-vCentered {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .layout-app .row-reverse {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
-  .layout-app .cols {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .layout-app .cols-centered {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .layout-app footer .footer-menu a {
+      padding-bottom: 10px; }
+  .layout-app footer .copyright {
+    margin-top: 32px;
+    margin-left: -33px; }
+.layout-app footer {
+  /* footer positioning of elements
+   * because of display flex column changing position
+   * of one could affect other                        */ }
+  .layout-app footer .footer-logo {
+    float: left; }
+    .layout-app footer .footer-logo img {
+      position: relative;
+      top: -10px;
+      left: -35px; }
+  .layout-app footer .footer-releases {
+    position: relative;
+    top: 4px;
+    left: -72px; }
+  .layout-app footer .footer-github {
+    position: relative;
+    top: -4px;
+    left: -99px; }
+    .layout-app footer .footer-github img {
+      margin-right: 19px;
+      margin-top: 1px;
+      width: 26px;
+      height: 26px; }
+.layout-app .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.layout-app .row-centered {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+.layout-app .row-vCentered {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.layout-app .row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+.layout-app .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.layout-app .cols-centered {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 /* SKINS ----------------------------------------------------------- */
 .midnight-mode.print {
@@ -1058,7 +1053,14 @@ p code, li code {
     margin-bottom: 36px; }
 
 /* MODULES PAGE -------------------------------------------------- */
+.modules {
+  min-height: 100vh;
+  overflow: hidden; }
+  .modules .content {
+    min-height: calc(100vh - 542px); }
+
 .posts {
+  display: none;
   margin-top: 70px; }
   .posts .message-box {
     display: none;
