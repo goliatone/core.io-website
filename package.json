@@ -20,7 +20,6 @@
     "grunt-sassdoc": "^2.0.2",
     "grunt-spritesmith": "^6.4.0",
     "grunt-swig-compile": "^0.1.0",
-    "grunt-swig-render": "^0.1.1",
     "grunt-swig-templates": "^0.1.4",
     "load-grunt-tasks": "^3.5.2"
   }
