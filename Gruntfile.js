@@ -112,11 +112,17 @@ module.exports = function(grunt) {
     },
 
     swig: {
-      options: {
-        data: '<%= path.data %>/page.json'
-      },
-      files: {
-        '<%= path.prod %>/index-swig.html': ['templates/index.swig']
+      swig: {
+        options: {
+          data: {
+            title: 'Hello World'
+          }
+        },
+        expand: true,
+        cwd: 'templates',
+        dest: 'dist/swig/',
+        src: ['*.swig'],
+        ext: '.html'
       }
     },
 
