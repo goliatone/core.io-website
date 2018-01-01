@@ -129,6 +129,12 @@ module.exports = function(grunt) {
       },
     },
 
+    swig_render: {
+      files: {
+        '<%= path.prod %>/index-swig.html': 'templates/index.swig'
+      }
+    },
+
     prettify: {
 
       files: {

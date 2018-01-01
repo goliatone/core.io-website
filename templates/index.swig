@@ -79,36 +79,7 @@
 
     <div class="cols">
 
-      <!-- Documentation Side Menu -->
-      <nav id="docs-side-menu" class="side-menu">
-        <ul>
-        {%- for item in metadata.sidebar.items  %}
-          <li>
-            <a href=""></a>
-            {%- if item.children.length > 0 %}
-            <ul>
-            {% for child in item.children  %}
-              <li><a href=""></a> </li>
-            {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-        {% endfor %}
-        </ul>
-      </nav><!-- END Documentation Side Menu -->
 
-      <div class="col-2">
-        <div id="guide" class="main-txt">
-          {% autoescape false %}
-            {{ content }}
-          {% endautoescape %}
-
-          <div class="link-pagination">
-            <a href="#">Next: Application</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </div><!-- END CONTENT -->
 
