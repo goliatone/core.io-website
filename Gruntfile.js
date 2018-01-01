@@ -120,6 +120,15 @@ module.exports = function(grunt) {
       }
     },
 
+    swig_compile: {
+      options: {
+        data: '<%= path.data %>/page.json'
+      },
+      files: {
+        '<%= path.prod %>/index-swig.html': ['templates/index.swig']
+      },
+    },
+
     prettify: {
 
       files: {
