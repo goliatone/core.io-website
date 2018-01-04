@@ -1,0 +1,65 @@
+{
+  "metadata": {
+
+    "logo_big": {
+      "src": "/img/logo/c_core.svg",
+      "alt": "Core.io",
+      "title": "Core.io",
+      "link": "/"
+    },
+
+    "main_menu": {
+      "items": [
+        {
+          "link": "/",
+          "txt": "Features"
+        },
+        {
+          "link": "/quickstart.html",
+          "txt": "Quickstart"
+        },
+        {
+          "link": "/documentation/about.html",
+          "txt": "Documentation"
+        },
+        {
+          "link": "/modules.html",
+          "txt": "Modules"
+        }
+      ]
+    },
+
+    "sidebar" : {
+      "items": [
+        {
+          "link": "#skins",
+          "txt": "Skins"
+        },
+        {
+          "link": "#colors",
+          "txt": "Colors"
+        },
+        {
+          "link": "#headers",
+          "txt": "Headers"
+        },
+        {
+          "link": "#text",
+          "txt": "Text (p)"
+        },
+        {
+          "link": "#hr",
+          "txt": "Separators (hr)"
+        },
+        {
+          "link": "#buttons",
+          "txt": "Buttons"
+        },
+        {
+          "link": "#labels",
+          "txt": "Labels"
+        }
+      ]
+    }
+  }
+}

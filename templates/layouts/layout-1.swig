@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<title>Documentation</title>
+<title>{% block title %}Add title{% endblock %}</title>
 <meta name="description" content="add_description">
 <meta name="keywords" content="add_keywords">
 <meta name="author" content="add_author">
@@ -15,12 +15,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/main.css">
+{% block styles %}
+  <link rel="stylesheet" href="/css/main.css">
+{% endblock %}
 
-<!-- highlight js -->
-<link rel="stylesheet" href="js/vendor/highlight-common/styles/hybrid.css">
-<script src="js/vendor/highlight-common/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -33,7 +31,9 @@
 
     <!-- HEADER LOGO -->
     <div class="logo">
-      <a href="/index.html"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+      {% block img.logo-big %}
+      <a href="{{link}}"><img src="{{src}}" alt="{{alt}}" title="{{title}}"/></a>
+      {% endblock img.logo-big %}
     </div><!-- END HEADER LOGO -->
 
     <!-- Header Navigation Bar -->
@@ -79,7 +79,36 @@
 
     <div class="cols">
 
+      <!-- Documentation Side Menu -->
+      <nav id="docs-side-menu" class="side-menu">
+        <ul>
+        {%- for item in metadata.sidebar.items  %}
+          <li>
+            <a href=""></a>
+            {%- if item.children.length > 0 %}
+            <ul>
+            {% for child in item.children  %}
+              <li><a href=""></a> </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        </ul>
+      </nav><!-- END Documentation Side Menu -->
 
+      <div class="col-2">
+        <div id="guide" class="main-txt">
+          {% autoescape false %}
+            {{ content }}
+          {% endautoescape %}
+
+          <div class="link-pagination">
+            <a href="#">Next: Application</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div><!-- END CONTENT -->
 
