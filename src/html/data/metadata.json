@@ -1,13 +1,6 @@
 {
   "metadata": {
 
-    "logo_big": {
-      "src": "/img/logo/c_core.svg",
-      "alt": "Core.io",
-      "title": "Core.io",
-      "link": "/"
-    },
-
     "main_menu": {
       "items": [
         {
