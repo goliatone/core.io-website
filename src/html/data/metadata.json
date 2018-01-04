@@ -53,6 +53,150 @@
           "txt": "Labels"
         }
       ]
-    }
+    },
+
+    "posts": [
+      {
+        "title": "core.io-data-manager",
+        "description": "core.io data manager module",
+        "author": "goliatone",
+        "version": "0.5.0",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          },
+          {
+            "txt": "data-manager",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "core.io-pubsub-mqtt",
+        "description": "core.io PubSub transport layer providing MQTT suppor",
+        "author": "goliatone",
+        "version": "0.0.8",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "core.io",
+        "description": "Application core utilities",
+        "author": "goliatone",
+        "version": "0.0.0",
+        "labels": []
+      },
+      {
+        "title": "core.io-filesync",
+        "description": "core.io file sync module",
+        "author": "goliatone",
+        "version": "0.1.9",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          },
+          {
+            "txt": "s3",
+            "type": "light-gray"
+          },
+          {
+            "txt": "filesync",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "core.io-persistence",
+        "description": "core.io persistence module",
+        "author": "goliatone",
+        "version": "0.1.7",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          },
+          {
+            "txt": "persistence",
+            "type": "light-gray"
+          },
+          {
+            "txt": "waterline",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "core.io-express-auth",
+        "description": "Module providing Passport.js auth for express",
+        "author": "goliatone",
+        "version": "0.2.2",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          },
+          {
+            "txt": "passport",
+            "type": "light-gray"
+          },
+          {
+            "txt": "auth",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "waterline-to-json-schema",
+        "description": "WaterlineJS to JSON schema generator",
+        "author": "goliatone",
+        "version": "0.5.2",
+        "labels": [
+          {
+            "txt": "json-schema",
+            "type": "light-gray"
+          },
+          {
+            "txt": "waterline",
+            "type": "light-gray"
+          }
+        ]
+      },
+      {
+        "title": "core.io-cli",
+        "description": "core.io CLI toolbelt manager",
+        "author": "goliatone",
+        "version": "0.0.3",
+        "labels": []
+      },
+      {
+        "title": "core.io-cli-local-env",
+        "description": "CLI utility to create local development environments",
+        "author": "goliatone",
+        "version": "0.1.2",
+        "labels": []
+      },
+      {
+        "title": "core.io-express-server",
+        "description": "core.io Express server module",
+        "author": "goliatone",
+        "version": "0.0.30",
+        "labels": [
+          {
+            "txt": "core.io",
+            "type": "light-gray"
+          },
+          {
+            "txt": "express",
+            "type": "light-gray"
+          }
+        ]
+      }
+    ]
   }
 }
