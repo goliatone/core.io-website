@@ -22,35 +22,78 @@
       ]
     },
 
-    "sidebar" : {
+    "data_docs_menu": {
       "items": [
         {
-          "link": "#skins",
-          "txt": "Skins"
+          "link": "/documentation/guide/index.html",
+          "txt": "Guide"
         },
         {
-          "link": "#colors",
-          "txt": "Colors"
+          "link": "/documentation/api/index.html",
+          "txt": "API"
         },
         {
-          "link": "#headers",
-          "txt": "Headers"
+          "link": "/documentation/examples/index.html",
+          "txt": "Examples"
+        }
+      ]
+    },
+
+    "sidebar": {
+      "items": [
+        {
+          "link": "#",
+          "txt": "Application",
+          "children": [
+            {
+              "link": "#",
+              "txt": "Context"
+            },
+            {
+              "link": "#",
+              "txt": "Lifecycle"
+            }
+          ]
         },
         {
-          "link": "#text",
-          "txt": "Text (p)"
+          "link": "#",
+          "txt": "Configuration"
         },
         {
-          "link": "#hr",
-          "txt": "Separators (hr)"
+          "link": "#",
+          "txt": "Modules",
+          "children": [
+            {
+              "link": "#",
+              "txt": "Core"
+            },
+            {
+              "link": "#",
+              "txt": "Community"
+            }
+          ]
         },
         {
-          "link": "#buttons",
-          "txt": "Buttons"
+          "link": "#",
+          "txt": "Commands"
         },
         {
-          "link": "#labels",
-          "txt": "Labels"
+          "link": "#",
+          "txt": "Autoloading",
+          "children": [
+            {
+              "link": "#",
+              "txt": "Modules"
+            },
+            {
+              "link": "#",
+              "txt": "Commands"
+            }
+          ]
+        },
+        {
+          "link": "#",
+          "txt": "Concepts"
         }
       ]
     },
