@@ -77,12 +77,13 @@
   .nav-bar-1
     +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
 
+  &.features #main-nav a[href="/"],
   &.features #main-nav a[href*="index"],
   &.quickstart #main-nav a[href*="quickstart"],
-  &.features #main-nav a[href*="index"],
+  &.docs #main-nav a[href*="documentation"],
   &.modules #main-nav a[href*="modules"]
-    border-color: $HIGHLIGHT_1
-    color: $COLOR_1
+    border-color: $COLOR_1
+    color: $HIGHLIGHT_1
 
 
   .nav-bar-2
