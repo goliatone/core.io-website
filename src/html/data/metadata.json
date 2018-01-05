@@ -1,6 +1,10 @@
 {
   "metadata": {
 
+    "description": "add_description",
+    "keywords": "add_keywords",
+    "author": "add_author",
+
     "main_menu": {
       "items": [
         {
