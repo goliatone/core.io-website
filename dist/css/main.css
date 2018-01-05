@@ -26,6 +26,8 @@ ul, li {
 
 a {
   text-decoration: none; }
+  a:visited, a:focus, a:active {
+    outline: none; }
 
 img {
   width: 100%;
