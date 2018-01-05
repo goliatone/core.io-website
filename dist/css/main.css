@@ -1228,11 +1228,11 @@ p code, li code {
   padding-left: 1px; }
   .docs .side-menu a {
     display: inline-block; }
-  .docs .side-menu .menu-item {
+  .docs .side-menu .menu-item, .docs .side-menu ul > li {
     margin-bottom: 16px; }
-  .docs .side-menu .submenu {
+  .docs .side-menu .submenu, .docs .side-menu ul ul {
     margin: 15px 0 0 18px; }
-  .docs .side-menu .menu-item-submenu {
+  .docs .side-menu .menu-item-submenu, .docs .side-menu ul ul > li {
     margin-bottom: 10px; }
 .docs .main-txt {
   width: 730px; }
