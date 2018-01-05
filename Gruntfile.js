@@ -114,12 +114,11 @@ module.exports = function(grunt) {
     swig: {
       options: {
         data: require('./src/html/data/metadata.json')
-        // data: '<%= path.data %>/metadata.json'
       },
       swig: {
         expand: true,
         cwd: 'templates',
-        dest: 'dist/swig/',
+        dest: 'dist/',
         src: ['*.swig'],
         ext: '.html'
       }
