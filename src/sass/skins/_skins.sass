@@ -51,13 +51,13 @@
       border-color: rgba(222,229,255,0.16)
 
 
-  $border-color: $HIGHLIGHT_1
   $color1: #5088ea
   $color2: #a4dd74
   $width: $DECO_BAR_W
 
   .highlight-bar
-    +highlight_bar_color_1($border-color, $color1, $color2, $width)
+    border: $HIGHLIGHT_1
+    +highlight_bar_color_1($color1, $color2, $width)
 
 
   .code-block,
