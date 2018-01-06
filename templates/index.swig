@@ -22,13 +22,7 @@
         </div>
       </section><!-- END SECTION -->
 
-      <section class="paragraph-2 cols row row-reverse">
-        <div class="col-2">
-          <h2 class="h-big">Get a quick start with<br/>project generators.</h2>
-          <hr class="hr-small"/>
-          <p class="subheader p-medium-2 light">Quickly create new project using dynamic project templates.<br/>Creating templates for new projects is fast and easy.</p>
-        </div>
-
+      <section class="paragraph-2 cols row">
         <div class="col-2">
           <div class="code-wrapper">
             <div id="code-output" class="code-block bash code-block-1">
@@ -47,6 +41,12 @@
               <pre class="tab-1">└── ./myapp/models</pre>
             </div>
           </div>
+        </div>
+
+        <div class="col-2">
+          <h2 class="h-big">Get a quick start with<br/>project generators.</h2>
+          <hr class="hr-small"/>
+          <p class="subheader p-medium-2 light">Quickly create new project using dynamic project templates.<br/>Creating templates for new projects is fast and easy.</p>
         </div>
       </section><!-- END SECTION -->
 
