@@ -93,7 +93,7 @@ module.exports = function(grunt) {
         // partials directory
         directory: '<%= path.partials %>',
         // common data
-        data: "<%= path.data %>/page.json",
+        data: '<%= path.data %>/page.json',
       },
       // task render final page
       render: {
@@ -108,6 +108,19 @@ module.exports = function(grunt) {
           }
         ]
       },
+    },
+
+    swig: {
+      options: {
+        data: require('./src/html/data/metadata.json')
+      },
+      swig: {
+        expand: true,
+        cwd: 'templates',
+        dest: 'dist/',
+        src: ['*.swig'],
+        ext: '.html'
+      }
     },
 
     prettify: {
