@@ -1164,9 +1164,6 @@ p code, li code {
               justify-content: center;
       font-size: 18px;
       font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif; }
-    .quickstart .instrus .title h3 {
-      font-family: inherit;
-      font-size: inherit; }
   .quickstart .instrus .description {
     max-width: 675px;
     padding-top: 6px;
