@@ -13,7 +13,7 @@
 /// <style>
 ///   .label {
 /// </style>
-/// 
+///
 /// <div class="label">
 /// </div>
 ///
@@ -28,7 +28,7 @@
 /// @param {Length} $border_r [3px] - Label's border radius.
 ///
 /// @output css for `label_draw`
-///     
+///
 /// @example sass - Creating `.label`
 ///   .label
 ///     +label_draw(auto, 20px, 7px, 2px)
@@ -42,8 +42,5 @@
   border: 1px solid black
   border-radius: $border_r
   padding: 0 7px
-  span
-    width: 100%
-    height: 100%
-    padding-bottom: 1px
-    +flexCenter
+  line-height: $height
+  text-align: center

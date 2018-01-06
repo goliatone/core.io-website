@@ -205,6 +205,7 @@ img {
     color: #00d8d8; }
     .midnight-mode a:hover {
       color: #fafafa; }
+  .midnight-mode .post .title,
   .midnight-mode .post .title a {
     color: #fafafa; }
   .midnight-mode .highlight {
@@ -870,20 +871,9 @@ header .logo {
   height: 20px;
   border: 1px solid black;
   border-radius: 3px;
-  padding: 0 7px; }
-  .label span {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 1px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+  padding: 0 7px;
+  line-height: 20px;
+  text-align: center; }
 
 /* -------------------------------------------- CODE-BLOCK */
 .code-block {
@@ -1046,7 +1036,7 @@ p code, li code {
   padding-left: 80px;
   padding-right: 115px;
   margin-top: 322px; }
-  .features .paragraph-2 .col-2:first-of-type {
+  .features .paragraph-2 .col-2:last-child {
     margin-right: 3px; }
   .features .paragraph-2 .code-block {
     min-width: 466px;
@@ -1071,7 +1061,6 @@ p code, li code {
     min-height: calc(100vh - 542px); }
 
 .posts {
-  display: none;
   margin-top: 70px; }
   .posts .message-box {
     display: none;
@@ -1167,9 +1156,6 @@ p code, li code {
               justify-content: center;
       font-size: 18px;
       font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif; }
-    .quickstart .instrus .title h3 {
-      font-family: inherit;
-      font-size: inherit; }
   .quickstart .instrus .description {
     max-width: 675px;
     padding-top: 6px;
