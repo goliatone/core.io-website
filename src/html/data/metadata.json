@@ -26,7 +26,7 @@
       ]
     },
 
-    "data_docs_menu": {
+    "docs_menu": {
       "items": [
         {
           "link": "/documentation/guide/index.html",

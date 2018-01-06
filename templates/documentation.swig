@@ -18,7 +18,7 @@
         <!-- Documentation Navigation Bar -->
         <div class="row row-vCentered">
           <nav id="docs-nav" class="nav-bar-2">
-            {% for item in metadata.docs_menu %}
+            {% for item in metadata.docs_menu.items -%}
             <div class="menu-item">
               <a href="{{item.link}}">{{item.txt}}</a>
             </div>
