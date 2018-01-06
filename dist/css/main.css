@@ -1068,7 +1068,6 @@ p code, li code {
     min-height: calc(100vh - 542px); }
 
 .posts {
-  display: none;
   margin-top: 70px; }
   .posts .message-box {
     display: none;
