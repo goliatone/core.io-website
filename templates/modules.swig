@@ -27,33 +27,20 @@
             <!-- POST TITLE, VERSION and DESCRIPTION -->
             <div>
               <div class="row row-vCentered">
-                <div class="title h-small">
-                  <a href="">{{post.title}}</a>
-                </div>
-                <div class="tag">
-                  <span>{{post.version}}</span>
-                </div>
+                <a  class="title h-small" href="">{{post.title}}</a>
+                <span class="tag">{{post.version}}</span>
               </div>
-              <div class="row">
-                <div class="description p-medium-1">
-                  <p>{{post.description}}</p>
-                </div>
-              </div>
+              <p class="row description p-medium-1">{{post.description}}</p>
             </div>
 
             <!-- POST LABELS AND ACCES ICON -->
             <div class="row">
               <div class="labels row">
                 {% for label in post.labels -%}
-                <div class="label {{label.type}} uppercase">
-                  <span>{{label.txt}}</span>
-                </div>
+                <span class="label {{label.type}} uppercase">{{label.txt}}</span>
                 {% endfor %}
               </div>
-
-              <div class="author tag">
-                <span><span class="p-smallest">by</span> {{post.author}}</span>
-              </div>
+              <span class="author tag"><span class="p-smallest">by</span> {{post.author}}</span>
             </div>
           </div>
         </div><!-- END POST -->
