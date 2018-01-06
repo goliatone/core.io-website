@@ -24,9 +24,7 @@
             </div>
             {% endfor %}
           </nav>
-          <div class="label highlight">
-            <span>0.2.8</span>
-          </div>
+          <span class="label highlight">0.2.8</span>
         </div><!-- END Documentation Navigation Bar -->
         <hr class="sticky hr-light">
       </div>
