@@ -45,7 +45,7 @@
             <div class="row">
               <div class="labels row">
                 {% for label in post.labels -%}
-                <div class="label {{label.tyoe}} uppercase">
+                <div class="label {{label.type}} uppercase">
                   <span>{{label.txt}}</span>
                 </div>
                 {% endfor %}
