@@ -1,4 +1,4 @@
-  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,40 +6,43 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Documentation</title>
+
   <meta name="description" content="add_description">
   <meta name="keywords" content="add_keywords">
   <meta name="author" content="add_author">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/main.css">
-
+  
+  <link rel="stylesheet" href="/css/main.css">
   <!-- highlight js -->
   <link rel="stylesheet" href="js/vendor/highlight-common/styles/hybrid.css">
   <script src="js/vendor/highlight-common/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+
+
 </head>
 
 <body>
 
   <div class="docs midnight-mode layout-app">
-    
+
     <div class="highlight-bar"></div>
 
     <header class="row row-vCentered">
-  
+
       <!-- HEADER LOGO -->
       <div class="logo">
-        <a href="/index.html"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+        <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
       </div><!-- END HEADER LOGO -->
 
       <!-- Header Navigation Bar -->
       <nav id="main-nav" class="nav-bar-1">
         <div class="menu-item">
-          <a href="/index.html">Features</a>
+          <a href="/">Features</a>
         </div>
         <div class="menu-item">
           <a href="/quickstart.html">Quickstart</a>
@@ -54,152 +57,158 @@
 
     </header><!-- END SECTION HEADER -->
 
-    <div class="content">
+    <div class=" content">
+      
+<div class="sticky nav">
 
-      <div class="sticky nav">
-        <div class="bg-menu"></div>
-        <div class="row row-vCentered">
-      <!-- Documentation Navigation Bar -->
-      <nav id="docs-nav" class="nav-bar-2">
-        <div class="menu-item">
-          <a href="/documentation/guide/index.html">Guide</a>
-        </div>
-        <div class="menu-item">
-          <a href="/documentation/api/index.html">API</a>
-        </div>
-        <div class="menu-item">
-          <a href="/documentation/examples/index.html">Examples</a>
-        </div>
-      </nav><!-- END Documentation Navigation Bar -->
+  <div class="bg-menu"></div>
 
-          <div class="label highlight">
-            <span>0.2.8</span>
-          </div>
-        </div>
+  <div class="row row-vCentered">
+    <!-- Documentation Navigation Bar -->
+    <nav id="docs-nav" class="nav-bar-2">
+      
+    </nav><!-- END Documentation Navigation Bar -->
 
-        <hr class="sticky hr-light">
+    <div class="label highlight">
+      <span>0.2.8</span>
+    </div>
+  </div>
+
+  <hr class="sticky hr-light">
+</div>
+
+<div class="cols">
+
+  <!-- Documentation Side Menu -->
+  <nav id="docs-side-menu" class="side-menu">
+    <ul>
+      <li>
+        <a href="#">Application</a>
+        
+        <ul>
+        
+          <li><a href="#">Context</a></li>
+        
+          <li><a href="#">Lifecycle</a></li>
+        
+        </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#">Configuration</a>
+        
+      </li>
+    
+      <li>
+        <a href="#">Modules</a>
+        
+        <ul>
+        
+          <li><a href="#">Core</a></li>
+        
+          <li><a href="#">Community</a></li>
+        
+        </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#">Commands</a>
+        
+      </li>
+    
+      <li>
+        <a href="#">Autoloading</a>
+        
+        <ul>
+        
+          <li><a href="#">Modules</a></li>
+        
+          <li><a href="#">Commands</a></li>
+        
+        </ul>
+        
+      </li>
+    
+      <li>
+        <a href="#">Concepts</a>
+        
+      </li>
+    
+    </ul>
+  </nav><!-- END Documentation Side Menu -->
+
+  <div class="col-2">
+    <div id="guide" class="main-txt">
+      <h3 class="title h-smaller-bold"># core.io documentation</h3>
+
+      <div class="description p-small-light">
+        <p><b>core.io</b> provides a structure to quickly prototype Node.js applications of any type, providing a set of guidelines and conventions to ease development.</p>
+        <p>In a way <b>core.io</b> aims to be a workflow rather than a framework by providing a common application structure regardless if the application is web, desktop, or data focused.</p>
+        <p><b>core.io</b> provides basic building blocks which are useful in any context and help with command tasks like configuration management, logging, dependency management and more basic needs of most applications.</p>
+        <p>The heart of <b>core.io</b> is the <a href="#">application context</a>, which you can extend directly with custom logic or indirectly with modules.</p>
+        <p><a href="#">Modules</a> are intended to encapsulate code and make it portable. They also serve as glue to integrate libraries like Socket.IO or AMQP into your project.</p>
+        <p>Following simple conventions on how files are named and where those files are placed core.io will auto-load, auto-configure, and auto-wire components always leaving you the choice to override defaults or create custom modules to replace core functionality.</p>
       </div>
 
-      <div class="cols">
-
-        <div class="col-2">
-      <!-- Documentation Side Menu -->
-      <nav id="docs-side-menu" class="side-menu sticky">
-        <div class="menu-item">
-          <a href="#">Application</a>
-            <div class="submenu">
-              <div class="menu-item-submenu">
-                <a href="#">Context</a>
-              </div>
-              <div class="menu-item-submenu">
-                <a href="#">Lifecycle</a>
-              </div>
-            </div>
-        </div>
-        <div class="menu-item">
-          <a href="#">Configuration</a>
-        </div>
-        <div class="menu-item">
-          <a href="#">Modules</a>
-            <div class="submenu">
-              <div class="menu-item-submenu">
-                <a href="#">Core</a>
-              </div>
-              <div class="menu-item-submenu">
-                <a href="#">Community</a>
-              </div>
-            </div>
-        </div>
-        <div class="menu-item">
-          <a href="#">Commands</a>
-        </div>
-        <div class="menu-item">
-          <a href="#">Autoloading</a>
-            <div class="submenu">
-              <div class="menu-item-submenu">
-                <a href="#">Modules</a>
-              </div>
-              <div class="menu-item-submenu">
-                <a href="#">Commands</a>
-              </div>
-            </div>
-        </div>
-        <div class="menu-item">
-          <a href="#">Concepts</a>
-        </div>
-      </nav><!-- END Documentation Side Menu -->
-        </div>
-
-        <div class="col-2">
-          <div id="guide" class="main-txt">
-            <h3 class="title h-smaller-bold"># core.io documentation</h3>
-
-            <div class="description p-small-light">
-              <p><b>core.io</b> provides a structure to quickly prototype Node.js applications of any type, providing a set of guidelines and conventions to ease development.</p>
-              <p>In a way <b>core.io</b> aims to be a workflow rather than a framework by providing a common application structure regardless if the application is web, desktop, or data focused.</p>
-              <p><b>core.io</b> provides basic building blocks which are useful in any context and help with command tasks like configuration management, logging, dependency management and more basic needs of most applications.</p>
-              <p>The heart of <b>core.io</b> is the <a href="#">application context</a>, which you can extend directly with custom logic or indirectly with modules.</p>
-              <p><a href="#">Modules</a> are intended to encapsulate code and make it portable. They also serve as glue to integrate libraries like Socket.IO or AMQP into your project.</p>
-              <p>Following simple conventions on how files are named and where those files are placed core.io will auto-load, auto-configure, and auto-wire components always leaving you the choice to override defaults or create custom modules to replace core functionality.</p>
-            </div>
-
-            <div class="code-block">
-              <pre><code>
+      <div class="code-block">
+        <pre><code>
 class MyClass {
-    constructor(options){
-        options = extend({}, MyClass.DEFAULTS, options);
-        if(options.autoinitialize) {
-            this.init(options);
-        }
-    }
+constructor(options){
+  options = extend({}, MyClass.DEFAULTS, options);
+  if(options.autoinitialize) {
+      this.init(options);
+  }
+}
 
-    init(options={}) {
-        extend(this, options);
-    }
+init(options={}) {
+  extend(this, options);
+}
 }
 
 MyClass.DEFAULTS = {
-    autoinitialize: true;
-    getName: function() {
-        return this.name;
-    },
-    name: 'MyClass'
+autoinitialize: true;
+getName: function() {
+  return this.name;
+},
+name: 'MyClass'
 }
-              </code></pre>
-            </div><!-- END CODE BLOCK -->
+        </code></pre>
+      </div><!-- END CODE BLOCK -->
 
-            <div class="row link-pagination">
-              <a href="#">Previous: Previous</a>
-              <a href="#">Next: Application</a>
-            </div>
-          </div>
-        </div>
+      <div class="row link-pagination">
+        <a href="#">Previous: Previous</a>
+        <a href="#">Next: Application</a>
       </div>
+    </div>
+  </div>
+</div>
 
     </div><!-- END CONTENT -->
 
     <footer>
       <div class="cols cols-centered">
-        
+
         <div class="col-3">
           <div class="footer-logo">
-            <a href="/index.html"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
+            <a href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
           </div>
-          
+
           <div class="footer-menu">
-            <a href="&#x2F;index.html">Features</a>
-            <a href="&#x2F;quickstart.html">Quickstart</a>
-            <a href="&#x2F;documentation&#x2F;about.html">Documentation</a>
-            <a href="&#x2F;modules.html">Modules</a>
+            <a href="/">Features</a>
+            <a href="/quickstart.html">Quickstart</a>
+            <a href="/documentation/about.html">Documentation</a>
+            <a href="/modules.html">Modules</a>
           </div>
-        </div> 
-        
+        </div>
+
         <div class="col-3">
           <div class="footer-releases">
             <p>Latest Release: 0.2.8 (Jun 01, 2017)</p>
           </div>
         </div>
-        
+
         <div class="col-3">
           <div class="footer-github">
             <a href="#" class="row row-vCentered">
@@ -212,15 +221,14 @@ MyClass.DEFAULTS = {
       <div class="row row-centered copyright">
         <p>Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
       </div>
-    </footer>    
+    </footer>
   </div><!-- END docs midnight-mode layout-app -->
-  
 
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
   <script src="/js/main.js"></script>
-
+  
 </body>
 
 </html>
-
