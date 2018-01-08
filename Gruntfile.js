@@ -95,6 +95,19 @@ module.exports = function(grunt) {
       }
     },
 
+    // render html prod src
+    processhtml: {
+      prod: {
+        // files: {
+        //   'dist/index.html': ['dist/index.html']
+        // }
+        expand: true,
+        cwd: '<%= path.prod %>',
+        dest: '<%= path.prod %>/',
+        src: ['*.html'],
+      }
+    },
+
     // HELPERS
 
     copy: {
@@ -115,7 +128,7 @@ module.exports = function(grunt) {
         '!<%= path.js_prod %>/*.min.js'
       ],
       css: [
-        '<%= path.css %>/*.css',
+        '<%= path.css %>/*',
         '!<%= path.css %>/*.min.css'
       ]
     }
@@ -126,10 +139,10 @@ module.exports = function(grunt) {
   //  compile sass and add prefixes
   //  lint js and populate dist/js
   //  render html
-  grunt.registerTask('build_dev', ['clean:default', 'sass', 'postcss', 'jshint', 'copy:js', 'swig']);
+  grunt.registerTask('build_dev', ['clean:all', 'sass', 'postcss', 'jshint', 'copy:js', 'swig']);
   // generate production files in dist:
   //  compile sass, add prefixes and minify css
   //  lint and minify js
   //  render html
-  grunt.registerTask('build_prod', ['clean:default', 'sass', 'postcss', 'cssmin', 'clean:css', 'jshint', 'copy:js', 'uglify', 'clean:js', 'swig']);
+  grunt.registerTask('build', ['clean:all', 'sass', 'postcss', 'cssmin', 'clean:css', 'jshint', 'copy:js', 'uglify', 'clean:js', 'swig', 'processhtml']);
 };

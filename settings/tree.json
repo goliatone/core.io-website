@@ -5,5 +5,5 @@
   "sass": "src/sass",
   "js_dev": "src/js",
   "js_prod": "dist/js",
-  "html_templates": "templates",
+  "html_templates": "templates"
 }
