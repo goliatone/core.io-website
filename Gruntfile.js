@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
     path: grunt.file.readJSON('settings/tree.json'),
 
-    // DEVELOPMENT
+    // CSS ---------------------------------------------
 
     // compile sass
     sass: {
@@ -35,6 +35,15 @@ module.exports = function(grunt) {
       }
     },
 
+    // minify css
+    cssmin: {
+      all: {
+        files: {
+          '<%= path.css %>/main.min.css': '<%= path.css %>/main.css',
+        }
+      }
+    },
+
     // generate sass documentation
     sassdoc: {
       default: {
@@ -42,27 +51,13 @@ module.exports = function(grunt) {
       },
     },
 
+
+    // JS ----------------------------------------------
+
     // lint js
     jshint: {
       files: ['Gruntfile.js', '<%= path.js_dev %>/**/*.js']
     },
-
-    // watch changes on css and js and if no errors, reload page
-    watch: {
-      options: {
-        livereload: true,
-        livereloadOnError: false
-      },
-
-      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass', 'postcss'] },
-
-      js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
-
-      html: {files: '<%= path.templates %>/**/*.swig', tasks: ['swig'] }
-    },
-
-
-    // PRODUCTION
 
     // minify js
     uglify: {
@@ -73,15 +68,10 @@ module.exports = function(grunt) {
       }
     },
 
-    // minify css
-    cssmin: {
-      all: {
-        files: {
-          '<%= path.css %>/main.min.css': '<%= path.css %>/main.css',
-        }
-      }
-    },
 
+    // HTML --------------------------------------------
+
+    // render html
     swig: {
       options: {
         data: require('./src/html/data/metadata.json')
@@ -95,12 +85,9 @@ module.exports = function(grunt) {
       }
     },
 
-    // render html prod src
+    // update html production links to minified css and js
     processhtml: {
       prod: {
-        // files: {
-        //   'dist/index.html': ['dist/index.html']
-        // }
         expand: true,
         cwd: '<%= path.prod %>',
         dest: '<%= path.prod %>/',
@@ -108,12 +95,34 @@ module.exports = function(grunt) {
       }
     },
 
-    // HELPERS
+
+    // HELPERS -----------------------------------------
+
+    // watch changes on css, js and html
+    // if no errors, reload page
+    watch: {
+      options: {
+        livereload: true,
+        livereloadOnError: false
+      },
+
+      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass', 'postcss'] },
+
+      js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
+
+      html: {files: '<%= path.templates %>/**/*.swig', tasks: ['swig'] }
+    },
 
     copy: {
       js: {
         files: [
-          {expand: true, flatten: true, src: ['<%= path.js_dev %>/*.js'], dest: '<%= path.js_prod %>', filter: 'isFile'}
+          {
+            expand: true,
+            flatten: true,
+            src: ['<%= path.js_dev %>/*.js'],
+            dest: '<%= path.js_prod %>',
+            filter: 'isFile'
+          }
         ]
       }
     },
@@ -144,5 +153,6 @@ module.exports = function(grunt) {
   //  compile sass, add prefixes and minify css
   //  lint and minify js
   //  render html
+  //  update css and js links to minified versions
   grunt.registerTask('build', ['clean:all', 'sass', 'postcss', 'cssmin', 'clean:css', 'jshint', 'copy:js', 'uglify', 'clean:js', 'swig', 'processhtml']);
 };
