@@ -14,13 +14,5 @@
   "partials": "src/html/partials",
   "data": "src/html/data",
   "templates": "src/html/templates",
-  "img_dev": "src/img",
-  "img_prod": "dist/img",
-  "image_dev": "src/img/images",
-  "image_prod": "dist/img/images",
-  "logo_dev": "src/img/logo",
-  "logo_prod": "dist/img/logo",
-  "icons_dev": "src/img/icons",
-  "icons_prod": "dist/img/icons",
   "plugins": "dist/js/vendor"
 }

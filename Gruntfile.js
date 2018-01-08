@@ -10,7 +10,6 @@ module.exports = function(grunt) {
 
     path: grunt.file.readJSON('settings/tree.json'),
 
-
     // DEVELOPMENT
 
     // compile sass
@@ -124,7 +123,6 @@ module.exports = function(grunt) {
     },
 
     prettify: {
-
       files: {
         '<%= path.prod %>/pretty/index.html': '<%= path.prod %>/index.mustache',
         '<%= path.prod %>/modules.html': '<%= path.prod %>/modules.mustache',
@@ -164,5 +162,4 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['clean:default', 'sass', 'jshint', 'copy:js']);
   grunt.registerTask('dist', ['clean:default', 'sass', 'postcss', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
   grunt.registerTask('render', ['mustache_render:render', 'prettify']);
-  grunt.registerTask('img', ['imagemin', 'grunticon', 'copy', 'sprite', 'clean:img']);
 };
