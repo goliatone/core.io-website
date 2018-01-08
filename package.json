@@ -17,6 +17,7 @@
     "grunt-mustache-render": "^1.9.2",
     "grunt-postcss": "^0.9.0",
     "grunt-prettify": "^0.4.0",
+    "grunt-processhtml": "^0.4.1",
     "grunt-sassdoc": "^2.0.2",
     "grunt-spritesmith": "^6.4.0",
     "grunt-swig-templates": "^0.1.4",
