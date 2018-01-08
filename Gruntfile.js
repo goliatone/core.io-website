@@ -3,9 +3,6 @@ module.exports = function(grunt) {
   // load all grunt tasks as found in package.json
   require('load-grunt-tasks')(grunt);
 
-  // use CLI entered page name for mustache-render, default index
-  var page_name = grunt.option('name') || 'index';
-
   grunt.initConfig({
 
     path: grunt.file.readJSON('settings/tree.json'),
@@ -47,7 +44,7 @@ module.exports = function(grunt) {
 
     // lint js
     jshint: {
-      files: ['Gruntfile.js', '<%= path.js_dev %>/**/*.js', '<%= path.tests /**/*.js']
+      files: ['Gruntfile.js', '<%= path.js_dev %>/**/*.js']
     },
 
     // watch changes on css and js and if no errors, reload page
@@ -61,7 +58,7 @@ module.exports = function(grunt) {
 
       js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
 
-      html: {files: '<%= path.dev %>/html/**/*.mustache', tasks: ['render'] }
+      html: {files: '<%= path.templates %>/**/*.swig', tasks: ['swig'] }
     },
 
 
@@ -80,33 +77,9 @@ module.exports = function(grunt) {
     cssmin: {
       all: {
         files: {
-          '<%= path.css %>/main.css': '<%= path.css %>/main.css',
-          '<%= path.css %>/login.css': '<%= path.css %>/login.css'
+          '<%= path.css %>/main.min.css': '<%= path.css %>/main.css',
         }
       }
-    },
-
-    // render working html sheets
-    mustache_render: {
-      options: {
-        // partials directory
-        directory: '<%= path.partials %>',
-        // common data
-        data: '<%= path.data %>/page.json',
-      },
-      // task render final page
-      render: {
-        files: [
-          {
-            '<%= path.prod %>/index.html': '<%= path.templates %>/features.mustache',
-            '<%= path.prod %>/modules.html': '<%= path.templates %>/modules.mustache',
-            '<%= path.prod %>/documentation.html': '<%= path.templates %>/documentation.mustache',
-            '<%= path.prod %>/quickstart.html': '<%= path.templates %>/quickstart.mustache',
-            '<%= path.prod %>/examples.html': '<%= path.templates %>/examples.mustache',
-            '<%= path.prod %>/documentation.swig': '<%= path.templates %>/documentation-swig.mustache',
-          }
-        ]
-      },
     },
 
     swig: {
@@ -115,28 +88,16 @@ module.exports = function(grunt) {
       },
       swig: {
         expand: true,
-        cwd: 'templates',
-        dest: 'dist/',
+        cwd: '<%= path.html_templates %>',
+        dest: '<%= path.prod %>/',
         src: ['*.swig'],
         ext: '.html'
       }
     },
 
-    prettify: {
-      files: {
-        '<%= path.prod %>/pretty/index.html': '<%= path.prod %>/index.mustache',
-        '<%= path.prod %>/modules.html': '<%= path.prod %>/modules.mustache',
-        '<%= path.prod %>/pretty/documentation-1.html': '<%= path.prod %>/documentation-1.mustache',
-        '<%= path.prod %>/documentation-2.html': '<%= path.prod %>/documentation-2.mustache',
-        '<%= path.prod %>/quickstart.html': '<%= path.prod %>/quickstart.mustache',
-      }
-    },
-
-
     // HELPERS
 
     copy: {
-      // for dev
       js: {
         files: [
           {expand: true, flatten: true, src: ['<%= path.js_dev %>/*.js'], dest: '<%= path.js_prod %>', filter: 'isFile'}
@@ -145,21 +106,30 @@ module.exports = function(grunt) {
     },
 
     clean: {
-      default: [
+      all: [
         '<%= path.js_prod %>/*.js',
-        '!<%= path.js_prod %>/*.min.js',
         '<%= path.css %>/*'
       ],
       js: [
         '<%= path.js_prod %>/*.js',
-        '!<%= path.js_prod %>/*.min.js',
+        '!<%= path.js_prod %>/*.min.js'
+      ],
+      css: [
+        '<%= path.css %>/*.css',
+        '!<%= path.css %>/*.min.css'
       ]
     }
 
   });
 
-
-  grunt.registerTask('default', ['clean:default', 'sass', 'jshint', 'copy:js']);
-  grunt.registerTask('dist', ['clean:default', 'sass', 'postcss', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
-  grunt.registerTask('render', ['mustache_render:render', 'prettify']);
+  // generate devolopment files in dist:
+  //  compile sass and add prefixes
+  //  lint js and populate dist/js
+  //  render html
+  grunt.registerTask('build_dev', ['clean:default', 'sass', 'postcss', 'jshint', 'copy:js', 'swig']);
+  // generate production files in dist:
+  //  compile sass, add prefixes and minify css
+  //  lint and minify js
+  //  render html
+  grunt.registerTask('build_prod', ['clean:default', 'sass', 'postcss', 'cssmin', 'clean:css', 'jshint', 'copy:js', 'uglify', 'clean:js', 'swig']);
 };

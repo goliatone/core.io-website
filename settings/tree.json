@@ -1,18 +1,9 @@
 {
   "dev": "src",
   "prod": "dist",
-  "temp": "tmp",
-  "settings": "settings",
-  "partials": "templates",
-  "tests": "test",
   "css": "dist/css",
   "sass": "src/sass",
   "js_dev": "src/js",
   "js_prod": "dist/js",
-  "html_dev": "src/html",
-  "html_prod": "dist/html",
-  "partials": "src/html/partials",
-  "data": "src/html/data",
-  "templates": "src/html/templates",
-  "plugins": "dist/js/vendor"
+  "html_templates": "templates",
 }
