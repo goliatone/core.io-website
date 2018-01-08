@@ -4,7 +4,7 @@
 
 {% block page %}modules{% endblock %}
 
-{% block content %}
+{% block content %} {% set bg = true %}
       <!-- SEARCH BAR -->
       <div class="row row-centered">
         <div class="search-bar-1">
