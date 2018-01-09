@@ -26,12 +26,18 @@
 /// @param {Text} $font [sans-serif] - Button's font family.
 /// @param {Length} $font_size [16px] - Button's font size.
 ///
-/// @output css for `.button`
-///
-/// @example sass - Creating `.bit-btn`
+/// @output css for `.btn-big`
+/// ```
+/// .btn-big {
+///   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+///   font-size: 18px;
+///   font-weight: 500;
+/// }
+/// ```
+/// @example sass - Creating `.btn-big`
 /// $HELVETICA_BOLD: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
 /// .btn-big
-///   +button_fonts(HELVETICA_BOLD, 18px)
+///   +button_fonts($HELVETICA_BOLD, 18px)
 ///
 
 =button_fonts($font, $font_size)

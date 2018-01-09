@@ -232,7 +232,7 @@ img {
     background: -webkit-gradient(linear, left top, right top, from(#5088ea), color-stop(50%, #a4dd74), color-stop(51%, #a4dd74), to(#5088ea));
     background: -o-linear-gradient(left, #5088ea 0%, #a4dd74 50%, #a4dd74 51%, #5088ea 100%);
     background: linear-gradient(to right, #5088ea 0%, #a4dd74 50%, #a4dd74 51%, #5088ea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5088ea', endColorstr='#a4dd74',GradientType=1 );
     -webkit-animation: bg_move 4s infinite;
             animation: bg_move 4s infinite; }
 @-webkit-keyframes bg_move {
