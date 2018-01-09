@@ -3,21 +3,23 @@
 /// Markup has the following structure:
 ///
 /// ```
-///   <div class="button">
-///     <span>Button Text</span>
-///   <div>
+///   <button class="big-btn">...</button>
+///   <a class="big-btn">...</a>
+///   <div class="big-btn">...<div>
 /// ```
 ///
 /// <style>
-///   .button {
+///   .btn-big {
+///     font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+///     font-size: 18px;
+///     font-weight: 500;
+///   }
 /// </style>
 ///
-/// <div class="button">
-/// </div>
+/// <button class="btn-big btn-black">Button</button>
 ///
 ///
 /// @group Buttons
-/// @group Fonts
 /// @author Tatiana Burgos
 ///
 ///
@@ -26,16 +28,13 @@
 ///
 /// @output css for `.button`
 ///
-/// @example sass - Creating `.button`
-///   .button
-///     +button_fonts()
+/// @example sass - Creating `.bit-btn`
+/// $HELVETICA_BOLD: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif
+/// .btn-big
+///   +button_fonts(HELVETICA_BOLD, 18px)
 ///
-/// @todo * Add link to label element
-/// @todo * Relate margin and padding sizes either to title size or to param
 
 =button_fonts($font, $font_size)
-  &button, &.button, button, .button
-    font-family: $font
-    font-size: $font_size
-    line-height: $font_size
-    font-weight: 500
+  font-family: $font
+  font-size: $font_size
+  font-weight: 500

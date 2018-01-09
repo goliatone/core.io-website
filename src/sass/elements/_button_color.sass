@@ -1,24 +1,26 @@
-/// Mixin to color a button.
+/// Mixin to color a button with an optional 5px 5px 5px box shadow.
 ///
 /// Markup has the following structure:
 ///
 /// ```
-///   <div class="button">
-///     <span>Button Text</span>
-///   <div>
+///   <button class="btn-black">...</button>
+///   <a class="btn-black">...</a>
+///   <div class="btn-black">...<div>
 /// ```
 ///
-///
 /// <style>
-///   .button {
+///   .btn-black {
+///     color: #f8f8f8;
+///     background-color: #2c2c31;
+///     border-color: #f8f8f8;
+///     box-shadow: #212121;
+///   }
 /// </style>
 ///
-/// <div class="button">
-/// </div>
+/// <button class="btn-big btn-black">Button</button>
 ///
 ///
 /// @group Buttons
-/// @group Colors
 /// @author Tatiana Burgos
 ///
 ///
@@ -26,19 +28,23 @@
 /// @param {Color} $color_2 [white] - Button's background color.
 /// @param {Color} $color_3 [false] - Button's shadow color.
 ///
-/// @output css for `.button`
-///
+/// @output css for `.btn-black`
+/// ```
+/// .btn-black {
+///   color: #f8f8f8;
+///   background-color: #2c2c31;
+///   border-color: #f8f8f8;
+///   box-shadow: #212121;
+/// }
+/// ```
 /// @example sass - Creating `.button`
-///   .button
-///     +button_color()
+///   .btn-black
+///     +button_color(#f8f8f8, #2c2c31, #212121)
 ///
-/// @todo * Add link to label element
-/// @todo * Relate margin and padding sizes either to title size or to param
 
 =button_color($color_1:black, $color_2:white, $color_3:false)
-  &button, &.button, button, .button
-    color: $color_1
-    background-color: $color_2
-    border-color: $color_1
-    @if $color_3
-      box-shadow: 5px 5px 5px $color_3
+  color: $color_1
+  background-color: $color_2
+  border-color: $color_1
+  @if $color_3
+    box-shadow: 5px 5px 5px $color_3

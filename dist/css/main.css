@@ -307,53 +307,46 @@ img {
       .midnight-mode .search-bar-1 input:hover, .midnight-mode .search-bar-1 input:focus {
         border-color: #00d8d8;
         outline: none; }
-  .midnight-mode .black-btnbutton, .midnight-mode .black-btn.button, .midnight-mode .black-btn button, .midnight-mode .black-btn .button {
+  .midnight-mode .black-btn {
     color: #f8f8f8;
     background-color: #2c2c31;
     border-color: #f8f8f8;
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
-  .midnight-mode .black-btn.fadebutton, .midnight-mode .black-btn.fade.button, .midnight-mode .black-btn.fade button, .midnight-mode .black-btn.fade .button {
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .midnight-mode .black-btn.fadebutton:hover, .midnight-mode .black-btn.fade.button:hover, .midnight-mode .black-btn.fade button:hover, .midnight-mode .black-btn.fade .button:hover {
-      color: #2c2c31;
-      background-color: #f8f8f8;
+    .midnight-mode .black-btn.fade {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .midnight-mode .gray-btnbutton, .midnight-mode .gray-btn.button, .midnight-mode .gray-btn button, .midnight-mode .gray-btn .button {
+      .midnight-mode .black-btn.fade:hover {
+        color: #2c2c31;
+        background-color: #f8f8f8;
+        border-color: #f8f8f8; }
+  .midnight-mode .gray-btn {
     color: #2c2c31;
     background-color: #f8f8f8;
     border-color: #2c2c31;
     -webkit-box-shadow: 5px 5px 5px #212121;
             box-shadow: 5px 5px 5px #212121; }
-  .midnight-mode .gray-btn.fadebutton, .midnight-mode .gray-btn.fade.button, .midnight-mode .gray-btn.fade button, .midnight-mode .gray-btn.fade .button {
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .midnight-mode .gray-btn.fadebutton:hover, .midnight-mode .gray-btn.fade.button:hover, .midnight-mode .gray-btn.fade button:hover, .midnight-mode .gray-btn.fade .button:hover {
-      color: #f8f8f8;
-      background-color: #2c2c31;
-      border-color: #f8f8f8;
+    .midnight-mode .gray-btn.fade {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
-  .midnight-mode .blue-btnbutton, .midnight-mode .blue-btn.button, .midnight-mode .blue-btn button, .midnight-mode .blue-btn .button {
+      .midnight-mode .gray-btn.fade:hover {
+        color: #f8f8f8;
+        background-color: #2c2c31;
+        border-color: #f8f8f8; }
+  .midnight-mode .blue-btn {
     color: #00d8d8;
     background-color: #2C2E31;
     border-color: #00d8d8; }
-  .midnight-mode .blue-btn.fadebutton, .midnight-mode .blue-btn.fade.button, .midnight-mode .blue-btn.fade button, .midnight-mode .blue-btn.fade .button {
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .midnight-mode .blue-btn.fadebutton:hover, .midnight-mode .blue-btn.fade.button:hover, .midnight-mode .blue-btn.fade button:hover, .midnight-mode .blue-btn.fade .button:hover {
-      color: #2C2E31;
-      background-color: #00d8d8;
+    .midnight-mode .blue-btn.fade {
       -webkit-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+      .midnight-mode .blue-btn.fade:hover {
+        color: #2C2E31;
+        background-color: #00d8d8;
+        border-color: #00d8d8; }
   .midnight-mode .label.highlight {
     color: #2C2E31;
     border-color: #00d8d8;
@@ -621,16 +614,14 @@ code {
   font-weight: 200; }
 
 /* ----------------------------------- BUTTONS */
-.big-btnbutton, .big-btn.button, .big-btn button, .big-btn .button {
+.big-btn {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 18px;
   font-weight: 500; }
 
-.medium-btnbutton, .medium-btn.button, .medium-btn button, .medium-btn .button {
+.medium-btn {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 16px;
   font-weight: 500; }
 
 /* ------------------------------------ LABELS */
@@ -822,7 +813,7 @@ header .logo {
 
 /* ----------------------------------------------- BUTTONS */
 /* --------------------------------- BIG BUTTON */
-.big-btnbutton, .big-btn.button, .big-btn button, .big-btn .button {
+.big-btn {
   display: inline-block;
   width: 200px;
   height: 53px;
@@ -830,11 +821,11 @@ header .logo {
   border: 1px solid black;
   border-radius: 3px;
   text-align: center; }
-  .big-btnbutton:hover, .big-btn.button:hover, .big-btn button:hover, .big-btn .button:hover {
+  .big-btn:hover {
     cursor: pointer; }
 
 /* ------------------------------ MEDIUM BUTTON */
-.medium-btnbutton, .medium-btn.button, .medium-btn button, .medium-btn .button {
+.medium-btn {
   display: inline-block;
   width: 155px;
   height: 44px;
@@ -842,7 +833,7 @@ header .logo {
   border: 2px solid black;
   border-radius: 5px;
   text-align: center; }
-  .medium-btnbutton:hover, .medium-btn.button:hover, .medium-btn button:hover, .medium-btn .button:hover {
+  .medium-btn:hover {
     cursor: pointer; }
 
 /* ---------------------------- DOWNLOAD BUTTON */
