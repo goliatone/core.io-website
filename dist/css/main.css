@@ -258,9 +258,9 @@ img {
     border-top: 1px solid #979797; }
     .midnight-mode .posts > .row:last-of-type {
       border-bottom: 1px solid #979797; }
-  .midnight-mode .nav-bar-1 a {
+  .midnight-mode .nav-bar-1 .menu-item a {
     color: #fafafa; }
-    .midnight-mode .nav-bar-1 a:hover, .midnight-mode .nav-bar-1 a.selected {
+    .midnight-mode .nav-bar-1 .menu-item a:hover, .midnight-mode .nav-bar-1 .menu-item a.selected {
       color: #00d8d8;
       border-color: #fafafa; }
   .midnight-mode.features #main-nav a[href="/"], .midnight-mode.features #main-nav a[href*="index"], .midnight-mode.quickstart #main-nav a[href*="quickstart"], .midnight-mode.docs #main-nav a[href*="documentation"], .midnight-mode.modules #main-nav a[href*="modules"] {
@@ -721,8 +721,6 @@ header .logo {
   .nav-bar-2 .menu-item {
     margin-right: 10px; }
     .nav-bar-2 .menu-item a {
-      font-size: inherit;
-      line-height: inherit;
       padding: 13px; }
       .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
         border-bottom: 2px solid white; }

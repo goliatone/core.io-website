@@ -2,7 +2,6 @@
 // -------------------------------------------------------------- CSS
 // SCOPE = PROJECT
 
-// ----------------------------------------- MIDNIGHT MODE
 .midnight-mode.print
   background: none
   color: black
@@ -75,25 +74,35 @@
         border-bottom: 1px solid $SHADE_2
 
 
+  $nav_bar_text: $COLOR_1
+  $nav_bar_higlght: $HIGHLIGHT_1
+
   .nav-bar-1
-    +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
+    .menu-item a
+      color: $nav_bar_text
+      &:hover, &.selected
+        color: $nav_bar_higlght
+        border-color: $nav_bar_text
 
   &.features #main-nav a[href="/"],
   &.features #main-nav a[href*="index"],
   &.quickstart #main-nav a[href*="quickstart"],
   &.docs #main-nav a[href*="documentation"],
   &.modules #main-nav a[href*="modules"]
-    border-color: $COLOR_1
-    color: $HIGHLIGHT_1
+    border-color: $nav_bar_text
+    color: $nav_bar_higlght
 
 
   .nav-bar-2
-    +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
+    .menu-item a
+      color: $nav_bar_text
+      &:hover, &.selected
+        border-color: $nav_bar_higlght
 
   &.docs .guide #docs-nav a[href*="guide"],
   &.docs .api #docs-nav a[href*="api"],
   &.docs .examples #docs-nav a[href*="examples"]
-    border-color: $HIGHLIGHT_1
+    border-color: $nav_bar_higlght
 
   .side-menu
     .menu-item a, li a
@@ -134,6 +143,7 @@
   .label
     &.highlight
       +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
+
     &.green
       +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
 

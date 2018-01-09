@@ -1,48 +1,47 @@
-/// Mixin to add color to a label (without link)
-/// (no hover style).
+/// Mixin to color a label.
 ///
-/// Use +label_draw to draw the label.
+/// Use `+label_draw` to draw the label.
 ///
 /// Markup has the following structure:
 ///
 /// ```
-///   <div class="label">
-///     <a href="">Label Text</a>
-///   <div>
+///   <div class="label higlight">Lable</a><div>
+///   <span class="label highlight">Label</span>
 /// ```
 ///
 ///
 /// <style>
-///   .label {
+///   .label.highlight {
+///     color: #2C2E31;
+///     border-color: #00d8d8;
+///     background-color: #00d8d8;
 ///   }
 /// </style>
-/// 
-/// <div class="label">
-/// </div>
+///
+/// <div class="label highlight">Label</div>
 ///
 ///
 /// @group Labels
-/// @group Colors
 /// @author Tatiana Burgos
 ///
 ///
 /// @param {Color} $color [white] - Label's text color.
 /// @param {Color} $bg_1 [black] - Label's background color.
 ///
-/// @output css for `.label`
-///     
-/// @example sass - Creating `.label`
-///   .label
-///     +label_color()
+/// @output css for `.label.highlight`
+/// ```
+///   .label.highlight {
+///     color: #2C2E31;
+///     border-color: #00d8d8;
+///     background-color: #00d8d8;
+///   }
+/// ```
+/// @example sass - Creating `.label.highlight`
+///   .label.highlight
+///     +label_color(#2C2E31, #00d8d8)
 ///
-/// @todo * Add link to label element
-/// @todo * Relate margin and padding sizes either to title size or to param
 
 =label_color($color: white, $bg: black)
   color: $color
   border-color: $bg
   background-color: $bg
-
-
-        
-

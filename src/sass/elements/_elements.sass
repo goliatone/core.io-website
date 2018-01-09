@@ -28,15 +28,21 @@ header .logo
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
-$item_margin: 2px
-$border_w: 2px
-$border_padding_top: 7px
 $border_padding_sides: 17px
+$border_w: 2px
 
 .nav-bar-1
   position: relative
   top: -4px
-  +nav_bar_draw-1($item_margin, $border_w, $border_padding_top, $border_padding_sides)
+  display: flex
+  .menu-item
+    margin-left: 2px
+    a
+      padding: 7px $border_padding_sides
+    > a:hover, > a.selected
+      border-top: $border_w solid white
+    &:last-child
+      margin-right: -$border_padding_sides
 
 .features #main-nav a[href="/"],
 .features #main-nav a[href*="index"],
@@ -48,17 +54,21 @@ $border_padding_sides: 17px
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
 $border_w: 2px
-$padding: 13px
-
-$padding_compensation: 7px
 
 .nav-bar-2
-  +nav_bar_draw-3($border_w, $padding)
+  display: flex
+  .menu-item
+    margin-right: 10px
+    a
+      padding: 13px
+      &:hover, &.selected
+        border-bottom: $border_w solid white
 
 .docs .guide #docs-nav a[href*="guide"],
 .docs .api #docs-nav a[href*="api"],
 .docs .examples #docs-nav a[href*="examples"]
   border-bottom: $border_w solid white
+
 
 /* -------------------------------------------- SEARCH BARS */
 
@@ -157,7 +167,13 @@ $border_r: 3px
 
 .label
   margin-right: 13px
-  +label_draw($width, $height, $border_r)
+  min-width: 47px
+  height: $height
+  border: 1px solid black
+  border-radius: 3px
+  padding: 0 7px
+  line-height: $height
+  text-align: center
 
 
 /* -------------------------------------------- CODE-BLOCK */

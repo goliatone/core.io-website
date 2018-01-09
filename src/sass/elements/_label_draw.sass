@@ -1,39 +1,55 @@
-/// Mixin to draw a label (without link).
-/// Use `+label_color` to add font and background colors.
+/// Mixin to draw a label.
+///
+/// Use `+label_color` to add text and background colors.
 ///
 /// Markup has the following structure:
 ///
 /// ```
-///   <div class="label">
-///     <a href="">Label Text</a>
-///   <div>
+///   <div class="label">Lable</a><div>
+///   <span class="label">Label</span>
 /// ```
-///
 ///
 /// <style>
 ///   .label {
+///     display: inline-block;
+///     min-width: 47px;
+///     height: 20px;
+///     border: 1px solid black;
+///     border-radius: 3px;
+///     padding: 0 7px;
+///     line-height: 20px;
+///     text-align: center;
+///     font-family: "Montserrat-Bold", Helvetica, sans-seri;
+///     font-size: 10px;
+///   }
 /// </style>
 ///
-/// <div class="label">
-/// </div>
+/// <div class="label highlight">Label</div>
 ///
 ///
 /// @group Labels
-/// @group Layouts
 /// @author Tatiana Burgos
 ///
 ///
-/// @param {Length} $width [auto] - Label's width.
+/// @param {Length} $width [auto] - Label's minimum width.
 /// @param {Length} $height [100%] - Label's height.
 /// @param {Length} $border_r [3px] - Label's border radius.
 ///
-/// @output css for `label_draw`
-///
+/// @output css for `.label`
+/// ```
+///   .label {
+///     min-width: 47px;
+///     height: 20px;
+///     border: 1px solid black;
+///     border-radius: 3px;
+///     padding: 0 7px;
+///     line-height: 20px;
+///     text-align: center;
+///   }
+/// ```
 /// @example sass - Creating `.label`
-///   .label
-///     +label_draw(auto, 20px, 7px, 2px)
-///
-/// @todo * Add link to label_color
+/// .label
+///   +label_draw(47px, 20px, 3px)
 ///
 
 =label_draw($width: auto, $height: 100%, $border_r: 3px)
