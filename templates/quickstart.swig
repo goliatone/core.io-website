@@ -4,7 +4,7 @@
 
 {% block page %}quickstart{% endblock %}
 
-{% block content %}
+{% block content %} {% set bg = true %}
       <section class="paragraph-1 cols row row-reverse row-vCentered">
         <div class="col-2">
           <h1 class="h-small uppercase">Getting started</h1>
