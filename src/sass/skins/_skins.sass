@@ -11,197 +11,197 @@
   footer
     display: none
 
-.midnight-mode
+body
   background-color: $BG_1
   color: $COLOR_1
 
-  .sticky
-    background-color: $BG_1
+.sticky
+  background-color: $BG_1
 
-  a, p
-    color: inherit
+p
+  color: inherit
 
+a
+  color: $HIGHLIGHT_1
+  &:hover
+    color: $COLOR_1
+
+.post .title,
+.post .title a
+  color: $COLOR_1
+
+.highlight
+  color: $HIGHLIGHT_1
+.shade
+  color: $SHADE_1
+
+footer
+  background-color: $BG_3
+  color: $COLOR_1
   a
-    color: $HIGHLIGHT_1
+    color: $COLOR_1
     &:hover
-      color: $COLOR_1
+      color: $HIGHLIGHT_1
 
-  .post .title,
-  .post .title a
+hr
+  border-color: $SHADE_1
+  &.hr-shade
+    border-color: $SHADE_2
+  &.hr-light
+    border-color: rgba(222,229,255,0.16)
+
+
+$color1: #5088ea
+$color2: #a4dd74
+$width: $DECO_BAR_W
+
+.highlight-bar
+  border: $HIGHLIGHT_1
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
+  background: $color1 /* Old browsers */
+  background: linear-gradient(to right, $color1 0%,$color2 50%,$color2 51%,$color1 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=1 ) /* IE6-9 */
+  animation: bg_move 4s infinite /* IE 10+, Fx 29+ */
+
+@keyframes bg_move
+  0%
+    background-position: 0px
+  50%
+    background-position: $width
+  100%
+    background-position: $width * 2
+
+
+.code-block,
+.code-block-1,
+.code-line,
+p code, li code
+  background-color: $BG_2
+
+
+.posts
+  > .row
+    border-top: 1px solid $SHADE_2
+    &:last-of-type
+      border-bottom: 1px solid $SHADE_2
+
+
+$nav_bar_text: $COLOR_1
+$nav_bar_higlght: $HIGHLIGHT_1
+
+.nav-bar-1
+  .menu-item a
+    color: $nav_bar_text
+    &:hover, &.selected
+      color: $nav_bar_higlght
+      border-color: $nav_bar_text
+
+features #main-nav a[href="/"],
+features #main-nav a[href*="index"],
+quickstart #main-nav a[href*="quickstart"],
+docs #main-nav a[href*="documentation"],
+modules #main-nav a[href*="modules"]
+  border-color: $nav_bar_text
+  color: $nav_bar_higlght
+
+
+.nav-bar-2
+  .menu-item a
+    color: $nav_bar_text
+    &:hover, &.selected
+      border-color: $nav_bar_higlght
+
+docs .guide #docs-nav a[href*="guide"],
+docs .api #docs-nav a[href*="api"],
+docs .examples #docs-nav a[href*="examples"]
+  border-color: $nav_bar_higlght
+
+.side-menu
+  .menu-item a, li a
     color: $COLOR_1
-
-  .highlight
-    color: $HIGHLIGHT_1
-  .shade
-    color: $SHADE_1
-
-  footer
-    background-color: $BG_3
-    color: $COLOR_1
-    a
-      color: $COLOR_1
-      &:hover
-        color: $HIGHLIGHT_1
-
-  hr
-    border-color: $SHADE_1
-    &.hr-shade
-      border-color: $SHADE_2
-    &.hr-light
-      border-color: rgba(222,229,255,0.16)
+    &:hover
+      color: $HIGHLIGHT_1
 
 
-  $color1: #5088ea
-  $color2: #a4dd74
-  $width: $DECO_BAR_W
+$border_w: 2px
+$detail_bg: $PAGINATION_BG_HIGHTLIGHT
 
-  .highlight-bar
-    border: $HIGHLIGHT_1
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
-    background: $color1 /* Old browsers */
-    background: linear-gradient(to right, $color1 0%,$color2 50%,$color2 51%,$color1 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=1 ) /* IE6-9 */
-    animation: bg_move 4s infinite /* IE 10+, Fx 29+ */
+$border: $border_w solid $PAGINATION_BORDER_C
+$border_highlight: $border_w solid $detail_bg
 
-    @keyframes bg_move
-      0%
-        background-position: 0px
-      50%
-        background-position: $width
-      100%
-        background-position: $width * 2
-
-
-  .code-block,
-  .code-block-1,
-  .code-line,
-  p code, li code
-    background-color: $BG_2
-
-
-  .posts
-    > .row
-      border-top: 1px solid $SHADE_2
-      &:last-of-type
-        border-bottom: 1px solid $SHADE_2
-
-
-  $nav_bar_text: $COLOR_1
-  $nav_bar_higlght: $HIGHLIGHT_1
-
-  .nav-bar-1
-    .menu-item a
-      color: $nav_bar_text
-      &:hover, &.selected
-        color: $nav_bar_higlght
-        border-color: $nav_bar_text
-
-  &.features #main-nav a[href="/"],
-  &.features #main-nav a[href*="index"],
-  &.quickstart #main-nav a[href*="quickstart"],
-  &.docs #main-nav a[href*="documentation"],
-  &.modules #main-nav a[href*="modules"]
-    border-color: $nav_bar_text
-    color: $nav_bar_higlght
-
-
-  .nav-bar-2
-    .menu-item a
-      color: $nav_bar_text
-      &:hover, &.selected
-        border-color: $nav_bar_higlght
-
-  &.docs .guide #docs-nav a[href*="guide"],
-  &.docs .api #docs-nav a[href*="api"],
-  &.docs .examples #docs-nav a[href*="examples"]
-    border-color: $nav_bar_higlght
-
-  .side-menu
-    .menu-item a, li a
-      color: $COLOR_1
-      &:hover
-        color: $HIGHLIGHT_1
-
-
-  $border_w: 2px
-  $detail_bg: $PAGINATION_BG_HIGHTLIGHT
-
-  $border: $border_w solid $PAGINATION_BORDER_C
-  $border_highlight: $border_w solid $detail_bg
-
-  .pagination
+.pagination
+  color: $PAGINATION_C
+  a
     color: $PAGINATION_C
-    a
-      color: $PAGINATION_C
-      margin-left: -$border_w
-      border: $border
-      border-left: none
-      &:hover
-        background-color: $detail_bg
-        border-color: $detail_bg
-        position: relative /* for the z-index to work */
-        z-index: 2
-      &:hover
-        color: $PAGINATION_C_HIGHLIGHT
-    li:first-child a
-      border-left: $border
-      &:hover
-        border-left: $border_highlight
-    .active a
-      border: $border_highlight
+    margin-left: -$border_w
+    border: $border
+    border-left: none
+    &:hover
+      background-color: $detail_bg
+      border-color: $detail_bg
       position: relative /* for the z-index to work */
       z-index: 2
+    &:hover
+      color: $PAGINATION_C_HIGHLIGHT
+  li:first-child a
+    border-left: $border
+    &:hover
+      border-left: $border_highlight
+  .active a
+    border: $border_highlight
+    position: relative /* for the z-index to work */
+    z-index: 2
 
-  .search-bar-1
-    +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
-
-
-  .black-btn
-    +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
-    &.fade
-      +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
-
-  .gray-btn
-    +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
-    &.fade
-      +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
-
-  .blue-btn
-    +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
-    &.fade
-      +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
-
-  .label
-    &.highlight
-      +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
-
-    &.green
-      +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
-
-    &.blue
-      +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
-
-    &.red
-      +label_color($LABELS_RED_C, $LABELS_RED_BG)
-
-    &.black
-      +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
-
-    &.orange
-      +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
-
-    &.light-gray
-      +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
-
-    &.dark-gray
-      +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+.search-bar-1
+  +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
 
 
-  .instruction_block
-    .description,
-    .button-wrapper,
-    .code-wrapper
-      border-left: 1px solid $SHADE_2
+.black-btn
+  +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
+  &.fade
+    +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
+
+.gray-btn
+  +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
+  &.fade
+    +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
+
+.blue-btn
+  +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
+  &.fade
+    +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+
+.label
+  &.highlight
+    +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
+
+  &.green
+    +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
+
+  &.blue
+    +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
+
+  &.red
+    +label_color($LABELS_RED_C, $LABELS_RED_BG)
+
+  &.black
+    +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
+
+  &.orange
+    +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
+
+  &.light-gray
+    +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
+
+  &.dark-gray
+    +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+
+
+.instruction_block
+  .description,
+  .button-wrapper,
+  .code-wrapper
+    border-left: 1px solid $SHADE_2
 
 
 
