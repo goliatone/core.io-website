@@ -2,7 +2,7 @@
 // -------------------------------------------------------------- CSS
 // SCOPE = PROJECT
 
-.midnight-mode.print
+.print
   background: none
   color: black
   .code-block, .code-line
@@ -15,9 +15,6 @@ body
   background-color: $BG_1
   color: $COLOR_1
 
-.sticky
-  background-color: $BG_1
-
 p
   color: inherit
 
@@ -25,15 +22,6 @@ a
   color: $HIGHLIGHT_1
   &:hover
     color: $COLOR_1
-
-.post .title,
-.post .title a
-  color: $COLOR_1
-
-.highlight
-  color: $HIGHLIGHT_1
-.shade
-  color: $SHADE_1
 
 footer
   background-color: $BG_3
@@ -43,6 +31,16 @@ footer
     &:hover
       color: $HIGHLIGHT_1
 
+.highlight
+  color: $HIGHLIGHT_1
+.shade
+  color: $SHADE_1
+
+.sticky
+  background-color: $BG_1
+
+
+/* ---------------------------------------------------- HR */
 hr
   border-color: $SHADE_1
   &.hr-shade
@@ -51,6 +49,7 @@ hr
     border-color: rgba(222,229,255,0.16)
 
 
+/* ---------------------------------------------- DECO-BAR */
 $color1: #5088ea
 $color2: #a4dd74
 $width: $DECO_BAR_W
@@ -72,23 +71,12 @@ $width: $DECO_BAR_W
     background-position: $width * 2
 
 
-.code-block,
-.code-block-1,
-.code-line,
-p code, li code
-  background-color: $BG_2
-
-
-.posts
-  > .row
-    border-top: 1px solid $SHADE_2
-    &:last-of-type
-      border-bottom: 1px solid $SHADE_2
-
-
+/* ---------------------------------------------- NAV-BARS */
 $nav_bar_text: $COLOR_1
 $nav_bar_higlght: $HIGHLIGHT_1
 
+/* --------------------------------- NAV-BAR-1 */
+/* HEADER NAV BAR */
 .nav-bar-1
   .menu-item a
     color: $nav_bar_text
@@ -105,6 +93,8 @@ modules #main-nav a[href*="modules"]
   color: $nav_bar_higlght
 
 
+/* --------------------------------- NAV-BAR-2 */
+/* DOCUMENTATION NAV BAR */
 .nav-bar-2
   .menu-item a
     color: $nav_bar_text
@@ -116,13 +106,13 @@ docs .api #docs-nav a[href*="api"],
 docs .examples #docs-nav a[href*="examples"]
   border-color: $nav_bar_higlght
 
-.side-menu
-  .menu-item a, li a
-    color: $COLOR_1
-    &:hover
-      color: $HIGHLIGHT_1
+
+/* -------------------------------------------- SEARCH BARS */
+.search-bar-1
+  +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
 
 
+/* -------------------------------------------- PAGINATION */
 $border_w: 2px
 $detail_bg: $PAGINATION_BG_HIGHTLIGHT
 
@@ -152,25 +142,28 @@ $border_highlight: $border_w solid $detail_bg
     position: relative /* for the z-index to work */
     z-index: 2
 
-.search-bar-1
-  +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
 
-
+/* ----------------------------------------------- BUTTONS */
+/* ------------------------------- BLACK BUTTON */
 .black-btn
   +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
   &.fade
     +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
 
+/* -------------------------------- GRAY BUTTON */
 .gray-btn
   +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
   &.fade
     +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
 
+/* -------------------------------- BLUE BUTTON */
 .blue-btn
   +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
   &.fade
     +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
 
+
+/* ------------------------------------------------ LABELS */
 .label
   &.highlight
     +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
@@ -197,6 +190,34 @@ $border_highlight: $border_w solid $detail_bg
     +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
 
 
+/* -------------------------------------------- CODE-BLOCK */
+.code-block,
+.code-block-1,
+.code-line,
+p code, li code
+  background-color: $BG_2
+
+
+/* ------------------------------------------------- POSTS */
+.posts
+  > .row
+    border-top: 1px solid $SHADE_2
+    &:last-of-type
+      border-bottom: 1px solid $SHADE_2
+  .title,
+  .title a
+    color: $COLOR_1
+
+
+/* ---------------------------------------------- SIDEMENU */
+.side-menu
+  .menu-item a, li a
+    color: $COLOR_1
+    &:hover
+      color: $HIGHLIGHT_1
+
+
+/* ------------------------- QUICKSTART INSTRUCTION BLOCKS */
 .instruction_block
   .description,
   .button-wrapper,
@@ -204,7 +225,6 @@ $border_highlight: $border_w solid $detail_bg
     border-left: 1px solid $SHADE_2
 
 
-
-// ------------------------------------ BACKGROUND EFFECTS
+/* ------------------------------------- BACKGROUND SHAPES */
 @import background-1
 @import background-2

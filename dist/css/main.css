@@ -185,21 +185,18 @@ img {
       justify-content: space-around; }
 
 /* SKINS ----------------------------------------------------------- */
-.midnight-mode.print {
+.print {
   background: none;
   color: black; }
-  .midnight-mode.print .code-block, .midnight-mode.print .code-line {
+  .print .code-block, .print .code-line {
     background: none;
     color: black; }
-  .midnight-mode.print footer {
+  .print footer {
     display: none; }
 
 body {
   background-color: #2C2E31;
   color: #fafafa; }
-
-.sticky {
-  background-color: #2C2E31; }
 
 p {
   color: inherit; }
@@ -209,16 +206,6 @@ a {
   a:hover {
     color: #fafafa; }
 
-.post .title,
-.post .title a {
-  color: #fafafa; }
-
-.highlight {
-  color: #00d8d8; }
-
-.shade {
-  color: #f8f8f8; }
-
 footer {
   background-color: #1B1D1E;
   color: #fafafa; }
@@ -227,6 +214,16 @@ footer {
     footer a:hover {
       color: #00d8d8; }
 
+.highlight {
+  color: #00d8d8; }
+
+.shade {
+  color: #f8f8f8; }
+
+.sticky {
+  background-color: #2C2E31; }
+
+/* ---------------------------------------------------- HR */
 hr {
   border-color: #f8f8f8; }
   hr.hr-shade {
@@ -234,6 +231,7 @@ hr {
   hr.hr-light {
     border-color: rgba(222, 229, 255, 0.16); }
 
+/* ---------------------------------------------- DECO-BAR */
 .highlight-bar {
   border: #00d8d8;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
@@ -260,17 +258,9 @@ hr {
     background-position: 2220px; }
   100% {
     background-position: 4440px; } }
-.code-block,
-.code-block-1,
-.code-line,
-p code, li code {
-  background-color: #1b1d1d; }
-
-.posts > .row {
-  border-top: 1px solid #979797; }
-  .posts > .row:last-of-type {
-    border-bottom: 1px solid #979797; }
-
+/* ---------------------------------------------- NAV-BARS */
+/* --------------------------------- NAV-BAR-1 */
+/* HEADER NAV BAR */
 .nav-bar-1 .menu-item a {
   color: #fafafa; }
   .nav-bar-1 .menu-item a:hover, .nav-bar-1 .menu-item a.selected {
@@ -285,6 +275,8 @@ modules #main-nav a[href*="modules"] {
   border-color: #fafafa;
   color: #00d8d8; }
 
+/* --------------------------------- NAV-BAR-2 */
+/* DOCUMENTATION NAV BAR */
 .nav-bar-2 .menu-item a {
   color: #fafafa; }
   .nav-bar-2 .menu-item a:hover, .nav-bar-2 .menu-item a.selected {
@@ -295,11 +287,18 @@ docs .api #docs-nav a[href*="api"],
 docs .examples #docs-nav a[href*="examples"] {
   border-color: #00d8d8; }
 
-.side-menu .menu-item a, .side-menu li a {
+/* -------------------------------------------- SEARCH BARS */
+.search-bar-1 {
   color: #fafafa; }
-  .side-menu .menu-item a:hover, .side-menu li a:hover {
-    color: #00d8d8; }
+  .search-bar-1 input {
+    background-color: transparent;
+    color: #fafafa;
+    border-color: #f8f8f8; }
+    .search-bar-1 input:hover, .search-bar-1 input:focus {
+      border-color: #00d8d8;
+      outline: none; }
 
+/* -------------------------------------------- PAGINATION */
 .pagination {
   color: #8a9199; }
   .pagination a {
@@ -323,16 +322,8 @@ docs .examples #docs-nav a[href*="examples"] {
     position: relative;
     z-index: 2; }
 
-.search-bar-1 {
-  color: #fafafa; }
-  .search-bar-1 input {
-    background-color: transparent;
-    color: #fafafa;
-    border-color: #f8f8f8; }
-    .search-bar-1 input:hover, .search-bar-1 input:focus {
-      border-color: #00d8d8;
-      outline: none; }
-
+/* ----------------------------------------------- BUTTONS */
+/* ------------------------------- BLACK BUTTON */
 .black-btn {
   color: #f8f8f8;
   background-color: #2c2c31;
@@ -348,6 +339,7 @@ docs .examples #docs-nav a[href*="examples"] {
       background-color: #f8f8f8;
       border-color: #f8f8f8; }
 
+/* -------------------------------- GRAY BUTTON */
 .gray-btn {
   color: #2c2c31;
   background-color: #f8f8f8;
@@ -363,6 +355,7 @@ docs .examples #docs-nav a[href*="examples"] {
       background-color: #2c2c31;
       border-color: #f8f8f8; }
 
+/* -------------------------------- BLUE BUTTON */
 .blue-btn {
   color: #00d8d8;
   background-color: #2C2E31;
@@ -376,6 +369,7 @@ docs .examples #docs-nav a[href*="examples"] {
       background-color: #00d8d8;
       border-color: #00d8d8; }
 
+/* ------------------------------------------------ LABELS */
 .label.highlight {
   color: #2C2E31;
   border-color: #00d8d8;
@@ -409,11 +403,35 @@ docs .examples #docs-nav a[href*="examples"] {
   border-color: #c2cad4;
   background-color: #c2cad4; }
 
+/* -------------------------------------------- CODE-BLOCK */
+.code-block,
+.code-block-1,
+.code-line,
+p code, li code {
+  background-color: #1b1d1d; }
+
+/* ------------------------------------------------- POSTS */
+.posts > .row {
+  border-top: 1px solid #979797; }
+  .posts > .row:last-of-type {
+    border-bottom: 1px solid #979797; }
+.posts .title,
+.posts .title a {
+  color: #fafafa; }
+
+/* ---------------------------------------------- SIDEMENU */
+.side-menu .menu-item a, .side-menu li a {
+  color: #fafafa; }
+  .side-menu .menu-item a:hover, .side-menu li a:hover {
+    color: #00d8d8; }
+
+/* ------------------------- QUICKSTART INSTRUCTION BLOCKS */
 .instruction_block .description,
 .instruction_block .button-wrapper,
 .instruction_block .code-wrapper {
   border-left: 1px solid #979797; }
 
+/* ------------------------------------- BACKGROUND SHAPES */
 /* ----------------------------- #bg top page svg elements */
 #bg {
   position: absolute;
