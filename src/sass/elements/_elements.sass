@@ -73,15 +73,38 @@ $border_w: 2px
 /* -------------------------------------------- SEARCH BARS */
 
 /* ------------------------------- SEARCH-BAR-1 */
-$width: 100%
 $height: 78px
 $padding: 60px
-$border_w: 1px
-$border_r: 3px
+
+$padding_placeholder: 25px
+$font_size: $height * 0.308
+
+$icon_top: $padding + ($height - $font_size)/2
+$icon_right: $padding + $padding_placeholder
 
 .search-bar-1
-  +search_bar_draw-3($width, $height, $padding, $border_w, $border_r)
-
+  width: 100%
+  padding: $padding
+  font-size: $font_size
+  position: relative
+  input
+    display: inline-block
+    width: 100%
+    height: $height
+    border: 1px solid white
+    border-radius: 3px
+    padding-left: $padding_placeholder
+    font-size: inherit
+    font-family: inherit
+    line-height: $height
+    &:focus
+      border: 1px solid white
+  .icon
+    position: absolute
+    top: $icon_top
+    right: $icon_right
+    &:hover
+      cursor: pointer
 
 
 /* -------------------------------------------- PAGINATION */

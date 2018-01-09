@@ -109,7 +109,14 @@ docs .examples #docs-nav a[href*="examples"]
 
 /* -------------------------------------------- SEARCH BARS */
 .search-bar-1
-  +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
+  color: $COLOR_1
+  input
+    background-color: transparent
+    color: $COLOR_1
+    border-color: $SHADE_1
+    &:hover, &:focus
+      border-color: $HIGHLIGHT_1
+      outline: none
 
 
 /* -------------------------------------------- PAGINATION */
