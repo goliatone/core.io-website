@@ -92,7 +92,22 @@ $num_width: 47px
 
 .pagination
   margin: 85px 0 20px
-  +pagination_draw($height, $border_r, $num_width)
+  height: 44px
+  ul
+    height: inherit
+  li
+    height: inherit
+    min-width: 47px
+    float: left
+    a
+      height: 100%
+      +flexCenter
+    &:first-child a
+      border-top-left-radius: $border_r
+      border-bottom-left-radius: $border_r
+    &:last-child a
+      border-top-right-radius: $border_r
+      border-bottom-right-radius: $border_r
   .prev,
   .next
     width: 78px

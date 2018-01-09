@@ -123,15 +123,34 @@
         color: $HIGHLIGHT_1
 
 
-  $color: $PAGINATION_C
-  $border_color: $PAGINATION_BORDER_C
   $border_w: 2px
-  $detail_c: $PAGINATION_C_HIGHLIGHT
-  $detail_bg: $PAGINATION_BACKGROUND_HIGHTLIGHT
+  $detail_bg: $PAGINATION_BG_HIGHTLIGHT
+
+  $border: $border_w solid $PAGINATION_BORDER_C
+  $border_highlight: $border_w solid $detail_bg
 
   .pagination
-    +pagination_color($color, $border_color, $border_w, $detail_c, $detail_bg)
-
+    color: $PAGINATION_C
+    a
+      color: $PAGINATION_C
+      margin-left: -$border_w
+      border: $border
+      border-left: none
+      &:hover
+        background-color: $detail_bg
+        border-color: $detail_bg
+        position: relative /* for the z-index to work */
+        z-index: 2
+      &:hover
+        color: $PAGINATION_C_HIGHLIGHT
+    li:first-child a
+      border-left: $border
+      &:hover
+        border-left: $border_highlight
+    .active a
+      border: $border_highlight
+      position: relative /* for the z-index to work */
+      z-index: 2
 
   .search-bar-1
     +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
