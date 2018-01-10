@@ -3,15 +3,11 @@ module.exports = function(grunt) {
   // load all grunt tasks as found in package.json
   require('load-grunt-tasks')(grunt);
 
-  // use CLI entered page name for mustache-render, default index
-  var page_name = grunt.option('name') || 'index';
-
   grunt.initConfig({
 
     path: grunt.file.readJSON('settings/tree.json'),
 
-
-    // DEVELOPMENT
+    // CSS ---------------------------------------------
 
     // compile sass
     sass: {
@@ -39,6 +35,15 @@ module.exports = function(grunt) {
       }
     },
 
+    // minify css
+    cssmin: {
+      all: {
+        files: {
+          '<%= path.css %>/main.min.css': '<%= path.css %>/main.css',
+        }
+      }
+    },
+
     // generate sass documentation
     sassdoc: {
       default: {
@@ -46,27 +51,13 @@ module.exports = function(grunt) {
       },
     },
 
+
+    // JS ----------------------------------------------
+
     // lint js
     jshint: {
-      files: ['Gruntfile.js', '<%= path.js_dev %>/**/*.js', '<%= path.tests /**/*.js']
+      files: ['Gruntfile.js', '<%= path.js_dev %>/**/*.js']
     },
-
-    // watch changes on css and js and if no errors, reload page
-    watch: {
-      options: {
-        livereload: true,
-        livereloadOnError: false
-      },
-
-      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass', 'postcss'] },
-
-      js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
-
-      html: {files: '<%= path.dev %>/html/**/*.mustache', tasks: ['render'] }
-    },
-
-
-    // PRODUCTION
 
     // minify js
     uglify: {
@@ -77,92 +68,91 @@ module.exports = function(grunt) {
       }
     },
 
-    // minify css
-    cssmin: {
-      all: {
-        files: {
-          '<%= path.css %>/main.css': '<%= path.css %>/main.css',
-          '<%= path.css %>/login.css': '<%= path.css %>/login.css'
-        }
-      }
-    },
 
-    // render working html sheets
-    mustache_render: {
-      options: {
-        // partials directory
-        directory: '<%= path.partials %>',
-        // common data
-        data: '<%= path.data %>/page.json',
-      },
-      // task render final page
-      render: {
-        files: [
-          {
-            '<%= path.prod %>/index.html': '<%= path.templates %>/features.mustache',
-            '<%= path.prod %>/modules.html': '<%= path.templates %>/modules.mustache',
-            '<%= path.prod %>/documentation.html': '<%= path.templates %>/documentation.mustache',
-            '<%= path.prod %>/quickstart.html': '<%= path.templates %>/quickstart.mustache',
-            '<%= path.prod %>/examples.html': '<%= path.templates %>/examples.mustache',
-            '<%= path.prod %>/documentation.swig': '<%= path.templates %>/documentation-swig.mustache',
-          }
-        ]
-      },
-    },
+    // HTML --------------------------------------------
 
+    // render html
     swig: {
       options: {
         data: require('./src/html/data/metadata.json')
       },
       swig: {
         expand: true,
-        cwd: 'templates',
-        dest: 'dist/',
+        cwd: '<%= path.html_templates %>',
+        dest: '<%= path.prod %>/',
         src: ['*.swig'],
         ext: '.html'
       }
     },
 
-    prettify: {
-
-      files: {
-        '<%= path.prod %>/pretty/index.html': '<%= path.prod %>/index.mustache',
-        '<%= path.prod %>/modules.html': '<%= path.prod %>/modules.mustache',
-        '<%= path.prod %>/pretty/documentation-1.html': '<%= path.prod %>/documentation-1.mustache',
-        '<%= path.prod %>/documentation-2.html': '<%= path.prod %>/documentation-2.mustache',
-        '<%= path.prod %>/quickstart.html': '<%= path.prod %>/quickstart.mustache',
+    // update html production links to minified css and js
+    processhtml: {
+      prod: {
+        expand: true,
+        cwd: '<%= path.prod %>',
+        dest: '<%= path.prod %>/',
+        src: ['*.html'],
       }
     },
 
 
-    // HELPERS
+    // HELPERS -----------------------------------------
+
+    // watch changes on css, js and html
+    // if no errors, reload page
+    watch: {
+      options: {
+        livereload: true,
+        livereloadOnError: false
+      },
+
+      css: { files: '<%= path.sass %>/**/*.sass', tasks: ['sass', 'postcss'] },
+
+      js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
+
+      html: {files: '<%= path.templates %>/**/*.swig', tasks: ['swig'] }
+    },
 
     copy: {
-      // for dev
       js: {
         files: [
-          {expand: true, flatten: true, src: ['<%= path.js_dev %>/*.js'], dest: '<%= path.js_prod %>', filter: 'isFile'}
+          {
+            expand: true,
+            flatten: true,
+            src: ['<%= path.js_dev %>/*.js'],
+            dest: '<%= path.js_prod %>',
+            filter: 'isFile'
+          }
         ]
       }
     },
 
     clean: {
-      default: [
+      all: [
         '<%= path.js_prod %>/*.js',
-        '!<%= path.js_prod %>/*.min.js',
         '<%= path.css %>/*'
       ],
       js: [
         '<%= path.js_prod %>/*.js',
-        '!<%= path.js_prod %>/*.min.js',
+        '!<%= path.js_prod %>/*.min.js'
+      ],
+      css: [
+        '<%= path.css %>/*',
+        '!<%= path.css %>/*.min.css'
       ]
     }
 
   });
 
-
-  grunt.registerTask('default', ['clean:default', 'sass', 'jshint', 'copy:js']);
-  grunt.registerTask('dist', ['clean:default', 'sass', 'postcss', 'cssmin', 'jshint', 'copy:js', 'uglify', 'clean:js', 'render']);
-  grunt.registerTask('render', ['mustache_render:render', 'prettify']);
-  grunt.registerTask('img', ['imagemin', 'grunticon', 'copy', 'sprite', 'clean:img']);
+  // generate devolopment files in dist:
+  //  compile sass and add prefixes
+  //  lint js and populate dist/js
+  //  render html
+  grunt.registerTask('build_dev', ['clean:all', 'sass', 'postcss', 'jshint', 'copy:js', 'swig']);
+  // generate production files in dist:
+  //  compile sass, add prefixes and minify css
+  //  lint and minify js
+  //  render html
+  //  update css and js links to minified versions
+  grunt.registerTask('build', ['clean:all', 'sass', 'postcss', 'cssmin', 'clean:css', 'jshint', 'copy:js', 'uglify', 'clean:js', 'swig', 'processhtml']);
 };

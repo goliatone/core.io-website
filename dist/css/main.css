@@ -1292,9 +1292,11 @@ p code, li code {
       margin-left: 7px; }
 .docs .sticky.nav {
   top: 0;
-  padding-top: 20px;
+  margin-top: -20px;
   padding-bottom: 20px;
   z-index: 2; }
+  .docs .sticky.nav .row {
+    padding-top: 20px; }
 .docs .sticky.side-menu {
   top: 140px;
   z-index: 1; }

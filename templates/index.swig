@@ -4,7 +4,7 @@
 
 {% block page %}features{% endblock %}
 
-{% block content %}
+{% block content %} {% set bg = true %}
       <section class="paragraph-1 cols">
         <div class="col-2">
           <h1 class="highlight h-biggest">The no framework<br/>for rapid prototyping.</h1>
