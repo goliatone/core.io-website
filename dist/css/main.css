@@ -375,7 +375,11 @@ li code {
 .posts .title a {
   color: #fafafa; }
 
-/* ---------------------------------------------- SIDEMENU */
+/* --------------------------------------------- DOCS MENU */
+.bg-menu {
+  background-color: #2C2E31; }
+
+/* ----------------------------------------- DOCS SIDEMENU */
 .side-menu .menu-item a,
 .side-menu li a {
   color: #fafafa; }
@@ -1160,8 +1164,7 @@ p code, li code {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  background-color: #2C2E31; }
+  z-index: 1; }
 .docs .nav-bar-2,
 .docs .label,
 .docs hr {
@@ -1172,11 +1175,13 @@ p code, li code {
   padding-left: 1px; }
   .docs .side-menu a {
     display: inline-block; }
-  .docs .side-menu .menu-item, .docs .side-menu ul > li {
+  .docs .side-menu .menu-item,
+  .docs .side-menu ul > li {
     margin-bottom: 16px; }
   .docs .side-menu .submenu, .docs .side-menu ul ul {
     margin: 15px 0 0 18px; }
-  .docs .side-menu .menu-item-submenu, .docs .side-menu ul ul > li {
+  .docs .side-menu .menu-item-submenu,
+  .docs .side-menu ul ul > li {
     margin-bottom: 10px; }
 .docs .main-txt {
   width: 730px; }
