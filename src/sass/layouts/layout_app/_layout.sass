@@ -1,82 +1,83 @@
 /* LAYOUT_APP STYLE----------------------------------------------- */
-.layout-app
-  header,
-  .content
-    max-width: $LAYOUT_MAW_W
-    margin: auto
-  header
-    height: $HEADER_H
-    .logo,
-      width: 200px
-  &.modules .content,
-  &.docs .content,
-  &.styleguide .content
+header,
+.content
+  max-width: $LAYOUT_MAW_W
+  margin: auto
+
+header
+  height: $HEADER_H
+  padding-left: $LAYOUT_PADDING_SIDES
+  padding-right: $LAYOUT_PADDING_SIDES
+  .logo
+    width: 200px
+
+.content
+  .modules &,
+  .docs &12
     padding: 0 $LAYOUT_PADDING_SIDES
-  header
-    padding-left: $LAYOUT_PADDING_SIDES
-    padding-right: $LAYOUT_PADDING_SIDES
-
-  footer
-    width: $FOOTER_W
-    margin-top: $FOOTER_MARGIN_TOP
-    padding: $FOOTER_PADDING
-    .footer-logo
-      display: inline-block
-      +size($FOOTER_ICON_SIZE)
-    .footer-menu
-      display: flex
-      flex-direction: column
-      a
-        padding-bottom: $FOOTER_A_PADDING
-    .footer-releases p
-      margin-bottom: 5px
-    .copyright
-      margin-top: $FOOTER_FOOTNOTE_MARGIN - $FOOTER_A_PADDING
-      margin-left: -33px
-
-  footer
-    /* footer positioning of elements
-     * because of display flex column changing position
-     * of one could affect other                        */
-    .footer-logo
-      float: left
-      img
-        position: relative
-        top: -10px
-        left: -35px
-    .footer-releases
-      position: relative
-      top: 4px
-      left: -72px
-    .footer-github
-      position: relative
-      top: -4px
-      left: -99px
-      img
-        margin-right: 19px
-        margin-top: 1px
-        width: 26px
-        height: 26px
 
 
-  .row
+$footer_a_padding: 10px
+
+footer
+  width: 100%
+  height: $FOOTER_H
+  margin-top: $FOOTER_MARGIN_TOP
+  padding: 46px $LAYOUT_PADDING_SIDES 20px $LAYOUT_PADDING_SIDES
+  .footer-logo
+    display: inline-block
+    +size(38px)
+  .footer-menu
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    a
+      padding-bottom: $footer_a_padding
+  .footer-releases p
+    margin-bottom: 5px
+  .copyright
+    margin-top: 42px - $footer_a_padding
+    margin-left: -33px
 
-  .row-centered
-    justify-content: space-around
+/* footer positioning of elements
+ * because of display flex column changing position
+ * of one could affect other                        */
+footer
+  .footer-logo
+    float: left
+    img
+      position: relative
+      top: -10px
+      left: -35px
+  .footer-releases
+    position: relative
+    top: 4px
+    left: -72px
+  .footer-github
+    position: relative
+    top: -4px
+    left: -99px
+    img
+      margin-right: 19px
+      margin-top: 1px
+      width: 26px
+      height: 26px
 
-  .row-vCentered
-    align-items: center
 
-  .row-reverse
-    flex-direction: row-reverse
+.row
+  display: flex
+  justify-content: space-between
+
+.row-centered
+  justify-content: space-around
+
+.row-vCentered
+  align-items: center
 
 
-  .cols
-    display: flex
-    justify-content: space-between
-    .col-3
-      display-flex
-  .cols-centered
-    justify-content: space-around
+.cols
+  display: flex
+  justify-content: space-between
+  .col-3
+    display-flex
+.cols-centered
+  justify-content: space-around
