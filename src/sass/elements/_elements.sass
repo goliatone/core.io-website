@@ -4,7 +4,6 @@ hr
   width: 100%
   height: 0
   border: none
-  border-top: 1px solid white
 
   &.hr-small
     width: 53px
@@ -17,19 +16,13 @@ hr
 /* ---------------------------------------------- DECO-BAR */
 .highlight-bar
   width: $DECO_BAR_W * 2
-  height: $DECO_BAR_H
-
-
-/* -------------------------------------------------- LOGO */
-header .logo
-  width: 200px
+  height: 4px
 
 
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
 $border_padding_sides: 17px
-$border_w: 2px
 
 .nav-bar-1
   position: relative
@@ -39,35 +32,17 @@ $border_w: 2px
     margin-left: 2px
     a
       padding: 7px $border_padding_sides
-    > a:hover, > a.selected
-      border-top: $border_w solid white
     &:last-child
       margin-right: -$border_padding_sides
 
-.features #main-nav a[href="/"],
-.features #main-nav a[href*="index"],
-.quickstart #main-nav a[href*="quickstart"],
-.docs #main-nav a[href*="documentation"],
-.modules #main-nav a[href*="modules"]
-  border-top: $border_w solid white
-
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
-$border_w: 2px
-
 .nav-bar-2
   display: flex
   .menu-item
     margin-right: 10px
     a
       padding: 13px
-      &:hover, &.selected
-        border-bottom: $border_w solid white
-
-.docs .guide #docs-nav a[href*="guide"],
-.docs .api #docs-nav a[href*="api"],
-.docs .examples #docs-nav a[href*="examples"]
-  border-bottom: $border_w solid white
 
 
 /* -------------------------------------------- SEARCH BARS */
@@ -97,8 +72,6 @@ $icon_right: $padding + $padding_placeholder
     font-size: inherit
     font-family: inherit
     line-height: $height
-    &:focus
-      border: 1px solid white
   .icon
     position: absolute
     top: $icon_top
@@ -108,10 +81,7 @@ $icon_right: $padding + $padding_placeholder
 
 
 /* -------------------------------------------- PAGINATION */
-$height: 44px
-$border_width: 2px
 $border_r: 5px
-$num_width: 47px
 
 .pagination
   margin: 85px 0 20px
@@ -139,9 +109,6 @@ $num_width: 47px
     content: ''
     width: 7.5px
     height: 7.5px
-    border: 1px solid $PAGINATION_C
-    border-top: none
-    border-right: none
   .prev:before
     margin-right: 5px
     transform: rotate(45deg)
@@ -157,7 +124,6 @@ $num_width: 47px
 
 /* ----------------------------------------------- BUTTONS */
 /* --------------------------------- BIG BUTTON */
-
 .big-btn
   $w: 200px
   $h: 53px
@@ -199,32 +165,29 @@ $num_width: 47px
 
 
 /* ------------------------------------------------ LABELS */
-$width: 47px
 $height: 20px
-$border_r: 3px
 
 .label
-  margin-right: 13px
   min-width: 47px
   height: $height
-  border: 1px solid black
-  border-radius: 3px
+  margin-right: 13px
   padding: 0 7px
   line-height: $height
+  border-radius: 3px
   text-align: center
 
 
 /* -------------------------------------------- CODE-BLOCK */
-$w: $WINDOW_CONTROLS_W
+$pre_margin_bottom: 19px
 
 .code-block
-  padding: $CODE_BLOCK_PADDING
+  padding: 9px 20px
   border-radius: 4px
   .header
-    padding-bottom: $HEADER_PADDING
+    padding-bottom: 39px
     position: relative
     .window-controls
-      +window_controls($w: $w)
+      +window_controls($w: 13px)
       position: absolute
       top: 3px
       left: 0
@@ -234,10 +197,10 @@ $w: $WINDOW_CONTROLS_W
     text-align: center
   code, pre
     display: block
-    margin-bottom: $CODE_MARGIN
+    margin-bottom: $pre_margin_bottom
     &.tab-1
-      padding-left: $TAB_1_PADDING
-      margin-top: $TAB_1_MARGIN - $CODE_MARGIN
+      padding-left: 45px
+      margin-top: 9px - $pre_margin_bottom
     &.code-tight
       margin-bottom: 0
 
