@@ -1020,6 +1020,8 @@ p code, li code {
   overflow: hidden; }
   .modules .content {
     min-height: calc(100vh - 542px); }
+  .modules .pagination {
+    display: none; }
 
 .posts {
   margin-top: 70px; }
@@ -1045,9 +1047,6 @@ p code, li code {
   .post .description {
     margin: 9px 0 24px;
     width: 655px; }
-
-.modules .pagination {
-  display: none; }
 
 /* QUICKSTART PAGE ----------------------------------------------- */
 .quickstart .paragraph-1 {

@@ -6,6 +6,9 @@ $content_h: $HEADER_H + $FOOTER_H +$FOOTER_MARGIN_TOP
   overflow: hidden
   .content
     min-height: calc(100vh - #{$content_h})
+  .pagination
+    display: none
+
 .posts
   margin-top: 70px
   .message-box
@@ -26,6 +29,3 @@ $content_h: $HEADER_H + $FOOTER_H +$FOOTER_MARGIN_TOP
   .description
     margin: 9px 0 24px
     width: 655px
-
-.modules .pagination
-  display: none
