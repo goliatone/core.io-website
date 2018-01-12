@@ -12,50 +12,50 @@
     display: none
 
 body
-  background-color: $BG_1
-  color: $COLOR_1
+  background-color: $MAIN_BG
+  color: $MAIN_TEXT
 
 p
   color: inherit
 
 a
-  color: $HIGHLIGHT_1
+  color: $HIGHLIGHT
   &:hover
-    color: $COLOR_1
+    color: $MAIN_TEXT
 
 footer
-  background-color: $BG_3
-  color: $COLOR_1
+  background-color: $FOOTER_BG
+  color: $MAIN_TEXT
   a
-    color: $COLOR_1
+    color: $MAIN_TEXT
     &:hover
-      color: $HIGHLIGHT_1
+      color: $HIGHLIGHT
 
 .highlight
-  color: $HIGHLIGHT_1
+  color: $HIGHLIGHT
 .shade
-  color: $SHADE_1
+  color: $SHADE_WHITE
 
 .sticky
-  background-color: $BG_1
+  background-color: $MAIN_BG
 
 
 /* ---------------------------------------------------- HR */
 hr
-  border-top: 1px solid $SHADE_1
+  border: none
+  border-top: 1px solid $SHADE_WHITE
   &.hr-shade
-    border-color: $SHADE_2
+    border-color: $SHADE_GRAY
   &.hr-light
     border-color: rgba(222,229,255,0.16)
 
 
 /* ---------------------------------------------- DECO-BAR */
-$color1: #5088ea
-$color2: #a4dd74
-$width: $DECO_BAR_W
+$color1: $DECO_BAR_BG_1
+$color2: $DECO_BAR_BG_2
 
 .highlight-bar
-  border: $HIGHLIGHT_1
+  border: $HIGHLIGHT
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
   background: $color1 /* Old browsers */
   background: linear-gradient(to right, $color1 0%,$color2 50%,$color2 51%,$color1 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -66,57 +66,55 @@ $width: $DECO_BAR_W
   0%
     background-position: 0px
   50%
-    background-position: $width
+    background-position: $DECO_BAR_W
   100%
-    background-position: $width * 2
+    background-position: $DECO_BAR_W * 2
 
 
 /* ---------------------------------------------- NAV-BARS */
-$nav_bar_text: $COLOR_1
-$nav_bar_higlght: $HIGHLIGHT_1
 $border_w: 2px
 
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
 .nav-bar-1
   .menu-item a
-    color: $nav_bar_text
+    color: $MAIN_TEXT
     &:hover, &.selected
-      color: $nav_bar_higlght
-      border-top: $border_w solid $nav_bar_text
+      color: $HIGHLIGHT
+      border-top: $border_w solid $MAIN_TEXT
 
 .features #main-nav a[href="/"],
 .features #main-nav a[href*="index"],
 .quickstart #main-nav a[href*="quickstart"],
 .docs #main-nav a[href*="documentation"],
 .modules #main-nav a[href*="modules"]
-  color: $nav_bar_higlght
-  border-top: $border_w solid $nav_bar_text
+  color: $HIGHLIGHT
+  border-top: $border_w solid $MAIN_TEXT
 
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
 .nav-bar-2
   .menu-item a
-    color: $nav_bar_text
+    color: $MAIN_TEXT
     &:hover, &.selected
-      border-bottom: $border_w solid $nav_bar_higlght
+      border-bottom: $border_w solid $HIGHLIGHT
 
 .docs .guide #docs-nav a[href*="guide"],
 .docs .api #docs-nav a[href*="api"],
 .docs .examples #docs-nav a[href*="examples"]
-  border-bottom: $border_w solid $nav_bar_higlght
+  border-bottom: $border_w solid $HIGHLIGHT
 
 
 /* -------------------------------------------- SEARCH BARS */
 .search-bar-1
-  color: $COLOR_1
+  color: $MAIN_TEXT
   input
     background-color: transparent
-    color: $COLOR_1
-    border-color: $SHADE_1
+    color: $MAIN_TEXT
+    border-color: $SHADE_WHITE
     &:hover, &:focus
-      border: 1px solid $HIGHLIGHT_1
+      border: 1px solid $HIGHLIGHT
       outline: none
 
 
@@ -157,75 +155,77 @@ $border_highlight: $border_w solid $detail_bg
 /* ----------------------------------------------- BUTTONS */
 /* ------------------------------- BLACK BUTTON */
 .black-btn
-  +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
+  +button_color($BUTTON_BLACK_TEXT, $BUTTON_BLACK_BG, $BUTTON_BLACK_SHADOW)
   &.fade
-    +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
+    +button_fade-2($BUTTON_BLACK_BG, $BUTTON_BLACK_TEXT)
 
 /* -------------------------------- GRAY BUTTON */
 .gray-btn
-  +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
+  +button_color($BUTTON_GRAY_TEXT, $BUTTON_GRAY_BG, $BUTTON_GRAY_SHADOW)
   &.fade
-    +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
+    +button_fade($BUTTON_GRAY_BG, $BUTTON_GRAY_TEXT)
 
 /* -------------------------------- BLUE BUTTON */
 .blue-btn
-  +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
+  +button_color($BUTTON_BLUE_TEXT, $BUTTON_BLUE_BG)
   &.fade
-    +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
+    +button_fade-2($BUTTON_BLUE_BG, $BUTTON_BLUE_TEXT)
 
 
 /* ------------------------------------------------ LABELS */
 .label
   &.highlight
-    +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
+    +label_color($LABEL_DARK_TEXT, $HIGHLIGHT)
 
   &.green
-    +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
+    +label_color($LABEL_TEXT, $LABEL_GREEN_BG)
 
   &.blue
-    +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
+    +label_color($LABEL_TEXT, $LABELS_BLUE_BG)
 
   &.red
-    +label_color($LABELS_RED_C, $LABELS_RED_BG)
+    +label_color($LABEL_TEXT, $LABELS_RED_BG)
 
   &.black
-    +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
+    +label_color($LABEL_TEXT, $LABELS_BLACK_BG)
 
   &.orange
-    +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
+    +label_color($LABEL_TEXT, $LABELS_ORANGE_BG)
 
   &.light-gray
-    +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
+    +label_color($LABEL_DARK_TEXT, $LABELS_LIGHT_GRAY_BG)
 
   &.dark-gray
-    +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+    +label_color($LABEL_TEXT, $LABELS_DARK_GRAY_BG)
 
 
 /* -------------------------------------------- CODE-BLOCK */
 .code-block,
 .code-block-1,
 .code-line,
-p code, li code
-  background-color: $BG_2
+p code,
+li code
+  background-color: $CODE_BG
 
 
 /* ------------------------------------------------- POSTS */
 .posts
   > .row
-    border-top: 1px solid $SHADE_2
+    border-top: 1px solid $SHADE_GRAY
     &:last-of-type
-      border-bottom: 1px solid $SHADE_2
+      border-bottom: 1px solid $SHADE_GRAY
   .title,
   .title a
-    color: $COLOR_1
+    color: $MAIN_TEXT
 
 
 /* ---------------------------------------------- SIDEMENU */
 .side-menu
-  .menu-item a, li a
-    color: $COLOR_1
+  .menu-item a,
+  li a
+    color: $MAIN_TEXT
     &:hover
-      color: $HIGHLIGHT_1
+      color: $HIGHLIGHT
 
 
 /* ------------------------- QUICKSTART INSTRUCTION BLOCKS */
@@ -233,7 +233,7 @@ p code, li code
   .description,
   .button-wrapper,
   .code-wrapper
-    border-left: 1px solid $SHADE_2
+    border-left: 1px solid $SHADE_GRAY
 
 
 /* ------------------------------------- BACKGROUND SHAPES */
