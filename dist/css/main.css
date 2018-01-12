@@ -34,67 +34,41 @@ img {
   height: auto; }
 
 /* GENERAL CLASSES --------------------------------- GENERAL CLASSES */
-.relative {
-  position: relative; }
-
-.fixed {
-  position: fixed;
-  z-index: 5000; }
-
-.absolute {
-  position: absolute;
-  z-index: 5000; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.vCentered {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
-
-.flex {
+.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-.hidden {
-  display: none; }
+.row-centered {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
-.hidden-text {
-  position: absolute;
-  height: 0;
-  width: 0;
-  opacity: 0;
-  font-size: 0; }
+.row-vCentered {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-.hidden-link-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  font-size: 0; }
+.cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-.fullwidth {
-  width: 100%;
-  overflow-x: visible; }
-
-.fullheight {
-  height: 100vh;
-  overflow: hidden; }
-
-.uppercase {
-  text-transform: uppercase; }
+.cols-centered {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .sticky {
   position: -webkit-sticky;
   position: sticky; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 /* LAYOUT_APP STYLE----------------------------------------------- */
 header,
@@ -159,35 +133,6 @@ footer .footer-github {
     margin-top: 1px;
     width: 26px;
     height: 26px; }
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.row-centered {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.row-vCentered {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.cols {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.cols-centered {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
 
 /* SKINS ----------------------------------------------------------- */
 .print {

@@ -1,61 +1,27 @@
 /* GENERAL CLASSES --------------------------------- GENERAL CLASSES */
 
-// mostly classes used by javascript (add/remove/toggle)
-// to update states
 // POSITION
-
-.relative
-  position: relative
-
-.fixed
-  position: fixed
-  z-index: 5000
-
-.absolute
-  position: absolute
-  z-index: 5000
-
-.left
-  float: left
-
-.right
-  float: right
-
-.vCentered
-  +vCentered
-
-.flex
+.row
   display: flex
-  height: 100%
+  justify-content: space-between
 
-.hidden
-  display: none
+.row-centered
+  justify-content: space-around
 
-.hidden-text
-  position: absolute
-  height: 0
-  width: 0
-  opacity: 0
-  font-size: 0
+.row-vCentered
+  align-items: center
 
-.hidden-link-text
-  position: absolute
-  top: 0
-  left: 0
-  opacity: 0
-  font-size: 0
 
-.fullwidth 
-  width: 100%
-  overflow-x: visible
+.cols
+  display: flex
+  justify-content: space-between
+  
+.cols-centered
+  justify-content: space-around
 
-.fullheight
-  //min-height: 100%
-  height: 100vh
-  overflow: hidden
+.sticky
+  position: sticky
 
+// TEXT
 .uppercase
   text-transform: uppercase
-
-.sticky 
-  position: sticky
