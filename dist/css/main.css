@@ -1,12 +1,12 @@
 /* INDEX ----------------------------------------------------- INDEX
- * 
+ *
  * 1. Resets
  * 2. General Classes
  * 3. Skins (colors)
  * 4. Font definitions (fonts)
  * 5. Layouts (dims)
  * 6. Elements
- * 7. Styleguide                                        
+ * 7. Styleguide
  *                                                                   */
 /* RESETS --------------------------------------------------- RESETS */
 /* so frame doesn't float around when x-scrolling on pad */
@@ -393,6 +393,10 @@ li code {
 .instruction_block .code-wrapper {
   border-left: 1px solid #979797; }
 
+/* circle number */
+.instrus .title::before {
+  border: 1px dashed #979797; }
+
 /* ------------------------------------- BACKGROUND SHAPES */
 /* ----------------------------- #bg top page svg elements */
 #bg {
@@ -665,6 +669,12 @@ code {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.09px; }
+
+/* -------------- QUICKSTART INSTRUCTION BLOCK */
+/* circle number */
+.instrus .title::before {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px; }
 
 /* ---------------------------------------------------- HR */
 hr {
@@ -1063,74 +1073,6 @@ p code, li code {
     padding: 51px 20px 51px 28px; }
   .quickstart .paragraph-1 hr {
     display: none; }
-.quickstart .instrus {
-  padding-left: 197px;
-  padding-right: 91px;
-  /* circle number */
-  counter-reset: instrus -1; }
-  .quickstart .instrus hr {
-    width: 505px;
-    margin: 68px 0 86px 164px; }
-  .quickstart .instrus .instruction_block {
-    /* circle number */
-    counter-increment: instrus;
-    /* to have vertical line = border-left
-     * margin can't be set here,
-     * instead padding-bottom on each
-     * last element of the instruction block */ }
-    .quickstart .instrus .instruction_block .description,
-    .quickstart .instrus .instruction_block .button-wrapper,
-    .quickstart .instrus .instruction_block .code-wrapper,
-    .quickstart .instrus .instruction_block .paragraph-2 {
-      margin-left: 30px;
-      padding-left: 55px; }
-    .quickstart .instrus .instruction_block:last-of-type .description {
-      border: none; }
-    .quickstart .instrus .instruction_block:last-of-type .last {
-      padding-bottom: 0; }
-  .quickstart .instrus .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .quickstart .instrus .title:before {
-      /* circle number */
-      content: counter(instrus);
-      width: 60px;
-      height: 60px;
-      margin-right: 20px;
-      border: 1px dashed #979797;
-      border-radius: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-size: 18px;
-      font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif; }
-  .quickstart .instrus .description {
-    max-width: 675px;
-    padding-top: 6px;
-    padding-bottom: 30px;
-    line-height: 26px; }
-    .quickstart .instrus .description p.last {
-      padding-bottom: 55px; }
-  .quickstart .instrus .button-wrapper {
-    padding-bottom: 114px; }
-  .quickstart .instrus .code-line {
-    width: 850px;
-    margin: 28px 0 32px 0; }
-  .quickstart .instrus .code-wrapper {
-    padding-bottom: 117px; }
-    .quickstart .instrus .code-wrapper .code-block {
-      padding-top: 14px;
-      padding-left: 27px; }
 .quickstart .paragraph-2 {
   margin-left: 30px;
   padding-left: 271px; }
@@ -1143,6 +1085,72 @@ p code, li code {
         margin-left: 15px; }
         .quickstart .paragraph-2 .subheader ul li > * {
           margin-left: -3px; }
+
+.instrus {
+  padding-left: 197px;
+  padding-right: 91px;
+  /* circle number */
+  counter-reset: instrus -1; }
+  .instrus hr {
+    width: 505px;
+    margin: 68px 0 86px 164px; }
+  .instrus .instruction_block {
+    /* circle number */
+    counter-increment: instrus;
+    /* to have vertical line = border-left
+     * margin can't be set here,
+     * instead padding-bottom on each
+     * last element of the instruction block */ }
+    .instrus .instruction_block .description,
+    .instrus .instruction_block .button-wrapper,
+    .instrus .instruction_block .code-wrapper,
+    .instrus .instruction_block .paragraph-2 {
+      margin-left: 30px;
+      padding-left: 55px; }
+    .instrus .instruction_block:last-of-type .description {
+      border: none; }
+    .instrus .instruction_block:last-of-type .last {
+      padding-bottom: 0; }
+  .instrus .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .instrus .title::before {
+      /* circle number */
+      content: counter(instrus);
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .instrus .description {
+    max-width: 675px;
+    padding-top: 6px;
+    padding-bottom: 30px;
+    line-height: 26px; }
+    .instrus .description p.last {
+      padding-bottom: 55px; }
+  .instrus .button-wrapper {
+    padding-bottom: 114px; }
+  .instrus .code-line {
+    width: 850px;
+    margin: 28px 0 32px 0; }
+  .instrus .code-wrapper {
+    padding-bottom: 117px; }
+    .instrus .code-wrapper .code-block {
+      padding-top: 14px;
+      padding-left: 27px; }
 
 /* DOCUMENTATION PAGE -------------------------------------------- */
 .docs .content {

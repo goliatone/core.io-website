@@ -25,74 +25,6 @@ $instrus_padding_r: 91px
       padding: 51px 20px 51px 28px
     hr
       display: none
-
-  .instrus
-    padding-left: $instrus_padding_l
-    padding-right: $instrus_padding_r
-    hr
-      width: 505px
-      margin: 68px 0 86px 164px
-
-    /* circle number */
-    counter-reset: instrus -1
-
-    .instruction_block
-      /* circle number */
-      counter-increment: instrus
-      /* to have vertical line = border-left
-       * margin can't be set here,
-       * instead padding-bottom on each
-       * last element of the instruction block */
-      .description,
-      .button-wrapper,
-      .code-wrapper,
-      .paragraph-2
-        margin-left: $margin_l
-        padding-left: 55px
-      &:last-of-type
-        .description
-          border: none
-        .last
-          padding-bottom: 0
-
-    .title
-      display: flex
-      align-items: center
-      &:before
-        /* circle number */
-        content: counter(instrus)
-        width: $numeration_w
-        height: $numeration_w
-        margin-right: $numeration_margin_r
-        border: 1px dashed #979797
-        border-radius: 50%
-        display: flex
-        align-items: center
-        justify-content: center
-        font-size: 18px
-        font-family: $MAIN_FONT_MEDIUM
-
-    .description
-      max-width: 675px
-      padding-top: 6px
-      padding-bottom: 30px
-      line-height: 26px
-      p.last
-        padding-bottom: 55px
-
-    .button-wrapper
-      padding-bottom: 114px
-
-    .code-line
-      width: 850px
-      margin: 28px 0 32px 0
-
-    .code-wrapper
-      padding-bottom: 117px
-      .code-block
-        padding-top: 14px
-        padding-left: 27px
-
   .paragraph-2
     margin-left: $margin_l
     padding-left: 271px
@@ -106,3 +38,67 @@ $instrus_padding_r: 91px
           margin-left: 15px
           > *
             margin-left: -3px
+
+.instrus
+  padding-left: $instrus_padding_l
+  padding-right: $instrus_padding_r
+  hr
+    width: 505px
+    margin: 68px 0 86px 164px
+
+  /* circle number */
+  counter-reset: instrus -1
+
+  .instruction_block
+    /* circle number */
+    counter-increment: instrus
+    /* to have vertical line = border-left
+     * margin can't be set here,
+     * instead padding-bottom on each
+     * last element of the instruction block */
+    .description,
+    .button-wrapper,
+    .code-wrapper,
+    .paragraph-2
+      margin-left: $margin_l
+      padding-left: 55px
+    &:last-of-type
+      .description
+        border: none
+      .last
+        padding-bottom: 0
+
+  .title
+    display: flex
+    align-items: center
+    &::before
+      /* circle number */
+      content: counter(instrus)
+      width: $numeration_w
+      height: $numeration_w
+      margin-right: $numeration_margin_r
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+
+  .description
+    max-width: 675px
+    padding-top: 6px
+    padding-bottom: 30px
+    line-height: 26px
+    p.last
+      padding-bottom: 55px
+
+  .button-wrapper
+    padding-bottom: 114px
+
+  .code-line
+    width: 850px
+    margin: 28px 0 32px 0
+
+  .code-wrapper
+    padding-bottom: 117px
+    .code-block
+      padding-top: 14px
+      padding-left: 27px
