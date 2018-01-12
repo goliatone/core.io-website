@@ -1,7 +1,4 @@
 /* -------------------------------------- FONT_DEFINITIONS */
-html
-  font-size: 62.5%
-
 body
   font-family: $MAIN_FONT
   font-size: 18px
@@ -60,6 +57,7 @@ footer
   font-family: $MAIN_FONT_MEDIUM
   font-size: 16px
 
+
 /* ---------------------------------- TEXT (p) */
 .p-biggest
   font-family: $MAIN_FONT_LIGHT_ITALIC
@@ -113,6 +111,7 @@ footer
   font-family: $MAIN_FONT_LIGHT
   font-weight: 300
 
+
 /* -------------------------------------- CODE */
 code
   font-family: $CODE_FONT_1
@@ -131,6 +130,7 @@ code
     font-size: 15px
     font-weight: bold
 
+
 /* ---------------------------------- NAV BARS */
 .nav-bar-1
   font-family: $MAIN_FONT_MEDIUM
@@ -145,7 +145,8 @@ code
 .side-menu
   font-family: $MAIN_FONT_MEDIUM
   font-size: 18px
-  .menu-item-submenu, ul ul li
+  .menu-item-submenu,
+  ul ul li
     font-size: 16px
 
 
@@ -163,11 +164,14 @@ code
 
 /* ----------------------------------- BUTTONS */
 .big-btn
-  +button_fonts($MAIN_FONT_BOLD, 18px)
+  font-family: $MAIN_FONT_BOLD
+  font-size: 18px
+  font-weight: 500
 
 .medium-btn
-  +button_fonts($MAIN_FONT_MEDIUM, 16px)
-
+  font-family: $MAIN_FONT_MEDIUM
+  font-size: 16px
+  font-weight: 500
 
 /* ------------------------------------ LABELS */
 .label

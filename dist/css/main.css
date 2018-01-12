@@ -452,9 +452,6 @@ footer {
   z-index: 2; }
 
 /* -------------------------------------- FONT_DEFINITIONS */
-html {
-  font-size: 62.5%; }
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px; }
@@ -598,7 +595,8 @@ code {
 .side-menu {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px; }
-  .side-menu .menu-item-submenu, .side-menu ul ul li {
+  .side-menu .menu-item-submenu,
+  .side-menu ul ul li {
     font-size: 16px; }
 
 /* ------------------------------- SEARCH BARS */
