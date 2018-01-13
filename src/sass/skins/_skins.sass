@@ -1,7 +1,4 @@
-/* SKINS ----------------------------------------------------------- */
-// -------------------------------------------------------------- CSS
-// SCOPE = PROJECT
-
+/* ----------------------------------------------------------- SKINS */
 .print
   background: none
   color: black
@@ -106,7 +103,7 @@ $border_w: 2px
   border-bottom: $border_w solid $HIGHLIGHT
 
 
-/* -------------------------------------------- SEARCH BARS */
+/* --------------------------------------------- SEARCH BAR */
 .search-bar-1
   color: $MAIN_TEXT
   input
@@ -152,6 +149,7 @@ $border_highlight: $border_w solid $detail_bg
     border-top: none
     border-right: none
 
+
 /* ----------------------------------------------- BUTTONS */
 /* ------------------------------- BLACK BUTTON */
 .black-btn
@@ -174,29 +172,31 @@ $border_highlight: $border_w solid $detail_bg
 
 /* ------------------------------------------------ LABELS */
 .label
+  color: $LABEL_TEXT
+
   &.highlight
-    +label_color($LABEL_DARK_TEXT, $HIGHLIGHT)
+    +label_color($HIGHLIGHT, $LABEL_DARK_TEXT)
 
   &.green
-    +label_color($LABEL_TEXT, $LABEL_GREEN_BG)
+    +label_color($LABEL_GREEN_BG)
 
   &.blue
-    +label_color($LABEL_TEXT, $LABELS_BLUE_BG)
+    +label_color($LABELS_BLUE_BG)
 
   &.red
-    +label_color($LABEL_TEXT, $LABELS_RED_BG)
+    +label_color($LABELS_RED_BG)
 
   &.black
-    +label_color($LABEL_TEXT, $LABELS_BLACK_BG)
+    +label_color($LABELS_BLACK_BG)
 
   &.orange
-    +label_color($LABEL_TEXT, $LABELS_ORANGE_BG)
+    +label_color($LABELS_ORANGE_BG)
 
   &.light-gray
-    +label_color($LABEL_DARK_TEXT, $LABELS_LIGHT_GRAY_BG)
+    +label_color($LABELS_LIGHT_GRAY_BG, $LABEL_DARK_TEXT)
 
   &.dark-gray
-    +label_color($LABEL_TEXT, $LABELS_DARK_GRAY_BG)
+    +label_color($LABELS_DARK_GRAY_BG)
 
 
 /* -------------------------------------------- CODE-BLOCK */
@@ -217,6 +217,7 @@ li code
   .title,
   .title a
     color: $MAIN_TEXT
+
 
 /* --------------------------------------------- DOCS MENU */
 .bg-menu

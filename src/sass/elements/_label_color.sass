@@ -25,8 +25,8 @@
 /// @author Tatiana Burgos
 ///
 ///
-/// @param {Color} $color [white] - Label's text color.
-/// @param {Color} $bg_1 [black] - Label's background color.
+/// @param {Color} $bg [black] - Label's background and border color.
+/// @param {Color} $color [false] - Label's text color, optional.
 ///
 /// @output css for `.label.highlight`
 /// ```
@@ -38,10 +38,11 @@
 /// ```
 /// @example sass - Creating `.label.highlight`
 ///   .label.highlight
-///     +label_color(#2C2E31, #00d8d8)
+///     +label_color(#00d8d8, #2C2E31)
 ///
 
-=label_color($color: white, $bg: black)
-  color: $color
+=label_color($bg: black, $color: false)
+  @if $color
+    color: $color
   border: 1px solid $bg
   background-color: $bg

@@ -1,13 +1,11 @@
-/* INDEX ----------------------------------------------------- INDEX
- *
- * 1. Resets
+/* ----------------------------------------------------------- INDEX */
+/* 1. Resets
  * 2. General Classes
- * 3. Skins (colors)
- * 4. Font definitions (fonts)
- * 5. Layouts (dims)
- * 6. Elements
- *                                                                   */
-/* RESETS --------------------------------------------------- RESETS */
+ * 3. Layouts (dims)
+ * 4. Skins (colors)
+ * 5. Font definitions (fonts)
+ * 6. Elements                                                       */
+/* ---------------------------------------------------------- RESETS */
 html {
   /* so frame does not float around when x-scrolling on pad */
   overflow-x: hidden;
@@ -32,7 +30,7 @@ img {
   width: 100%;
   height: auto; }
 
-/* GENERAL CLASSES --------------------------------- GENERAL CLASSES */
+/* ------------------------------------------------- GENERAL CLASSES */
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,7 +67,7 @@ img {
 .uppercase {
   text-transform: uppercase; }
 
-/* LAYOUT_APP STYLE----------------------------------------------- */
+/* ---------------------------------------------------------  LAYOUT */
 header,
 .content {
   max-width: 1225px;
@@ -133,7 +131,7 @@ footer .footer-github {
     width: 26px;
     height: 26px; }
 
-/* SKINS ----------------------------------------------------------- */
+/* ----------------------------------------------------------- SKINS */
 .print {
   background: none;
   color: black; }
@@ -237,7 +235,7 @@ hr {
 .docs .examples #docs-nav a[href*="examples"] {
   border-bottom: 2px solid #00d8d8; }
 
-/* -------------------------------------------- SEARCH BARS */
+/* --------------------------------------------- SEARCH BAR */
 .search-bar-1 {
   color: #fafafa; }
   .search-bar-1 input {
@@ -295,9 +293,9 @@ hr {
 
 /* -------------------------------- GRAY BUTTON */
 .gray-btn {
-  color: #f8f8f8;
-  background-color: #2c2c31;
-  border: 1px solid #f8f8f8;
+  color: #2c2c31;
+  background-color: #f8f8f8;
+  border: 1px solid #2c2c31;
   -webkit-box-shadow: 5px 5px 5px #212121;
           box-shadow: 5px 5px 5px #212121; }
   .gray-btn.fade {
@@ -305,9 +303,9 @@ hr {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease; }
     .gray-btn.fade:hover {
-      color: #2c2c31;
-      background-color: #f8f8f8;
-      border-color: #2c2c31; }
+      color: #f8f8f8;
+      background-color: #2c2c31;
+      border-color: #f8f8f8; }
 
 /* -------------------------------- BLUE BUTTON */
 .blue-btn {
@@ -324,38 +322,34 @@ hr {
       border-color: #00d8d8; }
 
 /* ------------------------------------------------ LABELS */
-.label.highlight {
-  color: #2c2c31;
-  border: 1px solid #00d8d8;
-  background-color: #00d8d8; }
-.label.green {
-  color: #ffffff;
-  border: 1px solid #36af47;
-  background-color: #36af47; }
-.label.blue {
-  color: #ffffff;
-  border: 1px solid #1991eb;
-  background-color: #1991eb; }
-.label.red {
-  color: #ffffff;
-  border: 1px solid #ed1c24;
-  background-color: #ed1c24; }
-.label.black {
-  color: #ffffff;
-  border: 1px solid #516173;
-  background-color: #516173; }
-.label.orange {
-  color: #ffffff;
-  border: 1px solid #f7981c;
-  background-color: #f7981c; }
-.label.light-gray {
-  color: #2c2c31;
-  border: 1px solid #dfe1e5;
-  background-color: #dfe1e5; }
-.label.dark-gray {
-  color: #ffffff;
-  border: 1px solid #c2cad4;
-  background-color: #c2cad4; }
+.label {
+  color: #ffffff; }
+  .label.highlight {
+    color: #2c2c31;
+    border: 1px solid #00d8d8;
+    background-color: #00d8d8; }
+  .label.green {
+    border: 1px solid #36af47;
+    background-color: #36af47; }
+  .label.blue {
+    border: 1px solid #1991eb;
+    background-color: #1991eb; }
+  .label.red {
+    border: 1px solid #ed1c24;
+    background-color: #ed1c24; }
+  .label.black {
+    border: 1px solid #516173;
+    background-color: #516173; }
+  .label.orange {
+    border: 1px solid #f7981c;
+    background-color: #f7981c; }
+  .label.light-gray {
+    color: #2c2c31;
+    border: 1px solid #dfe1e5;
+    background-color: #dfe1e5; }
+  .label.dark-gray {
+    border: 1px solid #c2cad4;
+    background-color: #c2cad4; }
 
 /* -------------------------------------------- CODE-BLOCK */
 .code-block,
@@ -397,7 +391,7 @@ li code {
   border: 1px dashed #979797; }
 
 /* ------------------------------------- BACKGROUND SHAPES */
-/* ----------------------------- #bg top page svg elements */
+/* ----------------- #bg top page svg elements */
 #bg {
   position: absolute;
   top: 0;
@@ -438,8 +432,8 @@ header,
 #header_path_top g {
   opacity: 0.204993207; }
 
-/* ------------------------ #bg-2 bottom page svg elements */
-.layout-app {
+/* ------------ #bg-2 bottom page svg elements */
+body {
   position: relative; }
 
 #bg-2 {
@@ -458,7 +452,7 @@ footer {
   position: relative;
   z-index: 2; }
 
-/* -------------------------------------- FONT_DEFINITIONS */
+/* ------------------------------------------------ FONT_DEFINITIONS */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px; }
@@ -477,7 +471,7 @@ footer {
   font-size: 14px;
   font-weight: 300; }
 
-/* ----------------------------------- HEADERS */
+/* ----------------------------------------------- HEADERS */
 .h-biggest {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 64px;
@@ -516,7 +510,7 @@ footer {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px; }
 
-/* ---------------------------------- TEXT (p) */
+/* ---------------------------------------------- TEXT (p) */
 .p-biggest {
   font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 48px; }
@@ -569,7 +563,7 @@ footer {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300; }
 
-/* -------------------------------------- CODE */
+/* -------------------------------------------------- CODE */
 code {
   font-family: "Courier Bold", Courier, monospace; }
 
@@ -588,17 +582,22 @@ code {
     font-size: 15px;
     font-weight: bold; }
 
-/* ---------------------------------- NAV BARS */
+/* ---------------------------------------------- NAV BARS */
+/* --------------------------------- NAV-BAR-1 */
+/* HEADER NAV BAR */
 .nav-bar-1 {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 18px; }
 
+/* --------------------------------- NAV-BAR-2 */
+/* DOCUMENTATION NAV BAR */
 .nav-bar-2 {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 16px; }
 
+/* ----------------------------------------- DOCS SIDEMENU */
 .side-menu {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px; }
@@ -606,33 +605,35 @@ code {
   .side-menu ul ul li {
     font-size: 16px; }
 
-/* ------------------------------- SEARCH BARS */
+/* -------------------------------------------- SEARCH BAR */
 .search-bar-1 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 28px; }
 
-/* -------------------------------- PAGINATION */
+/* -------------------------------------------- PAGINATION */
 .pagination {
   font-size: 16px;
   font-weight: 200; }
 
-/* ----------------------------------- BUTTONS */
+/* ----------------------------------------------- BUTTONS */
+/* --------------------------------- BIG BUTTON */
 .big-btn {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 500; }
 
+/* ------------------------------ MEDIUM BUTTON */
 .medium-btn {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 500; }
 
-/* ------------------------------------ LABELS */
+/* ------------------------------------------------ LABELS */
 .label {
   font-family: "Montserrat-Bold", Helvetica, sans-serif;
   font-size: 10px; }
 
-/* ---------------------------------- FOOTNOTE */
+/* -------------------------------------- FOOTER COPYRIGHT */
 .copyright {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px; }
@@ -640,7 +641,7 @@ code {
     font-family: inherit;
     font-size: inherit; }
 
-/* ------------------------------------- POSTS */
+/* ------------------------------------------------- POSTS */
 .post .title {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 28px; }
@@ -652,7 +653,7 @@ code {
   font-size: 16px;
   line-height: 26px; }
 
-/* ------------------- DOCUMENTATION MAIN TEXT */
+/* ------------------------------- DOCUMENTATION MAIN TEXT */
 .docs .main-txt h1, .docs .main-txt h2 {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -669,12 +670,13 @@ code {
   line-height: 24px;
   letter-spacing: 0.09px; }
 
-/* -------------- QUICKSTART INSTRUCTION BLOCK */
+/* -------------------------- QUICKSTART INSTRUCTION BLOCK */
 /* circle number */
 .instrus .title::before {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px; }
 
+/* -------------------------------------------------------- ELEMENTS */
 /* ---------------------------------------------------- HR */
 hr {
   width: 100%;
@@ -717,8 +719,7 @@ hr {
     .nav-bar-2 .menu-item a {
       padding: 13px; }
 
-/* -------------------------------------------- SEARCH BARS */
-/* ------------------------------- SEARCH-BAR-1 */
+/* --------------------------------------------- SEARCH BAR */
 .search-bar-1 {
   width: 100%;
   padding: 60px;
@@ -922,7 +923,7 @@ p code, li code {
   padding: 0 4px 2px 4px;
   border-radius: 2px; }
 
-/* FEATURES PAGE ------------------------------------------------- */
+/* --------------------------------------------------- FEATURES PAGE */
 .features section {
   margin-bottom: 50px; }
   .features section:first-child {
@@ -976,7 +977,7 @@ p code, li code {
   .features .paragraph-3 .subheader {
     margin-bottom: 36px; }
 
-/* MODULES PAGE -------------------------------------------------- */
+/* ---------------------------------------------------- MODULES PAGE */
 .modules {
   min-height: 100vh;
   overflow: hidden; }
@@ -1010,7 +1011,7 @@ p code, li code {
     margin: 9px 0 24px;
     width: 655px; }
 
-/* QUICKSTART PAGE ----------------------------------------------- */
+/* ------------------------------------------------- QUICKSTART PAGE */
 .quickstart .paragraph-1 {
   padding-left: 248px;
   padding-right: 196px;
@@ -1104,7 +1105,7 @@ p code, li code {
       padding-top: 14px;
       padding-left: 27px; }
 
-/* DOCUMENTATION PAGE -------------------------------------------- */
+/* ---------------------------------------------- DOCUMENTATION PAGE */
 .docs .content {
   margin-top: -4px; }
   .docs .content > .cols {
