@@ -482,39 +482,16 @@ footer {
   font-size: 48px;
   font-weight: 300; }
 
-.h-medium {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 36px;
-  font-weight: lighter; }
-
 .h-small {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 28px; }
-
-.h-smaller {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 24px;
-  letter-spacing: 0.13px; }
 
 .h-smaller-bold {
   font-family: "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   letter-spacing: 0.13px; }
 
-.h-smaller-italic {
-  font-family: "HelveticaNeue-MediumItalic", "Helvetica Neue MediumItalic", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: lighter; }
-
-.h-smallest {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px; }
-
 /* ---------------------------------------------- TEXT (p) */
-.p-biggest {
-  font-family: "HelveticaNeue-LightItalic", "Helvetica Neue LightItalic", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 48px; }
-
 .p-big-1 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 20px; }
@@ -551,10 +528,6 @@ footer {
   line-height: 24px;
   letter-spacing: 0.09px; }
 
-.p-small-2 {
-  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 16px; }
-
 .p-smallest {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px; }
@@ -567,10 +540,12 @@ footer {
 code {
   font-family: "Courier Bold", Courier, monospace; }
 
-.code-block, .docs .main-txt pre {
+.code-block,
+.docs .main-txt pre {
   font-family: Monaco, monospace;
   font-size: 16px; }
-  .code-block .title, .docs .main-txt pre .title {
+  .code-block .title,
+  .docs .main-txt pre .title {
     font-family: "Courier New", Courier, monospace;
     font-size: 14px; }
 
