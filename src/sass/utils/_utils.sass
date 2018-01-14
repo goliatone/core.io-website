@@ -1,27 +1,4 @@
-// -------------------------------------- placeholder_c 
-
-=placeholder_color($color)
-  ::-webkit-input-placeholder
-    /* WebKit browsers */
-    color: $color
-
-  :-moz-placeholder
-    /* Mozilla Firefox 4 to 18 */
-    color:  $color
-    opacity: 1
-
-  ::-moz-placeholder
-    /* Mozilla Firefox 19+ */
-    color: $color
-    opacity: 1
-
-  :-ms-input-placeholder
-    /* Internet Explorer 10+ */
-    color: $color
-
-
 // ----------------------------------------- flexCenter
-
 =flexCenter
   display: flex
   justify-content: center
@@ -32,11 +9,3 @@
 =size($a)
   width: $a
   height: $a
-
-
-// ------------------------------------------ vCentered 
-
-=vCentered($y:50%)
-  position: relative
-  top: $y
-  transform: translateY(-50%)

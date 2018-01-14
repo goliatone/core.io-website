@@ -1,4 +1,4 @@
-/* DOCUMENTATION PAGE -------------------------------------------- */
+/* ---------------------------------------------- DOCUMENTATION PAGE */
 .docs
   .content
     margin-top: -4px
@@ -17,7 +17,6 @@
     top: 0
     left: 0
     z-index: 1
-    background-color: #2C2E31
   .nav-bar-2,
   .label,
   hr
@@ -29,12 +28,15 @@
     padding-left: 1px
     a
       display: inline-block
-    .menu-item, ul > li
+    .menu-item,
+    ul > li
       margin-bottom: 16px
     .submenu, ul ul
       margin: 15px 0 0 18px
-    .menu-item-submenu, ul ul > li
+    .menu-item-submenu,
+    ul ul > li
       margin-bottom: 10px
+
   .main-txt
     width: 730px
     .title, h1, h2
@@ -74,13 +76,15 @@
       > *
         margin-left: 7px
 
+
+  $sticky_nav_padding: 20px
   .sticky.nav
     top: 0
-    margin-top: -20px
-    padding-bottom: 20px
+    margin-top: -$sticky_nav_padding
+    padding-bottom: $sticky_nav_padding
     z-index: 2
     .row
-      padding-top: 20px
+      padding-top: $sticky_nav_padding
 
   .sticky.side-menu
     top: 140px

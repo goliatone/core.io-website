@@ -1,0 +1,63 @@
+/* ---------------------------------------------------------  LAYOUT */
+header,
+.content
+  max-width: $LAYOUT_MAW_W
+  margin: auto
+
+header
+  height: $HEADER_H
+  padding-left: $LAYOUT_PADDING_SIDES
+  padding-right: $LAYOUT_PADDING_SIDES
+  .logo
+    width: 200px
+
+.content
+  .modules &,
+  .docs &12
+    padding: 0 $LAYOUT_PADDING_SIDES
+
+
+$footer_a_padding: 10px
+
+footer
+  width: 100%
+  height: $FOOTER_H
+  margin-top: $FOOTER_MARGIN_TOP
+  padding: 46px $LAYOUT_PADDING_SIDES 20px $LAYOUT_PADDING_SIDES
+  .footer-logo
+    display: inline-block
+    +size(38px)
+  .footer-menu
+    display: flex
+    flex-direction: column
+    a
+      padding-bottom: $footer_a_padding
+  .footer-releases p
+    margin-bottom: 5px
+  .copyright
+    margin-top: 42px - $footer_a_padding
+    margin-left: -33px
+
+/* footer positioning of elements
+ * because of display flex column changing position
+ * of one could affect other                        */
+footer
+  .footer-logo
+    float: left
+    img
+      position: relative
+      top: -10px
+      left: -35px
+  .footer-releases
+    position: relative
+    top: 4px
+    left: -72px
+  .footer-github
+    position: relative
+    top: -4px
+    left: -99px
+    img
+      margin-right: 19px
+      margin-top: 1px
+      width: 26px
+      height: 26px

@@ -1,44 +1,52 @@
 /// Mixin to add a fading switch of colors to a button on hover.
-/// Background and border same color
+/// Background and border same color.
 ///
 /// Markup has the following structure:
 ///
 /// ```
-///   <div class="fade">
-///     <button>Button Text</button>
-///   <div>
+///   <button class="fade-2">...</button>
+///   <a class="fade-2">...</a>
+///   <div class="fade-2">...<div>
 /// ```
 ///
-///
 /// <style>
-///   .fade {
+///   .fade-2 {
+///     transition: all .3s ease;
+///   }
+///   .fade-2:hover {
+///     color: #2c2c31;
+///     background-color: gray;
+///   }
 /// </style>
 ///
-/// <div class="button">
-///   <button class="fade">Text</button>
-/// </div>
+/// <button class="btn-big btn-black fade-2">Button</button>
 ///
 ///
 /// @group Buttons
-/// @group Transitions
-/// @group Colors
 /// @author Tatiana Burgos
 ///
 ///
-/// @param {Color} $color_1 [white] - Button's text and border color on hover.
-/// @param {Color} $color_2 [black] - Button's background color on hover.
+/// @param {Color} $color_1 [white] - Button's border color on hover.
+/// @param {Color} $color_2 [black] - Button's background and text color on hover.
 ///
-/// @output css for `.button`
-///
+/// @output css for `.fade-2`
+/// ```
+/// .fade-2 {
+///   transition: all .3s ease;
+/// }
+/// .fade-2:hover {
+///   color: #2c2c31;
+///   background-color: #f8f8f8;
+/// }
+/// ```
 /// @example sass - Creating `.fade`
-///   .fade
-///     +button_fade()
+/// .fade-2
+///   +button_fade(#2c2c31, #f8f8f8)
 ///
 
 =button_fade-2($color_1:white, $color_2:black)
-  &button, &.button, button, .button
-    transition: all .3s ease
-    &:hover
-      color: $color_1
-      background-color: $color_2
-      transition: all .3s ease
+  transition: all .3s ease
+  &:hover
+    color: $color_1
+    background-color: $color_2
+    border-color: $color_2

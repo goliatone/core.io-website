@@ -1,9 +1,5 @@
-/* SKINS ----------------------------------------------------------- */
-// -------------------------------------------------------------- CSS
-// SCOPE = PROJECT
-
-// ----------------------------------------- MIDNIGHT MODE
-.midnight-mode.print
+/* ----------------------------------------------------------- SKINS */
+.print
   background: none
   color: black
   .code-block, .code-line
@@ -12,158 +8,243 @@
   footer
     display: none
 
-.midnight-mode
-  background-color: $BG_1
-  color: $COLOR_1
+body
+  background-color: $MAIN_BG
+  color: $MAIN_TEXT
 
-  .sticky
-    background-color: $BG_1
+p
+  color: inherit
 
-  a, p
-    color: inherit
+a
+  color: $HIGHLIGHT
+  &:hover
+    color: $MAIN_TEXT
 
+footer
+  background-color: $FOOTER_BG
+  color: $MAIN_TEXT
   a
-    color: $HIGHLIGHT_1
+    color: $MAIN_TEXT
     &:hover
-      color: $COLOR_1
+      color: $HIGHLIGHT
 
-  .post .title,
-  .post .title a
-    color: $COLOR_1
+.highlight
+  color: $HIGHLIGHT
+.shade
+  color: $SHADE_WHITE
 
-  .highlight
-    color: $HIGHLIGHT_1
-  .shade
-    color: $SHADE_1
-
-  footer
-    background-color: $BG_3
-    color: $COLOR_1
-    a
-      color: $COLOR_1
-      &:hover
-        color: $HIGHLIGHT_1
-
-  hr
-    border-color: $SHADE_1
-    &.hr-shade
-      border-color: $SHADE_2
-    &.hr-light
-      border-color: rgba(222,229,255,0.16)
+.sticky
+  background-color: $MAIN_BG
 
 
-  $color1: #5088ea
-  $color2: #a4dd74
-  $width: $DECO_BAR_W
-
-  .highlight-bar
-    border: $HIGHLIGHT_1
-    +highlight_bar_color_1($color1, $color2, $width)
-
-
-  .code-block,
-  .code-block-1,
-  .code-line,
-  p code, li code
-    background-color: $BG_2
+/* ---------------------------------------------------- HR */
+hr
+  border: none
+  border-top: 1px solid $SHADE_WHITE
+  &.hr-shade
+    border-color: $SHADE_GRAY
+  &.hr-light
+    border-color: rgba(222,229,255,0.16)
 
 
-  .posts
-    > .row
-      border-top: 1px solid $SHADE_2
-      &:last-of-type
-        border-bottom: 1px solid $SHADE_2
+/* ---------------------------------------------- DECO-BAR */
+$color1: $DECO_BAR_BG_1
+$color2: $DECO_BAR_BG_2
+
+.highlight-bar
+  border: $HIGHLIGHT
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
+  background: $color1 /* Old browsers */
+  background: linear-gradient(to right, $color1 0%,$color2 50%,$color2 51%,$color1 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=1 ) /* IE6-9 */
+  animation: bg_move 4s infinite /* IE 10+, Fx 29+ */
+
+@keyframes bg_move
+  0%
+    background-position: 0px
+  50%
+    background-position: $DECO_BAR_W
+  100%
+    background-position: $DECO_BAR_W * 2
 
 
-  .nav-bar-1
-    +nav_bar_color-1($COLOR_1, $HIGHLIGHT_1, $COLOR_1)
+/* ---------------------------------------------- NAV-BARS */
+$border_w: 2px
 
-  &.features #main-nav a[href="/"],
-  &.features #main-nav a[href*="index"],
-  &.quickstart #main-nav a[href*="quickstart"],
-  &.docs #main-nav a[href*="documentation"],
-  &.modules #main-nav a[href*="modules"]
-    border-color: $COLOR_1
-    color: $HIGHLIGHT_1
+/* --------------------------------- NAV-BAR-1 */
+/* HEADER NAV BAR */
+.nav-bar-1
+  .menu-item a
+    color: $MAIN_TEXT
+    &:hover, &.selected
+      color: $HIGHLIGHT
+      border-top: $border_w solid $MAIN_TEXT
 
-
-  .nav-bar-2
-    +nav_bar_color-3($COLOR_1, $HIGHLIGHT_1)
-
-  &.docs .guide #docs-nav a[href*="guide"],
-  &.docs .api #docs-nav a[href*="api"],
-  &.docs .examples #docs-nav a[href*="examples"]
-    border-color: $HIGHLIGHT_1
-
-  .side-menu
-    .menu-item a, li a
-      color: $COLOR_1
-      &:hover
-        color: $HIGHLIGHT_1
+.features #main-nav a[href="/"],
+.features #main-nav a[href*="index"],
+.quickstart #main-nav a[href*="quickstart"],
+.docs #main-nav a[href*="documentation"],
+.modules #main-nav a[href*="modules"]
+  color: $HIGHLIGHT
+  border-top: $border_w solid $MAIN_TEXT
 
 
-  $color: $PAGINATION_C
-  $border_color: $PAGINATION_BORDER_C
-  $border_w: 2px
-  $detail_c: $PAGINATION_C_HIGHLIGHT
-  $detail_bg: $PAGINATION_BACKGROUND_HIGHTLIGHT
+/* --------------------------------- NAV-BAR-2 */
+/* DOCUMENTATION NAV BAR */
+.nav-bar-2
+  .menu-item a
+    color: $MAIN_TEXT
+    &:hover, &.selected
+      border-bottom: $border_w solid $HIGHLIGHT
 
-  .pagination
-    +pagination_color($color, $border_color, $border_w, $detail_c, $detail_bg)
-
-
-  .search-bar-1
-    +search_bar_color($COLOR_1, transparent, $SHADE_1, $HIGHLIGHT_1)
-
-
-  .black-btn
-    +button_color($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2, $BUTTON_BLACK_SHADOW_C)
-    &.fade
-      +button_fade-2($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1)
-
-  .gray-btn
-    +button_color($BUTTON_BLACK_C_2, $BUTTON_BLACK_C_1, $BUTTON_BLACK_SHADOW_C)
-    &.fade
-      +button_fade($BUTTON_BLACK_C_1, $BUTTON_BLACK_C_2)
-
-  .blue-btn
-    +button_color($BUTTON_BLUE_C_1, $BUTTON_BLUE_C_2)
-    &.fade
-      +button_fade-2($BUTTON_BLUE_C_2, $BUTTON_BLUE_C_1)
-
-  .label
-    &.highlight
-      +label_color($LABEL_HIGHLIGT_C, $LABEL_HIGHLIGT_BG)
-    &.green
-      +label_color($LABEL_GREEN_C, $LABEL_GREEN_BG)
-
-    &.blue
-      +label_color($LABELS_BLUE_C, $LABELS_BLUE_BG)
-
-    &.red
-      +label_color($LABELS_RED_C, $LABELS_RED_BG)
-
-    &.black
-      +label_color($LABELS_BLACK_C, $LABELS_BLACK_BG)
-
-    &.orange
-      +label_color($LABELS_ORANGE_C, $LABELS_ORANGE_BG)
-
-    &.light-gray
-      +label_color($LABELS_LIGHT_GRAY_C, $LABELS_LIGHT_GRAY_BG)
-
-    &.dark-gray
-      +label_color($LABELS_DARK_GRAY_C, $LABELS_DARK_GRAY_BG)
+.docs .guide #docs-nav a[href*="guide"],
+.docs .api #docs-nav a[href*="api"],
+.docs .examples #docs-nav a[href*="examples"]
+  border-bottom: $border_w solid $HIGHLIGHT
 
 
-  .instruction_block
-    .description,
-    .button-wrapper,
-    .code-wrapper
-      border-left: 1px solid $SHADE_2
+/* --------------------------------------------- SEARCH BAR */
+.search-bar-1
+  color: $MAIN_TEXT
+  input
+    background-color: transparent
+    color: $MAIN_TEXT
+    border-color: $SHADE_WHITE
+    &:hover, &:focus
+      border: 1px solid $HIGHLIGHT
+      outline: none
 
 
+/* -------------------------------------------- PAGINATION */
+$border_w: 2px
+$detail_bg: $PAGINATION_BG_HIGHTLIGHT
 
-// ------------------------------------ BACKGROUND EFFECTS
+$border: $border_w solid $PAGINATION_BORDER_C
+$border_highlight: $border_w solid $detail_bg
+
+.pagination
+  color: $PAGINATION_C
+  a
+    color: $PAGINATION_C
+    margin-left: -$border_w
+    border: $border
+    border-left: none
+    &:hover
+      color: $PAGINATION_C_HIGHLIGHT
+      background-color: $detail_bg
+      border-color: $detail_bg
+      position: relative /* for the z-index to work */
+      z-index: 2
+  li:first-child a
+    border-left: $border
+    &:hover
+      border-left: $border_highlight
+  .active a
+    border: $border_highlight
+    position: relative /* for the z-index to work */
+    z-index: 2
+  .prev:before,
+  .next:after
+    border: 1px solid $PAGINATION_C
+    border-top: none
+    border-right: none
+
+
+/* ----------------------------------------------- BUTTONS */
+/* ------------------------------- BLACK BUTTON */
+.black-btn
+  +button_color($BUTTON_BLACK_TEXT, $BUTTON_BLACK_BG, $BUTTON_BLACK_SHADOW)
+  &.fade
+    +button_fade-2($BUTTON_BLACK_BG, $BUTTON_BLACK_TEXT)
+
+/* -------------------------------- GRAY BUTTON */
+.gray-btn
+  +button_color($BUTTON_GRAY_TEXT, $BUTTON_GRAY_BG, $BUTTON_GRAY_SHADOW)
+  &.fade
+    +button_fade($BUTTON_GRAY_BG, $BUTTON_GRAY_TEXT)
+
+/* -------------------------------- BLUE BUTTON */
+.blue-btn
+  +button_color($BUTTON_BLUE_TEXT, $BUTTON_BLUE_BG)
+  &.fade
+    +button_fade-2($BUTTON_BLUE_BG, $BUTTON_BLUE_TEXT)
+
+
+/* ------------------------------------------------ LABELS */
+.label
+  color: $LABEL_TEXT
+
+  &.highlight
+    +label_color($HIGHLIGHT, $LABEL_DARK_TEXT)
+
+  &.green
+    +label_color($LABEL_GREEN_BG)
+
+  &.blue
+    +label_color($LABELS_BLUE_BG)
+
+  &.red
+    +label_color($LABELS_RED_BG)
+
+  &.black
+    +label_color($LABELS_BLACK_BG)
+
+  &.orange
+    +label_color($LABELS_ORANGE_BG)
+
+  &.light-gray
+    +label_color($LABELS_LIGHT_GRAY_BG, $LABEL_DARK_TEXT)
+
+  &.dark-gray
+    +label_color($LABELS_DARK_GRAY_BG)
+
+
+/* -------------------------------------------- CODE-BLOCK */
+.code-block,
+.code-block-1,
+.code-line,
+p code,
+li code
+  background-color: $CODE_BG
+
+
+/* ------------------------------------------------- POSTS */
+.posts
+  > .row
+    border-top: 1px solid $SHADE_GRAY
+    &:last-of-type
+      border-bottom: 1px solid $SHADE_GRAY
+  .title,
+  .title a
+    color: $MAIN_TEXT
+
+
+/* --------------------------------------------- DOCS MENU */
+.bg-menu
+  background-color: $MAIN_BG
+
+
+/* ----------------------------------------- DOCS SIDEMENU */
+.side-menu
+  .menu-item a,
+  li a
+    color: $MAIN_TEXT
+    &:hover
+      color: $HIGHLIGHT
+
+
+/* ------------------------- QUICKSTART INSTRUCTION BLOCKS */
+.instruction_block
+  .description,
+  .button-wrapper,
+  .code-wrapper
+    border-left: 1px solid $SHADE_GRAY
+
+/* circle number */
+.instrus .title::before
+  border: 1px dashed $SHADE_GRAY
+
+
+/* ------------------------------------- BACKGROUND SHAPES */
 @import background-1
 @import background-2
