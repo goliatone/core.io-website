@@ -30,25 +30,23 @@
 
   <header class="main-header row row-vCentered">
 
-    <!-- HEADER LOGO -->
     <div class="logo">
       <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
-    </div><!-- END HEADER LOGO -->
+    </div>
 
-    <!-- Header Navigation Bar -->
     <nav id="main-nav" class="nav-bar-1">
       <ul>
         {%- for item in metadata.main_menu.items  %}
         <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
         {%- endfor %}
       </ul>
-    </nav><!-- END Header Navigation Bar -->
+    </nav>
 
-  </header><!-- END SECTION HEADER -->
+  </header>
 
   <main class="{% block content_class %}{# add_content_class #}{% endblock %} content">
     {% block content %}{% endblock %}
-  </main><!-- END CONTENT -->
+  </main>
 
   <footer>
     <div class="cols cols-centered">
