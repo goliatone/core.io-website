@@ -685,13 +685,13 @@ hr {
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
-.nav-bar-2 {
+.nav-bar-2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-2 .menu-item {
+  .nav-bar-2 ul .menu-item {
     margin-right: 10px; }
-    .nav-bar-2 .menu-item a {
+    .nav-bar-2 ul .menu-item a {
       padding: 13px; }
 
 /* --------------------------------------------- SEARCH BAR */
