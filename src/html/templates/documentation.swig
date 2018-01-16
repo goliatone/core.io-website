@@ -50,7 +50,7 @@
         </ul>
       </nav><!-- END Documentation Side Menu -->
 
-      <div id="guide" class="main-txt">
+      <main id="guide" class="main-txt">
         <h3 class="title h-smaller-bold"># core.io documentation</h3>
 
         <div class="description p-small-light">
@@ -92,5 +92,5 @@ name: 'MyClass'
           <a href="#">Next: Application</a>
         </div>
       </div>
-    </div>
+    </main>
 {% endblock %}
