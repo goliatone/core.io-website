@@ -670,17 +670,17 @@ hr {
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
-.nav-bar-1 {
+.nav-bar-1 ul {
   position: relative;
   top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-1 .menu-item {
+  .nav-bar-1 ul .menu-item {
     margin-left: 2px; }
-    .nav-bar-1 .menu-item a {
+    .nav-bar-1 ul .menu-item a {
       padding: 7px 17px; }
-    .nav-bar-1 .menu-item:last-child {
+    .nav-bar-1 ul .menu-item:last-child {
       margin-right: -17px; }
 
 /* --------------------------------- NAV-BAR-2 */

@@ -39,11 +39,11 @@
 
       <!-- Header Navigation Bar -->
       <nav id="main-nav" class="nav-bar-1">
-        {%- for item in metadata.main_menu.items  %}
-        <div class="menu-item">
-          <a href="{{item.link}}">{{item.txt}}</a>
-        </div>
-        {%- endfor %}
+        <ul>
+          {%- for item in metadata.main_menu.items  %}
+          <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+          {%- endfor %}
+        </ul>
       </nav><!-- END Header Navigation Bar -->
 
     </header><!-- END SECTION HEADER -->
