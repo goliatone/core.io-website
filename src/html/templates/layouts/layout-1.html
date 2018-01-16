@@ -24,123 +24,120 @@
 
 </head>
 
-<body>
+<body class="{% block page %}{# add_page_class #}{% endblock %}">
 
-  <div class="{% block page %}{# add_page_class #}{% endblock %} midnight-mode layout-app">
+  <div class="highlight-bar"></div>
 
-    <div class="highlight-bar"></div>
+  <header class="row row-vCentered">
 
-    <header class="row row-vCentered">
+    <!-- HEADER LOGO -->
+    <div class="logo">
+      <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+    </div><!-- END HEADER LOGO -->
 
-      <!-- HEADER LOGO -->
-      <div class="logo">
-        <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
-      </div><!-- END HEADER LOGO -->
+    <!-- Header Navigation Bar -->
+    <nav id="main-nav" class="nav-bar-1">
+      <ul>
+        {%- for item in metadata.main_menu.items  %}
+        <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav><!-- END Header Navigation Bar -->
 
-      <!-- Header Navigation Bar -->
-      <nav id="main-nav" class="nav-bar-1">
-        <ul>
-          {%- for item in metadata.main_menu.items  %}
-          <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
-          {%- endfor %}
-        </ul>
-      </nav><!-- END Header Navigation Bar -->
+  </header><!-- END SECTION HEADER -->
 
-    </header><!-- END SECTION HEADER -->
+  <div class="{% block content_class %}{# add_content_class #}{% endblock %} content">
+    {% block content %}{% endblock %}
+  </div><!-- END CONTENT -->
 
-    <div class="{% block content_class %}{# add_content_class #}{% endblock %} content">
-      {% block content %}{% endblock %}
-    </div><!-- END CONTENT -->
+  <footer>
+    <div class="cols cols-centered">
 
-    <footer>
-      <div class="cols cols-centered">
-
-        <div class="col-3">
-          <div class="footer-logo">
-            <a href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
-          </div>
-
-          <nav class="footer-menu">
-            <ul>
-              {%- for item in metadata.main_menu.items  %}
-                <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
-              {%- endfor %}
-            </ul>
-          </nav>
+      <div class="col-3">
+        <div class="footer-logo">
+          <a href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
         </div>
 
-        <div class="col-3">
-          <div class="footer-releases">
-            <p>Latest Release: 0.2.8 (Jun 01, 2017)</p>
-          </div>
-        </div>
+        <nav class="footer-menu">
+          <ul>
+            {%- for item in metadata.main_menu.items  %}
+              <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+            {%- endfor %}
+          </ul>
+        </nav>
+      </div>
 
-        <div class="col-3">
-          <div class="footer-github">
-            <a href="#" class="row row-vCentered">
-              <img src="/img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
-            </a>
-          </div>
+      <div class="col-3">
+        <div class="footer-releases">
+          <p>Latest Release: 0.2.8 (Jun 01, 2017)</p>
         </div>
       </div>
 
-      <div class="row row-centered copyright">
-        <p>Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+      <div class="col-3">
+        <div class="footer-github">
+          <a href="#" class="row row-vCentered">
+            <img src="/img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
+          </a>
+        </div>
       </div>
-    </footer>
+    </div>
 
-    {% if bg %}
-    <!--backgrounds -->
-    <div id="bg">
-      <div id="gradient-1">
-        <svg viewbox="0 0 1230 295">
-          <defs>
-            <lineargradient x1="50%" y1="-34.9735169%" x2="50%" y2="92.7608581%" id="linearGradient-1">
-              <stop stop-color="#484747" offset="0%"></stop>
-              <stop stop-color="#2C2D31" offset="100%"></stop>
-            </lineargradient>
-          </defs>
-          <g transform="translate(-33, 0)" fill="url(#linearGradient-1)">
-            <rect x="33" y="0" width="1230" height="295"></rect>
+    <div class="row row-centered copyright">
+      <p>Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+    </div>
+  </footer>
+
+  {% if bg %}
+  <!--backgrounds -->
+  <div id="bg">
+    <div id="gradient-1">
+      <svg viewbox="0 0 1230 295">
+        <defs>
+          <lineargradient x1="50%" y1="-34.9735169%" x2="50%" y2="92.7608581%" id="linearGradient-1">
+            <stop stop-color="#484747" offset="0%"></stop>
+            <stop stop-color="#2C2D31" offset="100%"></stop>
+          </lineargradient>
+        </defs>
+        <g transform="translate(-33, 0)" fill="url(#linearGradient-1)">
+          <rect x="33" y="0" width="1230" height="295"></rect>
+        </g>
+      </svg>
+    </div>
+    <div id="filters">
+      <div id="header_path_bottom">
+        <svg viewbox="0 0 1288 812">
+          <g fill-opacity="0.239999995">
+            <g transform="translate(0, -23)" fill="#D8D8D8">
+              <path d="M0,63.6354844 C291.293933,515.343966 596.211418,758.784524 914.752455,793.957158 C1233.29349,829.129792 1347.94492,841.695911 1258.70675,831.655514 L1258.70675,63.6354844 L315.645706,23 L0,63.6354844 Z"></path>
+            </g>
           </g>
         </svg>
       </div>
-      <div id="filters">
-        <div id="header_path_bottom">
-          <svg viewbox="0 0 1288 812">
-            <g fill-opacity="0.239999995">
-              <g transform="translate(0, -23)" fill="#D8D8D8">
-                <path d="M0,63.6354844 C291.293933,515.343966 596.211418,758.784524 914.752455,793.957158 C1233.29349,829.129792 1347.94492,841.695911 1258.70675,831.655514 L1258.70675,63.6354844 L315.645706,23 L0,63.6354844 Z"></path>
-              </g>
+      <div id="header_path_middle">
+        <svg viewbox="0 0 1224 937">
+          <g fill-opacity="0.239999995">
+            <g transform="translate(-34, -23)" fill="#D8D8D8">
+              <path d="M34,217.539062 C568.588088,683.346723 976.588088,930.833702 1258,960 L1258,170.772472 L217.882813,23 L34,217.539062 Z"></path>
             </g>
-          </svg>
-        </div>
-        <div id="header_path_middle">
-          <svg viewbox="0 0 1224 937">
-            <g fill-opacity="0.239999995">
-              <g transform="translate(-34, -23)" fill="#D8D8D8">
-                <path d="M34,217.539062 C568.588088,683.346723 976.588088,930.833702 1258,960 L1258,170.772472 L217.882813,23 L34,217.539062 Z"></path>
-              </g>
+          </g>
+        </svg>
+      </div>
+      <div id="header_path_top">
+        <svg viewbox="0 0 1225 810">
+          <g fill-opacity="0.204993207">
+            <g transform="translate(-34, -22)" fill="#D8D8D8">
+              <path d="M1010.18359,22.4804688 L344.242188,22.4804688 L34,359.644531 L34,829.59375 C324.40625,841.463542 602.68099,782.457031 868.824219,652.574219 C1134.96745,522.691406 1264.69271,450.990885 1258,437.472656 L1258,23 L1010.18359,22.4804688 Z"></path>
             </g>
-          </svg>
-        </div>
-        <div id="header_path_top">
-          <svg viewbox="0 0 1225 810">
-            <g fill-opacity="0.204993207">
-              <g transform="translate(-34, -22)" fill="#D8D8D8">
-                <path d="M1010.18359,22.4804688 L344.242188,22.4804688 L34,359.644531 L34,829.59375 C324.40625,841.463542 602.68099,782.457031 868.824219,652.574219 C1134.96745,522.691406 1264.69271,450.990885 1258,437.472656 L1258,23 L1010.18359,22.4804688 Z"></path>
-              </g>
-            </g>
-          </svg>
-        </div>
+          </g>
+        </svg>
       </div>
     </div>
-    <div id="bg-2">
-      <div id="filter-bottom"></div>
-      <div id="bg-bottom"></div>
-    </div>
-    {% endif %}
-  </div><!-- END docs midnight-mode layout-app -->
+  </div>
+  <div id="bg-2">
+    <div id="filter-bottom"></div>
+    <div id="bg-bottom"></div>
+  </div>
+  {% endif %}
 
   {% block scripts %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
