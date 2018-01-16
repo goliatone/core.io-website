@@ -899,10 +899,11 @@ p code, li code {
   border-radius: 2px; }
 
 /* --------------------------------------------------- FEATURES PAGE */
+.features header {
+  padding-top: 68px;
+  margin-bottom: 50px; }
 .features section {
   margin-bottom: 50px; }
-  .features section:first-child {
-    padding-top: 68px; }
 .features hr {
   margin: 26px 0 28px 4px; }
 .features .paragraph-1 {

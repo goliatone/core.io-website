@@ -5,7 +5,7 @@
 {% block page %}features{% endblock %}
 
 {% block content %} {% set bg = true %}
-    <section class="paragraph-1 cols">
+    <header class="paragraph-1 cols">
       <div>
         <h1 class="highlight h-biggest">The no framework<br/>for rapid prototyping.</h1>
         <hr class="hr-small"/>
@@ -20,7 +20,7 @@
           <img src="/img/images/computer_01.svg" width="100%" height="100%"/>
         </div>
       </div>
-    </section>
+    </header>
 
     <section class="paragraph-2 cols">
       <div>
