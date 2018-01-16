@@ -12,6 +12,8 @@
 
 {% block page %}docs{% endblock %}
 
+{% block content_class %}guide{% endblock %}
+
 {% block content %}
     <div class="sticky nav">
       <div class="bg-menu"></div>
@@ -48,21 +50,20 @@
         </ul>
       </nav><!-- END Documentation Side Menu -->
 
-      <div class="col-2">
-        <div id="guide" class="main-txt">
-          <h3 class="title h-smaller-bold"># core.io documentation</h3>
+      <div id="guide" class="main-txt">
+        <h3 class="title h-smaller-bold"># core.io documentation</h3>
 
-          <div class="description p-small-light">
-            <p><b>core.io</b> provides a structure to quickly prototype Node.js applications of any type, providing a set of guidelines and conventions to ease development.</p>
-            <p>In a way <b>core.io</b> aims to be a workflow rather than a framework by providing a common application structure regardless if the application is web, desktop, or data focused.</p>
-            <p><b>core.io</b> provides basic building blocks which are useful in any context and help with command tasks like configuration management, logging, dependency management and more basic needs of most applications.</p>
-            <p>The heart of <b>core.io</b> is the <a href="#">application context</a>, which you can extend directly with custom logic or indirectly with modules.</p>
-            <p><a href="#">Modules</a> are intended to encapsulate code and make it portable. They also serve as glue to integrate libraries like Socket.IO or AMQP into your project.</p>
-            <p>Following simple conventions on how files are named and where those files are placed core.io will auto-load, auto-configure, and auto-wire components always leaving you the choice to override defaults or create custom modules to replace core functionality.</p>
-          </div>
+        <div class="description p-small-light">
+          <p><b>core.io</b> provides a structure to quickly prototype Node.js applications of any type, providing a set of guidelines and conventions to ease development.</p>
+          <p>In a way <b>core.io</b> aims to be a workflow rather than a framework by providing a common application structure regardless if the application is web, desktop, or data focused.</p>
+          <p><b>core.io</b> provides basic building blocks which are useful in any context and help with command tasks like configuration management, logging, dependency management and more basic needs of most applications.</p>
+          <p>The heart of <b>core.io</b> is the <a href="#">application context</a>, which you can extend directly with custom logic or indirectly with modules.</p>
+          <p><a href="#">Modules</a> are intended to encapsulate code and make it portable. They also serve as glue to integrate libraries like Socket.IO or AMQP into your project.</p>
+          <p>Following simple conventions on how files are named and where those files are placed core.io will auto-load, auto-configure, and auto-wire components always leaving you the choice to override defaults or create custom modules to replace core functionality.</p>
+        </div>
 
-          <div class="code-block">
-            <pre><code>
+        <div class="code-block">
+          <pre><code>
 class MyClass {
 constructor(options){
   options = extend({}, MyClass.DEFAULTS, options);
@@ -83,13 +84,12 @@ getName: function() {
 },
 name: 'MyClass'
 }
-            </code></pre>
-          </div><!-- END CODE BLOCK -->
+          </code></pre>
+        </div><!-- END CODE BLOCK -->
 
-          <div class="row link-pagination">
-            <a href="#">Previous: Previous</a>
-            <a href="#">Next: Application</a>
-          </div>
+        <div class="row link-pagination">
+          <a href="#">Previous: Previous</a>
+          <a href="#">Next: Application</a>
         </div>
       </div>
     </div>
