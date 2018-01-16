@@ -60,11 +60,13 @@
             <a href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
           </div>
 
-          <div class="footer-menu">
-          {%- for item in metadata.main_menu.items  %}
-            <a href="{{item.link}}">{{item.txt}}</a>
-          {%- endfor %}
-          </div>
+          <nav class="footer-menu">
+            <ul>
+              {%- for item in metadata.main_menu.items  %}
+                <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+              {%- endfor %}
+            </ul>
+          </nav>
         </div>
 
         <div class="col-3">

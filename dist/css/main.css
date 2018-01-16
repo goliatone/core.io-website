@@ -100,7 +100,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    footer .footer-menu a {
+    footer .footer-menu .menu-item {
       padding-bottom: 10px; }
   footer .footer-releases p {
     margin-bottom: 5px; }
