@@ -935,7 +935,7 @@ p code, li code {
   padding-left: 80px;
   padding-right: 115px;
   margin-top: 322px; }
-  .features .paragraph-2 .col-2:last-child {
+  .features .paragraph-2 .cols > div:last-child {
     margin-right: 3px; }
   .features .paragraph-2 .code-block {
     min-width: 466px;
