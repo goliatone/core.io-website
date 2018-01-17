@@ -54,7 +54,11 @@ img {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .cols-centered {
   -ms-flex-pack: distribute;
@@ -813,6 +817,7 @@ hr {
 
 /* ------------------------------------------------ LABELS */
 .label {
+  display: inline-block;
   min-width: 47px;
   height: 20px;
   margin-right: 13px;
@@ -971,11 +976,7 @@ p code, li code {
 .post {
   width: 100%;
   min-height: 204px;
-  padding: 32px 90px 27px 61px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  padding: 32px 90px 27px 61px; }
   .post .title {
     position: relative;
     left: -1px; }
@@ -1084,7 +1085,7 @@ p code, li code {
 /* ---------------------------------------------- DOCUMENTATION PAGE */
 .docs .content {
   margin-top: -4px; }
-  .docs .content > .cols {
+  .docs .content > .row {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;

@@ -29,7 +29,7 @@
             </div>
 
             <div class="row">
-              <div class="labels row">
+              <div>
                 {% for label in post.labels -%}
                 <span class="label {{label.type}} uppercase">{{label.txt}}</span>
                 {% endfor %}
