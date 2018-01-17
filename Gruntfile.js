@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 
       js: { files: '<%= path.js_dev %>/*.js', tasks: ['jshint'] },
 
-      html: {files: '<%= path.templates %>/**/*.swig', tasks: ['swig'] }
+      html: {files: '<%= path.html_templates %>/**/*.swig', tasks: ['swig'] }
     },
 
     copy: {
