@@ -5,7 +5,7 @@
 {% block page %}features{% endblock %}
 
 {% block content %} {% set bg = true %}
-    <header class="paragraph-1 cols">
+    <header class="paragraph-1 row">
       <div>
         <h1 class="highlight h-biggest">The no framework<br/>for rapid prototyping.</h1>
         <hr class="hr-small"/>
@@ -22,24 +22,22 @@
       </div>
     </header>
 
-    <section class="paragraph-2 cols">
-      <div>
-        <div class="code-wrapper">
-          <div id="code-output" class="code-block bash code-block-1">
-            <div class="header">
-              <div class="window-controls">
-                <button class="close">Close</button>
-                <button class="minimize">Minimize</button>
-                <button class="maximize">Maximize</button>
-              </div>
-              <span class="title">bash</span>
+    <section class="paragraph-2 row">
+      <div class="code-wrapper">
+        <div id="code-output" class="code-block bash code-block-1">
+          <div class="header">
+            <div class="window-controls">
+              <button class="close">Close</button>
+              <button class="minimize">Minimize</button>
+              <button class="maximize">Maximize</button>
             </div>
-            <pre>$ npm install -g core.io</pre>
-            <pre>$ core new myApp</pre>
-            <pre><span class="highlight">created</span> ./myapp</pre>
-            <pre class="tab-1">├── ./myapp/modules</pre>
-            <pre class="tab-1">└── ./myapp/models</pre>
+            <span class="title">bash</span>
           </div>
+          <pre>$ npm install -g core.io</pre>
+          <pre>$ core new myApp</pre>
+          <pre><span class="highlight">created</span> ./myapp</pre>
+          <pre class="tab-1">├── ./myapp/modules</pre>
+          <pre class="tab-1">└── ./myapp/models</pre>
         </div>
       </div>
 
@@ -50,7 +48,7 @@
       </div>
     </section>
 
-    <section class="paragraph-3 cols">
+    <section class="paragraph-3 row">
       <div>
         <h2 class="h-big">Read the documentation<br/>to get started.</h2>
         <hr class="hr-small"/>

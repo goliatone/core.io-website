@@ -84,7 +84,7 @@ img {
   .main-header .logo {
     width: 200px; }
 
-.modules .content, .docs .content12 {
+.modules .content, .docs .content {
   padding: 0 112px; }
 
 footer {
@@ -904,20 +904,10 @@ p code, li code {
   border-radius: 2px; }
 
 /* --------------------------------------------------- FEATURES PAGE */
-.features .content header {
-  padding-top: 68px;
-  margin-bottom: 50px; }
-.features .content section {
-  margin-bottom: 50px; }
-.features .content hr {
-  margin: 26px 0 28px 4px; }
 .features .paragraph-1 {
-  padding-left: 112px;
-  padding-right: 93px;
-  padding-bottom: 10px; }
+  padding: 68px 93px 60px 112px; }
   .features .paragraph-1 hr {
-    margin-top: 13px;
-    margin-bottom: 25px; }
+    margin: 13px 0 25px 0; }
   .features .paragraph-1 .subheader {
     margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
@@ -941,8 +931,10 @@ p code, li code {
   padding-left: 80px;
   padding-right: 115px;
   margin-top: 322px; }
-  .features .paragraph-2 .cols > div:last-child {
+  .features .paragraph-2 > div:last-child {
     margin-right: 3px; }
+  .features .paragraph-2 hr {
+    margin: 26px 0 28px 4px; }
   .features .paragraph-2 .code-block {
     min-width: 466px;
     min-height: 331px;
