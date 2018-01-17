@@ -44,7 +44,7 @@ function help {
 #################################################
 
 function build:dist {
-    grunt dist
+    grunt build
 }
 
 TIMEFORMAT="Task completed in %3lR"
