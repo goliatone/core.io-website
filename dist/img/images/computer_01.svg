@@ -12,10 +12,6 @@
                 animation: showShadow 2s, scaleShadow 4s 2s infinite;
             }
 
-            #shadow path {
-                transform: translateY(40px);
-            }
-
             #hole {
                 transform-origin: center center;
                 animation: scaleHoleUp .8s, scaleHoleDown 1s 2s;
@@ -204,7 +200,7 @@
     </defs>
 
     <g id="shadow" filter="url(#f1)">
-        <path fill="#151618" d="m14,318l149,86l235,-136l-150,-87l-234,137z" />
+        <path fill="#151618" d="m14,358l149,86l235,-136l-150,-87l-234,137z" />
     </g>
 
     <g id="hole">

@@ -915,12 +915,11 @@ p code, li code {
   .features .paragraph-1 .subheader {
     margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
-    width: 361px; }
-  .features .paragraph-1 .side-svg {
-    text-align: center;
-    padding-left: 11px; }
-    .features .paragraph-1 .side-svg img {
-      margin: 29px 0 0 27px; }
+    width: 361px;
+    height: 100%; }
+    .features .paragraph-1 .side-img img {
+      margin: -20px 0 0 35px;
+      height: 100%; }
   .features .paragraph-1 .button {
     margin-right: 22px;
     margin-bottom: 52px;
