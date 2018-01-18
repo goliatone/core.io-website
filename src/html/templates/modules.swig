@@ -18,24 +18,22 @@
         </div>
 
         {% for post in metadata.posts %}
-        <article class="row">
-          <div class="post cols">
-            <div>
-              <div class="row row-vCentered">
-                <a  class="title h-small" href="">{{post.title}}</a>
-                <span class="tag">{{post.version}}</span>
-              </div>
-              <p class="description p-medium-1">{{post.description}}</p>
+        <article class="post cols">
+          <header>
+            <div class="row row-vCentered">
+              <a  class="title h-small" href="">{{post.title}}</a>
+              <span class="tag">{{post.version}}</span>
             </div>
+            <p class="description p-medium-1">{{post.description}}</p>
+          </header>
 
-            <div class="row">
-              <div>
-                {% for label in post.labels -%}
-                <span class="label {{label.type}} uppercase">{{label.txt}}</span>
-                {% endfor %}
-              </div>
-              <span class="author tag"><span class="p-smallest">by</span> {{post.author}}</span>
+          <div class="row">
+            <div>
+              {% for label in post.labels -%}
+              <span class="label {{label.type}} uppercase">{{label.txt}}</span>
+              {% endfor %}
             </div>
+            <span class="author tag"><span class="p-smallest">by</span> {{post.author}}</span>
           </div>
         </article>
         {% endfor %}

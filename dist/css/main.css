@@ -364,13 +364,13 @@ li code {
   background-color: #1b1d1d; }
 
 /* ------------------------------------------------- POSTS */
-.posts > .row {
+.post {
   border-top: 1px solid #979797; }
-  .posts > .row:last-of-type {
+  .post:last-of-type {
     border-bottom: 1px solid #979797; }
-.posts .title,
-.posts .title a {
-  color: #fafafa; }
+  .post .title,
+  .post .title a {
+    color: #fafafa; }
 
 /* --------------------------------------------- DOCS MENU */
 .bg-menu {
