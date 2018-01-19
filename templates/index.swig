@@ -16,7 +16,7 @@
         </div>
 
         <div class="col-2">
-          <div class="side-img side-svg">
+          <div class="side-img">
             <img src="/img/images/computer_01.svg" width="100%" height="100%"/>
           </div>
         </div>
