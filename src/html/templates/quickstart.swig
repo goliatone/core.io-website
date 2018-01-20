@@ -5,19 +5,16 @@
 {% block page %}quickstart{% endblock %}
 
 {% block content %} {% set bg = true %}
-      <section class="paragraph-1 row row-vCentered">
-        <div class="col-2">
-          <div class="side-img side-svg">
-            <img src="/img/images/3_cubes.svg" width="100%" height="100%"/>
-          </div>
+      <header class="paragraph-1 row row-vCentered">
+        <div class="side-img side-svg">
+          <img src="/img/images/3_cubes.svg" width="100%" height="100%"/>
         </div>
 
-        <div class="col-2">
+        <div>
           <h1 class="h-small uppercase">Getting started</h1>
-          <hr class="hr-small"/>
           <p class="subheader p-big-1 light">Create your first core.io application in 4 simple steps.<br/>Even if you are new to Node.js this will be easy.</p>
         </div>
-      </section><!-- END SECTION -->
+      </header>
 
       <section class="instrus">
         <hr class="hr-shade"/>

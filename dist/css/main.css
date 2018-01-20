@@ -91,7 +91,10 @@ footer {
   width: 100%;
   height: 222px;
   margin-top: 120px;
-  padding: 46px 112px 20px 112px; }
+  padding: 46px 0 20px 0; }
+  footer .content {
+    height: 100%;
+    padding: 0 80px; }
   footer .footer-logo {
     display: inline-block;
     width: 38px;
@@ -108,9 +111,6 @@ footer {
       padding-bottom: 10px; }
   footer .footer-releases p {
     margin-bottom: 5px; }
-  footer .copyright {
-    margin-top: 32px;
-    margin-left: -33px; }
 
 /* footer positioning of elements
  * because of display flex column changing position
@@ -613,10 +613,11 @@ code {
   font-size: 10px; }
 
 /* -------------------------------------- FOOTER COPYRIGHT */
-.copyright {
+.footer-copyright {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px; }
-  .copyright > * {
+  font-size: 13px;
+  text-align: center; }
+  .footer-copyright > * {
     font-family: inherit;
     font-size: inherit; }
 
@@ -911,12 +912,11 @@ p code, li code {
   .features .paragraph-1 .subheader {
     margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
-    width: 361px; }
-  .features .paragraph-1 .side-svg {
-    text-align: center;
-    padding-left: 11px; }
-    .features .paragraph-1 .side-svg img {
-      margin: 29px 0 0 27px; }
+    width: 361px;
+    height: 100%; }
+    .features .paragraph-1 .side-img img {
+      margin: -20px 0 0 35px;
+      height: 100%; }
   .features .paragraph-1 .button {
     margin-right: 22px;
     margin-bottom: 52px;
@@ -993,8 +993,6 @@ p code, li code {
     width: 300px;
     height: 310px;
     padding: 51px 20px 51px 28px; }
-  .quickstart .paragraph-1 hr {
-    display: none; }
 .quickstart .paragraph-2 {
   margin-left: 30px;
   padding-left: 271px; }

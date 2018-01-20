@@ -31,7 +31,6 @@
     </div>
 
     <div class="row">
-      <!-- Documentation Side Menu -->
       <nav id="docs-side-menu" class="side-menu">
         <ul>
         {%- for item in metadata.sidebar.items %}
@@ -47,7 +46,7 @@
           </li>
         {% endfor -%}
         </ul>
-      </nav><!-- END Documentation Side Menu -->
+      </nav>
 
       <main id="guide" class="main-txt">
         <h3 class="title h-smaller-bold"># core.io documentation</h3>
