@@ -72,16 +72,16 @@ img {
   text-transform: uppercase; }
 
 /* ---------------------------------------------------------  LAYOUT */
-header,
+.main-header,
 .content {
   max-width: 1225px;
   margin: auto; }
 
-header {
+.main-header {
   height: 200px;
   padding-left: 112px;
   padding-right: 112px; }
-  header .logo {
+  .main-header .logo {
     width: 200px; }
 
 .modules .content, .docs .content {
@@ -107,7 +107,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    footer .footer-menu a {
+    footer .footer-menu .menu-item {
       padding-bottom: 10px; }
   footer .footer-releases p {
     margin-bottom: 5px; }
@@ -364,13 +364,13 @@ li code {
   background-color: #1b1d1d; }
 
 /* ------------------------------------------------- POSTS */
-.posts > .row {
+.post {
   border-top: 1px solid #979797; }
-  .posts > .row:last-of-type {
+  .post:last-of-type {
     border-bottom: 1px solid #979797; }
-.posts .title,
-.posts .title a {
-  color: #fafafa; }
+  .post .title,
+  .post .title a {
+    color: #fafafa; }
 
 /* --------------------------------------------- DOCS MENU */
 .bg-menu {
@@ -405,7 +405,7 @@ li code {
 
 /* show content, z-index needs position set */
 .highlight-bar,
-header,
+.main-header,
 .content {
   position: relative;
   z-index: 2; }
@@ -675,28 +675,28 @@ hr {
 /* ---------------------------------------------- NAV-BARS */
 /* --------------------------------- NAV-BAR-1 */
 /* HEADER NAV BAR */
-.nav-bar-1 {
+.nav-bar-1 ul {
   position: relative;
   top: -4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-1 .menu-item {
+  .nav-bar-1 ul .menu-item {
     margin-left: 2px; }
-    .nav-bar-1 .menu-item a {
+    .nav-bar-1 ul .menu-item a {
       padding: 7px 17px; }
-    .nav-bar-1 .menu-item:last-child {
+    .nav-bar-1 ul .menu-item:last-child {
       margin-right: -17px; }
 
 /* --------------------------------- NAV-BAR-2 */
 /* DOCUMENTATION NAV BAR */
-.nav-bar-2 {
+.nav-bar-2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .nav-bar-2 .menu-item {
+  .nav-bar-2 ul .menu-item {
     margin-right: 10px; }
-    .nav-bar-2 .menu-item a {
+    .nav-bar-2 ul .menu-item a {
       padding: 13px; }
 
 /* --------------------------------------------- SEARCH BAR */
@@ -818,6 +818,7 @@ hr {
 
 /* ------------------------------------------------ LABELS */
 .label {
+  display: inline-block;
   min-width: 47px;
   height: 20px;
   margin-right: 13px;
@@ -904,19 +905,10 @@ p code, li code {
   border-radius: 2px; }
 
 /* --------------------------------------------------- FEATURES PAGE */
-.features section {
-  margin-bottom: 50px; }
-  .features section:first-child {
-    padding-top: 68px; }
-.features hr {
-  margin: 26px 0 28px 4px; }
 .features .paragraph-1 {
-  padding-left: 112px;
-  padding-right: 93px;
-  padding-bottom: 10px; }
+  padding: 68px 93px 60px 112px; }
   .features .paragraph-1 hr {
-    margin-top: 13px;
-    margin-bottom: 25px; }
+    margin: 13px 0 25px 0; }
   .features .paragraph-1 .subheader {
     margin-bottom: 32px; }
   .features .paragraph-1 .side-img {
@@ -939,8 +931,10 @@ p code, li code {
   padding-left: 80px;
   padding-right: 115px;
   margin-top: 322px; }
-  .features .paragraph-2 .col-2:last-child {
+  .features .paragraph-2 > div:last-child {
     margin-right: 3px; }
+  .features .paragraph-2 hr {
+    margin: 26px 0 28px 4px; }
   .features .paragraph-2 .code-block {
     min-width: 466px;
     min-height: 331px;
@@ -974,11 +968,7 @@ p code, li code {
 .post {
   width: 100%;
   min-height: 204px;
-  padding: 32px 90px 27px 61px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  padding: 32px 90px 27px 61px; }
   .post .title {
     position: relative;
     left: -1px; }
@@ -1003,8 +993,6 @@ p code, li code {
     width: 300px;
     height: 310px;
     padding: 51px 20px 51px 28px; }
-  .quickstart .paragraph-1 hr {
-    display: none; }
 .quickstart .paragraph-2 {
   margin-left: 30px;
   padding-left: 271px; }
@@ -1087,7 +1075,7 @@ p code, li code {
 /* ---------------------------------------------- DOCUMENTATION PAGE */
 .docs .content {
   margin-top: -4px; }
-  .docs .content > .cols {
+  .docs .content > .row {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;

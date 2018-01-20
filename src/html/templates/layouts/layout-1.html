@@ -5,26 +5,26 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>core.io | The No Framework for rapid prototyping</title>
+  <title>{% block title %}Add title{% endblock %}</title>
 
-  <meta name="description" content="add_description">
-  <meta name="keywords" content="add_keywords">
-  <meta name="author" content="add_author">
+  <meta name="description" content="{{metadata.description}}">
+  <meta name="keywords" content="{{metadata.keywords}}">
+  <meta name="author" content="{{metadata.author}}">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
+  {% block styles %}
   <!-- build:css /css/main.min.css -->
   <link rel="stylesheet" href="/css/main.css">
   <!-- /build -->
-  
+  {% endblock %}
 
 </head>
 
-<body class="features">
+<body class="{% block page %}{# add_page_class #}{% endblock %}">
 
   <div class="highlight-bar"></div>
 
@@ -34,75 +34,16 @@
 
     <nav id="main-nav" class="nav-bar-1">
       <ul>
-        <li class="menu-item"><a href="/">Features</a></li>
-        <li class="menu-item"><a href="/quickstart.html">Quickstart</a></li>
-        <li class="menu-item"><a href="/documentation/about.html">Documentation</a></li>
-        <li class="menu-item"><a href="/modules.html">Modules</a></li>
+        {%- for item in metadata.main_menu.items  %}
+        <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+        {%- endfor %}
       </ul>
     </nav>
 
   </header>
 
-  <main class=" content">
-     
-    <header class="paragraph-1 row">
-      <div>
-        <h1 class="highlight h-biggest">The no framework<br/>for rapid prototyping.</h1>
-        <hr class="hr-small"/>
-        <p class="subheader p-big-2 shade">core.io is a federation of Node.js modules that<br/>focus on development speed.</p>
-        <button class="button big-btn black-btn fade download"><span>Download</span></button>
-        <a href="/quickstart.html" class="button big-btn gray-btn fade">Getting Started</a>
-        <p class="p-smallest">Latest Release: 0.2.8 (Jun 01, 2017)</p>
-      </div>
-
-      <div>
-        <div class="side-img side-svg">
-          <img src="/img/images/computer_01.svg" width="100%" height="100%"/>
-        </div>
-      </div>
-    </header>
-
-    <section class="paragraph-2 row">
-      <div class="code-wrapper">
-        <div id="code-output" class="code-block bash code-block-1">
-          <div class="header">
-            <div class="window-controls">
-              <button class="close">Close</button>
-              <button class="minimize">Minimize</button>
-              <button class="maximize">Maximize</button>
-            </div>
-            <span class="title">bash</span>
-          </div>
-          <pre>$ npm install -g core.io</pre>
-          <pre>$ core new myApp</pre>
-          <pre><span class="highlight">created</span> ./myapp</pre>
-          <pre class="tab-1">├── ./myapp/modules</pre>
-          <pre class="tab-1">└── ./myapp/models</pre>
-        </div>
-      </div>
-
-      <div>
-        <h2 class="h-big">Get a quick start with<br/>project generators.</h2>
-        <hr class="hr-small"/>
-        <p class="subheader p-medium-2 light">Quickly create new project using dynamic project templates.<br/>Creating templates for new projects is fast and easy.</p>
-      </div>
-    </section>
-
-    <section class="paragraph-3 row">
-      <div>
-        <h2 class="h-big">Read the documentation<br/>to get started.</h2>
-        <hr class="hr-small"/>
-        <p class="subheader p-medium-2 light">Next to the documentation, follow tutorials to get started.</p>
-        <a href="/documentation/about.html" class="button big-btn gray-btn fade">Documentation</a>
-      </div>
-
-      <div>
-        <div class="side-img">
-          <img src="/img/images/code_editor.svg" alt="" title="Features"/>
-        </div>
-      </div>
-    </section>
-
+  <main class="{% block content_class %}{# add_content_class #}{% endblock %} content">
+    {% block content %}{% endblock %}
   </main>
 
   <footer>
@@ -113,10 +54,9 @@
 
           <nav class="footer-menu">
             <ul>
-              <li class="menu-item"><a href="/">Features</a></li>
-              <li class="menu-item"><a href="/quickstart.html">Quickstart</a></li>
-              <li class="menu-item"><a href="/documentation/about.html">Documentation</a></li>
-              <li class="menu-item"><a href="/modules.html">Modules</a></li>
+              {%- for item in metadata.main_menu.items  %}
+              <li class="menu-item"><a href="{{item.link}}">{{item.txt}}</a></li>
+              {%- endfor %}
             </ul>
           </nav>
         </div>
@@ -135,7 +75,7 @@
     <p class="row row-centered copyright">Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
   </footer>
 
-  
+  {% if bg %}
   <!--backgrounds -->
   <div id="bg">
     <div id="gradient-1">
@@ -185,15 +125,15 @@
     <div id="filter-bottom"></div>
     <div id="bg-bottom"></div>
   </div>
-  
+  {% endif %}
 
-  
+  {% block scripts %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
   <!-- build:js /js/main.min.js -->
   <script src="/js/main.js"></script>
   <!-- /build -->
-  
+  {% endblock %}
 </body>
 
 </html>
