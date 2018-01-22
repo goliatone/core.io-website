@@ -1,4 +1,4 @@
-{% extends 'layouts/layout-1.html' %}
+{% extends '_layouts/layout.html' %}
 
 {% block title %}core.io | The No Framework for rapid prototyping{% endblock %}
 
