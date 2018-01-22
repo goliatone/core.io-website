@@ -702,8 +702,7 @@ hr {
 /* --------------------------------------------- SEARCH BAR */
 .search-bar-1 {
   width: 100%;
-  padding: 60px;
-  font-size: 24.024px;
+  padding: 20px 60px 60px;
   position: relative; }
   .search-bar-1 input {
     display: inline-block;
@@ -717,8 +716,8 @@ hr {
     line-height: 78px; }
   .search-bar-1 .icon {
     position: absolute;
-    top: 86.988px;
-    right: 85px; }
+    top: 45px;
+    right: 100px; }
     .search-bar-1 .icon:hover {
       cursor: pointer; }
 
