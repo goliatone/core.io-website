@@ -1,10 +1,4 @@
-* links activos con css
- 
-* pasar a gist grunt img tasks
-
 * favicon sizes
-
-* do semantics
 
 * sticky numbers x instruction blocks
 
@@ -16,13 +10,20 @@
 
 * search box icon animation loading
 
-* limpiar archivos
+* prettify, revisar x renderizado con mustache
+* check prettify plugin why not working
 
-* Revisar fade / styleguide
+* hacer responsive @media-queries
 
-* styleguide footer arreglar
 
-* styleguide añadir:
+
+* DONE completar ejemplos en cada sass x sassdoc
+
+* DONE revisar sassdocs
+
+* DONE update readmes
+
+* NO (styleguide removed) styleguide añadir:
 	* pagination
 	* code block
 	* code line
@@ -32,17 +33,17 @@
 	* links
 	* footnote (?)
 
-* prettify, revisar x renderizado con mustache
-* check prettify plugin why not working
+* NO (styleguide removed) Revisar fade / styleguide
 
-* update readmes
+* NO (styleguide removed)styleguide footer arreglar
 
-* hacer responsive @media-queries
+* DONE limpiar archivos
 
-* revisar sassdocs
+* DONE do semantics
 
-* completar ejemplos en cada sass x sassdoc
+* DONE pasar a gist grunt img tasks
 
+* DONE links activos con css
 
 * DONE sticky menu x docs menu
 
