@@ -47,18 +47,10 @@ $border_padding_sides: 17px
 
 /* --------------------------------------------- SEARCH BAR */
 $height: 78px
-$padding: 60px
-
-$padding_placeholder: 25px
-$font_size: $height * 0.308
-
-$icon_top: $padding + ($height - $font_size)/2
-$icon_right: $padding + $padding_placeholder
 
 .search-bar-1
   width: 100%
-  padding: $padding
-  font-size: $font_size
+  padding: 20px 60px 60px
   position: relative
   input
     display: inline-block
@@ -66,14 +58,14 @@ $icon_right: $padding + $padding_placeholder
     height: $height
     border: 1px solid white
     border-radius: 3px
-    padding-left: $padding_placeholder
+    padding-left: 25px
     font-size: inherit
     font-family: inherit
     line-height: $height
   .icon
     position: absolute
-    top: $icon_top
-    right: $icon_right
+    top: 45px
+    right: 100px
     &:hover
       cursor: pointer
 
