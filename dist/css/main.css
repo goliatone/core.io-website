@@ -84,7 +84,7 @@ img {
   .main-header .logo {
     width: 200px; }
 
-.modules .content, .docs .content {
+.modules main.content, .docs main.content {
   padding: 0 112px; }
 
 footer {
@@ -1072,9 +1072,9 @@ p code, li code {
       padding-left: 27px; }
 
 /* ---------------------------------------------- DOCUMENTATION PAGE */
-.docs .content {
+.docs main.content {
   margin-top: -4px; }
-  .docs .content > .row {
+  .docs main.content > .row {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
