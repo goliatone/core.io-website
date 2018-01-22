@@ -1,4 +1,4 @@
-{% extends 'layouts/layout-1.html' %}
+{% extends '_layouts/layout.html' %}
 
 {% block title %}Modules{% endblock %}
 
