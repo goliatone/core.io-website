@@ -663,11 +663,13 @@ code {
 hr {
   width: 100%;
   height: 0; }
-  hr.hr-small {
-    width: 53px;
-    border-width: 3px; }
-  hr.hr-medium {
-    width: 50%; }
+
+.hr-small {
+  width: 53px;
+  border-width: 3px; }
+
+.hr-medium {
+  width: 50%; }
 
 /* ---------------------------------------------- DECO-BAR */
 .highlight-bar {
