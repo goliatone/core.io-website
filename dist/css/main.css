@@ -622,9 +622,6 @@ code {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px;
   text-align: center; }
-  .footer-copyright > * {
-    font-family: inherit;
-    font-size: inherit; }
 
 /* ------------------------------------------------- POSTS */
 .post .title {
