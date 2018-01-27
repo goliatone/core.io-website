@@ -95,41 +95,46 @@ footer {
   footer .content {
     height: 100%;
     padding: 0 80px; }
-  footer .footer-logo {
-    display: inline-block;
-    width: 38px;
-    height: 38px; }
-  footer .footer-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    footer .footer-menu .menu-item {
-      padding-bottom: 10px; }
-  footer .footer-releases p {
-    margin-bottom: 5px; }
+
+.footer-logo {
+  display: inline-block;
+  width: 38px;
+  height: 38px; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .footer-menu .menu-item {
+    padding-bottom: 10px; }
+
+.footer-releases p {
+  margin-bottom: 5px; }
 
 /* footer positioning of elements
  * because of display flex column changing position
  * of one could affect other                        */
-footer .footer-logo {
+.footer-logo {
   float: left; }
-  footer .footer-logo img {
+  .footer-logo img {
     position: relative;
     top: -10px;
     left: -35px; }
-footer .footer-releases {
+
+.footer-releases {
   position: relative;
   top: 4px;
   left: -72px; }
-footer .footer-github {
+
+.footer-github {
   position: relative;
   top: -4px;
   left: -99px; }
-  footer .footer-github img {
+  .footer-github img {
     margin-right: 19px;
     margin-top: 1px;
     width: 26px;
