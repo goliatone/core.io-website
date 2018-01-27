@@ -89,7 +89,7 @@ module.exports = function(grunt) {
     processhtml: {
       prod: {
         expand: true,
-        cwd: '<%= path.prod %>',
+        cwd: '<%= path.prod %>/**/',
         dest: '<%= path.prod %>/',
         src: ['*.html'],
       }
