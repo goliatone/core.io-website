@@ -10,6 +10,7 @@
 
             #shadow {
                 animation: showShadow 2s, scaleShadow 4s 2s infinite;
+                transition: opcity;
             }
 
             #hole {
@@ -110,30 +111,36 @@
                 0%, 100% {
                     animation-timing-function: ease-in-out;
                     transform: scale(1);
+                    opacity: 1;
                 }
 
                 18% {
                     animation-timing-function: ease-in-out;
                     transform: scale(1.05);
+                    opacity: .7;
                 }
 
                 36% {
                     animation-timing-function: ease-in-out;
                     transform: scale(1.01);
+                    opacity: .9
                 }
 
                 53% {
                     animation-timing-function: ease-in-out;
                     transform: scale(1.04);
+                    opacity: .75;
                 }
 
                 68% {
                     animation-timing-function: ease-in-out;
                     transform: scale(1.02);
+                    opacity: .85;
                 }
 
                 80% {
                     transform: scale(1.03);
+                    opacity: .8;
                 }
             }
 
@@ -195,7 +202,7 @@
         </style>
 
         <filter id="f1" x="0" y="0" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="7" />
+            <feGaussianBlur stdDeviation="3" />
         </filter>
     </defs>
 
