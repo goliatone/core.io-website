@@ -11,8 +11,8 @@
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- build:css ../css/main.min.css -->
-  <link rel="stylesheet" href="../css/main.css">
+  <!-- build:css /css/main.min.css -->
+  <link rel="stylesheet" href="/css/main.css">
   <!-- /build -->
   <link rel="stylesheet" href="/documentation/api/assets/css/style.css">
 
@@ -22,9 +22,9 @@
 
   <div class="highlight-bar"></div>
 
-  <header class="row row-vCentered">
+  <header class="main-header row row-vCentered">
 
-    <a href="/"><img src="../img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+    <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
 
     <nav id="main-nav" class="nav-bar-1">
       <ul>
@@ -56,36 +56,7 @@
     </div>
 
     <div class="row">
-      <nav id="docs-side-menu" class="side-menu">
-        <ul>
-        {%- for item in metadata.sidebar.items %}
-          <li class="menu-item">
-            <a href="{{item.link}}">{{item.txt}}</a>
-            {% if item.children.length > 0 -%}
-            <ul class="submenu">
-              {% for child in item.children -%}
-              <li class="menu-item-submenu"><a href="{{child.link}}">{{child.txt}}</a></li>
-              {% endfor -%}
-            </ul>
-            {% endif -%}
-          </li>
-        {% endfor -%}
-        </ul>
-      </nav>
-
-      <main id="guide" class="main-txt">
-        <!-- START CONTENT BLOCK -->
-        {% autoescape false %}
-          {{ content }}
-        {% endautoescape %}
-        <!-- END CONTENT BLOCK -->
-
-        <!-- <div class="row link-pagination">
-          <a href="#">Previous: Previous</a>
-          <a href="#">Next: Application</a>
-        </div> -->
-
-      </main>
+      {% autoescape false %} {{ content }} {% endautoescape %}
     </div>
   </main>
 
@@ -93,7 +64,7 @@
     <div class="content cols">
       <div class="row row-centered">
         <div>
-          <a class="footer-logo" href="/"><img src="../img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
+          <a class="footer-logo" href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
 
           <nav class="footer-menu">
             <ul>
@@ -111,7 +82,7 @@
 
         <div class="footer-github">
           <a href="#" class="row row-vCentered">
-            <img src="../img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
+            <img src="/img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
           </a>
         </div>
       </div>

@@ -15,21 +15,21 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- build:css ../css/main.min.css -->
-  <link rel="stylesheet" href="../css/main.css">
+  <!-- build:css /css/main.min.css -->
+  <link rel="stylesheet" href="/css/main.css">
   <!-- /build -->
 
   <!-- highlight js -->
-  <link rel="stylesheet" href="../js/vendor/highlight-common/styles/atelier-dune-dark.css">
+  <link rel="stylesheet" href="/js/vendor/highlight-common/styles/atelier-dune-dark.css">
 </head>
 
 <body class="docs">
 
   <div class="highlight-bar"></div>
 
-  <header class="row row-vCentered">
+  <header class="main-header row row-vCentered">
 
-    <a href="/"><img src="../img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+    <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
 
     <nav id="main-nav" class="nav-bar-1">
       <ul>
@@ -55,7 +55,7 @@
 
           </ul>
         </nav>
-        <span class="label highlight">0.2.8</span>
+        <span class="label highlight">{{metadata.library.version}}</span>
       </div>
       <hr class="sticky hr-light">
     </div>
@@ -65,11 +65,11 @@
         <ul>
         {%- for item in metadata.sidebar.items %}
           <li class="menu-item">
-            <a href="{{item.link}}">{{item.txt}}</a>
+            <a href="{{item.link}}">{{item.name}}</a>
             {% if item.children.length > 0 -%}
             <ul class="submenu">
               {% for child in item.children -%}
-              <li class="menu-item-submenu"><a href="{{child.link}}">{{child.txt}}</a></li>
+              <li class="menu-item-submenu"><a href="{{child.link}}">{{child.name}}</a></li>
               {% endfor -%}
             </ul>
             {% endif -%}
@@ -98,7 +98,7 @@
     <div class="content cols">
       <div class="row row-centered">
         <div>
-          <a class="footer-logo" href="/"><img src="../img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
+          <a class="footer-logo" href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
 
           <nav class="footer-menu">
             <ul>
@@ -112,11 +112,12 @@
 
         <div class="footer-releases">
           <p>Latest Release: 0.2.8 (Jun 01, 2017)</p>
+          <p>Documentation Generated: {{metadata.date}}</p>
         </div>
 
         <div class="footer-github">
           <a href="#" class="row row-vCentered">
-            <img src="../img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
+            <img src="/img/icons/github-icon-2.png" alt="Core.io in Github" title="Github" />Github
           </a>
         </div>
       </div>
@@ -129,8 +130,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
   <script src="../js/vendor/highlight-common/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-  <!-- build:js ../js/main.min.js -->
-  <script src="../js/main.js"></script>
+  <!-- build:js /js/main.min.js -->
+  <script src="/js/main.js"></script>
   <!-- /build -->
 
 </body>
