@@ -618,10 +618,9 @@ code {
   font-size: 10px; }
 
 /* -------------------------------------- FOOTER COPYRIGHT */
-.footer-copyright {
+.copyright {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  text-align: center; }
+  font-size: 13px; }
 
 /* ------------------------------------------------- POSTS */
 .post .title {
