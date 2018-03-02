@@ -58,7 +58,7 @@
 
       <div>
         <div class="side-img">
-          <img src="/img/images/code_editor.svg" alt="" title="Features"/>
+          <img src="/img/images/code_editor.svg" alt="Features" title="Features"/>
         </div>
       </div>
     </section>
