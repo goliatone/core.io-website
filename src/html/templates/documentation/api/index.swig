@@ -18,14 +18,10 @@
 
 </head>
 
-<body class="docs">
-
-  <div class="highlight-bar"></div>
+<body class="docs highlight-bar">
 
   <header class="main-header row row-vCentered">
-
     <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
-
     <nav id="main-nav" class="nav-bar-1">
       <ul>
         <li class="menu-item"><a href="/">Features</a></li>
@@ -34,7 +30,6 @@
         <li class="menu-item"><a href="/modules.html">Modules</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="api content">
@@ -47,7 +42,6 @@
             <li class="menu-item"><a href="/documentation/guide/index.html">Guide</a></li>
             <li class="menu-item"><a href="/documentation/api/index.html">API</a></li>
             <li class="menu-item"><a href="/documentation/examples/index.html">Examples</a></li>
-
           </ul>
         </nav>
         <span class="label highlight">0.2.8</span>
@@ -65,7 +59,6 @@
       <div class="row row-centered">
         <div>
           <a class="footer-logo" href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
-
           <nav class="footer-menu">
             <ul>
               <li class="menu-item"><a href="/">Features</a></li>

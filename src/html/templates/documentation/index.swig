@@ -52,7 +52,6 @@
             <li class="menu-item"><a href="/documentation/guide/index.html">Guide</a></li>
             <li class="menu-item"><a href="/documentation/api/index.html">API</a></li>
             <li class="menu-item"><a href="/documentation/examples/index.html">Examples</a></li>
-
           </ul>
         </nav>
         <span class="label highlight">{{metadata.library.version}}</span>
@@ -61,36 +60,39 @@
     </div>
 
     <div class="row">
-      <nav id="docs-side-menu" class="side-menu">
-        <ul>
-        {%- for item in metadata.sidebar.items %}
-          <li class="menu-item">
-            <a href="{{item.link}}">{{item.name}}</a>
-            {% if item.children.length > 0 -%}
-            <ul class="submenu">
-              {% for child in item.children -%}
-              <li class="menu-item-submenu"><a href="{{child.link}}">{{child.name}}</a></li>
-              {% endfor -%}
-            </ul>
-            {% endif -%}
-          </li>
-        {% endfor -%}
-        </ul>
-      </nav>
+      <div id="split-left">
+        <nav id="docs-side-menu" class="sticky side-menu">
+          <ul>
+          {%- for item in metadata.sidebar.items %}
+            <li class="menu-item">
+              <a href="{{item.link}}">{{item.name}}</a>
+              {% if item.children.length > 0 -%}
+              <ul class="submenu">
+                {% for child in item.children -%}
+                <li class="menu-item-submenu"><a href="{{child.link}}">{{child.name}}</a></li>
+                {% endfor -%}
+              </ul>
+              {% endif -%}
+            </li>
+          {% endfor -%}
+          </ul>
+        </nav>
+      </div>
 
-      <main id="guide" class="main-txt">
-        <!-- START CONTENT BLOCK -->
-        {% autoescape false %}
-          {{ content }}
-        {% endautoescape %}
-        <!-- END CONTENT BLOCK -->
+      <div id="split-right">
+        <main id="guide" class="main-txt">
+          <!-- START CONTENT BLOCK -->
+          {% autoescape false %}
+            {{ content }}
+          {% endautoescape %}
+          <!-- END CONTENT BLOCK -->
 
-        <!-- <div class="row link-pagination">
-          <a href="#">Previous: Previous</a>
-          <a href="#">Next: Application</a>
-        </div> -->
-
-      </main>
+          <!-- <div class="row link-pagination">
+            <a href="#">Previous: Previous</a>
+            <a href="#">Next: Application</a>
+          </div> -->
+        </main>
+      </div>
     </div>
   </main>
 

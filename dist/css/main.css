@@ -189,7 +189,7 @@ hr {
     border-color: rgba(222, 229, 255, 0.16); }
 
 /* ---------------------------------------------- DECO-BAR */
-.highlight-bar {
+.highlight-bar::before {
   border: #00d8d8;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
   background: #5088EA;
@@ -378,7 +378,7 @@ li code {
     color: #fafafa; }
 
 /* --------------------------------------------- DOCS MENU */
-.bg-menu {
+.docs .sticky.nav::before {
   background-color: #2C2E31; }
 
 /* ----------------------------------------- DOCS SIDEMENU */
@@ -409,7 +409,7 @@ li code {
   z-index: 1; }
 
 /* show content, z-index needs position set */
-.highlight-bar,
+.highlight-bar::before,
 .main-header,
 .content {
   position: relative;
@@ -671,7 +671,9 @@ hr {
   width: 50%; }
 
 /* ---------------------------------------------- DECO-BAR */
-.highlight-bar {
+.highlight-bar::before {
+  content: "";
+  display: block;
   width: 4440px;
   height: 4px; }
 
@@ -1085,7 +1087,9 @@ p code, li code {
   z-index: 1; }
 .docs .nav-bar-2 .menu-item {
   z-index: 2; }
-.docs .bg-menu {
+.docs .sticky.nav::before {
+  content: "";
+  display: block;
   width: 2000px;
   height: 125px;
   position: absolute;
