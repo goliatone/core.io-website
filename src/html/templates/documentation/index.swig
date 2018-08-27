@@ -6,21 +6,21 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>Documentation</title>
-  <meta name="description" content="add_description">
-  <meta name="keywords" content="add_keywords">
-  <meta name="author" content="add_author">
+  <meta name="description" content="{{metadata.description}}">
+  <meta name="keywords" content="{{metadata.keywords}}">
+  <meta name="author" content="{{metadata.author}}">
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/main.css">
+  <!-- build:css /css/main.min.css -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- /build -->
 
   <!-- highlight js -->
-  <link rel="stylesheet" href="js/vendor/highlight-common/styles/hybrid.css">
-  <script src="js/vendor/highlight-common/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="/js/vendor/highlight-common/styles/atelier-dune-dark.css">
 </head>
 
 <body class="docs">
@@ -29,7 +29,7 @@
 
   <header class="main-header row row-vCentered">
 
-    <a class="logo" href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
+    <a href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
 
     <nav id="main-nav" class="nav-bar-1">
       <ul>
@@ -52,40 +52,46 @@
             <li class="menu-item"><a href="/documentation/guide/index.html">Guide</a></li>
             <li class="menu-item"><a href="/documentation/api/index.html">API</a></li>
             <li class="menu-item"><a href="/documentation/examples/index.html">Examples</a></li>
-
           </ul>
         </nav>
-        <span class="label highlight">0.2.8</span>
+        <span class="label highlight">{{metadata.library.version}}</span>
       </div>
       <hr class="sticky hr-light">
     </div>
 
     <div class="row">
-      <nav id="docs-side-menu" class="side-menu">
-        <ul>
-          {%- for item in metadata.sidebar.items  %}
-          <li>
-            <a href=""></a>
-            {%- if item.children.length > 0 %}
-            <ul>
-              {% for child in item.children  %}
-              <li><a href=""></a> </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
+      <div id="split-left">
+        <nav id="docs-side-menu" class="sticky side-menu">
+          <ul>
+          {%- for item in metadata.sidebar.items %}
+            <li class="menu-item">
+              <a href="{{item.link}}">{{item.name}}</a>
+              {% if item.children.length > 0 -%}
+              <ul class="submenu">
+                {% for child in item.children -%}
+                <li class="menu-item-submenu"><a href="{{child.link}}">{{child.name}}</a></li>
+                {% endfor -%}
+              </ul>
+              {% endif -%}
+            </li>
+          {% endfor -%}
+          </ul>
+        </nav>
+      </div>
 
-      <main id="guide" class="main-txt">
-      {% autoescape false %}
-        {{ content }}
-      {% endautoescape %}
+      <div id="split-right">
+        <main id="guide" class="main-txt">
+          <!-- START CONTENT BLOCK -->
+          {% autoescape false %}
+            {{ content }}
+          {% endautoescape %}
+          <!-- END CONTENT BLOCK -->
 
-      <div class="row link-pagination">
-        <a href="#">Previous: Previous</a>
-        <a href="#">Next: Application</a>
+          <!-- <div class="row link-pagination">
+            <a href="#">Previous: Previous</a>
+            <a href="#">Next: Application</a>
+          </div> -->
+        </main>
       </div>
     </div>
   </main>
@@ -108,6 +114,7 @@
 
         <div class="footer-releases">
           <p>Latest Release: 0.2.8 (Jun 01, 2017)</p>
+          <p>Documentation Generated: {{metadata.date}}</p>
         </div>
 
         <div class="footer-github">
@@ -117,12 +124,17 @@
         </div>
       </div>
 
-    <p class="row row-centered copyright">Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+      <p class="row row-centered copyright">Copyright &#169; 2017 goliatone. The contents of this page are licensed MIT license.</p>
+    </div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+  <script src="../js/vendor/highlight-common/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- build:js /js/main.min.js -->
   <script src="/js/main.js"></script>
+  <!-- /build -->
 
 </body>
 

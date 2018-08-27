@@ -95,41 +95,46 @@ footer {
   footer .content {
     height: 100%;
     padding: 0 80px; }
-  footer .footer-logo {
-    display: inline-block;
-    width: 38px;
-    height: 38px; }
-  footer .footer-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    footer .footer-menu .menu-item {
-      padding-bottom: 10px; }
-  footer .footer-releases p {
-    margin-bottom: 5px; }
+
+.footer-logo {
+  display: inline-block;
+  width: 38px;
+  height: 38px; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .footer-menu .menu-item {
+    padding-bottom: 10px; }
+
+.footer-releases p {
+  margin-bottom: 5px; }
 
 /* footer positioning of elements
  * because of display flex column changing position
  * of one could affect other                        */
-footer .footer-logo {
+.footer-logo {
   float: left; }
-  footer .footer-logo img {
+  .footer-logo img {
     position: relative;
     top: -10px;
     left: -35px; }
-footer .footer-releases {
+
+.footer-releases {
   position: relative;
   top: 4px;
   left: -72px; }
-footer .footer-github {
+
+.footer-github {
   position: relative;
   top: -4px;
   left: -99px; }
-  footer .footer-github img {
+  .footer-github img {
     margin-right: 19px;
     margin-top: 1px;
     width: 26px;
@@ -184,7 +189,7 @@ hr {
     border-color: rgba(222, 229, 255, 0.16); }
 
 /* ---------------------------------------------- DECO-BAR */
-.highlight-bar {
+.highlight-bar::before {
   border: #00d8d8;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5088ea+0,a4dd74+50,a4dd74+51,5088ea+100 */
   background: #5088EA;
@@ -373,7 +378,7 @@ li code {
     color: #fafafa; }
 
 /* --------------------------------------------- DOCS MENU */
-.bg-menu {
+.docs .sticky.nav::before {
   background-color: #2C2E31; }
 
 /* ----------------------------------------- DOCS SIDEMENU */
@@ -404,7 +409,7 @@ li code {
   z-index: 1; }
 
 /* show content, z-index needs position set */
-.highlight-bar,
+.highlight-bar::before,
 .main-header,
 .content {
   position: relative;
@@ -613,13 +618,9 @@ code {
   font-size: 10px; }
 
 /* -------------------------------------- FOOTER COPYRIGHT */
-.footer-copyright {
+.copyright {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  text-align: center; }
-  .footer-copyright > * {
-    font-family: inherit;
-    font-size: inherit; }
+  font-size: 13px; }
 
 /* ------------------------------------------------- POSTS */
 .post .title {
@@ -661,14 +662,18 @@ code {
 hr {
   width: 100%;
   height: 0; }
-  hr.hr-small {
-    width: 53px;
-    border-width: 3px; }
-  hr.hr-medium {
-    width: 50%; }
+
+.hr-small {
+  width: 53px;
+  border-width: 3px; }
+
+.hr-medium {
+  width: 50%; }
 
 /* ---------------------------------------------- DECO-BAR */
-.highlight-bar {
+.highlight-bar::before {
+  content: "";
+  display: block;
   width: 4440px;
   height: 4px; }
 
@@ -798,9 +803,7 @@ hr {
 
 /* ---------------------------- DOWNLOAD BUTTON */
 .button.download span {
-  position: relative;
-  padding-left: 14px;
-  top: 3px; }
+  padding-left: 14px; }
   .button.download span:before {
     content: "";
     background: url("../img/icons/white-github-512.png");
@@ -809,8 +812,8 @@ hr {
     height: 26px;
     display: inline-block;
     position: relative;
-    top: 8px;
-    left: -22px; }
+    top: 7px;
+    left: -12px; }
 .button.download:hover span:before {
   background: url("../img/icons/black-github-512.png");
   background-size: cover; }
@@ -1084,7 +1087,9 @@ p code, li code {
   z-index: 1; }
 .docs .nav-bar-2 .menu-item {
   z-index: 2; }
-.docs .bg-menu {
+.docs .sticky.nav::before {
+  content: "";
+  display: block;
   width: 2000px;
   height: 125px;
   position: absolute;

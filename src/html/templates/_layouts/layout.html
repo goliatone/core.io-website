@@ -24,14 +24,9 @@
 
 </head>
 
-<body class="{% block page %}{# add_page_class #}{% endblock %}">
-
-  <div class="highlight-bar"></div>
-
+<body class="{% block page %}{# add_page_class #}{% endblock %} highlight-bar">
   <header class="main-header row row-vCentered">
-
     <a class="logo" href="/"><img src="/img/logo/c_core.svg" alt="Core.io" title="Core.io"/></a>
-
     <nav id="main-nav" class="nav-bar-1">
       <ul>
         {%- for item in metadata.main_menu.items  %}
@@ -39,7 +34,6 @@
         {%- endfor %}
       </ul>
     </nav>
-
   </header>
 
   <main class="{% block content_class %}{# add_content_class #}{% endblock %} content">
@@ -51,7 +45,6 @@
       <div class="row row-centered">
         <div>
           <a class="footer-logo" href="/"><img src="/img/logo/mosca.svg" title="Core.io" alt="Core.io"/></a>
-
           <nav class="footer-menu">
             <ul>
               {%- for item in metadata.main_menu.items  %}
